@@ -308,6 +308,7 @@ type
     @param(AParamIdx index of the input param)
     @param(AValue value of param)}
     procedure ParamAsString(const AParamIdx: integer; const AValue: string);
+    function  ParamValueAsString(const AParamIdx: integer): string;
     {Insert Double value in param  
     @param(AParamIdx index of the input param)
     @param(AValue value of param )}
@@ -1827,6 +1828,64 @@ begin
     Unlock;
   end;
   {$ENDIF}
+end;
+
+function TFBLDsql.ParamValueAsString(const AParamIdx: integer): string;
+var
+  DataPtr: PChar;  // pointer to xsqlda.sqldata
+  l: integer;      // length of buffer
+begin
+  Result := '';
+  CheckParamIdx(AParamIdx);
+
+    case FPXSQLDA_IN^.sqlvar[AParamIdx].sqltype and (not 1) of
+      SQL_ARRAY:
+        Result := '(Array)';
+      SQL_BLOB:
+        begin
+//          if FPXSQLDA_IN^.sqlvar[AParamIdx].sqlsubtype = 1 then
+//            Result := BlobFieldAsString(AParamIdx)
+//          else
+            Result := '(Blob)';
+        end;
+      SQL_TEXT:
+        begin
+          DataPtr := FPXSQLDA_IN^.sqlvar[AParamIdx].sqldata;
+          l := FPXSQLDA_IN^.sqlvar[AParamIdx].sqllen;
+          SetString(Result, DataPtr, l);
+        end;
+      SQL_VARYING:
+        begin
+          DataPtr := FPXSQLDA_IN^.sqlvar[AParamIdx].sqldata;
+          l := isc_vax_integer(FPXSQLDA_IN^.sqlvar[AParamIdx].sqldata, 2);
+          Inc(DataPtr, 2);
+          SetString(Result, DataPtr, l);
+        end;
+      SQL_SHORT,
+      SQL_LONG:
+        if FPXSQLDA_IN^.sqlvar[AParamIdx].sqlscale = 0 then
+          Result := IntToStr(FieldAsLong(AParamIdx))
+        else
+          Result := FloatToStr(FieldAsDouble(AParamIdx));
+        SQL_DOUBLE:
+        Result := FloatToStr(FieldAsDouble(AParamIdx));
+      SQL_FLOAT,
+      SQL_D_FLOAT:
+        Result := FloatToStr(FieldAsFloat(AParamIdx));
+      SQL_TYPE_DATE:
+        Result := DateToStr(FieldAsDatetime(AParamIdx));
+      SQL_TYPE_TIME:
+        Result := TimeToStr(FieldAsDatetime(AParamIdx));
+      SQL_DATE:
+        Result := DateTimeToStr(FieldAsDatetime(AParamIdx));
+      SQL_INT64:
+        if FPXSQLDA_IN^.sqlvar[AParamIdx].sqlscale = 0 then
+          Result := IntToStr(FieldAsInt64(AParamIdx))
+        else
+          Result := FloatToStr(FieldAsDouble(AParamIdx));
+        else
+          FBLError(E_QR_FIELD_CONV, [AParamIdx]);
+    end;  { case }
 end;
 
 //------------------------------------------------------------------------------

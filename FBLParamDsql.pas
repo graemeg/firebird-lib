@@ -158,6 +158,8 @@ type
       parameter with the same name
       in order to enforce the new parameter semantic
     }
+    
+    function ParamNameToIndex(AParamName: string): integer;
 
     (* // don't know if/how to handle these regarding multiple occurences
     {Return True if Param can accept null value
@@ -252,7 +254,7 @@ type
     {Insert string value in param
     @param(AParamIdx index of the input param)
     @param(AValue value of param)}
-    procedure ParamByNameAsString(const AParamName: string; const AValue: string);
+    procedure ParamByNameAsString(const AParamName, AValue: string);
     {Insert Double value in param
     @param(AParamIdx index of the input param)
     @param(AValue value of param)}
@@ -268,7 +270,7 @@ type
     {Insert string value in BlobParam
     @param(AParamIdx index of the input param)
     @param(AValue value of param)}
-    procedure BlobParamByNameAsString(const AParamName: string; const AValue: string);
+    procedure BlobParamByNameAsString(const AParamName, AValue: string);
     {Insert Value as TStream in BlobParam
     @param(AParamIdx index of the input param)
     @param(AValue TStream source data)}
@@ -276,7 +278,7 @@ type
     {Copy the content of fileneme in BlobParam
     @param(AParamIdx index of the input param)
     @param(AValue TStream source data)}
-    procedure BlobParamByNameLoadFromFile(const AParamName: string; const AFileName: string);
+    procedure BlobParamByNameLoadFromFile(const AParamName, AFileName: string);
 
     {Works like TParam.AssignValues in BDE
     @param(AParamList list of lines ParamName=ParamValue.
@@ -745,6 +747,23 @@ begin
     Result := FParamMap[AParamIdx];
 end;
 
+function TFBLParamDsql.ParamNameToIndex(AParamName: string): integer;
+var
+  i: integer;
+  mParamName: string;
+begin
+  result := -1;
+  mParamName := UpperCase(AParamName);
+  CheckParamName(mParamName);
+  with FParamMap do
+    for i := 0 to Count - 1 do
+      if Strings[i] = mParamName then
+      begin
+        result := i;
+        Exit; //==>
+      end;
+end;
+
 procedure TFBLParamDsql.AssignValues(AParamList: TStringList);
 var
   i: integer;
@@ -805,7 +824,7 @@ begin
 end;
 
 procedure TFBLParamDsql.ParamAsLong(const AParamIdx: integer;
-  AValue: Integer);
+  AValue: longint);
 begin
   ParamByNameAsLong(FParamMap[AParamIdx], AValue);
 end;

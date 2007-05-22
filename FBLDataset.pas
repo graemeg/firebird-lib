@@ -177,11 +177,15 @@ begin
   FDsql.OnUnPrepare := DoOnUnPrepare;
   {$ENDIF}
   {$IFNDEF FPC}
-  {$IFDEF D6P}
+    {$IFDEF D6P}
   inherited SetUniDirectional(True);
-  {$ENDIF}
+    {$ENDIF}
   {$ELSE}
-   IsUniDirectional := True;
+    {$IFDEF VER2_0}
+  IsUniDirectional := True;   // required for FPC 2.0.4
+    {$ELSE}
+  SetUniDirectional(True);    // required for FPC 2.1.1 (r6375)
+    {$ENDIF}
   {$ENDIF}
 end;
 
