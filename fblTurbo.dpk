@@ -1,0 +1,74 @@
+package FBLTURBO;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION 'fblib for turbo delphi'}
+{$IMPLICITBUILD OFF}
+{%File 'fbl.inc'}
+{%TogetherDiagram 'ModelSupport_FBLTurbo\default.txaPackage'}
+{%TogetherDiagram 'ModelSupport_FBLTurbo\ibase_h\default.txaPackage'}
+{%TogetherDiagram 'ModelSupport_FBLTurbo\FBLExcept\default.txaPackage'}
+{%TogetherDiagram 'ModelSupport_FBLTurbo\FBLService\default.txaPackage'}
+{%TogetherDiagram 'ModelSupport_FBLTurbo\FBLParamDsql\default.txaPackage'}
+{%TogetherDiagram 'ModelSupport_FBLTurbo\iberror_h\default.txaPackage'}
+{%TogetherDiagram 'ModelSupport_FBLTurbo\FBLEvents\default.txaPackage'}
+{%TogetherDiagram 'ModelSupport_FBLTurbo\FBLTableToSqlScriptExport\default.txaPackage'}
+{%TogetherDiagram 'ModelSupport_FBLTurbo\FBLTransaction\default.txaPackage'}
+{%TogetherDiagram 'ModelSupport_FBLTurbo\FBLScript\default.txaPackage'}
+{%TogetherDiagram 'ModelSupport_FBLTurbo\FBLSimple\default.txaPackage'}
+{%TogetherDiagram 'ModelSupport_FBLTurbo\FBLReg\default.txaPackage'}
+{%TogetherDiagram 'ModelSupport_FBLTurbo\FBLmixf\default.txaPackage'}
+{%TogetherDiagram 'ModelSupport_FBLTurbo\FBLTextGridExport\default.txaPackage'}
+{%TogetherDiagram 'ModelSupport_FBLTurbo\FBLDatabase\default.txaPackage'}
+{%TogetherDiagram 'ModelSupport_FBLTurbo\FBLDsql\default.txaPackage'}
+{%TogetherDiagram 'ModelSupport_FBLTurbo\FBLMetadata\default.txaPackage'}
+{%TogetherDiagram 'ModelSupport_FBLTurbo\FBLHtmlExport\default.txaPackage'}
+{%TogetherDiagram 'ModelSupport_FBLTurbo\FBLConst\default.txaPackage'}
+{%TogetherDiagram 'ModelSupport_FBLTurbo\default.txvpck'}
+
+requires
+  rtl,
+  dbrtl;
+
+contains
+  iberror_h in 'iberror_h.pas',
+  FBLConst in 'FBLConst.pas',
+  FBLDatabase in 'FBLDatabase.pas',
+  FBLDsql in 'FBLDsql.pas',
+  FBLEvents in 'FBLEvents.pas',
+  FBLExcept in 'FBLExcept.pas',
+  FBLHtmlExport in 'FBLHtmlExport.pas',
+  FBLMetadata in 'FBLMetadata.pas',
+  FBLmixf in 'FBLmixf.pas',
+  FBLParamDsql in 'FBLParamDsql.pas',
+  FBLReg in 'FBLReg.pas',
+  FBLScript in 'FBLScript.pas',
+  FBLService in 'FBLService.pas',
+  FBLSimple in 'FBLSimple.pas',
+  FBLTableToSqlScriptExport in 'FBLTableToSqlScriptExport.pas',
+  FBLTextGridExport in 'FBLTextGridExport.pas',
+  FBLTransaction in 'FBLTransaction.pas',
+  ibase_h in 'ibase_h.pas',
+  FBLDataset in 'FBLDataset.pas';
+
+end.
