@@ -1834,6 +1834,53 @@ function TFBLDsql.ParamValueAsString(const AParamIdx: integer): string;
 var
   DataPtr: PChar;  // pointer to xsqlda.sqldata
   l: integer;      // length of buffer
+  
+  function _ParamAsLong(const AParamIdx: integer): LongInt;
+  begin
+    Result := Long(PLong(FPXSQLDA_IN^.sqlvar[AParamIdx].sqldata)^);
+  end;
+  
+  function _ParamAsDouble(const AParamIdx: integer): Double;
+  begin
+    Result := Double(PDouble(FPXSQLDA_IN^.sqlvar[AParamIdx].sqldata)^);
+  end;
+
+  function _ParamAsInt64(const AParamIdx: integer): Int64;
+  begin
+    Result := Int64(PInt64(FPXSQLDA_IN^.sqlvar[AParamIdx].sqldata)^);
+  end;
+  
+  function _ParamAsFloat(const AParamIdx: integer): Single;
+  begin
+    Result := Single(PSingle(FPXSQLDA_IN^.sqlvar[AParamIdx].sqldata)^);
+  end;
+
+  function _ParamAsDateTime(const AParamIdx: integer): TDateTime;
+  var
+    ltm: TCTimeStructure;
+    yy, mm, dd, h, m, s: word;
+  begin
+    case FPXSQLDA_IN^.sqlvar[AParamIdx].sqltype and (not 1) of
+      SQL_TYPE_TIME:
+        begin
+          isc_decode_sql_time(PISC_TIME(FPXSQLDA_IN^.sqlvar[AParamIdx].sqldata), @ltm);
+          Result := EncodeTime(ltm.tm_hour, ltm.tm_min, ltm.tm_sec, 0);
+        end;
+      SQL_TYPE_DATE:
+        begin
+          isc_decode_sql_date(PISC_DATE(FPXSQLDA_IN^.sqlvar[AParamIdx].sqldata), @ltm);
+          Result := EncodeDate(ltm.tm_year + 1900, ltm.tm_mon + 1, ltm.tm_mday);
+        end;
+      SQL_TIMESTAMP:
+        begin
+          isc_decode_timestamp(PISC_TIMESTAMP(FPXSQLDA_IN^.sqlvar[AParamIdx].sqldata), @ltm);
+          Result := EncodeDateTime(ltm.tm_year + 1900, ltm.tm_mon + 1, ltm.tm_mday, ltm.tm_hour, ltm.tm_min, ltm.tm_sec, 0);
+        end;
+      else
+        FBLError(E_QR_PARAM_TYPE, [AParamIdx]);
+    end;  { case }
+  end;
+
 begin
   Result := '';
   CheckParamIdx(AParamIdx);
@@ -1864,27 +1911,27 @@ begin
       SQL_SHORT,
       SQL_LONG:
         if FPXSQLDA_IN^.sqlvar[AParamIdx].sqlscale = 0 then
-          Result := IntToStr(FieldAsLong(AParamIdx))
+          Result := IntToStr(_ParamAsLong(AParamIdx))
         else
-          Result := FloatToStr(FieldAsDouble(AParamIdx));
-        SQL_DOUBLE:
-        Result := FloatToStr(FieldAsDouble(AParamIdx));
+          Result := FloatToStr(_ParamAsDouble(AParamIdx));
+      SQL_DOUBLE:
+        Result := FloatToStr(_ParamAsDouble(AParamIdx));
       SQL_FLOAT,
       SQL_D_FLOAT:
-        Result := FloatToStr(FieldAsFloat(AParamIdx));
+        Result := FloatToStr(_ParamAsFloat(AParamIdx));
       SQL_TYPE_DATE:
-        Result := DateToStr(FieldAsDatetime(AParamIdx));
+        Result := DateToStr(_ParamAsDateTime(AParamIdx));
       SQL_TYPE_TIME:
-        Result := TimeToStr(FieldAsDatetime(AParamIdx));
+        Result := TimeToStr(_ParamAsDateTime(AParamIdx));
       SQL_DATE:
-        Result := DateTimeToStr(FieldAsDatetime(AParamIdx));
+        Result := DateTimeToStr(_ParamAsDateTime(AParamIdx));
       SQL_INT64:
         if FPXSQLDA_IN^.sqlvar[AParamIdx].sqlscale = 0 then
-          Result := IntToStr(FieldAsInt64(AParamIdx))
+          Result := IntToStr(_ParamAsInt64(AParamIdx))
         else
-          Result := FloatToStr(FieldAsDouble(AParamIdx));
-        else
-          FBLError(E_QR_FIELD_CONV, [AParamIdx]);
+          Result := FloatToStr(_ParamAsDouble(AParamIdx));
+      else
+        FBLError(E_QR_FIELD_CONV, [AParamIdx]);
     end;  { case }
 end;
 
