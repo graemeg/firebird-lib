@@ -566,7 +566,6 @@ begin
       	p := p + d;
       	Line[p] := ':';
         Insert(mParamName, Line, p + 1);
-        d := d + Length(mParamName);
       end;
 
       // The following Code does not work if there are '?' characters

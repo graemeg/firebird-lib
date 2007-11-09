@@ -1858,7 +1858,6 @@ var
   function _ParamAsDateTime(const AParamIdx: integer): TDateTime;
   var
     ltm: TCTimeStructure;
-    yy, mm, dd, h, m, s: word;
   begin
     case FPXSQLDA_IN^.sqlvar[AParamIdx].sqltype and (not 1) of
       SQL_TYPE_TIME:
@@ -1877,8 +1876,11 @@ var
           Result := EncodeDateTime(ltm.tm_year + 1900, ltm.tm_mon + 1, ltm.tm_mday, ltm.tm_hour, ltm.tm_min, ltm.tm_sec, 0);
         end;
       else
+      begin
         FBLError(E_QR_PARAM_TYPE, [AParamIdx]);
-    end;  { case }
+        result:= 0;
+      end;
+    end;
   end;
 
 begin
