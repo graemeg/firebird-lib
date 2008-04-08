@@ -627,7 +627,7 @@ end;
 procedure TFBLParamDsql.CheckParamName(const AParamName: string);
 begin
   if FParamMap.IndexOf(AParamName) < 0 then
-  	EFBLError.Create(format('Unknown parameter %s', [AParamName]));
+  	raise EFBLError.Create(format('Unknown parameter %s', [AParamName]));
 end;
 
 procedure TFBLParamDsql.ParamByNameAsDateTime(const AParamName: string;
