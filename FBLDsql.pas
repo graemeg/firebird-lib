@@ -512,6 +512,8 @@ end;
 
 procedure TFBLDsql.SetTransaction(Value: TFBLTransaction);
 begin
+  if assigned(FTransaction) and (Value <> FTransaction) then
+    FTransaction.RemQuery(self);
   if Assigned(Value) and (Value <> FTransaction) then
     Value.AddQuery(self);
   if Assigned(Value) then
