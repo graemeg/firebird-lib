@@ -498,7 +498,7 @@ begin
         while (j <= Length(Line)) and (
           Pos(
             Line[j],
-            '012345689ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz_'
+            '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz_'
           ) > 0
         ) do
           inc(j);
