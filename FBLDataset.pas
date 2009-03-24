@@ -186,6 +186,9 @@ begin
     {$ELSE}
   SetUniDirectional(True);    // required for FPC 2.1.1 (r6375)
     {$ENDIF}
+    {$IF defined(VER2_2) or defined(VER2_3_1)}
+  SetUniDirectional(False);
+    {$ENDIF}
   {$ENDIF}
 end;
 
