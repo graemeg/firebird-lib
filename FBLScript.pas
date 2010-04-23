@@ -20,7 +20,6 @@
 
 }
 
-{last modify 2005-11-25 alessandro batisti}
 
 {$I fbl.inc}
 
@@ -38,12 +37,19 @@ interface
 
 uses
   {$IFDEF UNIX}
-  Libc,
+  initc,
+  unixtype,
+  baseunix,
   {$ELSE}
   windows,
   {$ENDIF}
   Classes,
   SysUtils;
+
+{$IFDEF UNIX}
+function mbrlen(const s: pchar; n: size_t; ps: pmbstate_t): size_t; cdecl; external clib name 'mbrlen';
+{$ENDIF}
+
 
 type
   TStatementType = (stUnknow, stSetTerm, stSetGenerator, stSelect, stInsert, stUpdate,
@@ -188,7 +194,7 @@ var
 {$ENDIF}
 begin
   {$IFDEF UNIX}
-  CharLen := Libc.mblen(AStr, MB_CUR_MAX);
+  CharLen := mbrlen(AStr, 10, nil);    // 10 = MB_CUR_MAX. See comments in cwstring unit
   if (CharLen = -1) 
     then CharLen := 1;
   Result := AStr + CharLen;
