@@ -13,10 +13,10 @@ Compilers supported
 
   * NO component TFBLDataset(1) ;
 
-  freepascal 2.0 or above 
-  lazarus ide 0.9.10 or above
+  Free Pascal 2.0 or above
+  Lazarus IDE 0.9.10 or above
 
-Firebird server supperted
+Firebird server supported
 
  1.0.x superserver classic
  1.5.x superserver classic
@@ -34,23 +34,24 @@ FBL_THREADSAFE in fbl.inc.
 for generate documetation follow these steps:
 
 1) download pasdoc from http://pasdoc.sourceforge.net
-2) compile pasdoc ,I used freepascal 2.0
+2) compile pasdoc, I used Free Pascal 2.0
 3) go to fblib source directory
-4) in win run  makehelp.bat, in linux run makehelp.sh 
-5) this script will create a directory name FblibHelp with docs, open index.html with your favorite browser. 
+4) in Windows run makehelp.bat, in Linux run makehelp.sh
+5) this script will create a directory name FblibHelp with docs, open
+   index.html with your favorite web browser.
 
-note for turbodelphi User
+note for Turbo Delphi users
 
-  in turbo delphi explorer You cannot install components in the ide,
-  package FBLTurbo.dpk is only for turbo delphi professional.
+  In Turbo Delphi Explorer you cannot install components in the IDE.
+  The package FBLTurbo.dpk is only for Turbo Delphi Professional.
 
-  in turbo delphi explorer add in  library path the fblib installation path and
+  In Turbo Delphi Explorer add in library path the fblib installation path and
   use fblib as class library.
   see turbodelphi examples;  
 
 
 (1)
-in version 0.85 there is a new component TFBLDataset is an TDataset discendant.
+in version 0.85 there is a new component TFBLDataset is an TDataset descendant.
 
 Limits:
    Unidirectional 
