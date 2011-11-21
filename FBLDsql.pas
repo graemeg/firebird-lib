@@ -387,7 +387,7 @@ type
 
 const
   {@exclude}
-  BLOB_SEGMENT_LEN = 4095;
+  BLOB_SEGMENT_LEN = 65535;
 
 implementation
 
