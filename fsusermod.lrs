@@ -1,0 +1,62 @@
+{ Questo è un file risorse generato automaticamente da Lazarus }
+
+LazarusResources.Add('TFrmUserMod','FORMDATA',[
+  'TPF0'#11'TFrmUserMod'#10'FrmUserMod'#13'ActiveControl'#7#10'edUserName'#11'B'
+  +'orderIcons'#11#12'biSystemMenu'#0#11'BorderStyle'#7#8'bsDialog'#7'Caption'#6
+  +#15'User parameters'#28'ChildSizing.LeftRightSpacing'#2#6#28'ChildSizing.Top'
+  +'BottomSpacing'#2#2#29'ChildSizing.HorizontalSpacing'#2#2#27'ChildSizing.Ver'
+  +'ticalSpacing'#2#2#12'ClientHeight'#3'R'#1#11'ClientWidth'#3#203#0#8'OnCreat'
+  +'e'#7#10'FormCreate'#6'OnShow'#7#8'FormShow'#13'PixelsPerInch'#2'`'#8'Positi'
+  +'on'#7#15'poDesktopCenter'#18'HorzScrollBar.Page'#3#202#0#18'VertScrollBar.P'
+  +'age'#3'Q'#1#4'Left'#3#192#1#6'Height'#3'R'#1#3'Top'#3#215#0#5'Width'#3#203#0
+  +#0#9'TGroupBox'#9'GroupBox1'#5'Align'#7#5'alTop'#7'Caption'#6#20'Required in'
+  +'formation'#12'ClientHeight'#3#132#0#11'ClientWidth'#3#187#0#8'TabOrder'#2#0
+  +#4'Left'#2#6#6'Height'#3#150#0#3'Top'#2#2#5'Width'#3#191#0#0#12'TLabeledEdit'
+  +#10'edUserName'#17'EditLabel.Caption'#6#9'&UserName'#15'EditLabel.Color'#7#6
+  +'clNone'#16'EditLabel.Height'#2#14#14'EditLabel.Left'#2#8#21'EditLabel.Paren'
+  +'tColor'#8#13'EditLabel.Top'#2#3#15'EditLabel.Width'#2'2'#14'EditLabel.Left'
+  +#2#8#16'EditLabel.Height'#2#14#13'EditLabel.Top'#2#3#15'EditLabel.Width'#2'2'
+  +#9'MaxLength'#2#31#11'ParentColor'#8#8'TabOrder'#2#0#8'OnChange'#7#16'edUser'
+  +'NameChange'#4'Left'#2#8#6'Height'#2#21#3'Top'#2#20#5'Width'#3#168#0#0#0#12
+  +'TLabeledEdit'#10'edPassword'#17'EditLabel.Caption'#6#9'&Password'#15'EditLa'
+  +'bel.Color'#7#6'clNone'#16'EditLabel.Height'#2#14#14'EditLabel.Left'#2#8#21
+  +'EditLabel.ParentColor'#8#13'EditLabel.Top'#2'+'#15'EditLabel.Width'#2'/'#14
+  +'EditLabel.Left'#2#8#16'EditLabel.Height'#2#14#13'EditLabel.Top'#2'+'#15'Edi'
+  +'tLabel.Width'#2'/'#9'MaxLength'#2#31#11'ParentColor'#8#12'PasswordChar'#6#1
+  +'*'#8'TabOrder'#2#1#8'OnChange'#7#16'edPasswordChange'#4'Left'#2#8#6'Height'
+  +#2#21#3'Top'#2'<'#5'Width'#3#168#0#0#0#12'TLabeledEdit'#17'edConfirmPassword'
+  +#17'EditLabel.Caption'#6#17'&Confirm password'#15'EditLabel.Color'#7#6'clNon'
+  +'e'#16'EditLabel.Height'#2#14#14'EditLabel.Left'#2#8#21'EditLabel.ParentColo'
+  +'r'#8#13'EditLabel.Top'#2'S'#15'EditLabel.Width'#2'W'#14'EditLabel.Left'#2#8
+  +#16'EditLabel.Height'#2#14#13'EditLabel.Top'#2'S'#15'EditLabel.Width'#2'W'#9
+  +'MaxLength'#2#31#11'ParentColor'#8#12'PasswordChar'#6#1'*'#8'TabOrder'#2#2#8
+  +'OnChange'#7#23'edConfirmPasswordChange'#4'Left'#2#8#6'Height'#2#21#3'Top'#2
+  +'d'#5'Width'#3#168#0#0#0#0#9'TGroupBox'#9'GroupBox2'#5'Align'#7#5'alTop'#7'C'
+  +'aption'#6#20'Optional information'#12'ClientHeight'#3#132#0#11'ClientWidth'
+  +#3#187#0#8'TabOrder'#2#1#4'Left'#2#6#6'Height'#3#150#0#3'Top'#3#154#0#5'Widt'
+  +'h'#3#191#0#0#12'TLabeledEdit'#11'edFirstName'#17'EditLabel.Caption'#6#11'&F'
+  +'irst name'#15'EditLabel.Color'#7#6'clNone'#16'EditLabel.Height'#2#14#14'Edi'
+  +'tLabel.Left'#2#8#21'EditLabel.ParentColor'#8#13'EditLabel.Top'#2#3#15'EditL'
+  +'abel.Width'#2'3'#14'EditLabel.Left'#2#8#16'EditLabel.Height'#2#14#13'EditLa'
+  +'bel.Top'#2#3#15'EditLabel.Width'#2'3'#9'MaxLength'#2#31#11'ParentColor'#8#8
+  +'TabOrder'#2#0#8'OnChange'#7#17'edFirstNameChange'#4'Left'#2#8#6'Height'#2#21
+  +#3'Top'#2#20#5'Width'#3#168#0#0#0#12'TLabeledEdit'#12'edMiddleName'#17'EditL'
+  +'abel.Caption'#6#12'&Middle name'#15'EditLabel.Color'#7#6'clNone'#16'EditLab'
+  +'el.Height'#2#14#14'EditLabel.Left'#2#8#21'EditLabel.ParentColor'#8#13'EditL'
+  +'abel.Top'#2'+'#15'EditLabel.Width'#2'<'#14'EditLabel.Left'#2#8#16'EditLabel'
+  +'.Height'#2#14#13'EditLabel.Top'#2'+'#15'EditLabel.Width'#2'<'#9'MaxLength'#2
+  +#31#11'ParentColor'#8#8'TabOrder'#2#1#8'OnChange'#7#18'edMiddleNameChange'#4
+  +'Left'#2#8#6'Height'#2#21#3'Top'#2'<'#5'Width'#3#168#0#0#0#12'TLabeledEdit'
+  +#10'edLastName'#17'EditLabel.Caption'#6#10'&Last name'#15'EditLabel.Color'#7
+  +#6'clNone'#16'EditLabel.Height'#2#14#14'EditLabel.Left'#2#8#21'EditLabel.Par'
+  +'entColor'#8#13'EditLabel.Top'#2'S'#15'EditLabel.Width'#2'2'#14'EditLabel.Le'
+  +'ft'#2#8#16'EditLabel.Height'#2#14#13'EditLabel.Top'#2'S'#15'EditLabel.Width'
+  +#2'2'#9'MaxLength'#2#31#11'ParentColor'#8#8'TabOrder'#2#2#8'OnChange'#7#16'e'
+  +'dLastNameChange'#4'Left'#2#8#6'Height'#2#21#3'Top'#2'd'#5'Width'#3#168#0#0#0
+  +#0#7'TBitBtn'#5'btnOk'#25'BorderSpacing.InnerBorder'#2#2#7'Caption'#6#3'&OK'
+  +#7'Enabled'#8#4'Kind'#7#4'bkOK'#9'NumGlyphs'#2#0#7'OnClick'#7#10'btnOkClick'
+  +#8'TabOrder'#2#2#4'Left'#2'z'#6'Height'#2#24#3'Top'#3'8'#1#5'Width'#2'K'#0#0
+  +#7'TBitBtn'#9'btnCancel'#25'BorderSpacing.InnerBorder'#2#2#7'Caption'#6#7'An'
+  +'nulla'#4'Kind'#7#8'bkCancel'#11'ModalResult'#2#2#9'NumGlyphs'#2#0#8'TabOrde'
+  +'r'#2#3#4'Left'#2'('#6'Height'#2#24#3'Top'#3'8'#1#5'Width'#2'K'#0#0#0
+]);

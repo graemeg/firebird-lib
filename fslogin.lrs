@@ -1,0 +1,28 @@
+{ Questo è un file risorse generato automaticamente da Lazarus }
+
+LazarusResources.Add('TfrmLogin','FORMDATA',[
+  'TPF0'#9'TfrmLogin'#8'frmLogin'#4'Left'#3#154#1#6'Height'#3#148#0#3'Top'#3#252
+  +#0#5'Width'#3#220#0#18'HorzScrollBar.Page'#3#219#0#18'VertScrollBar.Page'#3
+  +#147#0#13'ActiveControl'#7#6'edUser'#11'BorderStyle'#7#8'bsDialog'#7'Caption'
+  +#6#5'Login'#8'OnCreate'#7#10'FormCreate'#6'OnShow'#7#8'FormShow'#8'Position'
+  +#7#14'poScreenCenter'#0#6'TPanel'#6'Panel1'#6'Height'#2#20#5'Width'#3#220#0#5
+  +'Align'#7#5'alTop'#10'BevelOuter'#7#6'bvNone'#28'ChildSizing.LeftRightSpacin'
+  +'g'#2#4#27'ChildSizing.ControlsPerLine'#2#2#11'FullRepaint'#8#8'TabOrder'#2#0
+  +#0#6'TLabel'#6'lAlias'#4'Left'#2'%'#6'Height'#2#20#5'Width'#3#179#0#5'Align'
+  +#7#8'alClient'#7'Caption'#6#5'alias'#5'Color'#7#6'clGray'#10'Font.Color'#7#7
+  +'clWhite'#10'Font.Style'#11#6'fsBold'#0#6'Layout'#7#8'tlCenter'#11'ParentCol'
+  +'or'#8#11'Transparent'#8#0#0#6'TLabel'#6'Label1'#4'Left'#2#4#6'Height'#2#20#5
+  +'Width'#2'!'#5'Align'#7#6'alLeft'#7'Caption'#6#8' Alias: '#5'Color'#7#6'clGr'
+  +'ay'#10'Font.Color'#7#7'clWhite'#6'Layout'#7#8'tlCenter'#11'ParentColor'#8#11
+  +'Transparent'#8#0#0#0#12'TLabeledEdit'#6'edUser'#4'Left'#2#8#6'Height'#2#21#3
+  +'Top'#2'('#5'Width'#3#200#0#9'MaxLength'#2#31#11'ParentColor'#8#8'TabOrder'#2
+  +#1#0#0#12'TLabeledEdit'#10'edPassword'#4'Left'#2#8#6'Height'#2#21#3'Top'#2'P'
+  +#5'Width'#3#200#0#9'MaxLength'#2#31#11'ParentColor'#8#12'PasswordChar'#6#1'*'
+  +#8'TabOrder'#2#2#0#0#6'TPanel'#6'Panel2'#6'Height'#2'$'#3'Top'#2'p'#5'Width'
+  +#3#220#0#5'Align'#7#8'alBottom'#10'BevelOuter'#7#6'bvNone'#11'FullRepaint'#8
+  +#8'TabOrder'#2#3#0#6'TBevel'#6'Bevel1'#6'Height'#2#5#5'Width'#3#220#0#5'Alig'
+  +'n'#7#5'alTop'#5'Shape'#7#9'bsTopLine'#0#0#7'TBitBtn'#7'BitBtn1'#4'Left'#3
+  +#141#0#6'Height'#2#26#3'Top'#2#6#5'Width'#2'K'#7'Anchors'#11#5'akTop'#7'akRi'
+  +'ght'#0#25'BorderSpacing.InnerBorder'#2#2#7'Caption'#6#3'&OK'#7'Default'#9#4
+  +'Kind'#7#4'bkOK'#11'ModalResult'#2#1#9'NumGlyphs'#2#0#8'TabOrder'#2#0#0#0#0#0
+]);

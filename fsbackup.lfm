@@ -1,0 +1,284 @@
+object frmFbBackup: TfrmFbBackup
+  ActiveControl = btnStart
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsDialog
+  Caption = 'Backup'
+  ClientHeight = 306
+  ClientWidth = 383
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  Position = poDesktopCenter
+  HorzScrollBar.Page = 382
+  VertScrollBar.Page = 305
+  Left = 335
+  Height = 306
+  Top = 220
+  Width = 383
+  object Panel1: TPanel
+    Align = alBottom
+    BevelOuter = bvNone
+    ClientHeight = 29
+    ClientWidth = 383
+    TabOrder = 0
+    Height = 29
+    Top = 277
+    Width = 383
+    object btnStart: TBitBtn
+      Anchors = [akRight]
+      BorderSpacing.InnerBorder = 2
+      Caption = '&Start backup'
+      Default = True
+      Kind = bkOK
+      NumGlyphs = 0
+      OnClick = btnStartClick
+      TabOrder = 0
+      Left = 278
+      Height = 24
+      Top = 2
+      Width = 100
+    end
+    object BitBtn2: TBitBtn
+      Anchors = [akTop, akRight]
+      BorderSpacing.InnerBorder = 2
+      Caption = '&Chiudi'
+      Kind = bkClose
+      NumGlyphs = 0
+      TabOrder = 1
+      Left = 200
+      Height = 24
+      Top = 2
+      Width = 76
+    end
+  end
+  object Panel2: TPanel
+    Align = alClient
+    BevelOuter = bvNone
+    ChildSizing.LeftRightSpacing = 4
+    ChildSizing.TopBottomSpacing = 4
+    ClientHeight = 277
+    ClientWidth = 383
+    TabOrder = 1
+    Height = 277
+    Width = 383
+    object Notebook1: TNotebook
+      Align = alClient
+      PageIndex = 0
+      Left = 4
+      Height = 269
+      Top = 4
+      Width = 375
+      object Page1: TPage
+        Caption = 'Backup file'
+        ChildSizing.LeftRightSpacing = 2
+        ClientWidth = 367
+        ClientHeight = 243
+        Height = 243
+        Width = 367
+        object Panel3: TPanel
+          Align = alTop
+          Alignment = taLeftJustify
+          BevelOuter = bvNone
+          Caption = 'Database file'
+          ClientHeight = 18
+          ClientWidth = 363
+          TabOrder = 0
+          Left = 2
+          Height = 18
+          Width = 363
+        end
+        object Panel4: TPanel
+          Align = alTop
+          BevelOuter = bvNone
+          ClientHeight = 21
+          ClientWidth = 363
+          TabOrder = 1
+          Left = 2
+          Height = 21
+          Top = 18
+          Width = 363
+          object edDbFile: TEdit
+            Align = alClient
+            TabOrder = 0
+            Height = 21
+            Width = 363
+          end
+        end
+        object Panel5: TPanel
+          Align = alTop
+          Alignment = taLeftJustify
+          BevelOuter = bvNone
+          Caption = 'Backup file'
+          ClientHeight = 18
+          ClientWidth = 363
+          TabOrder = 2
+          Left = 2
+          Height = 18
+          Top = 39
+          Width = 363
+        end
+        object Panel6: TPanel
+          Align = alTop
+          BevelOuter = bvNone
+          ClientHeight = 21
+          ClientWidth = 363
+          TabOrder = 3
+          Left = 2
+          Height = 21
+          Top = 57
+          Width = 363
+          object edBKPFile: TEditButton
+            Align = alLeft
+            Anchors = [akTop, akLeft, akRight, akBottom]
+            ButtonWidth = 23
+            Glyph.Data = {
+              1B0900002F2A2058504D202A2F0A7374617469632063686172202A2062746E5F
+              6F70656E66696C655F78706D5B5D203D207B0A2231382031382039372032222C
+              0A2220200963204E6F6E65222C0A222E2009632023303030303030222C0A222B
+              2009632023344533333142222C0A22402009632023453541353636222C0A2223
+              2009632023464544333941222C0A22242009632023464543353835222C0A2225
+              2009632023464443353837222C0A22262009632023464543323832222C0A222A
+              2009632023463841433632222C0A223D2009632023464543383841222C0A222D
+              2009632023353335303444222C0A223B2009632023353535323446222C0A223E
+              2009632023354335413537222C0A222C2009632023353435313445222C0A2227
+              2009632023353635333530222C0A22292009632023433438363445222C0A2221
+              2009632023353234463443222C0A227E2009632023463546354635222C0A227B
+              2009632023454345434543222C0A225D2009632023453445344534222C0A225E
+              2009632023444344434443222C0A222F2009632023443444344434222C0A2228
+              2009632023434243424342222C0A225F2009632023433443344334222C0A223A
+              2009632023424342434243222C0A223C2009632023423542354235222C0A225B
+              2009632023423342334233222C0A227D2009632023333033303330222C0A227C
+              2009632023344133313139222C0A22312009632023444244424442222C0A2232
+              2009632023444644464445222C0A22332009632023453845384537222C0A2234
+              2009632023453645364534222C0A22352009632023443244324431222C0A2236
+              2009632023433743374336222C0A22372009632023424142414239222C0A2238
+              2009632023414441444143222C0A22392009632023413041303946222C0A2230
+              2009632023393439343933222C0A22612009632023343934393438222C0A2262
+              2009632023423737443434222C0A22632009632023353335313445222C0A2264
+              2009632023444144414441222C0A22652009632023444244424441222C0A2266
+              2009632023453145314530222C0A22672009632023444444444443222C0A2268
+              2009632023443644364435222C0A22692009632023434243424341222C0A226A
+              2009632023433143314330222C0A226B2009632023423642364235222C0A226C
+              2009632023413941394138222C0A226D2009632023363836383637222C0A226E
+              2009632023323232323231222C0A226F2009632023343933303138222C0A2270
+              2009632023434443444344222C0A22712009632023434143414339222C0A2272
+              2009632023443544354434222C0A22732009632023443244324430222C0A2274
+              2009632023434343434342222C0A22752009632023433243324331222C0A2276
+              2009632023423942394238222C0A22772009632023414641464145222C0A2278
+              2009632023413241324131222C0A22792009632023393539353934222C0A227A
+              2009632023434543454345222C0A22412009632023424542454243222C0A2242
+              2009632023433443344332222C0A22432009632023433643364335222C0A2244
+              2009632023433343334332222C0A22452009632023424642464245222C0A2246
+              2009632023414541454144222C0A22472009632023413541354134222C0A2248
+              2009632023394539453944222C0A22492009632023364636463645222C0A224A
+              2009632023313231323132222C0A224B2009632023424442444244222C0A224C
+              2009632023413641364135222C0A224D2009632023414141414138222C0A224E
+              2009632023414441444142222C0A224F2009632023414541454143222C0A2250
+              2009632023414241424141222C0A22512009632023413741374136222C0A2252
+              2009632023413141314130222C0A22532009632023394139413939222C0A2254
+              2009632023393439343932222C0A22552009632023384438443842222C0A2256
+              2009632023323332333233222C0A22572009632023344134413441222C0A2258
+              2009632023344134413439222C0A22592009632023344334433442222C0A225A
+              2009632023344334433443222C0A22602009632023344234423441222C0A2220
+              2E09632023343634363436222C0A222E2E09632023343334333433222C0A222B
+              2E09632023343134313430222C0A22402E09632023333433343333222C0A2223
+              2E09632023314631463145222C0A222020202020202020202020202E202E202E
+              202E2020202020202020202020202020202020222C0A22202020202020202020
+              202E202E2020202E202E202E202E2020202E202020202020202020222C0A2220
+              202020202020202E20202020202020202020202E202E202E202E202020202020
+              202020222C0A22202020202020202020202020202020202020202020202E202E
+              202E202020202020202020222C0A222020202020202020202020202020202020
+              2020202E202E202E202E202020202020202020222C0A2220202B202B202B202B
+              202020202020202020202020202020202020202020202020202020222C0A222B
+              2040202320242040202B202B202B202B202B202B202B20202020202020202020
+              202020222C0A222B202320252026202A202A202A202A202A202A202A202A202E
+              2020202020202020202020222C0A222B203D2026202B202D202D203B203E202C
+              202C20272027202C202E202E202E2020202020222C0A222B202620292021207E
+              207E207B205D205E202F2028205F203A203C205B207D2020202020222C0A222B
+              2026207C20312032203320342032203520362037203820392030206120202020
+              202020222C0A222B20622063206420652066206720682069206A206B206C2039
+              206D206E20202020202020222C0A222B206F2070207120722072207320742075
+              20762077207820792061202020202020202020222C0A222B2027207A20412042
+              204320442045206B2046204720482049204A202020202020202020222C0A222B
+              204B204C204D204E204F20502051205220532054205520612020202020202020
+              202020222C0A2256205720582059205A20592060206120202E2E2E2B2E402E23
+              2E20202020202020202020222C0A222020202020202020202020202020202020
+              20202020202020202020202020202020202020222C0A22202020202020202020
+              202020202020202020202020202020202020202020202020202020227D3B0A
+            }
+            NumGlyphs = 1
+            OnButtonClick = edBKPFileButtonClick
+            ParentColor = False
+            TabOrder = 0
+            Align = alLeft
+            Anchors = [akTop, akLeft, akRight, akBottom]
+            TabOrder = 0
+            Height = 21
+            Width = 339
+          end
+        end
+        object cgOptions: TCheckGroup
+          Align = alClient
+          AutoFill = True
+          Caption = 'Options'
+          ChildSizing.LeftRightSpacing = 6
+          ChildSizing.TopBottomSpacing = 6
+          ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+          ChildSizing.EnlargeVertical = crsHomogenousChildResize
+          ChildSizing.ShrinkHorizontal = crsScaleChilds
+          ChildSizing.ShrinkVertical = crsScaleChilds
+          ChildSizing.Layout = cclLeftToRightThenTopToBottom
+          ChildSizing.ControlsPerLine = 1
+          Items.Strings = (
+            'Verbose output'
+            'Metadata only'
+            'Ignore check sum'
+            'Ignore limbo transaction'
+            'no garbage collection'
+            'Old description'
+            'No trasportable'
+          )
+          TabOrder = 4
+          Left = 2
+          Height = 165
+          Top = 78
+          Width = 363
+          Data = {
+            0700000003020202020202
+          }
+        end
+      end
+      object Page2: TPage
+        Caption = 'Output'
+        ChildSizing.LeftRightSpacing = 2
+        ChildSizing.TopBottomSpacing = 2
+        ClientWidth = 367
+        ClientHeight = 243
+        Height = 243
+        Width = 367
+        object mOut: TMemo
+          Align = alClient
+          ScrollBars = ssBoth
+          TabOrder = 0
+          Left = 2
+          Height = 239
+          Top = 2
+          Width = 363
+        end
+      end
+    end
+  end
+  object FBLService1: TFBLService
+    OnWriteOutput = FBLService1WriteOutput
+    left = 8
+    top = 248
+  end
+  object sdBkpFile: TSaveDialog
+    Options = [ofPathMustExist, ofEnableSizing, ofViewDetail]
+    Title = 'Salva con nome'
+    DefaultExt = '.gbk'
+    FilterIndex = 0
+    Title = 'Salva con nome'
+    left = 8
+    top = 280
+  end
+end

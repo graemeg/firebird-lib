@@ -1,0 +1,60 @@
+object frmDescription: TfrmDescription
+  Left = 337
+  Height = 266
+  Top = 228
+  Width = 361
+  HorzScrollBar.Page = 360
+  VertScrollBar.Page = 265
+  ActiveControl = BitBtn1
+  Caption = 'frmDescription'
+  ChildSizing.LeftRightSpacing = 4
+  ChildSizing.TopBottomSpacing = 4
+  Constraints.MinHeight = 200
+  Constraints.MinWidth = 200
+  Position = poDesktopCenter
+  object Panel1: TPanel
+    Left = 4
+    Height = 31
+    Top = 231
+    Width = 353
+    Align = alBottom
+    BevelOuter = bvNone
+    TabOrder = 0
+    object BitBtn1: TBitBtn
+      Left = 275
+      Height = 25
+      Top = 7
+      Width = 75
+      Anchors = [akTop, akRight]
+      BorderSpacing.InnerBorder = 2
+      Caption = '&OK'
+      Default = True
+      Kind = bkOK
+      ModalResult = 1
+      NumGlyphs = 0
+      TabOrder = 0
+    end
+    object BitBtn2: TBitBtn
+      Left = 195
+      Height = 25
+      Top = 7
+      Width = 75
+      Anchors = [akTop, akRight]
+      BorderSpacing.InnerBorder = 2
+      Caption = 'Annulla'
+      Kind = bkCancel
+      ModalResult = 2
+      NumGlyphs = 0
+      TabOrder = 1
+    end
+  end
+  object Memo1: TMemo
+    Left = 4
+    Height = 227
+    Top = 4
+    Width = 353
+    Align = alClient
+    ScrollBars = ssBoth
+    TabOrder = 1
+  end
+end

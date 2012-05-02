@@ -1,0 +1,55 @@
+{ Questo è un file risorse generato automaticamente da Lazarus }
+
+LazarusResources.Add('TFrmTableFilter','FORMDATA',[
+  'TPF0'#15'TFrmTableFilter'#14'FrmTableFilter'#4'Left'#3#222#0#6'Height'#3#159
+  +#1#3'Top'#3#205#0#5'Width'#3'{'#2#18'HorzScrollBar.Page'#3'z'#2#18'VertScrol'
+  +'lBar.Page'#3#158#1#13'ActiveControl'#7#9'btnCancel'#11'BorderIcons'#11#12'b'
+  +'iSystemMenu'#0#11'BorderStyle'#7#8'bsDialog'#7'Caption'#6#14'FrmTableFilter'
+  +#28'ChildSizing.LeftRightSpacing'#2#2#6'OnShow'#7#8'FormShow'#8'Position'#7
+  +#15'poDesktopCenter'#0#6'TPanel'#6'Panel1'#4'Left'#2#2#6'Height'#2'#'#3'Top'
+  +#3'|'#1#5'Width'#3'w'#2#5'Align'#7#8'alBottom'#10'BevelOuter'#7#6'bvNone'#8
+  +'TabOrder'#2#0#0#7'TBitBtn'#5'btnOk'#4'Left'#3','#2#6'Height'#2#24#3'Top'#2#8
+  +#5'Width'#2'K'#7'Anchors'#11#7'akRight'#8'akBottom'#0#25'BorderSpacing.Inner'
+  +'Border'#2#2#7'Caption'#6#3'&OK'#7'Default'#9#7'Enabled'#8#10'Glyph.Data'#10
+  +#255#4#0#0#251#4#0#0'/* XPM */'#10'static char *graphic[] = {'#10'"20 18 53 '
+  +'1",'#10'". c None",'#10'", c #CFD7CF",'#10'"- c #A5E7A5",'#10'"* c #86B77F"'
+  +','#10'"a c #A7CE9E",'#10'"b c #67BD63",'#10'"c c #008C00",'#10'"d c #5FBF56'
+  +'",'#10'"e c #002504",'#10'"f c #4EBF46",'#10'"g c #00251C",'#10'"h c #63D76'
+  +'3",'#10'"i c #001A05",'#10'"j c #CED7CF",'#10'"k c #5FCF5F",'#10'"l c #0025'
+  +'10",'#10'"m c #63C76B",'#10'"n c #137B31",'#10'"o c #002702",'#10'"p c #CED'
+  +'7D7",'#10'"q c #9CD7A7",'#10'"r c #6FAD7B",'#10'"s c #9ED69C",'#10'"t c #56'
+  +'C75A",'#10'"u c #00770D",'#10'"v c #002718",'#10'"w c #73B785",'#10'"x c #6'
+  +'3B567",'#10'"y c #9CE795",'#10'"z c #53C753",'#10'"A c #018603",'#10'"B c #'
+  +'001E13",'#10'"C c #216335",'#10'"D c #56D74E",'#10'"E c #6FFF63",'#10'"F c '
+  +'#39D733",'#10'"G c #00210A",'#10'"H c #002302",'#10'"I c #176F29",'#10'"J c'
+  +' #39D739",'#10'"K c #009600",'#10'"L c #008500",'#10'"M c #1C632D",'#10'"N '
+  +'c #0E1B2D",'#10'"O c #00290A",'#10'"P c #0E632D",'#10'"Q c #118429",'#10'"R'
+  +' c #095E31",'#10'"S c #001E07",'#10'"T c #256F42",'#10'"U c #15673D",'#10'"'
+  +'V c #335B57",'#10'"W c #295656",'#10'"....................",'#10'".........'
+  +'...........",'#10'"...............,-*a.",'#10'"...............-bcc.",'#10'"'
+  +'..............-dcce.",'#10'".............-fcccg.",'#10'"............-hccci.'
+  +'.",'#10'"..........j-kcccl...",'#10'"....j.....-mccnop...",'#10'"...qrs...-'
+  +'tuccv.....",'#10'"...wcxy.-zAccB......",'#10'"..,CccDEFcccG.......",'#10'".'
+  +'..HIccJKLcMN.......",'#10'"....OPcccQRN........",'#10'".....STccUN.........'
+  +'",'#10'"......NVWN..........",'#10'".......NN...........",'#10'"...........'
+  +'........."}'#10#9'NumGlyphs'#2#0#7'OnClick'#7#10'btnOkClick'#8'TabOrder'#2#0
+  +#0#0#7'TBitBtn'#9'btnCancel'#4'Left'#3#174#1#6'Height'#2#24#3'Top'#2#8#5'Wid'
+  +'th'#2'u'#7'Anchors'#11#5'akTop'#6'akLeft'#7'akRight'#8'akBottom'#0#25'Borde'
+  +'rSpacing.InnerBorder'#2#2#7'Caption'#6#7'Annulla'#4'Kind'#7#8'bkCancel'#11
+  +'ModalResult'#2#2#9'NumGlyphs'#2#0#8'TabOrder'#2#1#0#0#0#6'TPanel'#6'Panel2'
+  +#4'Left'#2#2#6'Height'#3'|'#1#5'Width'#3#227#0#5'Align'#7#6'alLeft'#10'Bevel'
+  +'Outer'#7#6'bvNone'#8'TabOrder'#2#1#0#6'TPanel'#6'Panel5'#6'Height'#2#24#5'W'
+  +'idth'#3#227#0#5'Align'#7#5'alTop'#10'BevelOuter'#7#6'bvNone'#7'Caption'#6#6
+  +'Fields'#8'TabOrder'#2#0#0#0#9'TListView'#8'lvFields'#6'Height'#3'd'#1#3'Top'
+  +#2#24#5'Width'#3#227#0#5'Align'#7#8'alClient'#7'Columns'#14#1#7'Caption'#6#4
+  +'Name'#5'Width'#2'x'#0#1#7'Caption'#6#4'Type'#5'Width'#2'd'#0#0#9'RowSelect'
+  +#9#8'TabOrder'#2#1#9'ViewStyle'#7#8'vsReport'#10'OnDblClick'#7#16'lvFieldsDb'
+  +'lClick'#0#0#0#9'TSplitter'#9'Splitter1'#4'Left'#3#229#0#6'Height'#3'|'#1#5
+  +'Width'#2#5#0#0#6'TPanel'#6'Panel4'#4'Left'#3#234#0#6'Height'#3'|'#1#5'Width'
+  +#3#143#1#5'Align'#7#8'alClient'#10'BevelOuter'#7#6'bvNone'#8'TabOrder'#2#2#0
+  +#6'TPanel'#6'Panel7'#6'Height'#2#24#5'Width'#3#143#1#5'Align'#7#5'alTop'#10
+  +'BevelOuter'#7#6'bvNone'#7'Caption'#6#11'Filter Text'#8'TabOrder'#2#0#0#0#5
+  +'TMemo'#7'mFilter'#6'Height'#3'd'#1#3'Top'#2#24#5'Width'#3#143#1#5'Align'#7#8
+  +'alClient'#8'OnChange'#7#13'mFilterChange'#10'ScrollBars'#7#10'ssAutoBoth'#8
+  +'TabOrder'#2#1#0#0#0#0
+]);

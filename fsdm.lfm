@@ -1,0 +1,74 @@
+object dmib: Tdmib
+  Height = 270
+  HorizontalOffset = 480
+  VerticalOffset = 224
+  Width = 404
+  object DbMain: TFBLDatabase
+    SQLDialect = 1
+    left = 8
+    top = 8
+  end
+  object SynSQLSyn1: TSynSQLSyn
+    DefaultFilter = 'File SQL (*.sql)|*.sql'
+    Enabled = False
+    CommentAttri.Foreground = clTeal
+    StringAttri.Foreground = clRed
+    TableNameAttri.Foreground = clFuchsia
+    TableNameAttri.Style = [fsUnderline]
+    SQLDialect = sqlInterbase6
+    left = 192
+    top = 8
+  end
+  object trISql: TFBLTransaction
+    Database = DbMain
+    left = 8
+    top = 88
+  end
+  object qryISql: TFBLDsql
+    Transaction = trISql
+    left = 8
+    top = 120
+  end
+  object trBrowser: TFBLTransaction
+    Database = DbMain
+    left = 40
+    top = 88
+  end
+  object IbMeta: TFBLMetadata
+    Database = DbMain
+    Terminator = '^'
+    SetTerm = True
+    left = 45
+    top = 8
+  end
+  object qryBrowser: TFBLDsql
+    Transaction = trBrowser
+    left = 41
+    top = 120
+  end
+  object qryTableView: TFBLDsql
+    Transaction = trTableView
+    left = 80
+    top = 120
+  end
+  object trTableView: TFBLTransaction
+    Database = DbMain
+    left = 80
+    top = 88
+  end
+  object qryTableFilter: TFBLDsql
+    Transaction = trTableView
+    left = 80
+    top = 152
+  end
+  object trBlobView: TFBLTransaction
+    Database = DbMain
+    left = 120
+    top = 88
+  end
+  object qryBlobView: TFBLDsql
+    Transaction = trBlobView
+    left = 120
+    top = 120
+  end
+end

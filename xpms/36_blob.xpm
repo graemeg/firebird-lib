@@ -1,0 +1,28 @@
+/* XPM */
+static char *36_blob[] = {
+/* columns rows colors chars-per-pixel */
+"16 16 6 1",
+"  c black",
+". c navy",
+"X c cyan",
+"o c Null",
+"O c yellow",
+"+ c gray100",
+/* pixels */
+"oooooo          ",
+"oooooo XXXXXXXX ",
+"...... XXXX  XX ",
+".+...+ XXXX  XX ",
+"...... XXX  XXX ",
+".+++++ XX    XX ",
+".+   + X X  X X ",
+".+++++ XX   XXX ",
+".+   + OO O OOO ",
+".+++++ OO O  OO ",
+".+   + O  OO  O ",
+".+++++ OOOOOOOO ",
+".+   +          ",
+".+++++++++++++.o",
+"...............o",
+"oooooooooooooooo"
+};

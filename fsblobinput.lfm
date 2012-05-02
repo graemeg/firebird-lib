@@ -1,0 +1,182 @@
+object frmBlobInput: TfrmBlobInput
+  Left = 376
+  Height = 193
+  Top = 358
+  Width = 486
+  HorzScrollBar.Page = 485
+  VertScrollBar.Page = 192
+  BorderStyle = bsDialog
+  Caption = 'Param Blob Input'
+  Position = poScreenCenter
+  object Label3: TLabel
+    Left = 8
+    Height = 14
+    Top = 72
+    Width = 46
+    Caption = 'File name'
+    Color = clNone
+    ParentColor = False
+  end
+  object Bevel2: TBevel
+    Height = 8
+    Top = 44
+    Width = 486
+    Align = alTop
+    Shape = bsTopLine
+  end
+  object Panel2: TPanel
+    Height = 36
+    Top = 157
+    Width = 486
+    Align = alBottom
+    BevelOuter = bvNone
+    FullRepaint = False
+    TabOrder = 0
+    object Bevel1: TBevel
+      Height = 4
+      Width = 486
+      Align = alTop
+      Shape = bsTopLine
+    end
+    object btnOk: TBitBtn
+      Left = 408
+      Height = 24
+      Top = 8
+      Width = 75
+      BorderSpacing.InnerBorder = 2
+      Caption = '&OK'
+      Glyph.Data = {
+        6E040000424D6E04000000000000360000002800000014000000120000000100
+        1800000000006801000064000000640000000000000000000000CED6D6CED6D6
+        CED6D6CED6D6CED6D6CED6D6CED6D6CED6D6CED6D6CED6D6CED6D6CED6D6CED6
+        D6CED6D6CED6D6CED6D6CED6D6CED6D6CED6D6CED6D6CED6D6CED6D6CED6D6CE
+        D6D6CED6D6CED6D6CED6D62D1B0E2D1B0ECED6D6CED6D6CED6D6CED6D6CED6D6
+        CED6D6CED6D6CED6D6CED6D6CED6D6CED6D6CED6D6CED6D6CED6D6CED6D6CED6
+        D6CED6D62D1B0E575B335656292D1B0ECED6D6CED6D6CED6D6CED6D6CED6D6CE
+        D6D6CED6D6CED6D6CED6D6CED6D6CED6D6CED6D6CED6D6CED6D6CED6D6071E00
+        426F25008C00008C003D67152D1B0ECED6D6CED6D6CED6D6CED6D6CED6D6CED6
+        D6CED6D6CED6D6CED6D6CED6D6CED6D6CED6D6CED6D60A29002D630E008C0000
+        8C00008C00298411315E092D1B0ECED6D6CED6D6CED6D6CED6D6CED6D6CED6D6
+        CED6D6CED6D6CED6D6CED6D6CED6D6022300296F17008C00008C0039D7390096
+        00008500008C002D631C2D1B0ECED6D6CED6D6CED6D6CED6D6CED6D6CED6D6CE
+        D6D6CED6D6CED6D6CFD7CF356321008C00008C004ED75663FF6F33D739008C00
+        008C00008C000A2100CED6D6CED6D6CED6D6CED6D6CED6D6CED6D6CED6D6CED6
+        D6CED6D6CED6D685B773008C0067B56395E79CCED6D6A5E7A553C75303860100
+        8C00008C00131E00CED6D6CED6D6CED6D6CED6D6CED6D6CED6D6CED6D6CED6D6
+        CED6D6A7D79C7BAD6F9CD69ECED6D6CED6D6CED6D6A5E7A55AC7560D7700008C
+        00008C00182700CED6D6CED6D6CED6D6CED6D6CED6D6CED6D6CED6D6CED6D6CE
+        D6D6CFD7CECED6D6CED6D6CED6D6CED6D6CED6D6A5E7A56BC763008C00008C00
+        317B13022700D7D7CECED6D6CED6D6CED6D6CED6D6CED6D6CED6D6CED6D6CED6
+        D6CED6D6CED6D6CED6D6CED6D6CED6D6CFD7CEA5E7A55FCF5F008C00008C0000
+        8C00102500CED6D6CED6D6CED6D6CED6D6CED6D6CED6D6CED6D6CED6D6CED6D6
+        CED6D6CED6D6CED6D6CED6D6CED6D6CED6D6A5E7A563D763008C00008C00008C
+        00051A00CED6D6CED6D6CED6D6CED6D6CED6D6CED6D6CED6D6CED6D6CED6D6CE
+        D6D6CED6D6CED6D6CED6D6CED6D6CED6D6A5E7A546BF4E008C00008C00008C00
+        1C2500CED6D6CED6D6CED6D6CED6D6CED6D6CED6D6CED6D6CED6D6CED6D6CED6
+        D6CED6D6CED6D6CED6D6CED6D6CED6D6A5E7A556BF5F008C00008C00042500CE
+        D6D6CED6D6CED6D6CED6D6CED6D6CED6D6CED6D6CED6D6CED6D6CED6D6CED6D6
+        CED6D6CED6D6CED6D6CED6D6CED6D6A5E7A563BD67008C00008C00CED6D6CED6
+        D6CED6D6CED6D6CED6D6CED6D6CED6D6CED6D6CED6D6CED6D6CED6D6CED6D6CE
+        D6D6CED6D6CED6D6CED6D6CFD7CFA5E7A57FB7869ECEA7CED6D6CED6D6CED6D6
+        CED6D6CED6D6CED6D6CED6D6CED6D6CED6D6CED6D6CED6D6CED6D6CED6D6CED6
+        D6CED6D6CED6D6CED6D6CED6D6CED6D6CED6D6CED6D6CED6D6CED6D6CED6D6CE
+        D6D6CED6D6CED6D6CED6D6CED6D6CED6D6CED6D6CED6D6CED6D6CED6D6CED6D6
+        CED6D6CED6D6CED6D6CED6D6CED6D6CED6D6
+      }
+      NumGlyphs = 0
+      OnClick = btnOkClick
+      TabOrder = 0
+    end
+    object btnCancel: TBitBtn
+      Left = 328
+      Height = 24
+      Top = 8
+      Width = 75
+      BorderSpacing.InnerBorder = 2
+      Caption = 'Cancel'
+      Kind = bkCancel
+      ModalResult = 2
+      NumGlyphs = 0
+      TabOrder = 1
+    end
+  end
+  object edValue: TFileNameEdit
+    Left = 8
+    Height = 21
+    Top = 88
+    Width = 448
+    TabOrder = 1
+    ButtonWidth = 23
+    NumGlyphs = 1
+    ParentColor = False
+  end
+  object cbNull: TCheckBox
+    Left = 8
+    Height = 13
+    Top = 136
+    Width = 69
+    Caption = '&Set as null'
+    TabOrder = 2
+  end
+  object Panel1: TPanel
+    Height = 44
+    Width = 486
+    Align = alTop
+    BevelOuter = bvNone
+    ChildSizing.LeftRightSpacing = 4
+    ChildSizing.TopBottomSpacing = 4
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 2
+    TabOrder = 3
+    object Label1: TLabel
+      Left = 4
+      Height = 17
+      Top = 4
+      Width = 89
+      Caption = 'Param # :'
+      Color = clGray
+      Font.Color = clWhite
+      Font.Style = [fsBold]
+      Layout = tlCenter
+      ParentColor = False
+      Transparent = False
+    end
+    object lblParamNumber: TLabel
+      Left = 93
+      Height = 17
+      Top = 4
+      Width = 393
+      Caption = 'lblParamNumber'
+      Color = clGray
+      Font.Color = clWhite
+      Layout = tlCenter
+      ParentColor = False
+      Transparent = False
+    end
+    object Label4: TLabel
+      Left = 4
+      Height = 17
+      Top = 21
+      Width = 89
+      Caption = 'ParamType :'
+      Color = clGray
+      Font.Color = clWhite
+      Font.Style = [fsBold]
+      Layout = tlCenter
+      ParentColor = False
+      Transparent = False
+    end
+    object lblParamType: TLabel
+      Left = 93
+      Height = 17
+      Top = 21
+      Width = 393
+      Caption = 'lblParamType'
+      Color = clGray
+      Font.Color = clWhite
+      Layout = tlCenter
+      ParentColor = False
+      Transparent = False
+    end
+  end
+end

@@ -1,0 +1,29 @@
+/* XPM */
+static char *35_cancel_filter[] = {
+/* columns rows colors chars-per-pixel */
+"16 16 7 1",
+"  c black",
+". c #008080",
+"X c #800000",
+"o c Null",
+"O c #808080",
+"+ c #C0C0C0",
+"@ c gray100",
+/* pixels */
+"oooooooooooooooo",
+"oooooooooooooooo",
+"o         oooooo",
+"o .@@+++. oooXXo",
+"oo ++XX.OoooXXOo",
+"ooo +XXXXooXXOoo",
+"oooo +OOXXXXOooo",
+"oooo + oOXXXoooo",
+"oooo . oXXXXXooo",
+"oooo   OXXOOXXoo",
+"oooooooXXOooXXOo",
+"ooooooOXXooooOXo",
+"ooooooXXOoooooXO",
+"ooooooXOoooooooO",
+"oooooooooooooooo",
+"oooooooooooooooo"
+};

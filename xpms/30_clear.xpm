@@ -1,0 +1,27 @@
+/* XPM */
+static char *30_clear[] = {
+/* columns rows colors chars-per-pixel */
+"16 16 5 1",
+"  c gray42",
+". c Null",
+"X c #848484",
+"o c #C6C6C6",
+"O c gray87",
+/* pixels */
+"................",
+"................",
+"........X    XX.",
+"....... OOOOOO .",
+"...... OOOOOO  .",
+"..... OOOOOO X .",
+".... OOOOOO XX .",
+"... OOOOOO XX ..",
+".. OOOOOO XX ...",
+".X ooooo XX ....",
+". oooooo X .....",
+". oooooo  ......",
+".X      X.......",
+"................",
+"................",
+"................"
+};

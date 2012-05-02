@@ -1,0 +1,30 @@
+/* XPM */
+static char *17_privilege[] = {
+/* columns rows colors chars-per-pixel */
+"16 16 8 1",
+"  c black",
+". c #008484",
+"X c #840000",
+"o c red",
+"O c Null",
+"+ c #848484",
+"@ c #FF84FF",
+"# c #C6C6C6",
+/* pixels */
+"OOOOOOOOO+O+OOOO",
+"OOOOOO++ O#O @+O",
+"OOOOO+OO     OO ",
+"OOOOO+OOOOOOOO  ",
+"OOOOO+OOOOOOO O ",
+"OOOOO@OOOOOOXOO ",
+"OO     OoXOXOOO ",
+"O       OXX OOO ",
+"     OO OOo#OOO ",
+"    OO  OO#OOOO ",
+"    OOOO OOOOOO ",
+"   OOOO O      O",
+"O   OOO OOOOOOOO",
+"OO OO  OOOOOOOOO",
+"OO  OO OOOOOOOOO",
+"O .   . OOOOOOOO"
+};

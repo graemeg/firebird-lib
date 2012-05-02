@@ -1,0 +1,26 @@
+/* XPM */
+static char *7_sys_table[] = {
+/* columns rows colors chars-per-pixel */
+"16 16 4 1",
+"  c #000084",
+". c blue",
+"X c red",
+"o c Null",
+/* pixels */
+"oooooooooooooooo",
+" .   .   .   . o",
+".o. .o. .o. .o.o",
+"   .   .   .   o",
+".ooooooooooooo.o",
+" oXXXoXXXoXXXo o",
+".ooooooooooooo.o",
+" oXXXoXXXoXXXo o",
+".ooooooooooooo.o",
+" oXXXoXXXoXXXo o",
+".ooooooooooooo.o",
+" oXXXoXXXoXXXo o",
+".ooooooooooooo.o",
+" .   .   .   . o",
+"oooooooooooooooo",
+"oooooooooooooooo"
+};

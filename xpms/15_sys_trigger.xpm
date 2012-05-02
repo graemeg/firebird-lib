@@ -1,0 +1,29 @@
+/* XPM */
+static char *15_sys_trigger[] = {
+/* columns rows colors chars-per-pixel */
+"16 16 7 1",
+"  c black",
+". c #840000",
+"X c red",
+"o c Null",
+"O c #848484",
+"+ c #C6C6C6",
+"@ c #FFC6FF",
+/* pixels */
+"oooooooooooooooo",
+"oooooooooooooooo",
+"ooooooooooo   oo",
+"ooooooooo  X  +o",
+"ooooooo  XX  @oo",
+"ooooo  XXX  +ooo",
+"oooo  XXX  @oooo",
+"ooooo  XXX  +ooo",
+"ooooo XXX  Ooooo",
+"oooo XXX  Oooooo",
+"ooo XX  o+oooooo",
+"oo X. Oooooooooo",
+"oo  o@oooooooooo",
+"oooooooooooooooo",
+"oooooooooooooooo",
+"oooooooooooooooo"
+};

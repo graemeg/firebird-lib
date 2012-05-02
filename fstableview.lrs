@@ -1,0 +1,113 @@
+{ Questo è un file risorse generato automaticamente da Lazarus }
+
+LazarusResources.Add('TfrmTableView','FORMDATA',[
+  'TPF0'#13'TfrmTableView'#12'frmTableView'#4'Left'#3#246#0#6'Height'#3'?'#1#3
+  +'Top'#3#247#0#5'Width'#3'D'#2#18'HorzScrollBar.Page'#3'C'#2#18'VertScrollBar'
+  +'.Page'#3'+'#1#13'ActiveControl'#7#6'sgData'#7'Caption'#6#12'frmTableView'#4
+  +'Menu'#7#17'MainMenuTableView'#7'OnClose'#7#9'FormClose'#8'OnCreate'#7#10'Fo'
+  +'rmCreate'#9'OnDestroy'#7#11'FormDestroy'#6'OnShow'#7#8'FormShow'#0#10'TStat'
+  +'usBar'#11'sbTableView'#6'Height'#2#20#3'Top'#3#24#1#5'Width'#3'D'#2#6'Panel'
+  +'s'#14#1#5'Width'#2'2'#0#0#11'SimplePanel'#8#0#0#8'TToolBar'#8'ToolBar1'#6'H'
+  +'eight'#2#26#5'Width'#3'D'#2#8'AutoSize'#9#7'Caption'#6#8'ToolBar1'#11'EdgeB'
+  +'orders'#11#6'ebLeft'#5'ebTop'#7'ebRight'#8'ebBottom'#0#6'Images'#7#10'Image'
+  +'List1'#14'ParentShowHint'#8#8'ShowHint'#9#8'TabOrder'#2#0#0#11'TToolButton'
+  +#11'ToolButton1'#4'Left'#2'7'#4'Hint'#6#6'Filter'#3'Top'#2#2#6'Action'#7#7'a'
+  +'Filter'#0#0#11'TToolButton'#11'ToolButton2'#4'Left'#2#26#4'Hint'#6#19'Fetch'
+  +' Next 500 Rows'#3'Top'#2#2#6'Action'#7#10'aFetchNext'#0#0#11'TToolButton'#11
+  +'ToolButton3'#4'Left'#2#3#4'Hint'#6#10'Reload all'#3'Top'#2#2#6'Action'#7#8
+  +'aRefresh'#0#0#11'TToolButton'#11'ToolButton4'#4'Left'#2'1'#3'Top'#2#2#5'Wid'
+  +'th'#2#6#7'Caption'#6#11'ToolButton4'#5'Style'#7#12'tbsSeparator'#0#0#11'TTo'
+  +'olButton'#11'ToolButton5'#4'Left'#2'N'#4'Hint'#6#13'Remove filter'#3'Top'#2
+  +#2#6'Action'#7#13'aRemoveFilter'#0#0#11'TToolButton'#11'ToolButton6'#4'Left'
+  +#2'e'#3'Top'#2#2#5'Width'#2#6#7'Caption'#6#11'ToolButton6'#5'Style'#7#12'tbs'
+  +'Separator'#0#0#11'TToolButton'#11'ToolButton7'#4'Left'#2'k'#4'Hint'#6#15'Vi'
+  +'ew Blob Field'#3'Top'#2#2#6'Action'#7#9'aViewBlob'#0#0#0#11'TStringGrid'#6
+  +'sgData'#6'Height'#3#254#0#3'Top'#2#26#5'Width'#3'D'#2#5'Align'#7#8'alClient'
+  +#8'ColCount'#2#2#10'FixedColor'#7#9'clBtnFace'#13'GridLineWidth'#2#0#7'Optio'
+  +'ns'#11#15'goFixedVertLine'#15'goFixedHorzLine'#10'goVertLine'#10'goHorzLine'
+  +#11'goColSizing'#18'goRelaxedRowSelect'#14'goSmoothScroll'#19'goScrollKeepVi'
+  +'sible'#0#8'RowCount'#2#2#10'ScrollBars'#7#10'ssAutoBoth'#8'TabOrder'#2#1#7
+  +'TabStop'#9#10'OnDblClick'#7#14'sgDataDblClick'#11'OnMouseMove'#7#15'sgDataM'
+  +'ouseMove'#12'OnSelectCell'#7#16'sgDataSelectCell'#0#0#11'TActionList'#11'Ac'
+  +'tionList1'#6'Images'#7#10'ImageList1'#4'left'#3#160#0#3'top'#3'H'#1#0#7'TAc'
+  +'tion'#10'aFetchNext'#7'Caption'#6#12'Fetch Next..'#7'Enabled'#8#4'Hint'#6#19
+  +'Fetch Next 500 Rows'#10'ImageIndex'#2#4#9'OnExecute'#7#17'aFetchNextExecute'
+  +#0#0#7'TAction'#7'aFilter'#7'Caption'#6#6'Filter'#4'Hint'#6#6'Filter'#10'Ima'
+  +'geIndex'#2#1#9'OnExecute'#7#14'aFilterExecute'#0#0#7'TAction'#13'aRemoveFil'
+  +'ter'#7'Caption'#6#13'Remove Filter'#7'Enabled'#8#4'Hint'#6#13'Remove filter'
+  +#10'ImageIndex'#2#2#9'OnExecute'#7#20'aRemoveFilterExecute'#0#0#7'TAction'#8
+  +'aRefresh'#7'Caption'#6#10'Reload All'#4'Hint'#6#10'Reload all'#10'ImageInde'
+  +'x'#2#0#9'OnExecute'#7#15'aRefreshExecute'#0#0#7'TAction'#9'aViewBlob'#7'Cap'
+  +'tion'#6#9'View Blob'#7'Enabled'#8#4'Hint'#6#15'View Blob Field'#10'ImageInd'
+  +'ex'#2#3#9'OnExecute'#7#16'aViewBlobExecute'#0#0#0#11'TSaveDialog'#11'SaveDi'
+  +'alog1'#5'Title'#6#14'Salva con nome'#11'FilterIndex'#2#0#4'left'#3#160#0#3
+  +'top'#3'h'#1#0#0#10'TImageList'#10'ImageList1'#8'OnChange'#7#16'ImageList1Ch'
+  +'ange'#4'left'#3#160#0#3'top'#3#136#1#6'Bitmap'#10#5#13#0#0'li'#5#0#0#0#16#0
+  +#0#0#16#0#0#0'm'#3#0#0'/* XPM */'#10'static char *32_reload[] = {'#10'/* col'
+  +'umns rows colors chars-per-pixel */'#10'"16 16 30 1",'#10'"  c #10315A",'#10
+  +'". c #103963",'#10'"X c #10396B",'#10'"o c #104273",'#10'"O c #10427B",'#10
+  +'"+ c #104A84",'#10'"@ c #184A8C",'#10'"# c #185294",'#10'"$ c #185A9C",'#10
+  +'"% c #185AA5",'#10'"& c #1863AD",'#10'"* c #2163B5",'#10'"= c #216BBD",'#10
+  +'"- c #216BC6",'#10'"; c #2173CE",'#10'": c #2173D6",'#10'"> c #217BD6",'#10
+  +'", c #297BDE",'#10'"< c #3184DE",'#10'"1 c #3984DE",'#10'"2 c #428CDE",'#10
+  +'"3 c #4A94E7",'#10'"4 c #529CE7",'#10'"5 c #63A5E7",'#10'"6 c #6BA5E7",'#10
+  +'"7 c Null",'#10'"8 c #84B5EF",'#10'"9 c #94BDEF",'#10'"0 c #A5CEF7",'#10'"q'
+  +' c #FFFFFF",'#10'/* pixels */'#10'"7qqqqqqqqqqqqqq7",'#10'"q031,::;;-=*%#5q'
+  +'",'#10'"q3864321<,,;-%oq",'#10'"q26621<<,9q-*%+q",'#10'"q,4q<,,>9qq*%%+q",'
+  +#10'"q:2q<,>9qqq&%%+q",'#10'"q:<q>;9qqqq%%%+q",'#10'"q->q;9qqqqq&%%+q",'#10
+  +'"q=:q;9qqqqq*%%+q",'#10'"q*;q;;9qqqq=&%Oq",'#10'"q%=q:;;9qqq=&$oq",'#10'"q$'
+  +'*q--;;9qq=%#oq",'#10'"q@%6**=;;9q*$+Xq",'#10'"qO#%%%%%%%%$#O q",'#10'"q4ooo'
+  +'oOOooooX.3q",'#10'"7qqqqqqqqqqqqqq7"'#10'};'#10#243#1#0#0'/* XPM */'#10'sta'
+  +'tic char *34_filter[] = {'#10'/* columns rows colors chars-per-pixel */'#10
+  +'"16 16 5 1",'#10'"  c black",'#10'". c #008080",'#10'"X c Null",'#10'"o c #'
+  +'C0C0C0",'#10'"O c gray100",'#10'/* pixels */'#10'"XXXXXXXXXXXXXXXX",'#10'"X'
+  +'XXXXXXXXXXXXXXX",'#10'"X              X",'#10'"X .oOOOoooo... X",'#10'"XX .'
+  +'oOooooo.. XX",'#10'"XXX .oOooo.. XXX",'#10'"XXXX .ooo.. XXXX",'#10'"XXXXX o'
+  +'oo. XXXXX",'#10'"XXXXXX Oo XXXXXX",'#10'"XXXXXX Oo XXXXXX",'#10'"XXXXXX .. '
+  +'XXXXXX",'#10'"XXXXXX .. XXXXXX",'#10'"XXXXXX    XXXXXX",'#10'"XXXXXXXXXXXXX'
+  ,'XXX",'#10'"XXXXXXXXXXXXXXXX",'#10'"XXXXXXXXXXXXXXXX"'#10'};'#10#24#2#0#0'/*'
+  +' XPM */'#10'static char *35_cancel_filter[] = {'#10'/* columns rows colors '
+  +'chars-per-pixel */'#10'"16 16 7 1",'#10'"  c black",'#10'". c #008080",'#10
+  +'"X c #800000",'#10'"o c Null",'#10'"O c #808080",'#10'"+ c #C0C0C0",'#10'"@'
+  +' c gray100",'#10'/* pixels */'#10'"oooooooooooooooo",'#10'"oooooooooooooooo'
+  +'",'#10'"o         oooooo",'#10'"o .@@+++. oooXXo",'#10'"oo ++XX.OoooXXOo",'
+  +#10'"ooo +XXXXooXXOoo",'#10'"oooo +OOXXXXOooo",'#10'"oooo + oOXXXoooo",'#10
+  +'"oooo . oXXXXXooo",'#10'"oooo   OXXOOXXoo",'#10'"oooooooXXOooXXOo",'#10'"oo'
+  +'ooooOXXooooOXo",'#10'"ooooooXXOoooooXO",'#10'"ooooooXOoooooooO",'#10'"ooooo'
+  +'ooooooooooo",'#10'"oooooooooooooooo"'#10'};'#10#249#1#0#0'/* XPM */'#10'sta'
+  +'tic char *36_blob[] = {'#10'/* columns rows colors chars-per-pixel */'#10'"'
+  +'16 16 6 1",'#10'"  c black",'#10'". c navy",'#10'"X c cyan",'#10'"o c Null"'
+  +','#10'"O c yellow",'#10'"+ c gray100",'#10'/* pixels */'#10'"oooooo        '
+  +'  ",'#10'"oooooo XXXXXXXX ",'#10'"...... XXXX  XX ",'#10'".+...+ XXXX  XX "'
+  +','#10'"...... XXX  XXX ",'#10'".+++++ XX    XX ",'#10'".+   + X X  X X ",'
+  +#10'".+++++ XX   XXX ",'#10'".+   + OO O OOO ",'#10'".+++++ OO O  OO ",'#10
+  +'".+   + O  OO  O ",'#10'".+++++ OOOOOOOO ",'#10'".+   +          ",'#10'".+'
+  +'++++++++++++.o",'#10'"...............o",'#10'"oooooooooooooooo"'#10'};'#10
+  +'r'#3#0#0'/* XPM */'#10'static char *32_next_record[] = {'#10'/* columns row'
+  +'s colors chars-per-pixel */'#10'"16 16 30 1",'#10'"  c #10315A",'#10'". c #'
+  +'103963",'#10'"X c #10396B",'#10'"o c #104273",'#10'"O c #10427B",'#10'"+ c '
+  +'#104A84",'#10'"@ c #184A8C",'#10'"# c #185294",'#10'"$ c #18529C",'#10'"% c'
+  +' #185AA5",'#10'"& c #1863AD",'#10'"* c #2163B5",'#10'"= c #216BBD",'#10'"- '
+  +'c #216BC6",'#10'"; c #2173CE",'#10'": c #2173D6",'#10'"> c #217BD6",'#10'",'
+  +' c #297BDE",'#10'"< c #3184DE",'#10'"1 c #3984DE",'#10'"2 c #428CDE",'#10'"'
+  +'3 c #4A94E7",'#10'"4 c #529CE7",'#10'"5 c #63A5E7",'#10'"6 c #6BA5E7",'#10
+  +'"7 c Null",'#10'"8 c #84B5EF",'#10'"9 c #94BDEF",'#10'"0 c #A5CEF7",'#10'"q'
+  +' c #FFFFFF",'#10'/* pixels */'#10'"7qqqqqqqqqqqqqq7",'#10'"q031,::;;-=*%#5q'
+  +'",'#10'"q3864321<,,;-%oq",'#10'"q2642q9<,;;-<%+q",'#10'"q,43<qq9;-=*q%+q",'
+  +#10'"q:22<qqq9=*&q%+q",'#10'"q:<,>qqqq9*%q%+q",'#10'"q->:;qqqqq9&q%+q",'#10
+  +'"q=:;;qqqqq9*q%+q",'#10'"q*;:;qqqq9;=q%Oq",'#10'"q%=;:qqq9;;=q$oq",'#10'"q$'
+  +'*--qq9;;;=q#oq",'#10'"q@%**q9;;;;*<+Xq",'#10'"qO#%%%%%%%%$#O q",'#10'"q4ooo'
+  +'oOOooooX.3q",'#10'"7qqqqqqqqqqqqqq7"'#10'};'#10#0#0#11'TSaveDialog'#6'sdBlo'
+  +'b'#5'Title'#6#14'Salva con nome'#11'FilterIndex'#2#0#4'left'#3#160#0#3'top'
+  +#3#176#1#0#0#9'TMainMenu'#17'MainMenuTableView'#4'left'#3#160#0#3'top'#3' '#1
+  +#0#9'TMenuItem'#9'MenuItem1'#7'Caption'#6#4'Menu'#0#9'TMenuItem'#9'MenuItem2'
+  +#6'Action'#7#8'aRefresh'#7'OnClick'#7#15'aRefreshExecute'#0#0#9'TMenuItem'#9
+  +'MenuItem3'#6'Action'#7#10'aFetchNext'#7'OnClick'#7#17'aFetchNextExecute'#0#0
+  +#9'TMenuItem'#9'MenuItem4'#7'Caption'#6#1'-'#0#0#9'TMenuItem'#9'MenuItem5'#6
+  +'Action'#7#7'aFilter'#7'OnClick'#7#14'aFilterExecute'#0#0#9'TMenuItem'#9'Men'
+  +'uItem6'#6'Action'#7#13'aRemoveFilter'#7'OnClick'#7#20'aRemoveFilterExecute'
+  +#0#0#9'TMenuItem'#9'MenuItem7'#7'Caption'#6#1'-'#0#0#9'TMenuItem'#9'MenuItem'
+  +'8'#6'Action'#7#9'aViewBlob'#7'OnClick'#7#16'aViewBlobExecute'#0#0#9'TMenuIt'
+  +'em'#9'MenuItem9'#7'Caption'#6#1'-'#0#0#9'TMenuItem'#10'MenuItem10'#7'Captio'
+  +'n'#6#5'Close'#7'OnClick'#7#15'MenuItem10Click'#0#0#0#0#0
+]);

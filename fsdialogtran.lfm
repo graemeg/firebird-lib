@@ -1,0 +1,69 @@
+object frmDialogTran: TfrmDialogTran
+  Left = 304
+  Height = 126
+  Top = 284
+  Width = 389
+  HorzScrollBar.Page = 388
+  VertScrollBar.Page = 125
+  ActiveControl = BitBtn1
+  BorderStyle = bsDialog
+  Caption = 'Transaction Active'
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  object Label1: TLabel
+    Height = 32
+    Width = 389
+    Align = alTop
+    Alignment = taCenter
+    AutoSize = False
+    Caption = 'Transaction is Active'
+    Color = clNone
+    Layout = tlCenter
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Height = 24
+    Top = 32
+    Width = 389
+    Align = alTop
+    Alignment = taCenter
+    AutoSize = False
+    Caption = 'You must commit or rollback it before closing application'
+    Color = clNone
+    Layout = tlCenter
+    ParentColor = False
+  end
+  object BitBtn1: TBitBtn
+    Left = 16
+    Height = 30
+    Top = 88
+    Width = 104
+    BorderSpacing.InnerBorder = 2
+    Caption = 'Commit'
+    ModalResult = 6
+    NumGlyphs = 0
+    TabOrder = 0
+  end
+  object BitBtn2: TBitBtn
+    Left = 152
+    Height = 30
+    Top = 88
+    Width = 96
+    BorderSpacing.InnerBorder = 2
+    Caption = 'Rollback'
+    ModalResult = 7
+    NumGlyphs = 0
+    TabOrder = 1
+  end
+  object BitBtn3: TBitBtn
+    Left = 280
+    Height = 30
+    Top = 88
+    Width = 96
+    BorderSpacing.InnerBorder = 2
+    Caption = 'Cancel'
+    ModalResult = 2
+    NumGlyphs = 0
+    TabOrder = 2
+  end
+end

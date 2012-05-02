@@ -1,0 +1,3381 @@
+object frmBrowser: TfrmBrowser
+  Left = 262
+  Height = 500
+  Top = 139
+  Width = 640
+  HorzScrollBar.Page = 639
+  VertScrollBar.Page = 480
+  ActiveControl = tvDb
+  Caption = 'frmBrowser'
+  Menu = mnMain
+  OnClose = FormClose
+  OnCloseQuery = FormCloseQuery
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnShow = FormShow
+  object pListView: TPanel
+    Height = 455
+    Top = 26
+    Width = 176
+    Align = alLeft
+    FullRepaint = False
+    TabOrder = 0
+    object tvDb: TTreeView
+      Left = 1
+      Height = 434
+      Top = 1
+      Width = 174
+      Align = alClient
+      DefaultItemHeight = 16
+      Images = ImageList1
+      ParentShowHint = False
+      ScrollBars = ssAutoBoth
+      ShowHint = True
+      TabOrder = 0
+      OnChange = tvDbChange
+      OnClick = tvDbClick
+      OnDblClick = tvDbDblClick
+      OnMouseDown = tvDbMouseDown
+      OnMouseUp = tvDbMouseUp
+    end
+    object sbtvDb: TStatusBar
+      Height = 20
+      Top = 435
+      Width = 176
+      Panels = <      
+        item
+          Width = 50
+        end>
+      SimplePanel = False
+    end
+  end
+  object slpMain: TSplitter
+    Left = 176
+    Height = 455
+    Top = 26
+    Width = 5
+  end
+  object pOut: TPanel
+    Left = 181
+    Height = 455
+    Top = 26
+    Width = 459
+    Align = alClient
+    FullRepaint = False
+    TabOrder = 1
+    object nbMain: TNotebook
+      Left = 1
+      Height = 453
+      Top = 1
+      Width = 457
+      Align = alClient
+      OnPageChanged = nbMainPageChanged
+      PageIndex = 0
+      object TabDLL: TPage
+        Caption = 'DDL'
+        object pTitle: TPanel
+          Height = 27
+          Width = 449
+          Align = alTop
+          BevelOuter = bvLowered
+          FullRepaint = False
+          TabOrder = 0
+          object lTitle: TLabel
+            Left = 1
+            Height = 25
+            Top = 1
+            Width = 447
+            Align = alClient
+            Alignment = taCenter
+            Caption = '  '
+            Color = clGray
+            Font.Color = clAqua
+            Font.Height = -13
+            Font.Style = [fsBold]
+            Layout = tlCenter
+            ParentColor = False
+            Transparent = False
+          end
+        end
+        object mBuffer: TSynMemo
+          Cursor = crIBeam
+          Left = 6
+          Height = 376
+          Top = 31
+          Width = 192
+          Font.Height = -12
+          Font.Name = 'Courier New'
+          ParentColor = False
+          PopupMenu = pmnMemo
+          TabOrder = 1
+          Gutter.CodeFoldingWidth = 14
+          Keystrokes = <          
+            item
+              Command = 3
+              ShortCut = 38
+            end          
+            item
+              Command = 103
+              ShortCut = 8230
+            end          
+            item
+              Command = 211
+              ShortCut = 16422
+            end          
+            item
+              Command = 4
+              ShortCut = 40
+            end          
+            item
+              Command = 104
+              ShortCut = 8232
+            end          
+            item
+              Command = 212
+              ShortCut = 16424
+            end          
+            item
+              Command = 1
+              ShortCut = 37
+            end          
+            item
+              Command = 101
+              ShortCut = 8229
+            end          
+            item
+              Command = 5
+              ShortCut = 16421
+            end          
+            item
+              Command = 105
+              ShortCut = 24613
+            end          
+            item
+              Command = 2
+              ShortCut = 39
+            end          
+            item
+              Command = 102
+              ShortCut = 8231
+            end          
+            item
+              Command = 6
+              ShortCut = 16423
+            end          
+            item
+              Command = 106
+              ShortCut = 24615
+            end          
+            item
+              Command = 10
+              ShortCut = 34
+            end          
+            item
+              Command = 110
+              ShortCut = 8226
+            end          
+            item
+              Command = 14
+              ShortCut = 16418
+            end          
+            item
+              Command = 114
+              ShortCut = 24610
+            end          
+            item
+              Command = 9
+              ShortCut = 33
+            end          
+            item
+              Command = 109
+              ShortCut = 8225
+            end          
+            item
+              Command = 13
+              ShortCut = 16417
+            end          
+            item
+              Command = 113
+              ShortCut = 24609
+            end          
+            item
+              Command = 7
+              ShortCut = 36
+            end          
+            item
+              Command = 107
+              ShortCut = 8228
+            end          
+            item
+              Command = 15
+              ShortCut = 16420
+            end          
+            item
+              Command = 115
+              ShortCut = 24612
+            end          
+            item
+              Command = 8
+              ShortCut = 35
+            end          
+            item
+              Command = 108
+              ShortCut = 8227
+            end          
+            item
+              Command = 16
+              ShortCut = 16419
+            end          
+            item
+              Command = 116
+              ShortCut = 24611
+            end          
+            item
+              Command = 223
+              ShortCut = 45
+            end          
+            item
+              Command = 201
+              ShortCut = 16429
+            end          
+            item
+              Command = 604
+              ShortCut = 8237
+            end          
+            item
+              Command = 502
+              ShortCut = 46
+            end          
+            item
+              Command = 603
+              ShortCut = 8238
+            end          
+            item
+              Command = 501
+              ShortCut = 8
+            end          
+            item
+              Command = 501
+              ShortCut = 8200
+            end          
+            item
+              Command = 504
+              ShortCut = 16392
+            end          
+            item
+              Command = 601
+              ShortCut = 32776
+            end          
+            item
+              Command = 602
+              ShortCut = 40968
+            end          
+            item
+              Command = 509
+              ShortCut = 13
+            end          
+            item
+              Command = 199
+              ShortCut = 16449
+            end          
+            item
+              Command = 201
+              ShortCut = 16451
+            end          
+            item
+              Command = 610
+              ShortCut = 24649
+            end          
+            item
+              Command = 509
+              ShortCut = 16461
+            end          
+            item
+              Command = 510
+              ShortCut = 16462
+            end          
+            item
+              Command = 503
+              ShortCut = 16468
+            end          
+            item
+              Command = 611
+              ShortCut = 24661
+            end          
+            item
+              Command = 604
+              ShortCut = 16470
+            end          
+            item
+              Command = 603
+              ShortCut = 16472
+            end          
+            item
+              Command = 507
+              ShortCut = 16473
+            end          
+            item
+              Command = 506
+              ShortCut = 24665
+            end          
+            item
+              Command = 601
+              ShortCut = 16474
+            end          
+            item
+              Command = 602
+              ShortCut = 24666
+            end          
+            item
+              Command = 301
+              ShortCut = 16432
+            end          
+            item
+              Command = 302
+              ShortCut = 16433
+            end          
+            item
+              Command = 303
+              ShortCut = 16434
+            end          
+            item
+              Command = 304
+              ShortCut = 16435
+            end          
+            item
+              Command = 305
+              ShortCut = 16436
+            end          
+            item
+              Command = 306
+              ShortCut = 16437
+            end          
+            item
+              Command = 307
+              ShortCut = 16438
+            end          
+            item
+              Command = 308
+              ShortCut = 16439
+            end          
+            item
+              Command = 309
+              ShortCut = 16440
+            end          
+            item
+              Command = 310
+              ShortCut = 16441
+            end          
+            item
+              Command = 351
+              ShortCut = 24624
+            end          
+            item
+              Command = 352
+              ShortCut = 24625
+            end          
+            item
+              Command = 353
+              ShortCut = 24626
+            end          
+            item
+              Command = 354
+              ShortCut = 24627
+            end          
+            item
+              Command = 355
+              ShortCut = 24628
+            end          
+            item
+              Command = 356
+              ShortCut = 24629
+            end          
+            item
+              Command = 357
+              ShortCut = 24630
+            end          
+            item
+              Command = 358
+              ShortCut = 24631
+            end          
+            item
+              Command = 359
+              ShortCut = 24632
+            end          
+            item
+              Command = 360
+              ShortCut = 24633
+            end          
+            item
+              Command = 231
+              ShortCut = 24654
+            end          
+            item
+              Command = 232
+              ShortCut = 24643
+            end          
+            item
+              Command = 233
+              ShortCut = 24652
+            end          
+            item
+              Command = 612
+              ShortCut = 9
+            end          
+            item
+              Command = 613
+              ShortCut = 8201
+            end          
+            item
+              Command = 250
+              ShortCut = 24642
+            end>
+        end
+        object lvValues: TListView
+          Left = 214
+          Height = 378
+          Top = 31
+          Width = 216
+          Columns = <>
+          ScrollBars = ssAutoBoth
+          TabOrder = 2
+          Visible = False
+          ViewStyle = vsReport
+        end
+      end
+      object TabSql: TPage
+        Caption = 'Sql'
+        object pDown: TPanel
+          Height = 167
+          Top = 260
+          Width = 449
+          Align = alBottom
+          BevelOuter = bvNone
+          TabOrder = 0
+          object nbSQL: TNotebook
+            Height = 167
+            Width = 449
+            Align = alClient
+            PageIndex = 0
+            object tabMessages: TPage
+              Caption = 'Messages'
+              object mMsg: TListBox
+                Height = 141
+                Width = 441
+                Align = alClient
+                PopupMenu = pmnMessages
+                TabOrder = 0
+              end
+            end
+            object tabPlan: TPage
+              Caption = 'Plan'
+              object mPlan: TMemo
+                Height = 141
+                Width = 441
+                Align = alClient
+                TabOrder = 0
+              end
+            end
+            object tabParams: TPage
+              Caption = 'Params'
+              object sgParams: TStringGrid
+                Height = 141
+                Width = 441
+                Align = alClient
+                ColCount = 5
+                FixedColor = clBtnFace
+                GridLineWidth = 0
+                Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goColSizing, goSmoothScroll]
+                RowCount = 5
+                ScrollBars = ssAutoBoth
+                TabOrder = 0
+                TabStop = True
+              end
+            end
+          end
+        end
+        object Splitter1: TSplitter
+          Cursor = crVSplit
+          Height = 4
+          Top = 256
+          Width = 449
+          Align = alBottom
+          ResizeAnchor = akBottom
+        end
+        object pUp: TPanel
+          Height = 256
+          Width = 449
+          Align = alClient
+          BevelOuter = bvNone
+          TabOrder = 1
+          object mSql: TSynEdit
+            Height = 210
+            Top = 26
+            Width = 449
+            Align = alClient
+            Font.Height = -13
+            Font.Name = 'Courier New'
+            ParentColor = False
+            PopupMenu = pmnSql
+            TabOrder = 0
+            OnClick = mSqlClick
+            OnKeyDown = mSqlKeyDown
+            Gutter.CodeFoldingWidth = 14
+            Keystrokes = <            
+              item
+                Command = 3
+                ShortCut = 38
+              end            
+              item
+                Command = 103
+                ShortCut = 8230
+              end            
+              item
+                Command = 211
+                ShortCut = 16422
+              end            
+              item
+                Command = 4
+                ShortCut = 40
+              end            
+              item
+                Command = 104
+                ShortCut = 8232
+              end            
+              item
+                Command = 212
+                ShortCut = 16424
+              end            
+              item
+                Command = 1
+                ShortCut = 37
+              end            
+              item
+                Command = 101
+                ShortCut = 8229
+              end            
+              item
+                Command = 5
+                ShortCut = 16421
+              end            
+              item
+                Command = 105
+                ShortCut = 24613
+              end            
+              item
+                Command = 2
+                ShortCut = 39
+              end            
+              item
+                Command = 102
+                ShortCut = 8231
+              end            
+              item
+                Command = 6
+                ShortCut = 16423
+              end            
+              item
+                Command = 106
+                ShortCut = 24615
+              end            
+              item
+                Command = 10
+                ShortCut = 34
+              end            
+              item
+                Command = 110
+                ShortCut = 8226
+              end            
+              item
+                Command = 14
+                ShortCut = 16418
+              end            
+              item
+                Command = 114
+                ShortCut = 24610
+              end            
+              item
+                Command = 9
+                ShortCut = 33
+              end            
+              item
+                Command = 109
+                ShortCut = 8225
+              end            
+              item
+                Command = 13
+                ShortCut = 16417
+              end            
+              item
+                Command = 113
+                ShortCut = 24609
+              end            
+              item
+                Command = 7
+                ShortCut = 36
+              end            
+              item
+                Command = 107
+                ShortCut = 8228
+              end            
+              item
+                Command = 15
+                ShortCut = 16420
+              end            
+              item
+                Command = 115
+                ShortCut = 24612
+              end            
+              item
+                Command = 8
+                ShortCut = 35
+              end            
+              item
+                Command = 108
+                ShortCut = 8227
+              end            
+              item
+                Command = 16
+                ShortCut = 16419
+              end            
+              item
+                Command = 116
+                ShortCut = 24611
+              end            
+              item
+                Command = 223
+                ShortCut = 45
+              end            
+              item
+                Command = 201
+                ShortCut = 16429
+              end            
+              item
+                Command = 604
+                ShortCut = 8237
+              end            
+              item
+                Command = 502
+                ShortCut = 46
+              end            
+              item
+                Command = 603
+                ShortCut = 8238
+              end            
+              item
+                Command = 501
+                ShortCut = 8
+              end            
+              item
+                Command = 501
+                ShortCut = 8200
+              end            
+              item
+                Command = 504
+                ShortCut = 16392
+              end            
+              item
+                Command = 601
+                ShortCut = 32776
+              end            
+              item
+                Command = 602
+                ShortCut = 40968
+              end            
+              item
+                Command = 509
+                ShortCut = 13
+              end            
+              item
+                Command = 199
+                ShortCut = 16449
+              end            
+              item
+                Command = 201
+                ShortCut = 16451
+              end            
+              item
+                Command = 610
+                ShortCut = 24649
+              end            
+              item
+                Command = 509
+                ShortCut = 16461
+              end            
+              item
+                Command = 510
+                ShortCut = 16462
+              end            
+              item
+                Command = 503
+                ShortCut = 16468
+              end            
+              item
+                Command = 611
+                ShortCut = 24661
+              end            
+              item
+                Command = 604
+                ShortCut = 16470
+              end            
+              item
+                Command = 603
+                ShortCut = 16472
+              end            
+              item
+                Command = 507
+                ShortCut = 16473
+              end            
+              item
+                Command = 506
+                ShortCut = 24665
+              end            
+              item
+                Command = 601
+                ShortCut = 16474
+              end            
+              item
+                Command = 602
+                ShortCut = 24666
+              end            
+              item
+                Command = 301
+                ShortCut = 16432
+              end            
+              item
+                Command = 302
+                ShortCut = 16433
+              end            
+              item
+                Command = 303
+                ShortCut = 16434
+              end            
+              item
+                Command = 304
+                ShortCut = 16435
+              end            
+              item
+                Command = 305
+                ShortCut = 16436
+              end            
+              item
+                Command = 306
+                ShortCut = 16437
+              end            
+              item
+                Command = 307
+                ShortCut = 16438
+              end            
+              item
+                Command = 308
+                ShortCut = 16439
+              end            
+              item
+                Command = 309
+                ShortCut = 16440
+              end            
+              item
+                Command = 310
+                ShortCut = 16441
+              end            
+              item
+                Command = 351
+                ShortCut = 24624
+              end            
+              item
+                Command = 352
+                ShortCut = 24625
+              end            
+              item
+                Command = 353
+                ShortCut = 24626
+              end            
+              item
+                Command = 354
+                ShortCut = 24627
+              end            
+              item
+                Command = 355
+                ShortCut = 24628
+              end            
+              item
+                Command = 356
+                ShortCut = 24629
+              end            
+              item
+                Command = 357
+                ShortCut = 24630
+              end            
+              item
+                Command = 358
+                ShortCut = 24631
+              end            
+              item
+                Command = 359
+                ShortCut = 24632
+              end            
+              item
+                Command = 360
+                ShortCut = 24633
+              end            
+              item
+                Command = 231
+                ShortCut = 24654
+              end            
+              item
+                Command = 232
+                ShortCut = 24643
+              end            
+              item
+                Command = 233
+                ShortCut = 24652
+              end            
+              item
+                Command = 612
+                ShortCut = 9
+              end            
+              item
+                Command = 613
+                ShortCut = 8201
+              end            
+              item
+                Command = 250
+                ShortCut = 24642
+              end>
+            OnChange = mSqlChange
+          end
+          object sbarEdit: TStatusBar
+            Height = 20
+            Top = 236
+            Width = 449
+            Panels = <            
+              item
+                Width = 50
+              end            
+              item
+                Width = 50
+              end            
+              item
+                Width = 50
+              end            
+              item
+                Width = 50
+              end            
+              item
+                Width = 50
+              end>
+            SimplePanel = False
+          end
+          object ToolBar1: TToolBar
+            Height = 26
+            Width = 449
+            Caption = 'ToolBar1'
+            Images = ImageList1
+            ParentShowHint = False
+            ShowHint = True
+            TabOrder = 1
+            object ToolButton1: TToolButton
+              Left = 24
+              Hint = 'Open script'
+              Top = 2
+              Action = aOpenScript
+            end
+            object ToolButton2: TToolButton
+              Left = 1
+              Hint = 'New'
+              Top = 2
+              Action = aNewScript
+            end
+            object ToolButton3: TToolButton
+              Left = 47
+              Hint = 'Save script'
+              Top = 2
+              Action = aSaveScript
+            end
+            object ToolButton4: TToolButton
+              Left = 70
+              Top = 2
+              Width = 6
+              Caption = 'ToolButton4'
+              Style = tbsSeparator
+            end
+            object ToolButton10: TToolButton
+              Left = 76
+              Hint = 'Execute SQL statement'
+              Top = 2
+              Action = aExecSql
+            end
+            object ToolButton11: TToolButton
+              Left = 99
+              Hint = 'Excute SQL Script'
+              Top = 2
+              Action = aExecSqlScript
+            end
+            object ToolButton12: TToolButton
+              Left = 122
+              Top = 2
+              Width = 6
+              Caption = 'ToolButton12'
+              Style = tbsSeparator
+            end
+            object ToolButton13: TToolButton
+              Left = 128
+              Hint = 'Commit transaction'
+              Top = 2
+              Action = aCommit
+            end
+            object ToolButton14: TToolButton
+              Left = 151
+              Hint = 'Rollback transaction'
+              Top = 2
+              Action = aRollBack
+            end
+            object ToolButton15: TToolButton
+              Left = 174
+              Top = 2
+              Width = 6
+              Caption = 'ToolButton15'
+              Style = tbsSeparator
+            end
+            object ToolButton16: TToolButton
+              Left = 180
+              Hint = 'Previous in History'
+              Top = 2
+              Action = aPrevious
+            end
+            object ToolButton17: TToolButton
+              Left = 203
+              Hint = 'Next in History'
+              Top = 2
+              Action = aNext
+            end
+            object ToolButton18: TToolButton
+              Left = 226
+              Hint = 'Clear History'
+              Top = 2
+              Action = aClearHistory
+            end
+          end
+        end
+      end
+      object tabGrid: TPage
+        Caption = 'Result set'
+        object sgGrid: TStringGrid
+          Left = 30
+          Height = 144
+          Top = 15
+          Width = 216
+          ColCount = 5
+          FixedColor = clBtnFace
+          GridLineWidth = 0
+          Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goColSizing, goSmoothScroll]
+          RowCount = 5
+          ScrollBars = ssAutoBoth
+          TabOrder = 1
+          TabStop = True
+        end
+        object mGrid: TSynMemo
+          Cursor = crIBeam
+          Left = 30
+          Height = 150
+          Top = 167
+          Width = 216
+          Color = 12255231
+          Font.Height = -13
+          Font.Name = 'Courier New'
+          ParentColor = False
+          PopupMenu = pmnMemo
+          TabOrder = 0
+          Gutter.CodeFoldingWidth = 14
+          Keystrokes = <          
+            item
+              Command = 3
+              ShortCut = 38
+            end          
+            item
+              Command = 103
+              ShortCut = 8230
+            end          
+            item
+              Command = 211
+              ShortCut = 16422
+            end          
+            item
+              Command = 4
+              ShortCut = 40
+            end          
+            item
+              Command = 104
+              ShortCut = 8232
+            end          
+            item
+              Command = 212
+              ShortCut = 16424
+            end          
+            item
+              Command = 1
+              ShortCut = 37
+            end          
+            item
+              Command = 101
+              ShortCut = 8229
+            end          
+            item
+              Command = 5
+              ShortCut = 16421
+            end          
+            item
+              Command = 105
+              ShortCut = 24613
+            end          
+            item
+              Command = 2
+              ShortCut = 39
+            end          
+            item
+              Command = 102
+              ShortCut = 8231
+            end          
+            item
+              Command = 6
+              ShortCut = 16423
+            end          
+            item
+              Command = 106
+              ShortCut = 24615
+            end          
+            item
+              Command = 10
+              ShortCut = 34
+            end          
+            item
+              Command = 110
+              ShortCut = 8226
+            end          
+            item
+              Command = 14
+              ShortCut = 16418
+            end          
+            item
+              Command = 114
+              ShortCut = 24610
+            end          
+            item
+              Command = 9
+              ShortCut = 33
+            end          
+            item
+              Command = 109
+              ShortCut = 8225
+            end          
+            item
+              Command = 13
+              ShortCut = 16417
+            end          
+            item
+              Command = 113
+              ShortCut = 24609
+            end          
+            item
+              Command = 7
+              ShortCut = 36
+            end          
+            item
+              Command = 107
+              ShortCut = 8228
+            end          
+            item
+              Command = 15
+              ShortCut = 16420
+            end          
+            item
+              Command = 115
+              ShortCut = 24612
+            end          
+            item
+              Command = 8
+              ShortCut = 35
+            end          
+            item
+              Command = 108
+              ShortCut = 8227
+            end          
+            item
+              Command = 16
+              ShortCut = 16419
+            end          
+            item
+              Command = 116
+              ShortCut = 24611
+            end          
+            item
+              Command = 223
+              ShortCut = 45
+            end          
+            item
+              Command = 201
+              ShortCut = 16429
+            end          
+            item
+              Command = 604
+              ShortCut = 8237
+            end          
+            item
+              Command = 502
+              ShortCut = 46
+            end          
+            item
+              Command = 603
+              ShortCut = 8238
+            end          
+            item
+              Command = 501
+              ShortCut = 8
+            end          
+            item
+              Command = 501
+              ShortCut = 8200
+            end          
+            item
+              Command = 504
+              ShortCut = 16392
+            end          
+            item
+              Command = 601
+              ShortCut = 32776
+            end          
+            item
+              Command = 602
+              ShortCut = 40968
+            end          
+            item
+              Command = 509
+              ShortCut = 13
+            end          
+            item
+              Command = 199
+              ShortCut = 16449
+            end          
+            item
+              Command = 201
+              ShortCut = 16451
+            end          
+            item
+              Command = 610
+              ShortCut = 24649
+            end          
+            item
+              Command = 509
+              ShortCut = 16461
+            end          
+            item
+              Command = 510
+              ShortCut = 16462
+            end          
+            item
+              Command = 503
+              ShortCut = 16468
+            end          
+            item
+              Command = 611
+              ShortCut = 24661
+            end          
+            item
+              Command = 604
+              ShortCut = 16470
+            end          
+            item
+              Command = 603
+              ShortCut = 16472
+            end          
+            item
+              Command = 507
+              ShortCut = 16473
+            end          
+            item
+              Command = 506
+              ShortCut = 24665
+            end          
+            item
+              Command = 601
+              ShortCut = 16474
+            end          
+            item
+              Command = 602
+              ShortCut = 24666
+            end          
+            item
+              Command = 301
+              ShortCut = 16432
+            end          
+            item
+              Command = 302
+              ShortCut = 16433
+            end          
+            item
+              Command = 303
+              ShortCut = 16434
+            end          
+            item
+              Command = 304
+              ShortCut = 16435
+            end          
+            item
+              Command = 305
+              ShortCut = 16436
+            end          
+            item
+              Command = 306
+              ShortCut = 16437
+            end          
+            item
+              Command = 307
+              ShortCut = 16438
+            end          
+            item
+              Command = 308
+              ShortCut = 16439
+            end          
+            item
+              Command = 309
+              ShortCut = 16440
+            end          
+            item
+              Command = 310
+              ShortCut = 16441
+            end          
+            item
+              Command = 351
+              ShortCut = 24624
+            end          
+            item
+              Command = 352
+              ShortCut = 24625
+            end          
+            item
+              Command = 353
+              ShortCut = 24626
+            end          
+            item
+              Command = 354
+              ShortCut = 24627
+            end          
+            item
+              Command = 355
+              ShortCut = 24628
+            end          
+            item
+              Command = 356
+              ShortCut = 24629
+            end          
+            item
+              Command = 357
+              ShortCut = 24630
+            end          
+            item
+              Command = 358
+              ShortCut = 24631
+            end          
+            item
+              Command = 359
+              ShortCut = 24632
+            end          
+            item
+              Command = 360
+              ShortCut = 24633
+            end          
+            item
+              Command = 231
+              ShortCut = 24654
+            end          
+            item
+              Command = 232
+              ShortCut = 24643
+            end          
+            item
+              Command = 233
+              ShortCut = 24652
+            end          
+            item
+              Command = 612
+              ShortCut = 9
+            end          
+            item
+              Command = 613
+              ShortCut = 8201
+            end          
+            item
+              Command = 250
+              ShortCut = 24642
+            end>
+        end
+      end
+      object tabFields: TPage
+        Caption = 'Fields'
+        object sgFields: TStringGrid
+          Height = 427
+          Width = 449
+          Align = alClient
+          ColCount = 5
+          FixedColor = clBtnFace
+          GridLineWidth = 0
+          Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goColSizing, goSmoothScroll]
+          RowCount = 5
+          ScrollBars = ssAutoBoth
+          TabOrder = 0
+          TabStop = True
+        end
+      end
+    end
+  end
+  object ToolBarMain: TToolBar
+    Height = 26
+    Width = 640
+    AutoSize = True
+    Caption = 'ToolBarMain'
+    EdgeBorders = [ebLeft, ebTop, ebRight, ebBottom]
+    Images = ImageList1
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 2
+    object ToolButton6: TToolButton
+      Left = 26
+      Hint = 'Disconnect'
+      Top = 2
+      Action = aDisconnect
+    end
+    object ToolButton7: TToolButton
+      Left = 53
+      Hint = 'Refresh'
+      Top = 2
+      Action = aRefreshAll
+    end
+    object ToolButton5: TToolButton
+      Left = 49
+      Top = 2
+      Width = 4
+      Caption = 'ToolButton5'
+      Style = tbsSeparator
+    end
+    object ToolButton8: TToolButton
+      Left = 3
+      Top = 2
+      Action = aDbConnections
+    end
+    object ToolButton9: TToolButton
+      Left = 76
+      Top = 2
+      Width = 4
+      Caption = 'ToolButton9'
+      Style = tbsSeparator
+    end
+  end
+  object ActionList1: TActionList
+    Images = ImageList1
+    left = 48
+    top = 104
+    object aNewScript: TAction
+      Caption = 'New script'
+      Hint = 'New'
+      ImageIndex = 24
+      OnExecute = aNewScriptExecute
+    end
+    object aOpenScript: TAction
+      Caption = 'Open script'
+      Hint = 'Open script'
+      ImageIndex = 21
+      OnExecute = aOpenScriptExecute
+    end
+    object aSaveScript: TAction
+      Caption = 'Save script'
+      Hint = 'Save script'
+      ImageIndex = 19
+      OnExecute = aSaveScriptExecute
+    end
+    object aCommit: TAction
+      Caption = 'Commit'
+      Hint = 'Commit transaction'
+      ImageIndex = 25
+      OnExecute = aCommitExecute
+    end
+    object aRollBack: TAction
+      Caption = 'RollBack'
+      Hint = 'Rollback transaction'
+      ImageIndex = 26
+      OnExecute = aRollBackExecute
+    end
+    object aExecSql: TAction
+      Caption = 'Execute SQL statement'
+      Hint = 'Execute SQL statement'
+      ImageIndex = 23
+      OnExecute = aExecSqlExecute
+      ShortCut = 120
+    end
+    object aExecSqlScript: TAction
+      Caption = 'Execute SQL Script'
+      Hint = 'Excute SQL Script'
+      ImageIndex = 22
+      OnExecute = aExecSqlScriptExecute
+      ShortCut = 16504
+    end
+    object aMetadata: TAction
+      Caption = 'Exctract Metadata'
+      Hint = 'Extract Metadata'
+      OnExecute = aMetadataExecute
+    end
+    object aClearHistory: TAction
+      Caption = 'Clear History'
+      Hint = 'Clear History'
+      ImageIndex = 30
+      OnExecute = aClearHistoryExecute
+    end
+    object aPrevious: TAction
+      Caption = 'Previous'
+      Hint = 'Previous in History'
+      ImageIndex = 27
+      OnExecute = aPreviousExecute
+    end
+    object aNext: TAction
+      Caption = 'Next'
+      Hint = 'Next in History'
+      ImageIndex = 28
+      OnExecute = aNextExecute
+    end
+    object aBackupDatabase: TAction
+      Caption = 'Make Backup '
+      OnExecute = aBackupDatabaseExecute
+    end
+    object aRefreshAll: TAction
+      Caption = '&Refresh'
+      Hint = 'Refresh'
+      ImageIndex = 9
+      OnExecute = aRefreshAllExecute
+      ShortCut = 116
+    end
+    object aDisconnect: TAction
+      Caption = 'Di&sconnect'
+      Enabled = False
+      Hint = 'Disconnect'
+      ImageIndex = 11
+      OnExecute = aDisconnectExecute
+      ShortCut = 16452
+    end
+    object aViewData: TAction
+      Caption = 'View Data'
+      OnExecute = aViewDataExecute
+    end
+    object aCreateDb: TAction
+      Caption = 'Create Database'
+      OnExecute = aCreateDbExecute
+    end
+    object aExportToSql: TAction
+      Caption = 'Export to sql script'
+      OnExecute = aExportToSqlExecute
+    end
+    object aExportToHtml: TAction
+      Caption = 'aExportToHtml'
+      OnExecute = aExportToHtmlExecute
+    end
+    object aGrantMgr: TAction
+      Caption = 'aGrantMgr'
+    end
+    object aShowOptionDescription: TAction
+      Caption = 'Description'
+      OnExecute = aShowOptionDescriptionExecute
+    end
+    object aEditCopy: TEditCopy
+      Category = 'Edit'
+      Caption = '&Copy'
+      Hint = 'Copia'
+      ShortCut = 16451
+    end
+    object aShowOptions: TAction
+      Caption = 'Options'
+      Hint = 'Service manager'
+      OnExecute = aShowOptionsExecute
+    end
+    object aShowTextOptions: TAction
+      Caption = 'Font-Color'
+      OnExecute = aShowTextOptionsExecute
+    end
+    object aMbufferSelectAll: TAction
+      Caption = 'Select All'
+      OnExecute = aMbufferSelectAllExecute
+    end
+    object aEditCut1: TEditCut
+      Category = 'Edit'
+      Caption = '&Taglia'
+      Hint = 'Taglia'
+      ShortCut = 16472
+    end
+    object aEditPaste1: TEditPaste
+      Category = 'Edit'
+      Caption = '&Incolla'
+      Hint = 'Incolla'
+      ShortCut = 16470
+    end
+    object aServiceMgr: TAction
+      Caption = 'Service manager'
+      ImageIndex = 31
+      OnExecute = aServiceMgrExecute
+    end
+    object aUsers: TAction
+      Caption = 'User manager'
+      ImageIndex = 18
+      OnExecute = aUsersExecute
+    end
+    object aShowAbout: TAction
+      Caption = 'About...'
+      OnExecute = aShowAboutExecute
+    end
+    object aDbConnections: TAction
+      Caption = 'Connect '
+      ImageIndex = 7
+      OnExecute = aDbConnectionsExecute
+    end
+    object aClearMessages: TAction
+      Caption = 'Clear messages'
+      OnExecute = aClearMessagesExecute
+    end
+  end
+  object mnMain: TMainMenu
+    left = 48
+    top = 24
+    object MenuItem1: TMenuItem
+      Caption = '&Database'
+      object MenuItem2: TMenuItem
+        Action = aDbConnections
+        Bitmap.Data = {
+          950600002F2A2058504D202A2F0A7374617469632063686172202A375F636F6E
+          6E6563745B5D203D207B0A2F2A20636F6C756D6E7320726F777320636F6C6F72
+          732063686172732D7065722D706978656C202A2F0A2231362031362038342031
+          222C0A222020632023344134413642222C0A222E20632023354135413633222C
+          0A225820632023364236333441222C0A226F20632023374237333541222C0A22
+          4F20632023364236423633222C0A222B20632023363336333733222C0A224020
+          632023363336333742222C0A222320632023374237333642222C0A2224206320
+          677261793435222C0A222520632023363336333843222C0A2226206320233642
+          36423943222C0A222A20632023374237333843222C0A223D2063202337333733
+          3943222C0A222D20632023374237423934222C0A223B20632023364236424135
+          222C0A223A20632023364236424144222C0A223E20632023373337334144222C
+          0A222C20632023374237424144222C0A223C20632023374237424244222C0A22
+          3120632023374237424336222C0A223220632023393437333239222C0A223320
+          632023394337333239222C0A223420632023394337423239222C0A2235206320
+          23384336423432222C0A223620632023394337423432222C0A22372063204E75
+          6C6C222C0A223820632023423538343231222C0A223920632023384338343532
+          222C0A223020632023393438343532222C0A227120632023393438433642222C
+          0A227720632023393438433733222C0A226520632023394339343733222C0A22
+          7220632023413538433532222C0A227420632023424441443642222C0A227920
+          632023433639433441222C0A227520632023453742353541222C0A2269206320
+          23463742443541222C0A227020632023443643363733222C0A22612063202345
+          3743453733222C0A227320632023464644363733222C0A226420632023383438
+          343834222C0A226620632023383438343843222C0A2267206320677261793535
+          222C0A226820632023383438343934222C0A226A20632023383438343943222C
+          0A226B20632023384338343934222C0A226C20632023394339433934222C0A22
+          7A20632023383438344235222C0A227820632023384338434235222C0A226320
+          632023394339434144222C0A227620632023414441353834222C0A2262206320
+          23413541354135222C0A226E20632023413541354244222C0A226D2063202338
+          4338434336222C0A224D20632023384338434345222C0A224E20632023383438
+          344436222C0A224220632023384338434445222C0A2256206320233934393443
+          45222C0A224320632023394339434345222C0A225A2063202341444144433622
+          2C0A224120632023414441444345222C0A225320632023413541354445222C0A
+          224420632023414441444445222C0A224620632023423542354345222C0A2247
+          20632023423542354445222C0A224820632023413541354537222C0A224A2063
+          2023414441444537222C0A224B20632023414441444546222C0A224C20632023
+          423542354546222C0A225020632023424442444546222C0A2249206320234546
+          44453834222C0A225520632023434543454336222C0A22592063202343454345
+          4445222C0A225420632023433643364537222C0A225220632023433643364546
+          222C0A224520632023434543454546222C0A225720632023433643364637222C
+          0A225120632023434543454637222C0A222120632023443644364546222C0A22
+          7E20632023444544454546222C0A225E20632023453745374646222C0A222F20
+          632023454645464646222C0A222820632023463746374646222C0A2229206320
+          67726179313030222C0A2F2A20706978656C73202A2F0A223737373737373737
+          6229672437373737222C0A2237373737373737376229672437373737222C0A22
+          373737635A465A6E6E6A662437373737222C0A22373778417E2F2F5E524C6A6A
+          37373737222C0A22377A5928285E4521515757446A373737222C0A22372C212F
+          5E45545257504A4B436A3737222C0A22373B3B3E4347504C53484B4B447A6737
+          222C0A22373E266C6226264D534A5353536D6A37222C0A22373C664965263131
+          263B4D56566D6837222C0A22373E72732E3B4E4E4E4055784E3C2D37222C0A22
+          3737383220264E423123496B423E6737222C0A22373069352B373D3E3A39612A
+          4E253737222C0A2237747058373737374F34334026373737222C0A2237796476
+          373737377775363737373737222C0A22373737373737373771616F3737373737
+          222C0A2237373737373737377964763737373737220A7D3B0A
+        }
+        OnClick = aDbConnectionsExecute
+      end
+      object MenuItem3: TMenuItem
+        Action = aDisconnect
+        Bitmap.Data = {
+          300600002F2A2058504D202A2F0A7374617469632063686172202A31315F6469
+          73636F6E6E6563745B5D203D207B0A2F2A20636F6C756D6E7320726F77732063
+          6F6C6F72732063686172732D7065722D706978656C202A2F0A22313620313620
+          37372031222C0A222020632023364236333441222C0A222E2063202337423733
+          3541222C0A225820632023364236423633222C0A226F20632023363336333733
+          222C0A224F20632023363336333742222C0A222B20632023374237333642222C
+          0A2240206320677261793435222C0A222320632023364236423943222C0A2224
+          20632023374237333843222C0A222520632023373337333943222C0A22262063
+          2023374237423934222C0A222A20632023364236424135222C0A223D20632023
+          364236424144222C0A222D20632023373337334144222C0A223B206320233742
+          37424144222C0A223A20632023374237424244222C0A223E2063202337423742
+          4336222C0A222C20632023394337333239222C0A223C20632023394337423239
+          222C0A223120632023394337423432222C0A223220632023444533313030222C
+          0A223320632023453733313030222C0A223420632023454633313030222C0A22
+          3520632023463733313030222C0A223620632023464633313030222C0A223720
+          63204E756C6C222C0A223820632023423538343231222C0A2239206320233843
+          38343532222C0A223020632023393438343532222C0A22712063202339343843
+          3642222C0A227720632023393438433733222C0A226520632023394339343733
+          222C0A227220632023413538433532222C0A227420632023424441443642222C
+          0A227920632023433639433441222C0A227520632023453742353541222C0A22
+          6920632023463742443541222C0A227020632023443643363733222C0A226120
+          632023453743453733222C0A227320632023464644363733222C0A2264206320
+          23383438343834222C0A226620632023383438343843222C0A22672063206772
+          61793535222C0A226820632023383438343934222C0A226A2063202338343834
+          3943222C0A226B20632023384338343934222C0A226C20632023394339433934
+          222C0A227A20632023383438344235222C0A227820632023384338434235222C
+          0A226320632023414441353834222C0A227620632023413541354135222C0A22
+          6220632023413541354244222C0A226E20632023384338434336222C0A226D20
+          632023383438344436222C0A224D20632023384338434445222C0A224E206320
+          23393439344345222C0A224220632023394339434345222C0A22562063202341
+          4441444336222C0A224320632023414441444345222C0A225A20632023413541
+          354445222C0A224120632023414441444445222C0A2253206320234235423543
+          45222C0A224420632023423542354445222C0A22462063202341444144454622
+          2C0A224720632023423542354546222C0A224820632023424442444546222C0A
+          224A20632023454644453834222C0A224B20632023434543454445222C0A224C
+          20632023433643364546222C0A225020632023434543454546222C0A22492063
+          2023433643364637222C0A225520632023434543454637222C0A225920632023
+          443644364546222C0A225420632023453745374646222C0A2252206320234546
+          45464646222C0A224520632023463746374646222C0A22572063206772617931
+          3030222C0A2F2A20706978656C73202A2F0A2237373737373737377657674037
+          373737222C0A2237373735373737377657674037373737222C0A223737373535
+          535662626A664037353737222C0A2237377843363452544C476A6A3537373722
+          2C0A22377A4B4545353459554949356A373737222C0A22373B59525450323449
+          493532426A3737222C0A22372A2A2D4244483333323246417A6737222C0A2237
+          2D236C7623323332335A5A5A6E6A37222C0A22373A664A6532323E2332324E4E
+          6E6837222C0A22372D727332326D6D6D4F32326D3A2637222C0A223737383232
+          236D4D3E2B4A6B322D6737222C0A22373069326F37252D3D3961246D32373722
+          2C0A223774702037373737583C2C4F23373737222C0A22377964633737373777
+          75313737373737222C0A22373737373737373771612E3737373737222C0A2237
+          373737373737377964633737373737220A7D3B0A
+        }
+        OnClick = aDisconnectExecute
+      end
+      object MenuItem11: TMenuItem
+        Caption = '-'
+      end
+      object MenuItem6: TMenuItem
+        Action = aMetadata
+        OnClick = aMetadataExecute
+      end
+      object MenuItem7: TMenuItem
+        Action = aBackupDatabase
+        OnClick = aBackupDatabaseExecute
+      end
+      object MenuItem12: TMenuItem
+        Action = aCreateDb
+        OnClick = aCreateDbExecute
+      end
+      object MenuItem48: TMenuItem
+        Caption = '-'
+      end
+      object MenuExit: TMenuItem
+        Caption = 'Exit'
+        ShortCut = 16472
+        OnClick = MenuExitClick
+      end
+    end
+    object MenuItem23: TMenuItem
+      Caption = 'Tools'
+      object MenuItem25: TMenuItem
+        Action = aServiceMgr
+        Bitmap.Data = {
+          510200002F2A2058504D202A2F0A7374617469632063686172202A34315F7365
+          72766963655B5D203D207B0A2F2A20636F6C756D6E7320726F777320636F6C6F
+          72732063686172732D7065722D706978656C202A2F0A22313620313620313120
+          31222C0A222020632023303036334345222C0A222E2063204E756C6C222C0A22
+          5820632023383443364646222C0A226F20632023413544364646222C0A224F20
+          632023414444364646222C0A222B20632023423544454646222C0A2240206320
+          23433645374646222C0A222320632023443645464646222C0A22242063202345
+          3746374646222C0A222520632023463746464646222C0A222620632023464646
+          464646222C0A2F2A20706978656C73202A2F0A222E2E2E2E2E2E2E2E2E2E2E2E
+          2E2E2E2E222C0A222E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E222C0A222E2E2020
+          20202020202020202020202E222C0A222E202020202020202020202020202020
+          222C0A222E202626262626262626262626252420222C0A222E20262626262626
+          2626262625242320222C0A222E202658582658585858585858584020222C0A22
+          2E2026262626262626262524236F2B20222C0A222E2026585826585858585858
+          58584F20222C0A222E20262626262626252423402B4F4F20222C0A222E202658
+          582658585858585858584F20222C0A222E2026262626252423402B4F4F4F4F20
+          222C0A222E202658582558585858585858584F20222C0A222E20262625242340
+          2B4F4F4F4F4F4F20222C0A222E202020202020202020202020202020222C0A22
+          2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E220A7D3B0A
+        }
+        OnClick = aServiceMgrExecute
+      end
+      object MenuItem32: TMenuItem
+        Action = aUsers
+        Bitmap.Data = {
+          630A00002F2A2058504D202A2F0A7374617469632063686172202A31375F7573
+          6572735B5D203D207B0A2F2A20636F6C756D6E7320726F777320636F6C6F7273
+          2063686172732D7065722D706978656C202A2F0A223136203136203132342032
+          222C0A2220202063206772617933222C0A222E2020632023313831303038222C
+          0A22582020632023313031303130222C0A226F2020632023313831383138222C
+          0A224F2020632023333132313130222C0A222B20206320677261793136222C0A
+          22402020632023333133313331222C0A22232020632023333933393339222C0A
+          22242020632023323937333239222C0A22252020632023323937423239222C0A
+          22262020632023333136423331222C0A222A2020632023333137333331222C0A
+          223D2020632023333937333339222C0A222D2020632023343232393138222C0A
+          223B2020632023373331383130222C0A223A2020632023373332313231222C0A
+          223E2020632023374232313231222C0A222C20206320677261793236222C0A22
+          3C20206320677261793239222C0A22312020632023354135413541222C0A2232
+          2020632023354135323633222C0A22332020632023354137333541222C0A2234
+          2020632023354137333633222C0A22352020632023374236423432222C0A2236
+          20206320677261793432222C0A223720206320677261793435222C0A22382020
+          632023313833313843222C0A22392020632023323934413843222C0A22302020
+          632023323934413943222C0A22712020632023313834324336222C0A22772020
+          632023323134324336222C0A22652020632023323134414345222C0A22722020
+          632023323934414336222C0A22742020632023323934414345222C0A22792020
+          632023333135414336222C0A22752020632023333935414537222C0A22692020
+          632023343235323843222C0A22702020632023344135324135222C0A22612020
+          632023343236334135222C0A22732020632023353237334235222C0A22642020
+          632023343235414546222C0A22662020632023343236424445222C0A22672020
+          632023344137424445222C0A22682020632023344136334546222C0A226A2020
+          632023344136334637222C0A226B2020632023354136424646222C0A226C2020
+          632023354137424546222C0A227A2020632023354137334637222C0A22782020
+          632023354137334646222C0A22632020632023363337424646222C0A22762020
+          632023313838433138222C0A22622020632023313839343138222C0A226E2020
+          632023333938343331222C0A226D2020632023333938433339222C0A224D2020
+          632023333142353331222C0A224E2020632023333938433742222C0A22422020
+          632023344141353441222C0A22562020632023343242353432222C0A22432020
+          632023354141443633222C0A225A2020632023353241353742222C0A22412020
+          632023354142353733222C0A22532020632023363341443742222C0A22442020
+          632023363342443633222C0A22462020632023353243363532222C0A22472020
+          632023363343363633222C0A22482020632023363343453633222C0A224A2020
+          632023373344363733222C0A224B2020632023373342443834222C0A224C2020
+          632023354138434445222C0A22502020632023363338344436222C0A22492020
+          632023364238434646222C0A22552020632023384333313130222C0A22592020
+          632023393433313130222C0A22542020632023394336423130222C0A22522020
+          632023413534413138222C0A22452020632023414434413130222C0A22572020
+          632023424435323138222C0A22512020632023424435413138222C0A22212020
+          632023413535413231222C0A227E2020632023433636423231222C0A225E2020
+          632023434536333231222C0A222F2020632023434536423231222C0A22282020
+          632023453737423239222C0A2229202063204E756C6C222C0A225F2020632023
+          413538343432222C0A22602020632023423538433441222C0A22272020632023
+          413539343633222C0A225D2020632023434538433239222C0A225B2020632023
+          433639343339222C0A227B2020632023434539343331222C0A227D2020632023
+          444539343331222C0A227C2020632023454639343239222C0A22202E20632023
+          463738433239222C0A222E2E20632023463739343331222C0A22582E20632023
+          464639433339222C0A226F2E20632023464641353339222C0A224F2E20632023
+          434539433441222C0A222B2E20632023433639433532222C0A22402E20632023
+          434539433532222C0A22232E20632023443641353541222C0A22242E20632023
+          444542353642222C0A22252E20632023443642353733222C0A22262E20632023
+          453741353432222C0A222A2E20632023453741353441222C0A223D2E20632023
+          464641443441222C0A222D2E20632023464642353441222C0A223B2E20632023
+          464642353532222C0A223A2E20632023464642443532222C0A223E2E20632023
+          464642443541222C0A222C2E20632023383438343834222C0A223C2E20632067
+          7261793535222C0A22312E20632023423541443934222C0A22322E2063202341
+          3541354135222C0A22332E20632023383442354546222C0A22342E2063202338
+          3444453834222C0A22352E20632023394344364646222C0A22362E2063202342
+          3544454336222C0A22372E20632023434542353843222C0A22382E2063202344
+          3642353834222C0A22392E20632023443642443843222C0A22302E2063202344
+          4543363943222C0A22712E20632023454644364144222C0A22772E2063202343
+          3645374436222C0A22652E20632023453746374646222C0A2F2A20706978656C
+          73202A2F0A222920292029202920292029202920292029202920292029202920
+          292029202920222C0A222920292029202920292029202920292029202920302E
+          392E382E372E29202920222C0A22292029202C2037203C2E2C2E232029202920
+          2920232E242E712E252E5F202920222C0A222920292031203620322E2C2E4020
+          3C2029202B2E5B204F2E7B205D2054202920222C0A22292040203C202D202F20
+          28202E2E7E2029202A2E3A2E3E2E3A2E3B2E7D202920222C0A22292040202B20
+          21202E2E2E2E202E2F202920262E2D2E3B2E2D2E3D2E5D202920222C0A222920
+          6F204F2051202F202F205E2045202920402E6F2E6F2E582E582E35202920222C
+          0A22292058202E2052205120512057205520292029202E2E2E2E2E2E7C202920
+          2920222C0A22292029206F202020592059203B20322042204420312E60202720
+          6E2029202920222C0A2229202920612038203A203E20702079204120342E652E
+          652E532044206D202920222C0A2229205020632049204C20352E4C206C207520
+          5A20362E772E4A20482056207620222C0A2265206520782063206620332E6720
+          7A2075204E204B204320472046204D206220222C0A227120712075206A206B20
+          682075206420392034203D202A202520242026203320222C0A22732073207120
+          7720742072203020692029202920292029202920292029202920222C0A222920
+          292029202920292029202920292029202920292029202920292029202920222C
+          0A22292029202920292029202920292029202920292029202920292029202920
+          2920220A7D3B0A
+        }
+        OnClick = aUsersExecute
+      end
+    end
+    object MenuItem19: TMenuItem
+      Caption = '&Environment'
+      object MenuItem20: TMenuItem
+        Action = aShowOptions
+        OnClick = aShowOptionsExecute
+      end
+      object MenuItem21: TMenuItem
+        Action = aShowTextOptions
+        OnClick = aShowTextOptionsExecute
+      end
+    end
+    object MenuItem22: TMenuItem
+      Caption = '&Isql'
+      object MenuItem33: TMenuItem
+        Action = aNewScript
+        Bitmap.Data = {
+          7C0400002F2A2058504D202A2F0A7374617469632063686172202A32345F7371
+          6C5F6E65775B5D203D207B0A2F2A20636F6C756D6E7320726F777320636F6C6F
+          72732063686172732D7065722D706978656C202A2F0A22313620313620343820
+          31222C0A222020632023373338434244222C0A222E2063202337423834424422
+          2C0A225820632023344141354546222C0A226F20632023364238344336222C0A
+          224F20632023373339344345222C0A222B20632023374239344336222C0A2240
+          20632023373342354546222C0A222320632023373343364646222C0A22242063
+          204E756C6C222C0A222520632023383438344235222C0A222620632023383438
+          434235222C0A222A20632023384339344235222C0A223D206320233834394343
+          45222C0A222D20632023393441354336222C0A223B2063202339434135433622
+          2C0A223A20632023413541444336222C0A223E20632023414442354345222C0A
+          222C20632023414442444336222C0A223C20632023414442354436222C0A2231
+          20632023423542444436222C0A223220632023423542444445222C0A22332063
+          2023393443454546222C0A223420632023394343454546222C0A223520632023
+          394344364637222C0A223620632023423543364445222C0A2237206320234135
+          44364637222C0A223820632023414444364637222C0A22392063202342354336
+          4537222C0A223020632023423543454546222C0A227120632023424443454546
+          222C0A227720632023423544364637222C0A226520632023423544454637222C
+          0A227220632023424444454637222C0A227420632023434543454537222C0A22
+          7920632023433644454537222C0A227520632023434544364537222C0A226920
+          632023433644454637222C0A227020632023433645374637222C0A2261206320
+          23434545374637222C0A227320632023443645374637222C0A22642063202344
+          3645464646222C0A226620632023444545464646222C0A226720632023453745
+          464646222C0A226820632023453746374646222C0A226A206320234546463746
+          46222C0A226B20632023463746374646222C0A226C2063202346374646464622
+          2C0A227A20632023464646464646222C0A2F2A20706978656C73202A2F0A2224
+          243930303030393930312E24242424222C0A222424396B6A6A6A6A6A6A742B3D
+          242424222C0A222424717A7A7A7A7A7A7A752B234F2424222C0A222424397A7A
+          7A7A7A7A6C742040586F24222C0A222424397A7A7A7A7A6A6A732D2A26252422
+          2C0A222424367A7A7A7A6B67666664792C2524222C0A222424327A7A7A6B6766
+          73616969772524222C0A222424317A7A6B6A677361697265652524222C0A2224
+          24317A6B6A66736170697277382524222C0A2224243C7A6A6773617069723837
+          372524222C0A2224243E6C677373616972773834342524222C0A2224243A6873
+          6170696577383434332524222C0A2224243A6773616972773834343334252422
+          2C0A2224243B64616972773734343333342524222C0A2224243B647072653837
+          34333333352524222C0A2224242525252525252525252525252524220A7D3B0A
+        }
+        OnClick = aNewScriptExecute
+      end
+      object MenuItem34: TMenuItem
+        Action = aOpenScript
+        Bitmap.Data = {
+          D40300002F2A2058504D202A2F0A7374617469632063686172202A32315F6F70
+          656E5B5D203D207B0A2F2A20636F6C756D6E7320726F777320636F6C6F727320
+          63686172732D7065722D706978656C202A2F0A2231362031362033372031222C
+          0A222020632023303837333030222C0A222E20632023303837423038222C0A22
+          5820632023313038343038222C0A226F20632023313038433038222C0A224F20
+          632023313841353038222C0A222B20632023323138433130222C0A2240206320
+          23323139433130222C0A222320632023323941443138222C0A22242063202334
+          4143363331222C0A222520632023364244363432222C0A222620632023374244
+          363532222C0A222A2063204E756C6C222C0A223D20632023384345373541222C
+          0A222D20632023433641353138222C0A223B20632023443641443138222C0A22
+          3A20632023443641443231222C0A223E20632023443641443239222C0A222C20
+          632023444542353331222C0A223C20632023453742443532222C0A2231206320
+          23453743363441222C0A223220632023454643363441222C0A22332063202346
+          3744453642222C0A223420632023463744453733222C0A223520632023454644
+          453943222C0A223620632023454644454144222C0A2237206320234646454638
+          34222C0A223820632023464645463843222C0A22392063202346464546393422
+          2C0A223020632023464646373843222C0A227120632023464646373934222C0A
+          227720632023464646463934222C0A226520632023464646463943222C0A2272
+          20632023463745464135222C0A227420632023464646374135222C0A22792063
+          2023464646464144222C0A227520632023464646464336222C0A226920632023
+          464646464436222C0A2F2A20706978656C73202A2F0A222A2A2A2A2A2A2A2A2A
+          2A2A2A2A2A2A2A222C0A222A2A2A2A2A2A2A202E6F6F2E2A2A2A2A222C0A222A
+          2A2C3E2D2D2A2A2A2A6F4F582A2A2A222C0A222A3A357575353B2D2D2D2D6F4F
+          2A2A2A222C0A222A3E7577656969383934345823582A2A222C0A222A3E657171
+          717134343E2D2B24402D2A222C0A222A3E6571343434333E3620262524202A22
+          2C0A222A3E65343E2D2D2D363037203D202D2A222C0A222A3E713E3672727438
+          383834202D2A2A222C0A222A3E343E6530303038383834342D2A2A222C0A222A
+          3E3E367171383838383434322A2A2A222C0A222A3E3C7930383838343434323A
+          2A2A2A222C0A222A3E3C657734343434313A2D2A2A2A2A222C0A222A3E353731
+          3A2D2D2D2A2A2A2A2A2A2A222C0A222A3E2C3A2A2A2A2A2A2A2A2A2A2A2A2A22
+          2C0A222A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A220A7D3B0A
+        }
+        OnClick = aOpenScriptExecute
+      end
+      object MenuItem35: TMenuItem
+        Action = aSaveScript
+        Bitmap.Data = {
+          660500002F2A2058504D202A2F0A7374617469632063686172202A31375F7361
+          76655B5D203D207B0A2F2A20636F6C756D6E7320726F777320636F6C6F727320
+          63686172732D7065722D706978656C202A2F0A2231362031362036342031222C
+          0A222020632023323932393934222C0A222E20632023333133313934222C0A22
+          5820632023333133313943222C0A226F20632023333933393943222C0A224F20
+          632023333933394135222C0A222B20632023343234323943222C0A2240206320
+          23344134413943222C0A222320632023344134414135222C0A22242063202334
+          4135324144222C0A222520632023344135324235222C0A222620632023353235
+          324135222C0A222A20632023353235324144222C0A223D206320233541353241
+          44222C0A222D20632023354135414144222C0A223B2063202335323532423522
+          2C0A223A20632023354135414235222C0A223E20632023354135414244222C0A
+          222C20632023374237423943222C0A223C20632023373337334235222C0A2231
+          20632023373337424244222C0A223220632023354135414336222C0A22332063
+          2023363336334345222C0A223420632023364236424345222C0A22352063204E
+          756C6C222C0A223620632023383438343943222C0A2237206320233834383441
+          44222C0A223820632023384338434144222C0A22392063202338343834423522
+          2C0A223020632023384338434235222C0A227120632023393439344144222C0A
+          227720632023394339434135222C0A226520632023394339434235222C0A2272
+          20632023413541354244222C0A227420632023383438344336222C0A22792063
+          2023384339344336222C0A227520632023393439344336222C0A226920632023
+          394339434436222C0A227020632023414441444345222C0A2261206320234135
+          41354436222C0A227320632023413541444436222C0A22642063202341444144
+          4436222C0A226620632023414441444445222C0A226720632023423542354345
+          222C0A226820632023424442444345222C0A226A20632023423542354436222C
+          0A226B20632023424442444445222C0A226C20632023433643454336222C0A22
+          7A20632023433643454345222C0A227820632023434543454345222C0A226320
+          6320677261793834222C0A227620632023443644364445222C0A226220632067
+          7261793837222C0A226E20632023433643364537222C0A226D20632023434543
+          454537222C0A224D20632023434544364537222C0A224E206320234436443645
+          46222C0A224220632023444544454537222C0A22562063202345464546454622
+          2C0A224320632023454645464637222C0A225A20632023454646374637222C0A
+          2241206320677261793937222C0A225320632023463746374646222C0A224420
+          632023463746464646222C0A224620632067726179313030222C0A2F2A207069
+          78656C73202A2F0A2235352467637878787878787863702335222C0A22353125
+          4D5343434343434343536B323D222C0A223531254E5663636363636363566B32
+          3D222C0A223531254E5A42424242424242566B323D222C0A223531254E567662
+          6262626276566B323D222C0A223531254E5663636363636363566B323D222C0A
+          223531254E5343434343434343416B323D222C0A223531246D415A4141414141
+          41416B323D222C0A2235313B3A74616473646161736469332A222C0A22353133
+          3333333333333232333333343D222C0A22353133333E79753938726E664F4F32
+          2D222C0A22353133333A30402E7763466E202E3E2D222C0A22353133333A376F
+          6F6856466E202E3E2D222C0A22353133333A2C2B3C4253466A2E583E2D222C0A
+          22353133343A36726D534441672058322D222C0A2235352D2A23716C7A7A6C6C
+          652B2B2635220A7D3B0A
+        }
+        OnClick = aSaveScriptExecute
+      end
+      object MenuItem36: TMenuItem
+        Caption = '-'
+      end
+      object MenuItem37: TMenuItem
+        Action = aExecSql
+        Bitmap.Data = {
+          DB0200002F2A2058504D202A2F0A7374617469632063686172202A32335F7371
+          6C657865637574655B5D203D207B0A2F2A20636F6C756D6E7320726F77732063
+          6F6C6F72732063686172732D7065722D706978656C202A2F0A22313620313620
+          32302031222C0A222020632023303034413030222C0A222E2063202330303532
+          3030222C0A225820632023303036333030222C0A226F20632023323139433038
+          222C0A224F20632023323139433130222C0A222B20632023323941353130222C
+          0A224020632023333941443130222C0A222320632023333942353130222C0A22
+          2420632023333941443339222C0A222520632023344142353138222C0A222620
+          632023353242443441222C0A222A20632023353242443532222C0A223D206320
+          23353242443541222C0A222D20632023354143363541222C0A223B2063202336
+          3343363633222C0A223A20632023363343363642222C0A223E20632023364243
+          363642222C0A222C20632023374244363742222C0A223C2063204E756C6C222C
+          0A223120632023384344363843222C0A2F2A20706978656C73202A2F0A223C3C
+          3C3C3C3C3C3C3C3C3C3C3C3C3C3C222C0A223C3C3C3C3C3C3C3C3C3C3C3C3C3C
+          3C3C222C0A223C3C3C3C3C2058203C3C3C3C3C3C3C3C222C0A223C3C3C3C3C58
+          2458203C3C3C3C3C3C3C222C0A223C3C3C3C3C583B3158203C3C3C3C3C3C222C
+          0A223C3C3C3C3C583E2C2C58203C3C3C3C3C222C0A223C3C3C3C3C582D3E3A26
+          58203C3C3C3C222C0A223C3C3C3C3C582A3D262626582E3C3C3C222C0A223C3C
+          3C3C3C58254040402B582E3C3C3C222C0A223C3C3C3C3C58232B6F6F58203C3C
+          3C3C222C0A223C3C3C3C3C582B2B6F58203C3C3C3C3C222C0A223C3C3C3C3C58
+          4F6F58203C3C3C3C3C3C222C0A223C3C3C3C3C586F58203C3C3C3C3C3C3C222C
+          0A223C3C3C3C3C2058203C3C3C3C3C3C3C3C222C0A223C3C3C3C3C3C3C3C3C3C
+          3C3C3C3C3C3C222C0A223C3C3C3C3C3C3C3C3C3C3C3C3C3C3C3C220A7D3B0A
+        }
+        OnClick = aExecSqlExecute
+      end
+      object MenuItem38: TMenuItem
+        Action = aExecSqlScript
+        Bitmap.Data = {
+          9A0400002F2A2058504D202A2F0A7374617469632063686172202A32325F7371
+          6C7363726970745B5D203D207B0A2F2A20636F6C756D6E7320726F777320636F
+          6C6F72732063686172732D7065722D706978656C202A2F0A2231362031362035
+          302031222C0A222020632023373338434244222C0A222E206320233742383442
+          44222C0A225820632023344141354546222C0A226F2063202336423834433622
+          2C0A224F20632023373339344345222C0A222B20632023374239344336222C0A
+          224020632023373342354546222C0A222320632023373343364646222C0A2224
+          20632023433637423532222C0A22252063204E756C6C222C0A22262063202346
+          4641353339222C0A222A20632023464646373030222C0A223D20632067726179
+          3631222C0A222D20632023383438344235222C0A223B20632023383438434235
+          222C0A223A20632023383439434345222C0A223E20632023394341354336222C
+          0A222C20632023413541444336222C0A223C20632023414442354345222C0A22
+          3120632023414442444336222C0A223220632023414442354436222C0A223320
+          632023423542444436222C0A223420632023423542444445222C0A2235206320
+          23393443454546222C0A223620632023394343454546222C0A22372063202339
+          4344364637222C0A223820632023423543364445222C0A223920632023413544
+          364637222C0A223020632023414444364637222C0A2271206320234235433645
+          37222C0A227720632023423543454546222C0A22652063202342444345454622
+          2C0A227220632023423544364637222C0A227420632023423544454637222C0A
+          227920632023424444454637222C0A227520632023464646463934222C0A2269
+          206320677261793837222C0A227020632023434543454537222C0A2261206320
+          23433644454537222C0A227320632023434544364537222C0A22642063202343
+          3644454637222C0A226620632023433645374637222C0A226720632023443645
+          374637222C0A226820632023443645464646222C0A226A206320234537454646
+          46222C0A226B20632023453746374646222C0A226C2063202345464637464622
+          2C0A227A20632023463746374646222C0A227820632023463746464646222C0A
+          226320632067726179313030222C0A2F2A20706978656C73202A2F0A22252571
+          77777777717177332E25252525222C0A222525717A6C6C6C6C6C6C702B3A2525
+          25222C0A2225256563636363636363732B234F2525222C0A2225257163636363
+          636378702040586F25222C0A2225257163693D3D26752A2A24243B2D25222C0A
+          2225253863636326752A2A242461312D25222C0A22252534636326752A2A2424
+          6464722D25222C0A22252533636926752A24243D3D3D742D25222C0A22252533
+          6326752A242466647972302D25222C0A2225253226752A2A2A2A2A242439392D
+          25222C0A2225253C24242424752A24243D3D362D25222C0A2225252C6B672675
+          2A2424303636352D25222C0A2225252C6A262A24242430363635362D25222C0A
+          2225253E682A24243D3D3D3D3D3D362D25222C0A2225253E6824247430393635
+          3535372D25222C0A2225252D2D2D2D2D2D2D2D2D2D2D2D2D25220A7D3B0A
+        }
+        OnClick = aExecSqlScriptExecute
+      end
+      object MenuItem39: TMenuItem
+        Caption = '-'
+      end
+      object MenuItem40: TMenuItem
+        Action = aCommit
+        Bitmap.Data = {
+          4F0300002F2A2058504D202A2F0A7374617469632063686172202A32355F636F
+          6D6D69745B5D203D207B0A2F2A20636F6C756D6E7320726F777320636F6C6F72
+          732063686172732D7065722D706978656C202A2F0A2231362031362032382031
+          222C0A222020632023303038433030222C0A222E20632023303039343030222C
+          0A225820632023303039433030222C0A226F20632023303839343030222C0A22
+          4F20632023313039433030222C0A222B20632023303041353030222C0A224020
+          632023313041443030222C0A222320632023313841443030222C0A2224206320
+          23333139433331222C0A222520632023323141443030222C0A22262063202332
+          3142353030222C0A222A20632023323142443030222C0A223D20632023323942
+          353138222C0A222D20632023333941443239222C0A223B206320233239433630
+          30222C0A223A20632023333143453030222C0A223E2063202334414144323922
+          2C0A222C20632023343242353331222C0A223C20632023344141353532222C0A
+          223120632023363342353642222C0A223220632023343243363138222C0A2233
+          20632023343244363030222C0A223420632023354143453239222C0A22352063
+          2023363346463030222C0A223620632023374242443843222C0A22372063204E
+          756C6C222C0A223820632023413545373541222C0A2239206320233934433641
+          35222C0A2F2A20706978656C73202A2F0A223737373737373737373737373737
+          3737222C0A2237373737373737373737373737373737222C0A22373737373737
+          37373737373937373737222C0A22373737373737373737372C3336373737222C
+          0A22373737373737373737373E382D363737222C0A223737373737373737373C
+          3B2D2C373737222C0A22373737373737373737263B2E36373737222C0A223737
+          3737373737372C3B582037373737222C0A223737373725253737233B2E393737
+          3737222C0A223737373235353C3C3B2B243737373737222C0A223737373D3435
+          352A3B2E363737373737222C0A223737373C3A3B353A5820373737373737222C
+          0A22373737374F3A3B402E39373737373737222C0A2237373737312A3B2B2437
+          373737373737222C0A2237373737373D2A2E3637373737373737222C0A223737
+          3737373C6F313737373737373737220A7D3B0A
+        }
+        OnClick = aCommitExecute
+      end
+      object MenuItem41: TMenuItem
+        Action = aRollBack
+        Bitmap.Data = {
+          140400002F2A2058504D202A2F0A7374617469632063686172202A32365F726F
+          6C6C6261636B5B5D203D207B0A2F2A20636F6C756D6E7320726F777320636F6C
+          6F72732063686172732D7065722D706978656C202A2F0A223136203136203431
+          2031222C0A222020632023303034414144222C0A222E20632023303034414235
+          222C0A225820632023303035324235222C0A226F20632023303035324244222C
+          0A224F20632023303035414244222C0A222B20632023313034324135222C0A22
+          4020632023313034414144222C0A222320632023313035324235222C0A222420
+          632023323135414235222C0A222520632023333135414235222C0A2226206320
+          23333136334244222C0A222A20632023303035414336222C0A223D2063202330
+          3036334336222C0A222D20632023303036334345222C0A223B20632023303036
+          424345222C0A223A20632023303836424345222C0A223E206320233030373344
+          36222C0A222C20632023303037334445222C0A223C2063202330303742444522
+          2C0A223120632023313036334336222C0A223220632023303037424537222C0A
+          223320632023323137334345222C0A223420632023333937424345222C0A2235
+          20632023343236424244222C0A223620632023353237334244222C0A22372063
+          2023353237424244222C0A223820632023343237334336222C0A223920632023
+          353237424336222C0A223020632023303038344537222C0A2271206320233030
+          39344637222C0A227720632023303839434646222C0A22652063202333314144
+          4646222C0A227220632023343238344345222C0A227420632023344138344345
+          222C0A227920632023354138344336222C0A227520632023363338344336222C
+          0A226920632023373338434336222C0A227020632023374239344345222C0A22
+          6120632023363342444646222C0A22732063204E756C6C222C0A226420632023
+          383439434345222C0A2F2A20706978656C73202A2F0A22737373737373737373
+          73737373737373222C0A2273737373737373737373737373737373222C0A2273
+          737373737373737373737373737373222C0A22737079737373737364313B3B4F
+          357373222C0A22733461397373732432303C3E3B3D4073222C0A227333657473
+          733130326F3969233D3D75222C0A22733A77727358303B26737373732E2D2322
+          2C0A22732D7123583C3B377373737373382D2E222C0A22733D302D2C2D757373
+          73737373382D2E222C0A22734F3C3E2D2B64646473737373202D23222C0A2273
+          583E3B2D2D2D2D3D357373643D3D75222C0A2273204F4F4F4F4F4F4F75737320
+          2D2E73222C0A227373737373737373737373242D3D7573222C0A227373737373
+          7373737373253D2D247373222C0A22737373737373737373252A2D2373737322
+          2C0A22737373737373737373362A2073737373220A7D3B0A
+        }
+        OnClick = aRollBackExecute
+      end
+      object MenuItem42: TMenuItem
+        Caption = '-'
+      end
+      object MenuItem43: TMenuItem
+        Action = aPrevious
+        Bitmap.Data = {
+          4D0600002F2A2058504D202A2F0A7374617469632063686172202A32375F7072
+          65766975735B5D203D207B0A2F2A20636F6C756D6E7320726F777320636F6C6F
+          72732063686172732D7065722D706978656C202A2F0A22313620313620373920
+          31222C0A222020632023303033313030222C0A222E2063202330303432303022
+          2C0A225820632023303034413030222C0A226F20632023303834413030222C0A
+          224F20632023303035323030222C0A222B20632023303836333030222C0A2240
+          20632023303836423030222C0A222320632023303837423030222C0A22242063
+          2023313036423030222C0A222520632023313037333038222C0A222620632023
+          303838433030222C0A222A20632023303839343030222C0A223D206320233038
+          39433030222C0A222D20632023313839433038222C0A223B2063202330384135
+          3030222C0A223A20632023313041353030222C0A223E20632023313841353038
+          222C0A222C20632023313841443038222C0A223C20632023323138343038222C
+          0A223120632023323938433130222C0A223220632023323139433130222C0A22
+          3320632023333939433138222C0A223420632023323141353038222C0A223520
+          632023323941353038222C0A223620632023323941443038222C0A2237206320
+          23323141443130222C0A223820632023333141353130222C0A22392063202333
+          3141443130222C0A223020632023333941443130222C0A227120632023333141
+          353231222C0A227720632023343241353130222C0A2265206320233441414431
+          30222C0A227220632023343242353130222C0A22742063202334414235313822
+          2C0A227920632023353242353138222C0A227520632023344141353239222C0A
+          226920632023344142443231222C0A227020632023353242353231222C0A2261
+          20632023353242443239222C0A227320632023354142443239222C0A22642063
+          2023353242353339222C0A226620632023363342443331222C0A226720632023
+          363342443339222C0A226820632023364242443339222C0A226A206320233441
+          42443432222C0A226B20632023354142443432222C0A226C2063202336334244
+          3432222C0A227A20632023363342443441222C0A227820632023364242443441
+          222C0A226320632023353243363441222C0A227620632023373343363432222C
+          0A226220632023374243363441222C0A226E20632023373343363532222C0A22
+          6D20632023374243363532222C0A224D20632023374244363733222C0A224E20
+          63204E756C6C222C0A224220632023384343453633222C0A2256206320233843
+          43453642222C0A224320632023393444363733222C0A225A2063202339434445
+          3742222C0A224120632023384344363834222C0A225320632023413544453834
+          222C0A224420632023414444453843222C0A224620632023423544453934222C
+          0A224720632023423545373943222C0A224820632023423545374144222C0A22
+          4A20632023424445374135222C0A224B20632023424445374235222C0A224C20
+          632023433645374135222C0A225020632023433645374144222C0A2249206320
+          23433645464235222C0A225520632023434545464244222C0A22592063202344
+          3645464244222C0A225420632023444546374436222C0A225220632023453746
+          374436222C0A224520632023454646374537222C0A2257206320234546464645
+          46222C0A225120632023463746464637222C0A22212063202346464646464622
+          2C0A2F2A20706978656C73202A2F0A224E4E4E4E4E71646C6C75314E4E4E4E4E
+          222C0A224E4E4E7A7A46594C445A6233334E4E4E222C0A224E4E325652476D67
+          73666669382B4E4E222C0A224E716E5942707946507030393932404E222C0A22
+          4E7150566574442151613835342C404E222C0A2225785370704621456E393939
+          353E262E222C0A22256D76734A2151536B6B6B6B6B3E3D2E222C0A2225687355
+          2121212121212121213D3D4F222C0A2224707043572151494B484848483D3D58
+          222C0A224F7774396A51214D3D3D3D3D3D3B2A2E222C0A224F3C72382D6A5121
+          413A3D3D3D3B232E222C0A224E6F39363E3A634554373D3D3D3B584E222C0A22
+          4E6F24343E3D3D3D3D3D3D3D3B40584E222C0A224E4E6F2B3A3B3D3D3D3D3B3B
+          40204E4E222C0A224E4E4E2E2E233D3D3D3D2358584E4E4E222C0A224E4E4E4E
+          4E202E4F4F2E204E4E4E4E4E220A7D3B0A
+        }
+        OnClick = aPreviousExecute
+      end
+      object MenuItem44: TMenuItem
+        Action = aNext
+        Bitmap.Data = {
+          590600002F2A2058504D202A2F0A7374617469632063686172202A32385F6E65
+          78745B5D203D207B0A2F2A20636F6C756D6E7320726F777320636F6C6F727320
+          63686172732D7065722D706978656C202A2F0A2231362031362038302031222C
+          0A222020632023303033313030222C0A222E20632023303034323030222C0A22
+          5820632023303034413030222C0A226F20632023303834413030222C0A224F20
+          632023303035323030222C0A222B20632023303836333030222C0A2240206320
+          23303836423030222C0A222320632023303837423030222C0A22242063202331
+          3036423030222C0A222520632023313037333038222C0A222620632023303838
+          433030222C0A222A20632023303839343030222C0A223D206320233038394330
+          30222C0A222D20632023313839433038222C0A223B2063202330384135303022
+          2C0A223A20632023313041353030222C0A223E20632023313841353038222C0A
+          222C20632023313841443038222C0A223C20632023323138343038222C0A2231
+          20632023323938433130222C0A223220632023323139433130222C0A22332063
+          2023333939433138222C0A223420632023323141353038222C0A223520632023
+          323941353038222C0A223620632023323141443130222C0A2237206320233239
+          41443130222C0A223820632023333141353130222C0A22392063202333314144
+          3130222C0A223020632023333141443138222C0A227120632023333941443130
+          222C0A227720632023333141353231222C0A226520632023343241353130222C
+          0A227220632023344141443130222C0A227420632023343242353130222C0A22
+          7920632023344142353138222C0A227520632023344141353239222C0A226920
+          632023344142443231222C0A227020632023353242353231222C0A2261206320
+          23354142443239222C0A227320632023353242353339222C0A22642063202336
+          3342443331222C0A226620632023363342443339222C0A226720632023364242
+          443339222C0A226820632023344142443432222C0A226A206320233633424434
+          32222C0A226B20632023363342443441222C0A226C2063202336424244344122
+          2C0A227A20632023353243363441222C0A227820632023354143363532222C0A
+          226320632023373343363432222C0A227620632023373343363441222C0A2262
+          20632023374243363441222C0A226E20632023373343363532222C0A226D2063
+          2023374243363532222C0A224D20632023374244363733222C0A224E2063204E
+          756C6C222C0A224220632023383443453532222C0A2256206320233843434536
+          33222C0A224320632023384343453642222C0A225A2063202339344436374222
+          2C0A224120632023394344453742222C0A225320632023384344363834222C0A
+          224420632023394344453834222C0A224620632023413544453834222C0A2247
+          20632023413544453934222C0A224820632023423544453934222C0A224A2063
+          2023423545373943222C0A224B20632023423545374144222C0A224C20632023
+          433645374135222C0A225020632023433645374144222C0A2249206320234336
+          45464235222C0A225520632023433645464244222C0A22592063202343454546
+          4244222C0A225420632023443645464244222C0A225220632023444546374436
+          222C0A224520632023453746374436222C0A225720632023454646374537222C
+          0A225120632023454646464546222C0A222120632023463746464637222C0A22
+          7E20632023464646464646222C0A2F2A20706978656C73202A2F0A224E4E4E4E
+          4E77736A6A75314E4E4E4E4E222C0A224E4E4E6B6B48544C48416233334E4E4E
+          222C0A224E4E3243454A6D6661646469382B4E4E222C0A224E776E5456707050
+          487971393732404E222C0A224E775043727967217E443935342C404E222C0A22
+          256C46707970706D577E4439353E262E222C0A22256D636D424242765A217E47
+          303E3D2E222C0A222567617E7E7E7E7E7E7E7E7E4B3D3D4F222C0A2224707059
+          5549494949217E51783D3D58222C0A224F6579393A3D3D3D4D7E21683D3B2A2E
+          222C0A224F3C74372D3D2D537E21683D3D3B232E222C0A224E6F39373E3A3652
+          577A3D3D3D3B584E222C0A224E6F24343E3D3D3D3D3D3D3D3B40584E222C0A22
+          4E4E6F2B3A3B3D3D3D3D3B3B40204E4E222C0A224E4E4E2E2E233D3D3D3D2358
+          584E4E4E222C0A224E4E4E4E4E202E4F4F2E204E4E4E4E4E220A7D3B0A
+        }
+        OnClick = aNextExecute
+      end
+      object MenuItem45: TMenuItem
+        Action = aClearHistory
+        Bitmap.Data = {
+          F20100002F2A2058504D202A2F0A7374617469632063686172202A33305F636C
+          6561725B5D203D207B0A2F2A20636F6C756D6E7320726F777320636F6C6F7273
+          2063686172732D7065722D706978656C202A2F0A22313620313620352031222C
+          0A2220206320677261793432222C0A222E2063204E756C6C222C0A2258206320
+          23383438343834222C0A226F20632023433643364336222C0A224F2063206772
+          61793837222C0A2F2A20706978656C73202A2F0A222E2E2E2E2E2E2E2E2E2E2E
+          2E2E2E2E2E222C0A222E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E222C0A222E2E2E
+          2E2E2E2E2E582020202058582E222C0A222E2E2E2E2E2E2E204F4F4F4F4F4F20
+          2E222C0A222E2E2E2E2E2E204F4F4F4F4F4F20202E222C0A222E2E2E2E2E204F
+          4F4F4F4F4F2058202E222C0A222E2E2E2E204F4F4F4F4F4F205858202E222C0A
+          222E2E2E204F4F4F4F4F4F205858202E2E222C0A222E2E204F4F4F4F4F4F2058
+          58202E2E2E222C0A222E58206F6F6F6F6F205858202E2E2E2E222C0A222E206F
+          6F6F6F6F6F2058202E2E2E2E2E222C0A222E206F6F6F6F6F6F20202E2E2E2E2E
+          2E222C0A222E58202020202020582E2E2E2E2E2E2E222C0A222E2E2E2E2E2E2E
+          2E2E2E2E2E2E2E2E2E222C0A222E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E222C0A
+          222E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E220A7D3B0A
+        }
+        OnClick = aClearHistoryExecute
+      end
+    end
+    object MenuItem46: TMenuItem
+      Caption = '?'
+      object MenuItem47: TMenuItem
+        Action = aShowAbout
+        OnClick = aShowAboutExecute
+      end
+    end
+  end
+  object ImageList1: TImageList
+    Masked = True
+    left = 80
+    top = 104
+    Bitmap = {
+      6C69210000001000000010000000E50100002F2A2058504D202A2F0A73746174
+      69632063686172202A305F646F6D61696E5B5D203D207B0A2F2A20636F6C756D
+      6E7320726F777320636F6C6F72732063686172732D7065722D706978656C202A
+      2F0A22313620313620342031222C0A222020632023364236334135222C0A222E
+      20632023364237334135222C0A225820632023364239344436222C0A226F2063
+      204E756C6C222C0A2F2A20706978656C73202A2F0A226F6F6F6F6F6F6F6F6F6F
+      6F6F206F6F6F222C0A226F6F6F6F6F6F6F6F6F6F6F58206F6F6F222C0A226F6F
+      6F6F6F6F6F6F6F6F6F582E6F6F6F222C0A226F6F6F5858585858585858585858
+      5858222C0A226F6F6F582E2E2E2E2E2E2E582E20206F222C0A226F6F6F582E6F
+      6F6F6F6F6F582E6F6F6F222C0A226F6F6F582E6F6F6F6F6F6F582E6F6F6F222C
+      0A226F6F6F582E6F6F6F6F6F6F582E6F6F6F222C0A226F6F6F582E6F6F6F6F6F
+      6F58206F6F6F222C0A226F6F6F582E6F6F6F6F6F6F58206F6F6F222C0A226F6F
+      6F58206F6F6F6F6F6F58206F6F6F222C0A226F6F6F582058585858585858206F
+      6F6F222C0A226F5858582020202020202020206F6F6F222C0A2220202020206F
+      6F6F6F6F6F6F6F6F6F6F222C0A226F6F6F58206F6F6F6F6F6F6F6F6F6F6F222C
+      0A226F6F6F586F6F6F6F6F6F6F6F6F6F6F6F220A7D3B0ADF0100002F2A205850
+      4D202A2F0A7374617469632063686172202A315F7461626C655B5D203D207B0A
+      2F2A20636F6C756D6E7320726F777320636F6C6F72732063686172732D706572
+      2D706978656C202A2F0A22313620313620342031222C0A2220206320626C6163
+      6B222C0A222E20632023303030303834222C0A2258206320626C7565222C0A22
+      6F2063204E756C6C222C0A2F2A20706978656C73202A2F0A226F6F6F6F6F6F6F
+      6F6F6F6F6F6F6F6F6F222C0A222E582E2E2E582E2E2E582E2E2E582E6F222C0A
+      22586F582E586F582E586F582E586F586F222C0A222E2E2E582E2E2E582E2E2E
+      582E2E2E6F222C0A22586F6F6F6F6F6F6F6F6F6F6F6F6F586F222C0A222E6F20
+      20206F2020206F2020206F2E6F222C0A22586F6F6F6F6F6F6F6F6F6F6F6F6F58
+      6F222C0A222E6F2020206F2020206F2020206F2E6F222C0A22586F6F6F6F6F6F
+      6F6F6F6F6F6F6F586F222C0A222E6F2020206F2020206F2020206F2E6F222C0A
+      22586F6F6F6F6F6F6F6F6F6F6F6F6F586F222C0A222E6F2020206F2020206F20
+      20206F2E6F222C0A22586F6F6F6F6F6F6F6F6F6F6F6F6F586F222C0A222E582E
+      2E2E582E2E2E582E2E2E582E6F222C0A226F6F6F6F6F6F6F6F6F6F6F6F6F6F6F
+      6F222C0A226F6F6F6F6F6F6F6F6F6F6F6F6F6F6F6F220A7D3B0A460900002F2A
+      2058504D202A2F0A7374617469632063686172202A325F766965775B5D203D20
+      7B0A2F2A20636F6C756D6E7320726F777320636F6C6F72732063686172732D70
+      65722D706978656C202A2F0A223136203136203130362032222C0A2220202063
+      2023354135323742222C0A222E2020632023343234323943222C0A2258202063
+      2023354135323834222C0A226F2020632023354135323843222C0A224F202063
+      2023353235323943222C0A222B2020632023354135413943222C0A2240202063
+      2023343234324135222C0A22232020632023363335413834222C0A2224202063
+      2023363335413843222C0A22252020632023363336333843222C0A2226202063
+      2023364236333843222C0A222A2020632023363336333943222C0A223D202063
+      2023364236333943222C0A222D2020632023373336423934222C0A223B202063
+      2023374237333943222C0A223A2020632023374237423943222C0A223E202063
+      2023363336334135222C0A222C2020632023364236424135222C0A223C202063
+      2023364236424244222C0A22312020632023364237424244222C0A2232202063
+      2023373337334135222C0A22332020632023374237424135222C0A2234202063
+      2023374237334235222C0A22352020632023333142354646222C0A2236202063
+      2023333942354646222C0A22372020632023354139344537222C0A2238202063
+      2023344142354646222C0A22392020632023344142444646222C0A2230202063
+      2023353241444546222C0A22712020632023354141354537222C0A2277202063
+      2023363338344336222C0A22652020632023364238434436222C0A2272202063
+      2023363341354537222C0A22742020632023373342444637222C0A2279202063
+      2023353243364646222C0A22752020632023363343454646222C0A2269202063
+      2023364243454646222C0A22702020632023374243364637222C0A2261202063
+      2023373344364646222C0A22732020632023374244364646222C0A2264202063
+      2023383437424135222C0A2266202063204E756C6C222C0A2267202063202338
+      4338434144222C0A22682020632023383438344235222C0A226A202063202338
+      4338434235222C0A226B2020632023384338434244222C0A226C202063202338
+      4339434235222C0A227A2020632023393439344144222C0A2278202063202339
+      3439344235222C0A22632020632023394339434244222C0A2276202063202341
+      3541354244222C0A22622020632023384339344345222C0A226E202063202339
+      3439344345222C0A226D2020632023394339434336222C0A224D202063202338
+      4341354445222C0A224E2020632023384342444445222C0A2242202063202339
+      3442444345222C0A22562020632023394342354345222C0A2243202063202341
+      3541354336222C0A225A2020632023413541354345222C0A2241202063202341
+      4441444336222C0A22532020632023414441444345222C0A2244202063202341
+      3541354436222C0A22462020632023413541444445222C0A2247202063202341
+      4442354436222C0A22482020632023423542354345222C0A224A202063202342
+      4442354345222C0A224B2020632023424442444345222C0A224C202063202342
+      3542354436222C0A22502020632023423542354445222C0A2249202063202342
+      3542444445222C0A22552020632023424442444436222C0A2259202063202342
+      4442444537222C0A22542020632023394343364445222C0A2252202063202338
+      3444454646222C0A22452020632023384344454646222C0A2257202063202339
+      4343454546222C0A22512020632023393445374646222C0A2221202063202339
+      4345374646222C0A227E2020632023394345464646222C0A225E202063202342
+      4443364436222C0A222F2020632023424443364445222C0A2228202063202341
+      3543454537222C0A22292020632023423543364537222C0A225F202063202342
+      4443364537222C0A22602020632023414445464646222C0A2227202063202342
+      3546374646222C0A225D2020632023424446374646222C0A225B202063202343
+      3643364345222C0A227B2020632023433643454345222C0A227D202063202343
+      3643364436222C0A227C2020632023433643454445222C0A22202E2063202343
+      4543454436222C0A222E2E20632023434543454445222C0A22582E2063206772
+      61793834222C0A226F2E20632023443644364445222C0A224F2E206320677261
+      793837222C0A222B2E20632023433643364537222C0A22402E20632023433643
+      454537222C0A22232E20632023444544454546222C0A22242E20632023433646
+      464646222C0A22252E20632023434546464646222C0A22262E20632023453745
+      374537222C0A222A2E20632023453745374546222C0A223D2E20632023454645
+      464546222C0A222D2E206320677261793937222C0A2F2A20706978656C73202A
+      2F0A22662066206620662066206620402E7C20402E2F204C206D204920662066
+      206620222C0A226620662066207B20582E5B207D2041207620562054204E2032
+      20472066206620222C0A22662066206620202E6C20422028205D20252E242E60
+      2051203D20432066206620222C0A226620662066207D20572045202120602027
+      2060207E2045202C20782066206620222C0A226620662066205E202820732045
+      20512021205120452073203120672066206620222C0A226620662066202F2029
+      20692061205220522052207320692077203A2066206620222C0A226620662066
+      2066205320792075206920692069207520792037202D2066206620222C0A2266
+      206620662066204C203020392079207920792039203820652023206620662022
+      2C0A2266206620662066205020712035203620362074204D2034206F20262066
+      206620222C0A226620662066206620592072203520702046203C20402020203B
+      20532066206620222C0A2266206620662066202B2E6220502044206E202E202E
+      202A206320662066206620222C0A2266206620662066203D2E2A2E2D2E262E4C
+      203E204F2068206A202F2066206620222C0A226620662066202F203D2E2D2E3D
+      2E4F2E7D206B202B20682068206A2066206620222C0A226620662066205F2020
+      2E262E4F2E6F2E552063202C206B202420642066206620222C0A226620662066
+      2066205A207A204120482041206320332058202520432066206620222C0A2266
+      206620662066206620232E2E2E4B204A204A204B207D20232E66206620662022
+      0A7D3B0A4D0200002F2A2058504D202A2F0A7374617469632063686172202A33
+      5F70726F6365647572655B5D203D207B0A2F2A20636F6C756D6E7320726F7773
+      20636F6C6F72732063686172732D7065722D706978656C202A2F0A2231362031
+      362031312031222C0A2220206320626C61636B222C0A222E2063202330303030
+      4330222C0A2258206320626C7565222C0A226F20632023363036303830222C0A
+      224F20632023363043304330222C0A222B2063204E756C6C222C0A2240206320
+      23383038303830222C0A222320632023383038304330222C0A22242063202341
+      3643414630222C0A222520632023464646424630222C0A222620632067726179
+      313030222C0A2F2A20706978656C73202A2F0A222B2B2B2B2B2B2B2B2B2B2B2B
+      2B2B2B2B222C0A222B40404040404040402B2B2B2B2B2B2B222C0A222B402626
+      262626234F232B2B2B2B2B2B222C0A222B402625252525232323232B2B2B2B2B
+      222C0A222B402624242424255858585858582E2B222C0A222B40262525252525
+      26252E2E58582E2B222C0A222B402624242424242425232B58582E2B222C0A22
+      2B4026242424242424246F585858582E222C0A222B4026242424242424246F2B
+      58582E2B222C0A222B4026262625252525256F2B2B2E2B2B222C0A222B406F6F
+      6F6F6F6F6F6F6F2B2B2B2B2B222C0A222B2B2020202B2020202B202B2B2B2B2B
+      222C0A222B2B202B2B2B202B202B202B2B2B2B2B222C0A222B2B2020202B202B
+      202B202B2B2B2B2B222C0A222B2B2B2B202B2020202B202B2B2B2B2B222C0A22
+      2B2B2020202B2B2B202B2020202B2B2B220A7D3B0AF50300002F2A2058504D20
+      2A2F0A7374617469632063686172202A345F747269676765725B5D203D207B0A
+      2F2A20636F6C756D6E7320726F777320636F6C6F72732063686172732D706572
+      2D706978656C202A2F0A2231362031362033392031222C0A2220206320234336
+      36423239222C0A222E20632023463737333030222C0A22582063202346463742
+      3030222C0A226F20632023453737423339222C0A224F20632023454637423331
+      222C0A222B20632023433637423532222C0A22402063204E756C6C222C0A2223
+      2063204461726B4F72616E6765222C0A222420632023464639343030222C0A22
+      2520632023464639433030222C0A22262063206F72616E6765222C0A222A2063
+      2023464641443030222C0A223D20632023464642353030222C0A222D20632023
+      464642443038222C0A223B20632023464642443130222C0A223A206320234646
+      41443239222C0A223E20632023464641353339222C0A222C2063202346464135
+      3532222C0A223C20632023464641353541222C0A223120632023464643363030
+      222C0A223220632023464643363038222C0A223320632023464643453138222C
+      0A223420632023464644363030222C0A223520632023464644453030222C0A22
+      3620632023464644363130222C0A223720632023464644363331222C0A223820
+      632023464645463030222C0A223920632023464646373030222C0A2230206320
+      23464646373038222C0A227120632079656C6C6F77222C0A2277206320234646
+      46463038222C0A226520632023464646463138222C0A22722063202346464537
+      3339222C0A227420632023464645463339222C0A227920632023464646463231
+      222C0A227520632023464646373331222C0A226920632023464644453432222C
+      0A227020632023464645463441222C0A226120632023464646373432222C0A2F
+      2A20706978656C73202A2F0A2240404040404040404040404040372C2B222C0A
+      2240404040404040404040403769363C2B222C0A224040404040404040403739
+      382A262B40222C0A224040404040404037307139343D2B4040222C0A22404040
+      40403272706165717177792B40222C0A22404040403E3138393835717174322B
+      40222C0A22404040403A31383939717033262B4040222C0A22404040402B2B2B
+      3177753B2A2B2B4040222C0A22404040404040403D2D2A252B40404040222C0A
+      224040404040403D3225252B4040404040222C0A2240404040403D23242B2B40
+      4040404040222C0A22404040402523232B4040404040404040222C0A22404040
+      6F582E2B404040404040404040222C0A224040404F2B20404040404040404040
+      40222C0A224040402B404040404040404040404040222C0A2240404040404040
+      404040404040404040220A7D3B0A280900002F2A2058504D202A2F0A73746174
+      69632063686172202A355F67656E657261746F725B5D203D207B0A2F2A20636F
+      6C756D6E7320726F777320636F6C6F72732063686172732D7065722D70697865
+      6C202A2F0A223136203136203130342032222C0A222020206320233030374230
+      30222C0A222E2020632023323937423231222C0A225820206320233733354132
+      39222C0A226F2020632023374236423331222C0A224F20206320677261793332
+      222C0A222B2020632023374236423432222C0A22402020632067726179333922
+      2C0A222320206320677261793432222C0A22242020632023363336423733222C
+      0A22252020632023363337333843222C0A22262020632023303839343038222C
+      0A222A2020632023303839433038222C0A223D2020632023313038433038222C
+      0A222D2020632023313838433331222C0A223B2020632023313839343231222C
+      0A223A2020632023313041353038222C0A223E2020632023313841353130222C
+      0A222C2020632023313841353138222C0A223C2020632023323139343138222C
+      0A22312020632023323939433239222C0A22322020632023323939343339222C
+      0A22332020632023333938433231222C0A22342020632023323941443138222C
+      0A22352020632023333941353138222C0A22362020632023323942353231222C
+      0A22372020632023333941353339222C0A22382020632023333142353231222C
+      0A22392020632023333142443231222C0A22302020632023323939343532222C
+      0A22712020632023323941353441222C0A22772020632023343239433339222C
+      0A22652020632023354141353138222C0A22722020632023344139343541222C
+      0A22742020632023343238343642222C0A22792020632023343242353432222C
+      0A22752020632023344142443532222C0A22692020632023354141353633222C
+      0A22702020632023343243363239222C0A22612020632023353243453339222C
+      0A22732020632023354144363339222C0A22642020632023363344363432222C
+      0A22662020632023364244453441222C0A22672020632023363343363633222C
+      0A22682020632023363343363733222C0A226A2020632023373345373441222C
+      0A226B2020632023374245373541222C0A226C2020632023374245463532222C
+      0A227A2020632023344142353843222C0A22782020632023384334323030222C
+      0A22632020632023393435323030222C0A22762020632023383435323239222C
+      0A22622020632023384335413239222C0A226E2020632023393434413231222C
+      0A226D2020632023393435323231222C0A224D2020632023393436333231222C
+      0A224E2020632023413536333038222C0A22422020632023413536423030222C
+      0A22562020632023414436423038222C0A22432020632023413537333138222C
+      0A225A2020632023414437333138222C0A22412020632023414437333231222C
+      0A22532020632023423537423239222C0A22442020632023383436333532222C
+      0A2246202063204E756C6C222C0A22472020632023394341443331222C0A2248
+      2020632023423541353339222C0A224A2020632023394338343441222C0A224B
+      2020632023394338343733222C0A224C2020632023383442353733222C0A2250
+      2020632023424441443633222C0A22492020632023383444363733222C0A2255
+      2020632023393446373642222C0A22592020632023434539343038222C0A2254
+      2020632023433639343130222C0A22522020632023434539343130222C0A2245
+      2020632023434539433130222C0A22572020632023434539433138222C0A2251
+      2020632023433638433239222C0A22212020632023434539343239222C0A227E
+      2020632023443641353138222C0A225E2020632023443641353239222C0A222F
+      2020632023444541353239222C0A22282020632023444541443331222C0A2229
+      2020632023433641353432222C0A225F2020632023444541443441222C0A2260
+      2020632023444542353432222C0A22272020632023453741443432222C0A225D
+      2020632023453742353432222C0A225B2020632023454642443432222C0A227B
+      2020632023454642443441222C0A227D2020632023453742443633222C0A227C
+      2020632023443643363633222C0A22202E20632023454643363532222C0A222E
+      2E20632023463743363532222C0A22582E20632023453743363642222C0A226F
+      2E20632023454643363642222C0A224F2E206320677261793535222C0A222B2E
+      20632023384341354235222C0A22402E20632023413541354135222C0A22232E
+      20632023394342354336222C0A22242E20632023413545373934222C0A22252E
+      20632023434543454345222C0A22262E206320677261793834222C0A222A2E20
+      6320677261793837222C0A2F2A20706978656C73202A2F0A2246204620462064
+      202B2E24207A20362046204620462046204620462046204620222C0A22462046
+      206B206620252E4F2E7220752067204620462046204620462046204620222C0A
+      224620642066206620262E402E772039202C2071204620462046204620462046
+      20222C0A22242E55206C206620262E402E2E2026203A203E2068204620462046
+      2046204620222C0A22372038206A206A2049204C203C203E203E202A20302046
+      204620462046204620222C0A2246202D2066206A2073206120702039202C203B
+      20742046204620462046204620222C0A22462031206620382034206120352065
+      207920232E4F2025202920572046204620222C0A22462069203D202020322061
+      20472060207C20262E40202B205E205E2046204620222C0A2246204620462046
+      204620332048207B206F2E2A2E23206F207E20572057204620222C0A22462046
+      20462046204620582E202E7B206F2E2A2E232058205420592045205020222C0A
+      22462046204620462046206E2027202E2E7B207D204A2043205220542042204D
+      20222C0A22462046204620462046206D2051207B205B205D2028202F207E2054
+      2078204420222C0A224620462046204620462046205F205D204E202120282056
+      205420522046204620222C0A2246204620462046204620462041205A20762053
+      205E20622063204E2046204620222C0A22462046204620462046204620462046
+      2046204B20782046204620462046204620222C0A224620462046204620462046
+      204620462046204620462046204620462046204620220A7D3B0AED0100002F2A
+      2058504D202A2F0A7374617469632063686172202A365F7564665B5D203D207B
+      0A2F2A20636F6C756D6E7320726F777320636F6C6F72732063686172732D7065
+      722D706978656C202A2F0A22313620313620352031222C0A2220206320626C61
+      636B222C0A222E2063206772617933222C0A225820632023313031303130222C
+      0A226F20632023383430303834222C0A224F2063204E756C6C222C0A2F2A2070
+      6978656C73202A2F0A224F4F4F4F4F6F4F4F4F4F4F4F4F4F4F4F222C0A224F4F
+      4F4F6F4F6F4F4F4F4F4F4F4F4F4F222C0A224F4F4F4F4F4F4F4F4F4F4F4F4F4F
+      4F4F222C0A224F4F4F4F6F4F6F4F4F4F4F4F4F4F4F4F222C0A224F4F4F6F4F4F
+      4F4F4F4F4F4F4F4F4F4F222C0A224F4F4F6F6F4F4F4F2E204F58204F4F4F222C
+      0A224F4F4F6F4F4F4F204F20204F20204F4F222C0A224F4F4F4F6F4F4F4F4F4F
+      204F204F4F4F222C0A224F4F4F6F4F4F4F4F4F20204F4F4F4F4F222C0A224F4F
+      6F6F4F4F4F204F2E4F4F4F4F4F4F222C0A224F4F4F6F4F4F20204F20204F2E4F
+      4F4F222C0A224F4F6F4F4F4F4F20204F20204F4F4F4F222C0A224F4F4F6F4F4F
+      4F4F4F4F4F4F4F4F4F4F222C0A226F4F6F4F4F4F4F4F4F4F4F4F4F4F4F4F222C
+      0A224F6F4F4F4F4F4F4F4F4F4F4F4F4F4F4F222C0A224F6F4F4F4F4F4F4F4F4F
+      4F4F4F4F4F4F220A7D3B0A950600002F2A2058504D202A2F0A73746174696320
+      63686172202A375F636F6E6E6563745B5D203D207B0A2F2A20636F6C756D6E73
+      20726F777320636F6C6F72732063686172732D7065722D706978656C202A2F0A
+      2231362031362038342031222C0A222020632023344134413642222C0A222E20
+      632023354135413633222C0A225820632023364236333441222C0A226F206320
+      23374237333541222C0A224F20632023364236423633222C0A222B2063202336
+      3336333733222C0A224020632023363336333742222C0A222320632023374237
+      333642222C0A2224206320677261793435222C0A222520632023363336333843
+      222C0A222620632023364236423943222C0A222A20632023374237333843222C
+      0A223D20632023373337333943222C0A222D20632023374237423934222C0A22
+      3B20632023364236424135222C0A223A20632023364236424144222C0A223E20
+      632023373337334144222C0A222C20632023374237424144222C0A223C206320
+      23374237424244222C0A223120632023374237424336222C0A22322063202339
+      3437333239222C0A223320632023394337333239222C0A223420632023394337
+      423239222C0A223520632023384336423432222C0A2236206320233943374234
+      32222C0A22372063204E756C6C222C0A223820632023423538343231222C0A22
+      3920632023384338343532222C0A223020632023393438343532222C0A227120
+      632023393438433642222C0A227720632023393438433733222C0A2265206320
+      23394339343733222C0A227220632023413538433532222C0A22742063202342
+      4441443642222C0A227920632023433639433441222C0A227520632023453742
+      353541222C0A226920632023463742443541222C0A2270206320234436433637
+      33222C0A226120632023453743453733222C0A22732063202346464436373322
+      2C0A226420632023383438343834222C0A226620632023383438343843222C0A
+      2267206320677261793535222C0A226820632023383438343934222C0A226A20
+      632023383438343943222C0A226B20632023384338343934222C0A226C206320
+      23394339433934222C0A227A20632023383438344235222C0A22782063202338
+      4338434235222C0A226320632023394339434144222C0A227620632023414441
+      353834222C0A226220632023413541354135222C0A226E206320234135413542
+      44222C0A226D20632023384338434336222C0A224D2063202338433843434522
+      2C0A224E20632023383438344436222C0A224220632023384338434445222C0A
+      225620632023393439344345222C0A224320632023394339434345222C0A225A
+      20632023414441444336222C0A224120632023414441444345222C0A22532063
+      2023413541354445222C0A224420632023414441444445222C0A224620632023
+      423542354345222C0A224720632023423542354445222C0A2248206320234135
+      41354537222C0A224A20632023414441444537222C0A224B2063202341444144
+      4546222C0A224C20632023423542354546222C0A225020632023424442444546
+      222C0A224920632023454644453834222C0A225520632023434543454336222C
+      0A225920632023434543454445222C0A225420632023433643364537222C0A22
+      5220632023433643364546222C0A224520632023434543454546222C0A225720
+      632023433643364637222C0A225120632023434543454637222C0A2221206320
+      23443644364546222C0A227E20632023444544454546222C0A225E2063202345
+      3745374646222C0A222F20632023454645464646222C0A222820632023463746
+      374646222C0A222920632067726179313030222C0A2F2A20706978656C73202A
+      2F0A2237373737373737376229672437373737222C0A22373737373737373762
+      29672437373737222C0A22373737635A465A6E6E6A662437373737222C0A2237
+      3778417E2F2F5E524C6A6A37373737222C0A22377A5928285E4521515757446A
+      373737222C0A22372C212F5E45545257504A4B436A3737222C0A22373B3B3E43
+      47504C53484B4B447A6737222C0A22373E266C6226264D534A5353536D6A3722
+      2C0A22373C664965263131263B4D56566D6837222C0A22373E72732E3B4E4E4E
+      4055784E3C2D37222C0A223737383220264E423123496B423E6737222C0A2237
+      3069352B373D3E3A39612A4E253737222C0A2237747058373737374F34334026
+      373737222C0A2237796476373737377775363737373737222C0A223737373737
+      37373771616F3737373737222C0A223737373737373737796476373737373722
+      0A7D3B0AE10100002F2A2058504D202A2F0A7374617469632063686172202A37
+      5F7379735F7461626C655B5D203D207B0A2F2A20636F6C756D6E7320726F7773
+      20636F6C6F72732063686172732D7065722D706978656C202A2F0A2231362031
+      3620342031222C0A222020632023303030303834222C0A222E206320626C7565
+      222C0A2258206320726564222C0A226F2063204E756C6C222C0A2F2A20706978
+      656C73202A2F0A226F6F6F6F6F6F6F6F6F6F6F6F6F6F6F6F222C0A22202E2020
+      202E2020202E2020202E206F222C0A222E6F2E202E6F2E202E6F2E202E6F2E6F
+      222C0A222020202E2020202E2020202E2020206F222C0A222E6F6F6F6F6F6F6F
+      6F6F6F6F6F6F2E6F222C0A22206F5858586F5858586F5858586F206F222C0A22
+      2E6F6F6F6F6F6F6F6F6F6F6F6F6F2E6F222C0A22206F5858586F5858586F5858
+      586F206F222C0A222E6F6F6F6F6F6F6F6F6F6F6F6F6F2E6F222C0A22206F5858
+      586F5858586F5858586F206F222C0A222E6F6F6F6F6F6F6F6F6F6F6F6F6F2E6F
+      222C0A22206F5858586F5858586F5858586F206F222C0A222E6F6F6F6F6F6F6F
+      6F6F6F6F6F6F2E6F222C0A22202E2020202E2020202E2020202E206F222C0A22
+      6F6F6F6F6F6F6F6F6F6F6F6F6F6F6F6F222C0A226F6F6F6F6F6F6F6F6F6F6F6F
+      6F6F6F6F220A7D3B0A5B0600002F2A2058504D202A2F0A737461746963206368
+      6172202A395F726566726573685B5D203D207B0A2F2A20636F6C756D6E732072
+      6F777320636F6C6F72732063686172732D7065722D706978656C202A2F0A2231
+      362031362038302031222C0A222020632023353236423843222C0A222E206320
+      23353236423934222C0A225820632023344136424235222C0A226F2063202335
+      4136334135222C0A224F20632023354136424135222C0A222B20632023354137
+      424244222C0A224020632023364236334135222C0A2223206320233642373341
+      35222C0A222420632023303038343030222C0A22252063202330383843303822
+      2C0A222620632023303838433130222C0A222A20632023313039343138222C0A
+      223D20632023313839343138222C0A222D20632023313039343231222C0A223B
+      20632023313839343239222C0A223A20632023323139433231222C0A223E2063
+      2023323139433239222C0A222C20632023323941353239222C0A223C20632023
+      333941353541222C0A223120632023344141443642222C0A2232206320233441
+      41443733222C0A223320632023363342443633222C0A22342063202336424244
+      3733222C0A223520632023373343363733222C0A223620632023373343363742
+      222C0A223720632023333138434537222C0A223820632023354142353834222C
+      0A223920632023364238344244222C0A223020632023373342443934222C0A22
+      7120632023373342443943222C0A227720632023364242354135222C0A226520
+      632023373342444144222C0A227220632023353239434537222C0A2274206320
+      23354142354646222C0A227920632023364239344436222C0A22752063202337
+      3339434445222C0A226920632023373342354345222C0A227020632023374242
+      444445222C0A226120632023374241444537222C0A2273206320233742424445
+      46222C0A226420632023373343363834222C0A22662063202337424336394322
+      2C0A22672063204E756C6C222C0A226820632023393441444235222C0A226A20
+      632023393442354144222C0A226B20632023383442444546222C0A226C206320
+      23383443453834222C0A227A20632023383443363943222C0A22782063202339
+      3443454135222C0A226320632023394343454244222C0A227620632023413544
+      364144222C0A226220632023413544454135222C0A226E206320234135443642
+      44222C0A226D20632023393443454336222C0A224D2063202339344345443622
+      2C0A224E20632023383443364546222C0A224220632023384343364546222C0A
+      225620632023393443364546222C0A224320632023393443454537222C0A225A
+      20632023394343454546222C0A224120632023393443454637222C0A22532063
+      2023423543454445222C0A224420632023413543454546222C0A224620632023
+      414444364546222C0A224720632023413544364637222C0A2248206320234144
+      44364637222C0A224A20632023423544364637222C0A224B2063202343364336
+      4445222C0A224C20632023444546374445222C0A225020632023433645464646
+      222C0A224920632023434545464646222C0A225520632023443645374537222C
+      0A225920632023443645464637222C0A225420632023444545464646222C0A22
+      5220632023453745464646222C0A224520632023453746374646222C0A225720
+      632023454646374637222C0A225120632023454646374646222C0A2221206320
+      23463746464646222C0A227E20632067726179313030222C0A2F2A2070697865
+      6C73202A2F0A2267676179797979797979794F67676767222C0A226767615757
+      57575757574B4F39676767222C0A226767617E7E7E7E7E7E7E4B4F742B676722
+      2C0A226767757E7E7E7E4C4C216A2072375867222C0A226767757E7E4C333A3A
+      343E2E4F4F4067222C0A226767797E572C24242424264953684067222C0A2267
+      67797E6C2436763D24264A48444067222C0A226767397E357652642424254644
+      474067222C0A226767397E6252597A303071445A414067222C0A226767237E55
+      787A307146446656424067222C0A22676723516E25242438447731424E406722
+      2C0A2267676F45632A242A653224326B4E4067222C0A2267676F546326242424
+      243B70734E4067222C0A2267674049713E312D2D3C6973734E4067222C0A2267
+      6740506D4D5A434E6B736B6B4E4067222C0A2267674040404040404040404040
+      404067220A7D3B0A0C0200002F2A2058504D202A2F0A73746174696320636861
+      72202A31305F646570656E645B5D203D207B0A2F2A20636F6C756D6E7320726F
+      777320636F6C6F72732063686172732D7065722D706978656C202A2F0A223136
+      20313620372031222C0A222020632023303030303834222C0A222E206320626C
+      7565222C0A225820632023383430303030222C0A226F206320726564222C0A22
+      4F2063204E756C6C222C0A222B20632023383438343834222C0A224020632023
+      464638344646222C0A2F2A20706978656C73202A2F0A224F4F4F4F4F4F4F4F4F
+      4F4F4F4F4F4F4F222C0A224F4F4F4F4F4F4F4F4F4F4F4F4F4F4F4F222C0A224F
+      4F4F4F4F4F4F4F4F4F4F4F4F4F4F4F222C0A222020202E2020204F4F4F4F4F4F
+      4F4F4F222C0A222E4F2E4F2E4F2E4F4F4F4F4F4F4F4F4F222C0A22202E202020
+      2E204F4F4F4F4F4F4F4F4F222C0A222E4F4F4F4F4F2E4F4F202E202E202E2022
+      2C0A22204F2B402B4F206F4F204F2E4F204F2E222C0A222E4F4F4F4F4F2E584F
+      202E202E202E20222C0A22202E2020202E204F582E4F4F4F4F4F20222C0A224F
+      4F4F4F4F4F4F4F6F204F2B4F2B4F20222C0A224F4F4F4F4F4F4F4F4F204F4F4F
+      4F4F2E222C0A224F4F4F4F4F4F4F4F4F202E202E202E20222C0A224F4F4F4F4F
+      4F4F4F4F4F4F4F4F4F4F4F222C0A224F4F4F4F4F4F4F4F4F4F4F4F4F4F4F4F22
+      2C0A224F4F4F4F4F4F4F4F4F4F4F4F4F4F4F4F220A7D3B0A300600002F2A2058
+      504D202A2F0A7374617469632063686172202A31315F646973636F6E6E656374
+      5B5D203D207B0A2F2A20636F6C756D6E7320726F777320636F6C6F7273206368
+      6172732D7065722D706978656C202A2F0A2231362031362037372031222C0A22
+      2020632023364236333441222C0A222E20632023374237333541222C0A225820
+      632023364236423633222C0A226F20632023363336333733222C0A224F206320
+      23363336333742222C0A222B20632023374237333642222C0A22402063206772
+      61793435222C0A222320632023364236423943222C0A22242063202337423733
+      3843222C0A222520632023373337333943222C0A222620632023374237423934
+      222C0A222A20632023364236424135222C0A223D20632023364236424144222C
+      0A222D20632023373337334144222C0A223B20632023374237424144222C0A22
+      3A20632023374237424244222C0A223E20632023374237424336222C0A222C20
+      632023394337333239222C0A223C20632023394337423239222C0A2231206320
+      23394337423432222C0A223220632023444533313030222C0A22332063202345
+      3733313030222C0A223420632023454633313030222C0A223520632023463733
+      313030222C0A223620632023464633313030222C0A22372063204E756C6C222C
+      0A223820632023423538343231222C0A223920632023384338343532222C0A22
+      3020632023393438343532222C0A227120632023393438433642222C0A227720
+      632023393438433733222C0A226520632023394339343733222C0A2272206320
+      23413538433532222C0A227420632023424441443642222C0A22792063202343
+      3639433441222C0A227520632023453742353541222C0A226920632023463742
+      443541222C0A227020632023443643363733222C0A2261206320234537434537
+      33222C0A227320632023464644363733222C0A22642063202338343834383422
+      2C0A226620632023383438343843222C0A2267206320677261793535222C0A22
+      6820632023383438343934222C0A226A20632023383438343943222C0A226B20
+      632023384338343934222C0A226C20632023394339433934222C0A227A206320
+      23383438344235222C0A227820632023384338434235222C0A22632063202341
+      4441353834222C0A227620632023413541354135222C0A226220632023413541
+      354244222C0A226E20632023384338434336222C0A226D206320233834383444
+      36222C0A224D20632023384338434445222C0A224E2063202339343934434522
+      2C0A224220632023394339434345222C0A225620632023414441444336222C0A
+      224320632023414441444345222C0A225A20632023413541354445222C0A2241
+      20632023414441444445222C0A225320632023423542354345222C0A22442063
+      2023423542354445222C0A224620632023414441444546222C0A224720632023
+      423542354546222C0A224820632023424442444546222C0A224A206320234546
+      44453834222C0A224B20632023434543454445222C0A224C2063202343364336
+      4546222C0A225020632023434543454546222C0A224920632023433643364637
+      222C0A225520632023434543454637222C0A225920632023443644364546222C
+      0A225420632023453745374646222C0A225220632023454645464646222C0A22
+      4520632023463746374646222C0A225720632067726179313030222C0A2F2A20
+      706978656C73202A2F0A2237373737373737377657674037373737222C0A2237
+      373735373737377657674037373737222C0A223737373535535662626A664037
+      353737222C0A2237377843363452544C476A6A35373737222C0A22377A4B4545
+      353459554949356A373737222C0A22373B59525450323449493532426A373722
+      2C0A22372A2A2D4244483333323246417A6737222C0A22372D236C7623323332
+      335A5A5A6E6A37222C0A22373A664A6532323E2332324E4E6E6837222C0A2237
+      2D727332326D6D6D4F32326D3A2637222C0A223737383232236D4D3E2B4A6B32
+      2D6737222C0A22373069326F37252D3D3961246D323737222C0A223774702037
+      373737583C2C4F23373737222C0A223779646337373737777531373737373722
+      2C0A22373737373737373771612E3737373737222C0A22373737373737373779
+      64633737373737220A7D3B0ADE0100002F2A2058504D202A2F0A737461746963
+      2063686172202A31325F73716C5B5D203D207B0A2F2A20636F6C756D6E732072
+      6F777320636F6C6F72732063686172732D7065722D706978656C202A2F0A2231
+      3620313620342031222C0A2220206320626C61636B222C0A222E206320626C75
+      65222C0A22582063204E756C6C222C0A226F20632023464641354646222C0A2F
+      2A20706978656C73202A2F0A2258585858585858585858585858585858222C0A
+      2220202020202020202020202020202020222C0A22202E2E2E2E2E2E2E2E2E2E
+      2E2E2E2E20222C0A2220202020202020202020202020202020222C0A22205858
+      58585858585858585858585820222C0A2220582E2E2E582E2E2E2E582E585858
+      20222C0A2220582E2E2E582E2E2E2E582E58585820222C0A2220582E5858582E
+      58582E582E58585820222C0A2220582E2E2E582E58582E582E58585820222C0A
+      2220582E2E2E582E58582E582E58585820222C0A22205858582E582E582E2E58
+      2E58585820222C0A2220582E2E2E582E2E2E2E582E2E2E5820222C0A2220582E
+      2E2E582E2E2E2E582E2E2E5820222C0A22206F586F586F586F586F586F586F58
+      20222C0A2220202020202020202020202020202020222C0A2258585858585858
+      585858585858585858220A7D3B0A1B0200002F2A2058504D202A2F0A73746174
+      69632063686172202A31325F6578636570745B5D203D207B0A2F2A20636F6C75
+      6D6E7320726F777320636F6C6F72732063686172732D7065722D706978656C20
+      2A2F0A22313620313620382031222C0A2220206320626C61636B222C0A222E20
+      632023424430303030222C0A2258206320726564222C0A226F20632023424430
+      304244222C0A224F2063204E756C6C222C0A222B20632079656C6C6F77222C0A
+      224020632023383438343834222C0A222320632023464638344646222C0A2F2A
+      20706978656C73202A2F0A224F4F4F4F4F4F4F4F4F4F4F4F4F4F4F4F222C0A22
+      4F4F4F4F4F202020202020204F4F4F4F222C0A224F4F4F4F4F204F4F4F4F4F20
+      4F4F4F4F222C0A224F4F4F4F4F204F2340404F204F4F4F4F222C0A224F4F4F4F
+      4F204F4F4F4F4F204F4F4F4F222C0A224F4F4F4F4F204F4040234F204F4F4F4F
+      222C0A224F4F4F4F4F204F4F4F4F4F204F4F4F4F222C0A224F4F4F4F4F204F4F
+      2020202020202020222C0A22584F4F4F4F202020202B4F2B4F2B4F20222C0A22
+      6F582E4F4F584F4F204F2B4F2B4F2B20222C0A224F4F4F58584F4F4F20202020
+      20202020222C0A224F4F2E4F2E4F4F4F4F4F4F4F4F4F4F4F222C0A224F58584F
+      58584F4F4F4F4F4F4F4F4F4F222C0A222E584F4F4F586F4F4F4F4F4F4F4F4F4F
+      222C0A224F2E4F4F4F4F4F4F4F4F4F4F4F4F4F4F222C0A224F4F4F4F4F4F4F4F
+      4F4F4F4F4F4F4F4F220A7D3B0A0B0200002F2A2058504D202A2F0A7374617469
+      632063686172202A31345F726F6C655B5D203D207B0A2F2A20636F6C756D6E73
+      20726F777320636F6C6F72732063686172732D7065722D706978656C202A2F0A
+      22313620313620372031222C0A2220206320626C61636B222C0A222E20632023
+      303030303834222C0A2258206320626C7565222C0A226F2063204E756C6C222C
+      0A224F20632023383438343030222C0A222B20632079656C6C6F77222C0A2240
+      20632023383438343834222C0A2F2A20706978656C73202A2F0A226F6F6F6F6F
+      6F582E582E586F6F6F6F6F222C0A226F6F6F6F6F5858585858582E6F6F6F6F22
+      2C0A226F6F6F6F5858585858585858586F6F6F222C0A22202020205858585858
+      5858582E6F6F6F222C0A226F6F6F6F202B6F2B6F2B6F2B206F6F6F222C0A226F
+      6F6F202B20206F2B6F2B6F206F6F6F222C0A226F6F6F4F6F206F206F2B6F2B20
+      6F6F6F222C0A226F6F206F2B6F2B6F2B6F2B6F206F6F6F222C0A226F6F202020
+      2B2B2B6F2B6F2B206F6F6F222C0A226F6F6F6F206F204F2B6F4F2020206F6F22
+      2C0A226F6F6F6F20206F2B6F4F206F6F40206F222C0A226F6F6F6F206F2B6F2B
+      206F6F6F6F4020222C0A226F6F6F6F2020202020406F6F6F6F6F20222C0A226F
+      6F6F6F6F6F206F6F6F6F6F6F6F6F20222C0A226F6F6F6F6F6F206F6F6F6F6F6F
+      6F6F20222C0A226F6F6F6F6F6F6F6F6F6F6F6F6F6F6F6F220A7D3B0A12020000
+      2F2A2058504D202A2F0A7374617469632063686172202A31355F7379735F7472
+      69676765725B5D203D207B0A2F2A20636F6C756D6E7320726F777320636F6C6F
+      72732063686172732D7065722D706978656C202A2F0A22313620313620372031
+      222C0A2220206320626C61636B222C0A222E20632023383430303030222C0A22
+      58206320726564222C0A226F2063204E756C6C222C0A224F2063202338343834
+      3834222C0A222B20632023433643364336222C0A224020632023464643364646
+      222C0A2F2A20706978656C73202A2F0A226F6F6F6F6F6F6F6F6F6F6F6F6F6F6F
+      6F222C0A226F6F6F6F6F6F6F6F6F6F6F6F6F6F6F6F222C0A226F6F6F6F6F6F6F
+      6F6F6F6F2020206F6F222C0A226F6F6F6F6F6F6F6F6F20205820202B6F222C0A
+      226F6F6F6F6F6F6F202058582020406F6F222C0A226F6F6F6F6F202058585820
+      202B6F6F6F222C0A226F6F6F6F20205858582020406F6F6F6F222C0A226F6F6F
+      6F6F202058585820202B6F6F6F222C0A226F6F6F6F6F2058585820204F6F6F6F
+      6F222C0A226F6F6F6F2058585820204F6F6F6F6F6F222C0A226F6F6F20585820
+      206F2B6F6F6F6F6F6F222C0A226F6F20582E204F6F6F6F6F6F6F6F6F6F222C0A
+      226F6F20206F406F6F6F6F6F6F6F6F6F6F222C0A226F6F6F6F6F6F6F6F6F6F6F
+      6F6F6F6F6F222C0A226F6F6F6F6F6F6F6F6F6F6F6F6F6F6F6F222C0A226F6F6F
+      6F6F6F6F6F6F6F6F6F6F6F6F6F220A7D3B0AAE0300002F2A2058504D202A2F0A
+      7374617469632063686172202A31365F64617461626173655B5D203D207B0A2F
+      2A20636F6C756D6E7320726F777320636F6C6F72732063686172732D7065722D
+      706978656C202A2F0A2231362031362033352031222C0A222020632067726179
+      3236222C0A222E206320677261793239222C0A22582063202334413432353222
+      2C0A226F20632023344135323441222C0A224F20632023354135413541222C0A
+      222B20632023354136333633222C0A224020632023364235413633222C0A2223
+      206320677261793339222C0A222420632023363336333642222C0A2225206320
+      23364236333633222C0A222620632023364237333642222C0A222A2063202337
+      3336423733222C0A223D206320677261793435222C0A222D2063202337333733
+      3742222C0A223B20632023374237333733222C0A223A20632023374237333742
+      222C0A223E20632023374237423742222C0A222C20632023374238343843222C
+      0A223C2063204E756C6C222C0A223120632023383438343834222C0A22322063
+      2023384338343843222C0A2233206320677261793535222C0A22342063206772
+      61793538222C0A2235206320677261793631222C0A2236206320233934413539
+      43222C0A223720632023413541354135222C0A2238206320677261793638222C
+      0A223920632023423541444144222C0A2230206320677261793731222C0A2271
+      206320677261793734222C0A227720632023433643364336222C0A2265206320
+      23434543454345222C0A2272206320677261793834222C0A2274206320677261
+      793837222C0A227920632023443644454537222C0A2F2A20706978656C73202A
+      2F0A223C3C3C3C2C3A2A3B3D3D3D3E313C3C3C222C0A223C3C3C6F3933363737
+      373837333E3C3C222C0A223C3C3C58373D40263438657137333C3C222C0A223C
+      3C3C5879322B263538657137343C3C222C0A223C3C3C587932243D3738657737
+      343C3C222C0A223C3C3C58373D233D37306530333E3C3C222C0A223C3C3C2074
+      32233E3730727738353C3C222C0A223C3C3C207232252D3730727738353C3C22
+      2C0A223C3C3C207231233D3730727738353C3C222C0A223C3C3C2E373D4F3D37
+      30713731313C3C222C0A223C3C3C2E7431233E3730727737343C3C222C0A223C
+      3C3C207231233D3730727738353C3C222C0A223C3C3C2E7431233E3771727738
+      353C3C222C0A223C3C3C31353D233D3830713731313C3C222C0A223C3C3C3C3C
+      3C3C3C3C3C3C3C3C3C3C3C222C0A223C3C3C3C3C3C3C3C3C3C3C3C3C3C3C3C22
+      0A7D3B0A1F0200002F2A2058504D202A2F0A7374617469632063686172202A31
+      375F70726976696C6567655B5D203D207B0A2F2A20636F6C756D6E7320726F77
+      7320636F6C6F72732063686172732D7065722D706978656C202A2F0A22313620
+      313620382031222C0A2220206320626C61636B222C0A222E2063202330303834
+      3834222C0A225820632023383430303030222C0A226F206320726564222C0A22
+      4F2063204E756C6C222C0A222B20632023383438343834222C0A224020632023
+      464638344646222C0A222320632023433643364336222C0A2F2A20706978656C
+      73202A2F0A224F4F4F4F4F4F4F4F4F2B4F2B4F4F4F4F222C0A224F4F4F4F4F4F
+      2B2B204F234F20402B4F222C0A224F4F4F4F4F2B4F4F20202020204F4F20222C
+      0A224F4F4F4F4F2B4F4F4F4F4F4F4F4F2020222C0A224F4F4F4F4F2B4F4F4F4F
+      4F4F4F204F20222C0A224F4F4F4F4F404F4F4F4F4F4F584F4F20222C0A224F4F
+      20202020204F6F584F584F4F4F20222C0A224F202020202020204F5858204F4F
+      4F20222C0A2220202020204F4F204F4F6F234F4F4F20222C0A22202020204F4F
+      20204F4F234F4F4F4F20222C0A22202020204F4F4F4F204F4F4F4F4F4F20222C
+      0A222020204F4F4F4F204F2020202020204F222C0A224F2020204F4F4F204F4F
+      4F4F4F4F4F4F222C0A224F4F204F4F20204F4F4F4F4F4F4F4F4F222C0A224F4F
+      20204F4F204F4F4F4F4F4F4F4F4F222C0A224F202E2020202E204F4F4F4F4F4F
+      4F4F220A7D3B0A630A00002F2A2058504D202A2F0A7374617469632063686172
+      202A31375F75736572735B5D203D207B0A2F2A20636F6C756D6E7320726F7773
+      20636F6C6F72732063686172732D7065722D706978656C202A2F0A2231362031
+      36203132342032222C0A2220202063206772617933222C0A222E202063202331
+      3831303038222C0A22582020632023313031303130222C0A226F202063202331
+      3831383138222C0A224F2020632023333132313130222C0A222B202063206772
+      61793136222C0A22402020632023333133313331222C0A222320206320233339
+      33393339222C0A22242020632023323937333239222C0A222520206320233239
+      37423239222C0A22262020632023333136423331222C0A222A20206320233331
+      37333331222C0A223D2020632023333937333339222C0A222D20206320233432
+      32393138222C0A223B2020632023373331383130222C0A223A20206320233733
+      32313231222C0A223E2020632023374232313231222C0A222C20206320677261
+      793236222C0A223C20206320677261793239222C0A2231202063202335413541
+      3541222C0A22322020632023354135323633222C0A2233202063202335413733
+      3541222C0A22342020632023354137333633222C0A2235202063202337423642
+      3432222C0A223620206320677261793432222C0A223720206320677261793435
+      222C0A22382020632023313833313843222C0A22392020632023323934413843
+      222C0A22302020632023323934413943222C0A22712020632023313834324336
+      222C0A22772020632023323134324336222C0A22652020632023323134414345
+      222C0A22722020632023323934414336222C0A22742020632023323934414345
+      222C0A22792020632023333135414336222C0A22752020632023333935414537
+      222C0A22692020632023343235323843222C0A22702020632023344135324135
+      222C0A22612020632023343236334135222C0A22732020632023353237334235
+      222C0A22642020632023343235414546222C0A22662020632023343236424445
+      222C0A22672020632023344137424445222C0A22682020632023344136334546
+      222C0A226A2020632023344136334637222C0A226B2020632023354136424646
+      222C0A226C2020632023354137424546222C0A227A2020632023354137334637
+      222C0A22782020632023354137334646222C0A22632020632023363337424646
+      222C0A22762020632023313838433138222C0A22622020632023313839343138
+      222C0A226E2020632023333938343331222C0A226D2020632023333938433339
+      222C0A224D2020632023333142353331222C0A224E2020632023333938433742
+      222C0A22422020632023344141353441222C0A22562020632023343242353432
+      222C0A22432020632023354141443633222C0A225A2020632023353241353742
+      222C0A22412020632023354142353733222C0A22532020632023363341443742
+      222C0A22442020632023363342443633222C0A22462020632023353243363532
+      222C0A22472020632023363343363633222C0A22482020632023363343453633
+      222C0A224A2020632023373344363733222C0A224B2020632023373342443834
+      222C0A224C2020632023354138434445222C0A22502020632023363338344436
+      222C0A22492020632023364238434646222C0A22552020632023384333313130
+      222C0A22592020632023393433313130222C0A22542020632023394336423130
+      222C0A22522020632023413534413138222C0A22452020632023414434413130
+      222C0A22572020632023424435323138222C0A22512020632023424435413138
+      222C0A22212020632023413535413231222C0A227E2020632023433636423231
+      222C0A225E2020632023434536333231222C0A222F2020632023434536423231
+      222C0A22282020632023453737423239222C0A2229202063204E756C6C222C0A
+      225F2020632023413538343432222C0A22602020632023423538433441222C0A
+      22272020632023413539343633222C0A225D2020632023434538433239222C0A
+      225B2020632023433639343339222C0A227B2020632023434539343331222C0A
+      227D2020632023444539343331222C0A227C2020632023454639343239222C0A
+      22202E20632023463738433239222C0A222E2E20632023463739343331222C0A
+      22582E20632023464639433339222C0A226F2E20632023464641353339222C0A
+      224F2E20632023434539433441222C0A222B2E20632023433639433532222C0A
+      22402E20632023434539433532222C0A22232E20632023443641353541222C0A
+      22242E20632023444542353642222C0A22252E20632023443642353733222C0A
+      22262E20632023453741353432222C0A222A2E20632023453741353441222C0A
+      223D2E20632023464641443441222C0A222D2E20632023464642353441222C0A
+      223B2E20632023464642353532222C0A223A2E20632023464642443532222C0A
+      223E2E20632023464642443541222C0A222C2E20632023383438343834222C0A
+      223C2E206320677261793535222C0A22312E20632023423541443934222C0A22
+      322E20632023413541354135222C0A22332E20632023383442354546222C0A22
+      342E20632023383444453834222C0A22352E20632023394344364646222C0A22
+      362E20632023423544454336222C0A22372E20632023434542353843222C0A22
+      382E20632023443642353834222C0A22392E20632023443642443843222C0A22
+      302E20632023444543363943222C0A22712E20632023454644364144222C0A22
+      772E20632023433645374436222C0A22652E20632023453746374646222C0A2F
+      2A20706978656C73202A2F0A2229202920292029202920292029202920292029
+      20292029202920292029202920222C0A22292029202920292029202920292029
+      2029202920302E392E382E372E29202920222C0A22292029202C2037203C2E2C
+      2E2320292029202920232E242E712E252E5F202920222C0A2229202920312036
+      20322E2C2E40203C2029202B2E5B204F2E7B205D2054202920222C0A22292040
+      203C202D202F2028202E2E7E2029202A2E3A2E3E2E3A2E3B2E7D202920222C0A
+      22292040202B2021202E2E2E2E202E2F202920262E2D2E3B2E2D2E3D2E5D2029
+      20222C0A2229206F204F2051202F202F205E2045202920402E6F2E6F2E582E58
+      2E35202920222C0A22292058202E2052205120512057205520292029202E2E2E
+      2E2E2E7C2029202920222C0A22292029206F202020592059203B203220422044
+      20312E602027206E2029202920222C0A2229202920612038203A203E20702079
+      204120342E652E652E532044206D202920222C0A2229205020632049204C2035
+      2E4C206C2075205A20362E772E4A20482056207620222C0A2265206520782063
+      206620332E67207A2075204E204B204320472046204D206220222C0A22712071
+      2075206A206B20682075206420392034203D202A202520242026203320222C0A
+      2273207320712077207420722030206920292029202920292029202920292029
+      20222C0A22292029202920292029202920292029202920292029202920292029
+      2029202920222C0A222920292029202920292029202920292029202920292029
+      202920292029202920220A7D3B0A660500002F2A2058504D202A2F0A73746174
+      69632063686172202A31375F736176655B5D203D207B0A2F2A20636F6C756D6E
+      7320726F777320636F6C6F72732063686172732D7065722D706978656C202A2F
+      0A2231362031362036342031222C0A222020632023323932393934222C0A222E
+      20632023333133313934222C0A225820632023333133313943222C0A226F2063
+      2023333933393943222C0A224F20632023333933394135222C0A222B20632023
+      343234323943222C0A224020632023344134413943222C0A2223206320233441
+      34414135222C0A222420632023344135324144222C0A22252063202334413532
+      4235222C0A222620632023353235324135222C0A222A20632023353235324144
+      222C0A223D20632023354135324144222C0A222D20632023354135414144222C
+      0A223B20632023353235324235222C0A223A20632023354135414235222C0A22
+      3E20632023354135414244222C0A222C20632023374237423943222C0A223C20
+      632023373337334235222C0A223120632023373337424244222C0A2232206320
+      23354135414336222C0A223320632023363336334345222C0A22342063202336
+      4236424345222C0A22352063204E756C6C222C0A223620632023383438343943
+      222C0A223720632023383438344144222C0A223820632023384338434144222C
+      0A223920632023383438344235222C0A223020632023384338434235222C0A22
+      7120632023393439344144222C0A227720632023394339434135222C0A226520
+      632023394339434235222C0A227220632023413541354244222C0A2274206320
+      23383438344336222C0A227920632023384339344336222C0A22752063202339
+      3439344336222C0A226920632023394339434436222C0A227020632023414441
+      444345222C0A226120632023413541354436222C0A2273206320234135414444
+      36222C0A226420632023414441444436222C0A22662063202341444144444522
+      2C0A226720632023423542354345222C0A226820632023424442444345222C0A
+      226A20632023423542354436222C0A226B20632023424442444445222C0A226C
+      20632023433643454336222C0A227A20632023433643454345222C0A22782063
+      2023434543454345222C0A2263206320677261793834222C0A22762063202344
+      3644364445222C0A2262206320677261793837222C0A226E2063202343364336
+      4537222C0A226D20632023434543454537222C0A224D20632023434544364537
+      222C0A224E20632023443644364546222C0A224220632023444544454537222C
+      0A225620632023454645464546222C0A224320632023454645464637222C0A22
+      5A20632023454646374637222C0A2241206320677261793937222C0A22532063
+      2023463746374646222C0A224420632023463746464646222C0A224620632067
+      726179313030222C0A2F2A20706978656C73202A2F0A22353524676378787878
+      78787863702335222C0A223531254D5343434343434343536B323D222C0A2235
+      31254E5663636363636363566B323D222C0A223531254E5A4242424242424256
+      6B323D222C0A223531254E5676626262626276566B323D222C0A223531254E56
+      63636363636363566B323D222C0A223531254E5343434343434343416B323D22
+      2C0A223531246D415A414141414141416B323D222C0A2235313B3A7461647364
+      6161736469332A222C0A223531333333333333333232333333343D222C0A2235
+      3133333E79753938726E664F4F322D222C0A22353133333A30402E7763466E20
+      2E3E2D222C0A22353133333A376F6F6856466E202E3E2D222C0A22353133333A
+      2C2B3C4253466A2E583E2D222C0A22353133343A36726D534441672058322D22
+      2C0A2235352D2A23716C7A7A6C6C652B2B2635220A7D3B0AE10100002F2A2058
+      504D202A2F0A7374617469632063686172202A32305F64646C5B5D203D207B0A
+      2F2A20636F6C756D6E7320726F777320636F6C6F72732063686172732D706572
+      2D706978656C202A2F0A22313620313620342031222C0A2220206320626C6163
+      6B222C0A222E20632023303030303834222C0A22582063204E756C6C222C0A22
+      6F20632067726179313030222C0A2F2A20706978656C73202A2F0A2258585858
+      585858585858585858585858222C0A2258202020202020585858585858585858
+      222C0A2258206F6F6F6F20205858585858585858222C0A2258206F6F6F6F206F
+      2058585858585858222C0A2258206F20206F202E2E2E2E2E2E585858222C0A22
+      58206F6F6F6F6F2E6F6F6F6F2E2E5858222C0A2258206F202020202E6F6F6F6F
+      2E6F2E58222C0A2258206F6F6F6F6F2E6F20206F2E2E2E2E222C0A2258206F20
+      2020202E6F6F6F6F6F6F6F2E222C0A2258206F6F6F6F6F2E6F20202020206F2E
+      222C0A22582020202020202E6F6F6F6F6F6F6F2E222C0A22585858585858582E
+      6F20202020206F2E222C0A22585858585858582E6F6F6F6F6F6F6F2E222C0A22
+      585858585858582E2E2E2E2E2E2E2E2E222C0A22585858585858585858585858
+      58585858222C0A2258585858585858585858585858585858220A7D3B0AD40300
+      002F2A2058504D202A2F0A7374617469632063686172202A32315F6F70656E5B
+      5D203D207B0A2F2A20636F6C756D6E7320726F777320636F6C6F727320636861
+      72732D7065722D706978656C202A2F0A2231362031362033372031222C0A2220
+      20632023303837333030222C0A222E20632023303837423038222C0A22582063
+      2023313038343038222C0A226F20632023313038433038222C0A224F20632023
+      313841353038222C0A222B20632023323138433130222C0A2240206320233231
+      39433130222C0A222320632023323941443138222C0A22242063202334414336
+      3331222C0A222520632023364244363432222C0A222620632023374244363532
+      222C0A222A2063204E756C6C222C0A223D20632023384345373541222C0A222D
+      20632023433641353138222C0A223B20632023443641443138222C0A223A2063
+      2023443641443231222C0A223E20632023443641443239222C0A222C20632023
+      444542353331222C0A223C20632023453742443532222C0A2231206320234537
+      43363441222C0A223220632023454643363441222C0A22332063202346374445
+      3642222C0A223420632023463744453733222C0A223520632023454644453943
+      222C0A223620632023454644454144222C0A223720632023464645463834222C
+      0A223820632023464645463843222C0A223920632023464645463934222C0A22
+      3020632023464646373843222C0A227120632023464646373934222C0A227720
+      632023464646463934222C0A226520632023464646463943222C0A2272206320
+      23463745464135222C0A227420632023464646374135222C0A22792063202346
+      4646464144222C0A227520632023464646464336222C0A226920632023464646
+      464436222C0A2F2A20706978656C73202A2F0A222A2A2A2A2A2A2A2A2A2A2A2A
+      2A2A2A2A222C0A222A2A2A2A2A2A2A202E6F6F2E2A2A2A2A222C0A222A2A2C3E
+      2D2D2A2A2A2A6F4F582A2A2A222C0A222A3A357575353B2D2D2D2D6F4F2A2A2A
+      222C0A222A3E7577656969383934345823582A2A222C0A222A3E657171717134
+      343E2D2B24402D2A222C0A222A3E6571343434333E3620262524202A222C0A22
+      2A3E65343E2D2D2D363037203D202D2A222C0A222A3E713E3672727438383834
+      202D2A2A222C0A222A3E343E6530303038383834342D2A2A222C0A222A3E3E36
+      7171383838383434322A2A2A222C0A222A3E3C7930383838343434323A2A2A2A
+      222C0A222A3E3C657734343434313A2D2A2A2A2A222C0A222A3E3537313A2D2D
+      2D2A2A2A2A2A2A2A222C0A222A3E2C3A2A2A2A2A2A2A2A2A2A2A2A2A222C0A22
+      2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A220A7D3B0A9A0400002F2A2058504D20
+      2A2F0A7374617469632063686172202A32325F73716C7363726970745B5D203D
+      207B0A2F2A20636F6C756D6E7320726F777320636F6C6F72732063686172732D
+      7065722D706978656C202A2F0A2231362031362035302031222C0A2220206320
+      23373338434244222C0A222E20632023374238344244222C0A22582063202334
+      4141354546222C0A226F20632023364238344336222C0A224F20632023373339
+      344345222C0A222B20632023374239344336222C0A2240206320233733423545
+      46222C0A222320632023373343364646222C0A22242063202343363742353222
+      2C0A22252063204E756C6C222C0A222620632023464641353339222C0A222A20
+      632023464646373030222C0A223D206320677261793631222C0A222D20632023
+      383438344235222C0A223B20632023383438434235222C0A223A206320233834
+      39434345222C0A223E20632023394341354336222C0A222C2063202341354144
+      4336222C0A223C20632023414442354345222C0A223120632023414442444336
+      222C0A223220632023414442354436222C0A223320632023423542444436222C
+      0A223420632023423542444445222C0A223520632023393443454546222C0A22
+      3620632023394343454546222C0A223720632023394344364637222C0A223820
+      632023423543364445222C0A223920632023413544364637222C0A2230206320
+      23414444364637222C0A227120632023423543364537222C0A22772063202342
+      3543454546222C0A226520632023424443454546222C0A227220632023423544
+      364637222C0A227420632023423544454637222C0A2279206320234244444546
+      37222C0A227520632023464646463934222C0A2269206320677261793837222C
+      0A227020632023434543454537222C0A226120632023433644454537222C0A22
+      7320632023434544364537222C0A226420632023433644454637222C0A226620
+      632023433645374637222C0A226720632023443645374637222C0A2268206320
+      23443645464646222C0A226A20632023453745464646222C0A226B2063202345
+      3746374646222C0A226C20632023454646374646222C0A227A20632023463746
+      374646222C0A227820632023463746464646222C0A2263206320677261793130
+      30222C0A2F2A20706978656C73202A2F0A2225257177777777717177332E2525
+      2525222C0A222525717A6C6C6C6C6C6C702B3A252525222C0A22252565636363
+      63636363732B234F2525222C0A2225257163636363636378702040586F25222C
+      0A2225257163693D3D26752A2A24243B2D25222C0A2225253863636326752A2A
+      242461312D25222C0A22252534636326752A2A24246464722D25222C0A222525
+      33636926752A24243D3D3D742D25222C0A222525336326752A24246664797230
+      2D25222C0A2225253226752A2A2A2A2A242439392D25222C0A2225253C242424
+      24752A24243D3D362D25222C0A2225252C6B6726752A2424303636352D25222C
+      0A2225252C6A262A24242430363635362D25222C0A2225253E682A24243D3D3D
+      3D3D3D362D25222C0A2225253E68242474303936353535372D25222C0A222525
+      2D2D2D2D2D2D2D2D2D2D2D2D2D25220A7D3B0ADB0200002F2A2058504D202A2F
+      0A7374617469632063686172202A32335F73716C657865637574655B5D203D20
+      7B0A2F2A20636F6C756D6E7320726F777320636F6C6F72732063686172732D70
+      65722D706978656C202A2F0A2231362031362032302031222C0A222020632023
+      303034413030222C0A222E20632023303035323030222C0A2258206320233030
+      36333030222C0A226F20632023323139433038222C0A224F2063202332313943
+      3130222C0A222B20632023323941353130222C0A224020632023333941443130
+      222C0A222320632023333942353130222C0A222420632023333941443339222C
+      0A222520632023344142353138222C0A222620632023353242443441222C0A22
+      2A20632023353242443532222C0A223D20632023353242443541222C0A222D20
+      632023354143363541222C0A223B20632023363343363633222C0A223A206320
+      23363343363642222C0A223E20632023364243363642222C0A222C2063202337
+      4244363742222C0A223C2063204E756C6C222C0A223120632023384344363843
+      222C0A2F2A20706978656C73202A2F0A223C3C3C3C3C3C3C3C3C3C3C3C3C3C3C
+      3C222C0A223C3C3C3C3C3C3C3C3C3C3C3C3C3C3C3C222C0A223C3C3C3C3C2058
+      203C3C3C3C3C3C3C3C222C0A223C3C3C3C3C582458203C3C3C3C3C3C3C222C0A
+      223C3C3C3C3C583B3158203C3C3C3C3C3C222C0A223C3C3C3C3C583E2C2C5820
+      3C3C3C3C3C222C0A223C3C3C3C3C582D3E3A2658203C3C3C3C222C0A223C3C3C
+      3C3C582A3D262626582E3C3C3C222C0A223C3C3C3C3C58254040402B582E3C3C
+      3C222C0A223C3C3C3C3C58232B6F6F58203C3C3C3C222C0A223C3C3C3C3C582B
+      2B6F58203C3C3C3C3C222C0A223C3C3C3C3C584F6F58203C3C3C3C3C3C222C0A
+      223C3C3C3C3C586F58203C3C3C3C3C3C3C222C0A223C3C3C3C3C2058203C3C3C
+      3C3C3C3C3C222C0A223C3C3C3C3C3C3C3C3C3C3C3C3C3C3C3C222C0A223C3C3C
+      3C3C3C3C3C3C3C3C3C3C3C3C3C220A7D3B0A7C0400002F2A2058504D202A2F0A
+      7374617469632063686172202A32345F73716C5F6E65775B5D203D207B0A2F2A
+      20636F6C756D6E7320726F777320636F6C6F72732063686172732D7065722D70
+      6978656C202A2F0A2231362031362034382031222C0A22202063202337333843
+      4244222C0A222E20632023374238344244222C0A225820632023344141354546
+      222C0A226F20632023364238344336222C0A224F20632023373339344345222C
+      0A222B20632023374239344336222C0A224020632023373342354546222C0A22
+      2320632023373343364646222C0A22242063204E756C6C222C0A222520632023
+      383438344235222C0A222620632023383438434235222C0A222A206320233843
+      39344235222C0A223D20632023383439434345222C0A222D2063202339344135
+      4336222C0A223B20632023394341354336222C0A223A20632023413541444336
+      222C0A223E20632023414442354345222C0A222C20632023414442444336222C
+      0A223C20632023414442354436222C0A223120632023423542444436222C0A22
+      3220632023423542444445222C0A223320632023393443454546222C0A223420
+      632023394343454546222C0A223520632023394344364637222C0A2236206320
+      23423543364445222C0A223720632023413544364637222C0A22382063202341
+      4444364637222C0A223920632023423543364537222C0A223020632023423543
+      454546222C0A227120632023424443454546222C0A2277206320234235443646
+      37222C0A226520632023423544454637222C0A22722063202342444445463722
+      2C0A227420632023434543454537222C0A227920632023433644454537222C0A
+      227520632023434544364537222C0A226920632023433644454637222C0A2270
+      20632023433645374637222C0A226120632023434545374637222C0A22732063
+      2023443645374637222C0A226420632023443645464646222C0A226620632023
+      444545464646222C0A226720632023453745464646222C0A2268206320234537
+      46374646222C0A226A20632023454646374646222C0A226B2063202346374637
+      4646222C0A226C20632023463746464646222C0A227A20632023464646464646
+      222C0A2F2A20706978656C73202A2F0A2224243930303030393930312E242424
+      24222C0A222424396B6A6A6A6A6A6A742B3D242424222C0A222424717A7A7A7A
+      7A7A7A752B234F2424222C0A222424397A7A7A7A7A7A6C742040586F24222C0A
+      222424397A7A7A7A7A6A6A732D2A262524222C0A222424367A7A7A7A6B676666
+      64792C2524222C0A222424327A7A7A6B676673616969772524222C0A22242431
+      7A7A6B6A677361697265652524222C0A222424317A6B6A667361706972773825
+      24222C0A2224243C7A6A6773617069723837372524222C0A2224243E6C677373
+      616972773834342524222C0A2224243A68736170696577383434332524222C0A
+      2224243A67736169727738343433342524222C0A2224243B6461697277373434
+      3333342524222C0A2224243B64707265383734333333352524222C0A22242425
+      25252525252525252525252524220A7D3B0A4F0300002F2A2058504D202A2F0A
+      7374617469632063686172202A32355F636F6D6D69745B5D203D207B0A2F2A20
+      636F6C756D6E7320726F777320636F6C6F72732063686172732D7065722D7069
+      78656C202A2F0A2231362031362032382031222C0A2220206320233030384330
+      30222C0A222E20632023303039343030222C0A22582063202330303943303022
+      2C0A226F20632023303839343030222C0A224F20632023313039433030222C0A
+      222B20632023303041353030222C0A224020632023313041443030222C0A2223
+      20632023313841443030222C0A222420632023333139433331222C0A22252063
+      2023323141443030222C0A222620632023323142353030222C0A222A20632023
+      323142443030222C0A223D20632023323942353138222C0A222D206320233339
+      41443239222C0A223B20632023323943363030222C0A223A2063202333314345
+      3030222C0A223E20632023344141443239222C0A222C20632023343242353331
+      222C0A223C20632023344141353532222C0A223120632023363342353642222C
+      0A223220632023343243363138222C0A223320632023343244363030222C0A22
+      3420632023354143453239222C0A223520632023363346463030222C0A223620
+      632023374242443843222C0A22372063204E756C6C222C0A2238206320234135
+      45373541222C0A223920632023393443364135222C0A2F2A20706978656C7320
+      2A2F0A2237373737373737373737373737373737222C0A223737373737373737
+      3737373737373737222C0A2237373737373737373737373937373737222C0A22
+      373737373737373737372C3336373737222C0A22373737373737373737373E38
+      2D363737222C0A223737373737373737373C3B2D2C373737222C0A2237373737
+      3737373737263B2E36373737222C0A2237373737373737372C3B582037373737
+      222C0A223737373725253737233B2E3937373737222C0A223737373235353C3C
+      3B2B243737373737222C0A223737373D3435352A3B2E363737373737222C0A22
+      3737373C3A3B353A5820373737373737222C0A22373737374F3A3B402E393737
+      37373737222C0A2237373737312A3B2B2437373737373737222C0A2237373737
+      373D2A2E3637373737373737222C0A2237373737373C6F313737373737373737
+      220A7D3B0A140400002F2A2058504D202A2F0A7374617469632063686172202A
+      32365F726F6C6C6261636B5B5D203D207B0A2F2A20636F6C756D6E7320726F77
+      7320636F6C6F72732063686172732D7065722D706978656C202A2F0A22313620
+      31362034312031222C0A222020632023303034414144222C0A222E2063202330
+      3034414235222C0A225820632023303035324235222C0A226F20632023303035
+      324244222C0A224F20632023303035414244222C0A222B206320233130343241
+      35222C0A224020632023313034414144222C0A22232063202331303532423522
+      2C0A222420632023323135414235222C0A222520632023333135414235222C0A
+      222620632023333136334244222C0A222A20632023303035414336222C0A223D
+      20632023303036334336222C0A222D20632023303036334345222C0A223B2063
+      2023303036424345222C0A223A20632023303836424345222C0A223E20632023
+      303037334436222C0A222C20632023303037334445222C0A223C206320233030
+      37424445222C0A223120632023313036334336222C0A22322063202330303742
+      4537222C0A223320632023323137334345222C0A223420632023333937424345
+      222C0A223520632023343236424244222C0A223620632023353237334244222C
+      0A223720632023353237424244222C0A223820632023343237334336222C0A22
+      3920632023353237424336222C0A223020632023303038344537222C0A227120
+      632023303039344637222C0A227720632023303839434646222C0A2265206320
+      23333141444646222C0A227220632023343238344345222C0A22742063202334
+      4138344345222C0A227920632023354138344336222C0A227520632023363338
+      344336222C0A226920632023373338434336222C0A2270206320233742393443
+      45222C0A226120632023363342444646222C0A22732063204E756C6C222C0A22
+      6420632023383439434345222C0A2F2A20706978656C73202A2F0A2273737373
+      737373737373737373737373222C0A2273737373737373737373737373737373
+      222C0A2273737373737373737373737373737373222C0A227370797373737373
+      64313B3B4F357373222C0A22733461397373732432303C3E3B3D4073222C0A22
+      7333657473733130326F3969233D3D75222C0A22733A77727358303B26737373
+      732E2D23222C0A22732D7123583C3B377373737373382D2E222C0A22733D302D
+      2C2D75737373737373382D2E222C0A22734F3C3E2D2B64646473737373202D23
+      222C0A2273583E3B2D2D2D2D3D357373643D3D75222C0A2273204F4F4F4F4F4F
+      4F757373202D2E73222C0A227373737373737373737373242D3D7573222C0A22
+      73737373737373737373253D2D247373222C0A22737373737373737373252A2D
+      23737373222C0A22737373737373737373362A2073737373220A7D3B0A4D0600
+      002F2A2058504D202A2F0A7374617469632063686172202A32375F7072657669
+      75735B5D203D207B0A2F2A20636F6C756D6E7320726F777320636F6C6F727320
+      63686172732D7065722D706978656C202A2F0A2231362031362037392031222C
+      0A222020632023303033313030222C0A222E20632023303034323030222C0A22
+      5820632023303034413030222C0A226F20632023303834413030222C0A224F20
+      632023303035323030222C0A222B20632023303836333030222C0A2240206320
+      23303836423030222C0A222320632023303837423030222C0A22242063202331
+      3036423030222C0A222520632023313037333038222C0A222620632023303838
+      433030222C0A222A20632023303839343030222C0A223D206320233038394330
+      30222C0A222D20632023313839433038222C0A223B2063202330384135303022
+      2C0A223A20632023313041353030222C0A223E20632023313841353038222C0A
+      222C20632023313841443038222C0A223C20632023323138343038222C0A2231
+      20632023323938433130222C0A223220632023323139433130222C0A22332063
+      2023333939433138222C0A223420632023323141353038222C0A223520632023
+      323941353038222C0A223620632023323941443038222C0A2237206320233231
+      41443130222C0A223820632023333141353130222C0A22392063202333314144
+      3130222C0A223020632023333941443130222C0A227120632023333141353231
+      222C0A227720632023343241353130222C0A226520632023344141443130222C
+      0A227220632023343242353130222C0A227420632023344142353138222C0A22
+      7920632023353242353138222C0A227520632023344141353239222C0A226920
+      632023344142443231222C0A227020632023353242353231222C0A2261206320
+      23353242443239222C0A227320632023354142443239222C0A22642063202335
+      3242353339222C0A226620632023363342443331222C0A226720632023363342
+      443339222C0A226820632023364242443339222C0A226A206320233441424434
+      32222C0A226B20632023354142443432222C0A226C2063202336334244343222
+      2C0A227A20632023363342443441222C0A227820632023364242443441222C0A
+      226320632023353243363441222C0A227620632023373343363432222C0A2262
+      20632023374243363441222C0A226E20632023373343363532222C0A226D2063
+      2023374243363532222C0A224D20632023374244363733222C0A224E2063204E
+      756C6C222C0A224220632023384343453633222C0A2256206320233843434536
+      42222C0A224320632023393444363733222C0A225A2063202339434445374222
+      2C0A224120632023384344363834222C0A225320632023413544453834222C0A
+      224420632023414444453843222C0A224620632023423544453934222C0A2247
+      20632023423545373943222C0A224820632023423545374144222C0A224A2063
+      2023424445374135222C0A224B20632023424445374235222C0A224C20632023
+      433645374135222C0A225020632023433645374144222C0A2249206320234336
+      45464235222C0A225520632023434545464244222C0A22592063202344364546
+      4244222C0A225420632023444546374436222C0A225220632023453746374436
+      222C0A224520632023454646374537222C0A225720632023454646464546222C
+      0A225120632023463746464637222C0A222120632023464646464646222C0A2F
+      2A20706978656C73202A2F0A224E4E4E4E4E71646C6C75314E4E4E4E4E222C0A
+      224E4E4E7A7A46594C445A6233334E4E4E222C0A224E4E325652476D67736666
+      69382B4E4E222C0A224E716E5942707946507030393932404E222C0A224E7150
+      566574442151613835342C404E222C0A2225785370704621456E393939353E26
+      2E222C0A22256D76734A2151536B6B6B6B6B3E3D2E222C0A2225687355212121
+      2121212121213D3D4F222C0A2224707043572151494B484848483D3D58222C0A
+      224F7774396A51214D3D3D3D3D3D3B2A2E222C0A224F3C72382D6A5121413A3D
+      3D3D3B232E222C0A224E6F39363E3A634554373D3D3D3B584E222C0A224E6F24
+      343E3D3D3D3D3D3D3D3B40584E222C0A224E4E6F2B3A3B3D3D3D3D3B3B40204E
+      4E222C0A224E4E4E2E2E233D3D3D3D2358584E4E4E222C0A224E4E4E4E4E202E
+      4F4F2E204E4E4E4E4E220A7D3B0A590600002F2A2058504D202A2F0A73746174
+      69632063686172202A32385F6E6578745B5D203D207B0A2F2A20636F6C756D6E
+      7320726F777320636F6C6F72732063686172732D7065722D706978656C202A2F
+      0A2231362031362038302031222C0A222020632023303033313030222C0A222E
+      20632023303034323030222C0A225820632023303034413030222C0A226F2063
+      2023303834413030222C0A224F20632023303035323030222C0A222B20632023
+      303836333030222C0A224020632023303836423030222C0A2223206320233038
+      37423030222C0A222420632023313036423030222C0A22252063202331303733
+      3038222C0A222620632023303838433030222C0A222A20632023303839343030
+      222C0A223D20632023303839433030222C0A222D20632023313839433038222C
+      0A223B20632023303841353030222C0A223A20632023313041353030222C0A22
+      3E20632023313841353038222C0A222C20632023313841443038222C0A223C20
+      632023323138343038222C0A223120632023323938433130222C0A2232206320
+      23323139433130222C0A223320632023333939433138222C0A22342063202332
+      3141353038222C0A223520632023323941353038222C0A223620632023323141
+      443130222C0A223720632023323941443130222C0A2238206320233331413531
+      30222C0A223920632023333141443130222C0A22302063202333314144313822
+      2C0A227120632023333941443130222C0A227720632023333141353231222C0A
+      226520632023343241353130222C0A227220632023344141443130222C0A2274
+      20632023343242353130222C0A227920632023344142353138222C0A22752063
+      2023344141353239222C0A226920632023344142443231222C0A227020632023
+      353242353231222C0A226120632023354142443239222C0A2273206320233532
+      42353339222C0A226420632023363342443331222C0A22662063202336334244
+      3339222C0A226720632023364242443339222C0A226820632023344142443432
+      222C0A226A20632023363342443432222C0A226B20632023363342443441222C
+      0A226C20632023364242443441222C0A227A20632023353243363441222C0A22
+      7820632023354143363532222C0A226320632023373343363432222C0A227620
+      632023373343363441222C0A226220632023374243363441222C0A226E206320
+      23373343363532222C0A226D20632023374243363532222C0A224D2063202337
+      4244363733222C0A224E2063204E756C6C222C0A224220632023383443453532
+      222C0A225620632023384343453633222C0A224320632023384343453642222C
+      0A225A20632023393444363742222C0A224120632023394344453742222C0A22
+      5320632023384344363834222C0A224420632023394344453834222C0A224620
+      632023413544453834222C0A224720632023413544453934222C0A2248206320
+      23423544453934222C0A224A20632023423545373943222C0A224B2063202342
+      3545374144222C0A224C20632023433645374135222C0A225020632023433645
+      374144222C0A224920632023433645464235222C0A2255206320234336454642
+      44222C0A225920632023434545464244222C0A22542063202344364546424422
+      2C0A225220632023444546374436222C0A224520632023453746374436222C0A
+      225720632023454646374537222C0A225120632023454646464546222C0A2221
+      20632023463746464637222C0A227E20632023464646464646222C0A2F2A2070
+      6978656C73202A2F0A224E4E4E4E4E77736A6A75314E4E4E4E4E222C0A224E4E
+      4E6B6B48544C48416233334E4E4E222C0A224E4E3243454A6D6661646469382B
+      4E4E222C0A224E776E5456707050487971393732404E222C0A224E7750437279
+      67217E443935342C404E222C0A22256C46707970706D577E4439353E262E222C
+      0A22256D636D424242765A217E47303E3D2E222C0A222567617E7E7E7E7E7E7E
+      7E7E4B3D3D4F222C0A22247070595549494949217E51783D3D58222C0A224F65
+      79393A3D3D3D4D7E21683D3B2A2E222C0A224F3C74372D3D2D537E21683D3D3B
+      232E222C0A224E6F39373E3A3652577A3D3D3D3B584E222C0A224E6F24343E3D
+      3D3D3D3D3D3D3B40584E222C0A224E4E6F2B3A3B3D3D3D3D3B3B40204E4E222C
+      0A224E4E4E2E2E233D3D3D3D2358584E4E4E222C0A224E4E4E4E4E202E4F4F2E
+      204E4E4E4E4E220A7D3B0AF10100002F2A2058504D202A2F0A73746174696320
+      63686172202A32395F666F6E745B5D203D207B0A2F2A20636F6C756D6E732072
+      6F777320636F6C6F72732063686172732D7065722D706978656C202A2F0A2231
+      3620313620352031222C0A2220206320626C61636B222C0A222E206320233130
+      34324135222C0A225820632023323936424244222C0A226F2063204E756C6C22
+      2C0A224F20632023383438343834222C0A2F2A20706978656C73202A2F0A226F
+      6F6F6F6F6F6F6F6F6F6F6F6F6F6F6F222C0A226F6F6F206F6F6F6F6F6F6F6F6F
+      6F6F6F222C0A226F6F4F204F6F6F6F6F6F6F6F6F6F6F6F222C0A226F6F206F20
+      6F6F6F6F6F6F6F6F6F6F6F222C0A226F6F206F206F6F6F6F6F6F6F582E2E6F22
+      2C0A226F4F2020204F6F6F6F6F6F582E2E2E6F222C0A226F204F6F4F206F6F6F
+      6F582E2E2E2E6F222C0A226F206F6F6F206F6F6F582E2E582E2E6F222C0A226F
+      6F6F6F6F6F6F6F582E2E586F2E2E6F222C0A226F6F6F6F6F6F6F582E2E2E2E2E
+      2E2E6F222C0A226F6F6F6F6F6F582E2E586F6F6F2E2E6F222C0A226F6F6F6F6F
+      582E2E586F6F6F6F2E2E6F222C0A226F6F6F6F2E2E2E2E2E6F6F6F2E2E2E2E22
+      2C0A226F6F6F6F6F6F6F6F6F6F6F6F6F6F6F6F222C0A226F6F6F6F2E2E2E2E2E
+      2E2E2E2E2E2E2E222C0A226F6F6F6F6F6F6F6F6F6F6F6F6F6F6F6F220A7D3B0A
+      F20100002F2A2058504D202A2F0A7374617469632063686172202A33305F636C
+      6561725B5D203D207B0A2F2A20636F6C756D6E7320726F777320636F6C6F7273
+      2063686172732D7065722D706978656C202A2F0A22313620313620352031222C
+      0A2220206320677261793432222C0A222E2063204E756C6C222C0A2258206320
+      23383438343834222C0A226F20632023433643364336222C0A224F2063206772
+      61793837222C0A2F2A20706978656C73202A2F0A222E2E2E2E2E2E2E2E2E2E2E
+      2E2E2E2E2E222C0A222E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E222C0A222E2E2E
+      2E2E2E2E2E582020202058582E222C0A222E2E2E2E2E2E2E204F4F4F4F4F4F20
+      2E222C0A222E2E2E2E2E2E204F4F4F4F4F4F20202E222C0A222E2E2E2E2E204F
+      4F4F4F4F4F2058202E222C0A222E2E2E2E204F4F4F4F4F4F205858202E222C0A
+      222E2E2E204F4F4F4F4F4F205858202E2E222C0A222E2E204F4F4F4F4F4F2058
+      58202E2E2E222C0A222E58206F6F6F6F6F205858202E2E2E2E222C0A222E206F
+      6F6F6F6F6F2058202E2E2E2E2E222C0A222E206F6F6F6F6F6F20202E2E2E2E2E
+      2E222C0A222E58202020202020582E2E2E2E2E2E2E222C0A222E2E2E2E2E2E2E
+      2E2E2E2E2E2E2E2E2E222C0A222E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E222C0A
+      222E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E220A7D3B0A510200002F2A2058504D
+      202A2F0A7374617469632063686172202A34315F736572766963655B5D203D20
+      7B0A2F2A20636F6C756D6E7320726F777320636F6C6F72732063686172732D70
+      65722D706978656C202A2F0A2231362031362031312031222C0A222020632023
+      303036334345222C0A222E2063204E756C6C222C0A2258206320233834433646
+      46222C0A226F20632023413544364646222C0A224F2063202341444436464622
+      2C0A222B20632023423544454646222C0A224020632023433645374646222C0A
+      222320632023443645464646222C0A222420632023453746374646222C0A2225
+      20632023463746464646222C0A222620632023464646464646222C0A2F2A2070
+      6978656C73202A2F0A222E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E222C0A222E2E
+      2E2E2E2E2E2E2E2E2E2E2E2E2E2E222C0A222E2E202020202020202020202020
+      202E222C0A222E202020202020202020202020202020222C0A222E2026262626
+      26262626262626252420222C0A222E202626262626262626262625242320222C
+      0A222E202658582658585858585858584020222C0A222E202626262626262626
+      2524236F2B20222C0A222E202658582658585858585858584F20222C0A222E20
+      262626262626252423402B4F4F20222C0A222E20265858265858585858585858
+      4F20222C0A222E2026262626252423402B4F4F4F4F20222C0A222E2026585825
+      58585858585858584F20222C0A222E202626252423402B4F4F4F4F4F4F20222C
+      0A222E202020202020202020202020202020222C0A222E2E2E2E2E2E2E2E2E2E
+      2E2E2E2E2E2E220A7D3B0A280100002F2A2058504D202A2F0A73746174696320
+      63686172202A206D656E755F72756E5F78706D5B5D203D207B0A223820313420
+      352031222C0A22200963204E6F6E65222C0A222E09632023313436363030222C
+      0A222B09632023323642323030222C0A224009632023323735393139222C0A22
+      2309632023303030303030222C0A222E2E202020202020222C0A222E2B2E2020
+      202020222C0A222E2B2B2E20202020222C0A222E2B2B2B2E202020222C0A222E
+      2B2B2B2B2E2020222C0A222E2B2B2B2B2B2E20222C0A222E2B2B2B2B2B2B2E22
+      2C0A222E2B2B2B2B2B4023222C0A222E2B2B2B2B402320222C0A222E2B2B2B40
+      232020222C0A222E2B2B4023202020222C0A222E2B402320202020222C0A222E
+      40232020202020222C0A222323202020202020227D3B0A
+    }
+  end
+  object odOpen: TOpenDialog
+    Title = 'Open existing file'
+    FilterIndex = 0
+    left = 112
+    top = 104
+  end
+  object sdSave: TSaveDialog
+    Title = 'Save file as'
+    FilterIndex = 0
+    left = 146
+    top = 104
+  end
+  object Script: TFBLScript
+    Terminator = ';'
+    left = 184
+    top = 104
+  end
+  object pmnItem: TPopupMenu
+    Images = ImageList1
+    left = 80
+    top = 24
+    object MenuItem8: TMenuItem
+      Action = aViewData
+      OnClick = aViewDataExecute
+    end
+    object MenuItem10: TMenuItem
+      Caption = '-'
+    end
+    object MenuItem9: TMenuItem
+      Action = aExportToHtml
+      OnClick = aExportToHtmlExecute
+    end
+    object MenuItem14: TMenuItem
+      Action = aExportToSql
+      OnClick = aExportToSqlExecute
+    end
+    object MenuItem17: TMenuItem
+      Caption = '-'
+    end
+    object MenuItem18: TMenuItem
+      Action = aShowOptionDescription
+      OnClick = aShowOptionDescriptionExecute
+    end
+  end
+  object pmnDatabase: TPopupMenu
+    Images = ImageList1
+    left = 112
+    top = 24
+    object MenuItem13: TMenuItem
+      Action = aBackupDatabase
+      OnClick = aBackupDatabaseExecute
+    end
+    object MenuItem5: TMenuItem
+      Action = aMetadata
+      OnClick = aMetadataExecute
+    end
+  end
+  object pmnMemo: TPopupMenu
+    left = 146
+    top = 24
+    object MenuItem26: TMenuItem
+      Action = aEditCut1
+    end
+    object MenuItem27: TMenuItem
+      Action = aEditCopy
+    end
+    object MenuItem28: TMenuItem
+      Action = aEditPaste1
+    end
+    object MenuItem24: TMenuItem
+      Caption = '-'
+    end
+    object MenuItem15: TMenuItem
+      Action = aEditCopy
+    end
+    object MenuItem16: TMenuItem
+      Action = aMbufferSelectAll
+      OnClick = aMbufferSelectAllExecute
+    end
+  end
+  object pmnSql: TPopupMenu
+    left = 183
+    top = 24
+    object MenuItem29: TMenuItem
+      Action = aEditCut1
+    end
+    object MenuItem30: TMenuItem
+      Action = aEditCopy
+    end
+    object MenuItem31: TMenuItem
+      Action = aEditPaste1
+    end
+  end
+  object pmnMessages: TPopupMenu
+    left = 224
+    top = 24
+    object MenuItem4: TMenuItem
+      Action = aClearMessages
+      OnClick = aClearMessagesExecute
+    end
+  end
+end
