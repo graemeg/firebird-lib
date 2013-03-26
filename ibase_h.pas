@@ -43,8 +43,8 @@ const
   LibHandleNil = 0;
   {$ELSE}
   {$IFDEF LINUX}
-  DEFAULT_DLL_LOCATION = 'libgds.so.0';
-  DEFAULT_DLL_LOCATION2 = 'libfbclient.so';
+  DEFAULT_DLL_LOCATION = 'libfbclient.so.0';
+  DEFAULT_DLL_LOCATION2 = 'libgds.so';
   {$ENDIF}
   {$IFDEF BSD}
   DEFAULT_DLL_LOCATION = 'libgds.so.0';
