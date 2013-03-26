@@ -21,6 +21,9 @@
 
 
 unit FBLReg;
+
+{$I fbl.inc}
+
 {$IFNDEF FPC}
 {$R fblpalette.res}
 {$ENDIF}
@@ -36,12 +39,12 @@ uses
   FBLScript,
   FBLService,
   FBLEvents,
-  FBLParamDSql
+  FBLParamDsql
   {$IFNDEF DELPHI_PE}
    ,FBLDataset
   {$ENDIF}
   {$IFDEF FPC}
-     ,LResources, LazarusPackageIntf
+   ,LResources
   {$ENDIF};
 
 const
@@ -51,72 +54,11 @@ procedure Register;
 
 implementation
 
-{$IFDEF FPC}
-
-procedure RegisterUnitDatabase;
-begin
-  RegisterComponents(PALETTE_NAME, [TFBLDatabase]);
-end;
-
-procedure RegisterUnitTransaction;
-begin
-  RegisterComponents(PALETTE_NAME, [TFBLTransaction]);
-end;
-
-procedure RegisterUnitDsql;
-begin
-  RegisterComponents(PALETTE_NAME, [TFBLDSql]);
-end;
-
-procedure RegisterUnitMetadata;
-begin
-  RegisterComponents(PALETTE_NAME, [TFBLMetadata]);
-end;
-
-procedure RegisterUnitScript;
-begin
-  RegisterComponents(PALETTE_NAME, [TFBLScript]);
-end;
-
-procedure RegisterUnitService;
-begin
-  RegisterComponents(PALETTE_NAME, [TFBLService]);
-end;
-
-procedure RegisterUnitEvent;
-begin
-  RegisterComponents(PALETTE_NAME, [TFBLEvent]);
-end;
-
-procedure RegisterUnitParamDsql;
-begin
-  RegisterComponents(PALETTE_NAME, [TFBLParamDsql]);
-end;
-
-procedure RegisterUnitDataset;
-begin
-  RegisterComponents(PALETTE_NAME, [TFBLDataset]);
-end;
-{$ENDIF}
-
-
 procedure Register;
 begin
-  {$IFDEF FPC}
-  RegisterUnit('FBLDatabase', @RegisterUnitDatabase);
-  RegisterUnit('FBLTransaction', @RegisterUnitTransaction);
-  RegisterUnit('FBLDSql', @RegisterUnitDSql);
-  RegisterUnit('FBLMetadata', @RegisterUnitMetadata);
-  RegisterUnit('FBLScript', @RegisterUnitScript);
-  RegisterUnit('FBLService', @RegisterUnitService);
-  RegisterUnit('FBLEvents', @RegisterUnitEvent);
-  RegisterUnit('FBLParamDsql', @RegisterUnitParamDsql);
-  RegisterUnit('FBLDataset', @RegisterUnitDataset);
-  {$ELSE}
   RegisterComponents(PALETTE_NAME, [TFBLDatabase, TFBLTransaction,
-    TFBLDsql, TFBLMetadata, TFBLSCript, TFBLService, TFBLEvent,TFBLParamDsql
+    TFBLDsql, TFBLMetadata, TFBLSCript, TFBLService, TFBLEvent, TFBLParamDsql
     {$IFNDEF DELPHI_PE},TFBLDataset{$ENDIF}]);
-  {$ENDIF}
 end;
 
 
@@ -125,5 +67,5 @@ end;
 {$IFDEF FPC}
 initialization
   {$I fblpalette.lrs}
-  {$ENDIF}
+{$ENDIF}
 end.
