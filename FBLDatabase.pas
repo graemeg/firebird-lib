@@ -52,9 +52,9 @@ type
   {Connection protocol values}
   TProtocolType = (ptLocal,ptTcpIp,ptNetBeui);
   {Provider Info}
-  TProviderInfo = (piUnknow, piInterbase, piFirebird);
+  TProviderInfo = (piUnknown, piInterbase, piFirebird);
   {Server Info}
-  TServerInfo = (siUnKnow, siSuperServer, siClassicServer);
+  TServerInfo = (siUnKnown, siSuperServer, siClassicServer);
 
   {@abstract(encapsulates the properties and methods for connect to firebird database)}
   TFBLDatabase = class(TComponent)
@@ -735,7 +735,7 @@ var
   bOk: boolean;
   Res: integer;
 begin
-  Result := piUnknow;
+  Result := piUnknown;
   Res := GetDBInfoInt2(isc_info_db_provider, bOk);
   if bOk then
   begin
@@ -753,7 +753,7 @@ var
   bOk: boolean;
   Res: integer;
 begin
-  Result := siUnknow;
+  Result := siUnknown;
   Res := GetDBInfoInt2(isc_info_db_class, bOk);
   if bOk then
   begin
