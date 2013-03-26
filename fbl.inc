@@ -36,13 +36,13 @@
   {$ENDIF}
 {$ENDIF}
 
-//enamble this switch for interbase version < 6.0
+//enamble this switch for Interbase version < 6.0
 //{$DEFINE FBL_IB5} 
 
-//enable to switch to interbase 6 or firebird 1.0.x under linux with freepascal
+//enable to switch to Interbase 6 or Firebird 1.0.x under Linux with Free Pascal
 //{$DEFINE LIBCRYPT}
 
-//enable this switch with freepascal < 1.9.8
+//enable this switch with Free Pascal < 1.9.8
 //{$DEFINE FPC_INFD}
 
 

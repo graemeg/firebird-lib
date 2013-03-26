@@ -1,7 +1,7 @@
 {
    Firebird Library
    Open Source Library No Data Aware to direct access to Firebird
-   Relational Database from Borland Delphi / Kylix and Freepascal
+   Relational Database from Borland Delphi / Kylix and Free Pascal
 
    File:FBLTransaction.pas
    Copyright (c) 2002-2004 Alessandro Batisti

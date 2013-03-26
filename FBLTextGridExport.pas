@@ -1,7 +1,7 @@
 {
    Firebird Library
    Open Source Library No Data Aware for direct access to Firebird
-   Relational Database from Borland Delphi / Kylix and Freepascal
+   Relational Database from Borland Delphi / Kylix and Free Pascal
 
    File:FBLTextGridExport.pas
    Copyright (c) 2003-2004 Alessandro Batisti

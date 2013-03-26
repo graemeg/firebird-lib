@@ -1,4 +1,4 @@
-{implementation of FBLDataset in freepascal}
+{implementation of FBLDataset in free Pascal}
 
 procedure TFBLCustomDataset.InternalInitFieldDefs;
 var
