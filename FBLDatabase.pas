@@ -156,36 +156,39 @@ type
     {Connect to database
      @longCode(#
      //Examples
+     program FBLibTest;
      uses
-       FBLDatabase,FBLExcept;
-     //.......
+       FBLDatabase, FBLExcept;
      var
        myDb : TFBLDatabase;
-     myDB := TFBLDatabase.Create; // create an instance of TFDBDatabase;
-     //...
-     myDB.Host := 'myhost';          //set host name where run my db server
-     myDB.Protocol := ptTcpIp;       //set protocol type tcpip
-     myDb.DBFile := 'c:\db\mydb.fdb' //set database file name or alias (fb 1.5)
-     myDB.CharacterSet := 'NONE';    //set optionally  CharacterSet
-     //alternative method for connect to database
-     //is to set property myDB.Protocol := ptLocal
-     //and to set connection string in
-     //DbFile  property
-     //Example
-     //MyDb.DBFile := 'myhost:c:\db\mydb.fdb'; //tcpip
-     myDb.User := 'sysdba';         //set db user name
-     MyDb.Password := 'masterkey';  // set db password
-     //connect to database
-     try
-       myDB.Connect;
-       // MyDB.Connected  is true
-     except
-       //if connection failure raise exception
-       on E:EFBLError do   //EFBLError declared in FBLExcept.pas
-         WriteLn(E.Message);
-     end;
-     // ....disconnect
-     myDB.Disconnect;
+     begin
+       myDB := TFBLDatabase.Create; // create an instance of TFDBDatabase;
+
+       myDB.Host := 'myhost';          //set host name where run my db server
+       myDB.Protocol := ptTcpIp;       //set protocol type tcpip
+       myDb.DBFile := 'c:\db\mydb.fdb'; //set database file name or alias (fb 1.5)
+       myDB.CharacterSet := 'NONE';    //set optionally  CharacterSet
+       //alternative method for connect to database
+       //is to set property myDB.Protocol := ptLocal
+       //and to set connection string in
+       //DbFile  property
+       //Example
+       //MyDb.DBFile := 'myhost:c:\db\mydb.fdb'; //tcpip
+       myDb.User := 'sysdba';         //set db user name
+       MyDb.Password := 'masterkey';  // set db password
+       //connect to database
+       try
+         myDB.Connect;
+         // MyDB.Connected  is true
+       except
+         //if connection failure raise exception
+         on E:EFBLError do   //EFBLError declared in FBLExcept.pas
+           WriteLn(E.Message);
+       end;
+       // ....disconnect
+       myDB.Disconnect;
+       myDB.Free;
+     end.
      #)
      see also 
      @link(Disconnect) @Link(Connected) 
