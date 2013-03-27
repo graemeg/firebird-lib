@@ -1,7 +1,7 @@
-fblib firebird library version 0.84
+FBLib firebird library version 0.84
 
 Compilers supported
-  
+===================
   Delphi 4 standard ,pro ,ent
   Delphi 5 standard ,pro ,ent
   Delphi 6 personal* ,pro ,ent
@@ -17,11 +17,11 @@ Compilers supported
   Lazarus IDE 0.9.10 or above
 
 Firebird server supported
-
+==========================
  1.0.x superserver classic
  1.5.x superserver classic
  2.0.x superserver classic
-
+ 2.5.x superserver classic
 
 version 0.80 is thread safe (experimental feature) 
 components  thread safe are TFBLDatabase,TFBLTransaction,TFBLDsql 
@@ -31,8 +31,8 @@ enable this feature activate compiler directive
 FBL_THREADSAFE in fbl.inc.
 
 
-for generate documetation follow these steps:
-
+To generate documetation follow these steps:
+============================================
 1) download pasdoc from http://pasdoc.sourceforge.net
 2) compile pasdoc, I used Free Pascal 2.0
 3) go to fblib source directory
@@ -40,8 +40,8 @@ for generate documetation follow these steps:
 5) this script will create a directory name FblibHelp with docs, open
    index.html with your favorite web browser.
 
-note for Turbo Delphi users
-
+Note for Turbo Delphi users
+===========================
   In Turbo Delphi Explorer you cannot install components in the IDE.
   The package FBLTurbo.dpk is only for Turbo Delphi Professional.
 
@@ -51,14 +51,12 @@ note for Turbo Delphi users
 
 
 (1)
-in version 0.85 there is a new component TFBLDataset is an TDataset descendant.
+In version 0.85 there is a new component TFBLDataset. It is an TDataset descendant.
 
 Limits:
    Unidirectional 
    Read Only
    params not supported yet 
 
-see ClientDataset example in <fblib>\examples\turbodelphi\ directory 
+See ClientDataset example in <fblib>\examples\turbodelphi\ directory 
 
-  
-    
