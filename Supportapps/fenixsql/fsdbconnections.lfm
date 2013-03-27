@@ -1,0 +1,364 @@
+object frmDbConnections: TfrmDbConnections
+  Left = 455
+  Height = 452
+  Top = 191
+  Width = 433
+  HorzScrollBar.Page = 432
+  VertScrollBar.Page = 451
+  ActiveControl = cmbAlias
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsDialog
+  Caption = 'Database Connections'
+  ChildSizing.LeftRightSpacing = 5
+  ChildSizing.TopBottomSpacing = 5
+  ClientHeight = 452
+  ClientWidth = 433
+  OnCreate = FormCreate
+  OnShow = FormShow
+  Position = poDesktopCenter
+  LCLVersion = '1.1'
+  object GroupBox1: TGroupBox
+    Left = 5
+    Height = 57
+    Top = 5
+    Width = 423
+    Align = alTop
+    Caption = 'Alias'
+    ClientHeight = 40
+    ClientWidth = 419
+    TabOrder = 0
+    object cmbAlias: TComboBox
+      Left = 9
+      Height = 25
+      Top = 6
+      Width = 250
+      ItemHeight = 0
+      OnChange = cmbAliasChange
+      OnSelect = cmbAliasSelect
+      TabOrder = 0
+    end
+    object btnSave: TButton
+      Left = 265
+      Height = 23
+      Hint = 'save current alias'
+      Top = 6
+      Width = 68
+      BorderSpacing.InnerBorder = 4
+      Caption = '&Save'
+      OnClick = btnSaveClick
+      TabOrder = 1
+    end
+    object btnDelete: TButton
+      Left = 345
+      Height = 23
+      Hint = 'delete cuttent alias'
+      Top = 6
+      Width = 64
+      BorderSpacing.InnerBorder = 4
+      Caption = 'Delete'
+      OnClick = btnDeleteClick
+      TabOrder = 2
+    end
+  end
+  object GroupBox2: TGroupBox
+    Left = 5
+    Height = 210
+    Top = 62
+    Width = 423
+    Align = alTop
+    Caption = 'Server'
+    ClientHeight = 193
+    ClientWidth = 419
+    TabOrder = 1
+    object Label1: TLabel
+      Left = 9
+      Height = 15
+      Top = 0
+      Width = 52
+      Caption = 'Pro&tocol'
+      FocusControl = cmbProtocol
+      ParentColor = False
+    end
+    object Label2: TLabel
+      Left = 273
+      Height = 15
+      Top = 0
+      Width = 26
+      Caption = 'P&ort'
+      FocusControl = sePort
+      ParentColor = False
+    end
+    object Label3: TLabel
+      Left = 11
+      Height = 15
+      Top = 49
+      Width = 30
+      Caption = '&Host'
+      FocusControl = edHost
+      ParentColor = False
+    end
+    object Label4: TLabel
+      Left = 9
+      Height = 15
+      Top = 98
+      Width = 175
+      Caption = '&DBname (filename) or alias'
+      FocusControl = edDatabase
+      ParentColor = False
+    end
+    object lblDialect: TLabel
+      Left = 10
+      Height = 15
+      Top = 145
+      Width = 44
+      Caption = 'Dia&lect'
+      FocusControl = seDialect
+      ParentColor = False
+    end
+    object Label9: TLabel
+      Left = 104
+      Height = 15
+      Top = 145
+      Width = 87
+      Caption = '&Character set'
+      FocusControl = cmbCharacterSet
+      ParentColor = False
+    end
+    object cmbProtocol: TComboBox
+      Left = 9
+      Height = 23
+      Top = 18
+      Width = 192
+      ItemHeight = 0
+      ItemIndex = 0
+      Items.Strings = (
+        'Local'
+        'TcpIp'
+        'NetBeui'
+      )
+      OnSelect = cmbProtocolSelect
+      Style = csDropDownList
+      TabOrder = 0
+      Text = 'Local'
+    end
+    object edHost: TEdit
+      Left = 9
+      Height = 23
+      Top = 66
+      Width = 376
+      Enabled = False
+      TabOrder = 1
+    end
+    object edDatabase: TEditButton
+      Left = 9
+      Height = 23
+      Top = 114
+      Width = 376
+      ButtonWidth = 23
+      CharCase = ecNormal
+      Glyph.Data = {
+        46050000424D4605000000000000360000002800000012000000120000000100
+        2000000000001005000064000000640000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        00000000000000000000232323FF4A4A4AFF494A4AFF4B4C4CFF4C4C4CFF4B4C
+        4CFF4A4B4BFF484949FF464646FF434343FF404141FF333434FF1E1F1FFF0000
+        0000000000000000000000000000000000001B334EFFBDBDBDFFA5A6A6FFA8AA
+        AAFFABADADFFACAEAEFFAAABABFFA6A7A7FFA0A1A1FF999A9AFF929494FF8B8D
+        8DFF484949FF00000000000000000000000000000000000000001B334EFF5053
+        56FFCECECEFFBCBEBEFFC2C4C4FFC5C6C6FFC2C3C3FFBEBFBFFFB5B6B6FFADAE
+        AEFFA4A5A5FF9D9E9EFF6E6F6FFF121212FF0000000000000000000000000000
+        00001B334EFF183049FFCDCDCDFFC9CACAFFD4D5D5FFD4D5D5FFD0D2D2FFCBCC
+        CCFFC1C2C2FFB8B9B9FFAEAFAFFFA1A2A2FF949595FF484949FF000000000000
+        000000000000000000001B334EFF447DB7FF4E5153FFDADADAFFDADBDBFFE0E1
+        E1FFDCDDDDFFD5D6D6FFCACBCBFFC0C1C1FFB5B6B6FFA8A9A9FF9FA0A0FF6768
+        68FF212222FF0000000000000000000000001B334EFF82C2FEFF19314AFFDBDB
+        DBFFDEDFDFFFE7E8E8FFE4E6E6FFDEDFDFFFD1D2D2FFC6C7C7FFB9BABAFFACAD
+        ADFF9FA0A0FF939494FF484949FF0000000000000000000000001B334EFF82C2
+        FEFF4E86C4FF4C4F52FFF5F5F5FFF5F5F5FFECECECFFE4E4E4FFDCDCDCFFD4D4
+        D4FFCBCBCBFFC4C4C4FFBCBCBCFFB5B5B5FFB3B3B3FF303030FF000000000000
+        00001B334EFF8AC8FEFF82C2FEFF1B334EFF4D5053FF4D5053FF4F5255FF575A
+        5CFF4E5154FF4E5154FF505356FF505356FF4E5154FF000000FF000000FF0000
+        00FF00000000000000001B334EFF9AD3FEFF87C5FDFF82C2FEFF62ACF8FF62AC
+        F8FF62ACF8FF62ACF8FF62ACF8FF62ACF8FF62ACF8FF62ACF8FF000000FF0000
+        0000000000000000000000000000000000001B334EFF66A5E5FF9AD3FEFF85C5
+        FEFF66A5E5FF1B334EFF1B334EFF1B334EFF1B334EFF1B334EFF1B334EFF1B33
+        4EFF000000000000000000000000000000000000000000000000000000001B33
+        4EFF1B334EFF1B334EFF1B334EFF000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        00000000000000000000000000FF000000FF000000FF000000FF000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        00000000000000000000000000000000000000000000000000FF000000FF0000
+        00FF000000000000000000000000000000000000000000000000000000000000
+        0000000000FF0000000000000000000000000000000000000000000000FF0000
+        00FF000000FF000000FF00000000000000000000000000000000000000000000
+        0000000000000000000000000000000000FF000000FF00000000000000FF0000
+        00FF000000FF000000FF00000000000000FF0000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000FF0000
+        00FF000000FF000000FF00000000000000000000000000000000000000000000
+        00000000000000000000
+      }
+      MaxLength = 0
+      NumGlyphs = 1
+      OnButtonClick = edDatabaseButtonClick
+      TabOrder = 2
+    end
+    object sePort: TSpinEdit
+      Left = 273
+      Height = 23
+      Top = 18
+      Width = 112
+      Enabled = False
+      MaxValue = 65000
+      MinValue = 1
+      TabOrder = 3
+      Value = 3050
+    end
+    object seDialect: TSpinEdit
+      Left = 10
+      Height = 23
+      Top = 161
+      Width = 78
+      MaxValue = 3
+      MinValue = 1
+      TabOrder = 4
+      Value = 3
+    end
+    object cmbCharacterSet: TComboBox
+      Left = 104
+      Height = 23
+      Top = 161
+      Width = 281
+      ItemHeight = 0
+      ItemIndex = 0
+      Items.Strings = (
+        'NONE'
+        'OCTETS'
+        'ASCII'
+        'UNICODE_FSS'
+        'SJIS_0208|'
+        'EUCJ_0208'
+        'DOS437'
+        'DOS850'
+        'DOS865'
+        'ISO8859_1'
+        'DOS852'
+        'DOS857'
+        'DOS860'
+        'DOS861'
+        'DOS863'
+        'CYRL'
+        'WIN1250'
+        'WIN1251'
+        'WIN1252'
+        'WIN1253'
+        'WIN1254'
+        'NEXT'
+        'KSC_5601'
+        'BIG_5  '
+        'GB_2312                    '
+      )
+      Style = csDropDownList
+      TabOrder = 5
+      Text = 'NONE'
+    end
+  end
+  object GroupBox3: TGroupBox
+    Left = 5
+    Height = 144
+    Top = 272
+    Width = 423
+    Align = alTop
+    Caption = 'Autentication'
+    ClientHeight = 127
+    ClientWidth = 419
+    TabOrder = 2
+    object Label5: TLabel
+      Left = 11
+      Height = 15
+      Top = 0
+      Width = 30
+      Caption = '&User'
+      FocusControl = edUser
+      ParentColor = False
+    end
+    object Label6: TLabel
+      Left = 10
+      Height = 15
+      Top = 40
+      Width = 60
+      Caption = '&Password'
+      FocusControl = edPassword
+      ParentColor = False
+    end
+    object Label7: TLabel
+      Left = 11
+      Height = 15
+      Top = 80
+      Width = 27
+      Caption = '&Role'
+      ParentColor = False
+    end
+    object edUser: TEdit
+      Left = 10
+      Height = 23
+      Top = 16
+      Width = 264
+      TabOrder = 0
+    end
+    object edPassword: TEdit
+      Left = 10
+      Height = 23
+      Top = 56
+      Width = 265
+      EchoMode = emPassword
+      OnChange = edPasswordChange
+      PasswordChar = '*'
+      TabOrder = 1
+    end
+    object edRole: TEdit
+      Left = 10
+      Height = 23
+      Top = 96
+      Width = 265
+      TabOrder = 2
+    end
+  end
+  object btnTest: TBitBtn
+    Left = 8
+    Height = 25
+    Top = 424
+    Width = 75
+    Caption = '&Test'
+    OnClick = btnTestClick
+    TabOrder = 3
+  end
+  object btnConnect: TBitBtn
+    Left = 352
+    Height = 25
+    Top = 424
+    Width = 75
+    Caption = '&Connect'
+    OnClick = btnConnectClick
+    TabOrder = 4
+  end
+  object btnCancel: TBitBtn
+    Left = 269
+    Height = 25
+    Top = 424
+    Width = 75
+    Caption = '&Cancel'
+    Kind = bkCancel
+    ModalResult = 2
+    TabOrder = 5
+  end
+  object odDBFile: TOpenDialog
+    Title = 'Apri file esistenti'
+    FilterIndex = 0
+    left = 304
+    top = 336
+  end
+end

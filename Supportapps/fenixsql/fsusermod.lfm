@@ -1,0 +1,185 @@
+object FrmUserMod: TFrmUserMod
+  Left = 448
+  Height = 338
+  Top = 215
+  Width = 203
+  HorzScrollBar.Page = 202
+  VertScrollBar.Page = 337
+  ActiveControl = edUserName
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsDialog
+  Caption = 'User parameters'
+  ChildSizing.LeftRightSpacing = 6
+  ChildSizing.TopBottomSpacing = 2
+  ChildSizing.HorizontalSpacing = 2
+  ChildSizing.VerticalSpacing = 2
+  ClientHeight = 338
+  ClientWidth = 203
+  OnCreate = FormCreate
+  OnShow = FormShow
+  Position = poDesktopCenter
+  LCLVersion = '1.1'
+  object GroupBox1: TGroupBox
+    Left = 6
+    Height = 150
+    Top = 2
+    Width = 191
+    Align = alTop
+    Caption = 'Required information'
+    ClientHeight = 133
+    ClientWidth = 187
+    TabOrder = 0
+    object edUserName: TLabeledEdit
+      Left = 8
+      Height = 23
+      Top = 20
+      Width = 168
+      EditLabel.AnchorSideLeft.Control = edUserName
+      EditLabel.AnchorSideRight.Control = edUserName
+      EditLabel.AnchorSideRight.Side = asrBottom
+      EditLabel.AnchorSideBottom.Control = edUserName
+      EditLabel.Left = 8
+      EditLabel.Height = 15
+      EditLabel.Top = 2
+      EditLabel.Width = 168
+      EditLabel.Caption = '&UserName'
+      EditLabel.ParentColor = False
+      MaxLength = 31
+      TabOrder = 0
+      OnChange = edUserNameChange
+    end
+    object edPassword: TLabeledEdit
+      Left = 8
+      Height = 23
+      Top = 60
+      Width = 168
+      EchoMode = emPassword
+      EditLabel.AnchorSideLeft.Control = edPassword
+      EditLabel.AnchorSideRight.Control = edPassword
+      EditLabel.AnchorSideRight.Side = asrBottom
+      EditLabel.AnchorSideBottom.Control = edPassword
+      EditLabel.Left = 8
+      EditLabel.Height = 15
+      EditLabel.Top = 42
+      EditLabel.Width = 168
+      EditLabel.Caption = '&Password'
+      EditLabel.ParentColor = False
+      MaxLength = 31
+      PasswordChar = '*'
+      TabOrder = 1
+      OnChange = edPasswordChange
+    end
+    object edConfirmPassword: TLabeledEdit
+      Left = 8
+      Height = 23
+      Top = 100
+      Width = 168
+      EchoMode = emPassword
+      EditLabel.AnchorSideLeft.Control = edConfirmPassword
+      EditLabel.AnchorSideRight.Control = edConfirmPassword
+      EditLabel.AnchorSideRight.Side = asrBottom
+      EditLabel.AnchorSideBottom.Control = edConfirmPassword
+      EditLabel.Left = 8
+      EditLabel.Height = 15
+      EditLabel.Top = 82
+      EditLabel.Width = 168
+      EditLabel.Caption = '&Confirm password'
+      EditLabel.ParentColor = False
+      MaxLength = 31
+      PasswordChar = '*'
+      TabOrder = 2
+      OnChange = edConfirmPasswordChange
+    end
+  end
+  object GroupBox2: TGroupBox
+    Left = 6
+    Height = 150
+    Top = 154
+    Width = 191
+    Align = alTop
+    Caption = 'Optional information'
+    ClientHeight = 133
+    ClientWidth = 187
+    TabOrder = 1
+    object edFirstName: TLabeledEdit
+      Left = 8
+      Height = 23
+      Top = 20
+      Width = 168
+      EditLabel.AnchorSideLeft.Control = edFirstName
+      EditLabel.AnchorSideRight.Control = edFirstName
+      EditLabel.AnchorSideRight.Side = asrBottom
+      EditLabel.AnchorSideBottom.Control = edFirstName
+      EditLabel.Left = 8
+      EditLabel.Height = 15
+      EditLabel.Top = 2
+      EditLabel.Width = 168
+      EditLabel.Caption = '&First name'
+      EditLabel.ParentColor = False
+      MaxLength = 31
+      TabOrder = 0
+      OnChange = edFirstNameChange
+    end
+    object edMiddleName: TLabeledEdit
+      Left = 8
+      Height = 23
+      Top = 60
+      Width = 168
+      EditLabel.AnchorSideLeft.Control = edMiddleName
+      EditLabel.AnchorSideRight.Control = edMiddleName
+      EditLabel.AnchorSideRight.Side = asrBottom
+      EditLabel.AnchorSideBottom.Control = edMiddleName
+      EditLabel.Left = 8
+      EditLabel.Height = 15
+      EditLabel.Top = 42
+      EditLabel.Width = 168
+      EditLabel.Caption = '&Middle name'
+      EditLabel.ParentColor = False
+      MaxLength = 31
+      TabOrder = 1
+      OnChange = edMiddleNameChange
+    end
+    object edLastName: TLabeledEdit
+      Left = 8
+      Height = 23
+      Top = 100
+      Width = 168
+      EditLabel.AnchorSideLeft.Control = edLastName
+      EditLabel.AnchorSideRight.Control = edLastName
+      EditLabel.AnchorSideRight.Side = asrBottom
+      EditLabel.AnchorSideBottom.Control = edLastName
+      EditLabel.Left = 8
+      EditLabel.Height = 15
+      EditLabel.Top = 82
+      EditLabel.Width = 168
+      EditLabel.Caption = '&Last name'
+      EditLabel.ParentColor = False
+      MaxLength = 31
+      TabOrder = 2
+      OnChange = edLastNameChange
+    end
+  end
+  object btnOk: TBitBtn
+    Left = 122
+    Height = 24
+    Top = 312
+    Width = 75
+    BorderSpacing.InnerBorder = 2
+    Caption = '&OK'
+    Enabled = False
+    Kind = bkOK
+    OnClick = btnOkClick
+    TabOrder = 2
+  end
+  object btnCancel: TBitBtn
+    Left = 40
+    Height = 24
+    Top = 312
+    Width = 75
+    BorderSpacing.InnerBorder = 2
+    Caption = '&Cancel'
+    Kind = bkCancel
+    ModalResult = 2
+    TabOrder = 3
+  end
+end

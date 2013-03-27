@@ -1,0 +1,26 @@
+/* XPM */
+static char *20_ddl[] = {
+/* columns rows colors chars-per-pixel */
+"16 16 4 1",
+"  c black",
+". c #000084",
+"X c Null",
+"o c gray100",
+/* pixels */
+"XXXXXXXXXXXXXXXX",
+"X      XXXXXXXXX",
+"X oooo  XXXXXXXX",
+"X oooo o XXXXXXX",
+"X o  o ......XXX",
+"X ooooo.oooo..XX",
+"X o    .oooo.o.X",
+"X ooooo.o  o....",
+"X o    .ooooooo.",
+"X ooooo.o     o.",
+"X      .ooooooo.",
+"XXXXXXX.o     o.",
+"XXXXXXX.ooooooo.",
+"XXXXXXX.........",
+"XXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXX"
+};

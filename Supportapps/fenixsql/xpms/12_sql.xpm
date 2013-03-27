@@ -1,0 +1,26 @@
+/* XPM */
+static char *12_sql[] = {
+/* columns rows colors chars-per-pixel */
+"16 16 4 1",
+"  c black",
+". c blue",
+"X c Null",
+"o c #FFA5FF",
+/* pixels */
+"XXXXXXXXXXXXXXXX",
+"                ",
+" .............. ",
+"                ",
+" XXXXXXXXXXXXXX ",
+" X...X....X.XXX ",
+" X...X....X.XXX ",
+" X.XXX.XX.X.XXX ",
+" X...X.XX.X.XXX ",
+" X...X.XX.X.XXX ",
+" XXX.X.X..X.XXX ",
+" X...X....X...X ",
+" X...X....X...X ",
+" oXoXoXoXoXoXoX ",
+"                ",
+"XXXXXXXXXXXXXXXX"
+};

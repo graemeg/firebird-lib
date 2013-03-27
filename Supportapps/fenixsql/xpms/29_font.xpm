@@ -1,0 +1,27 @@
+/* XPM */
+static char *29_font[] = {
+/* columns rows colors chars-per-pixel */
+"16 16 5 1",
+"  c black",
+". c #1042A5",
+"X c #296BBD",
+"o c Null",
+"O c #848484",
+/* pixels */
+"oooooooooooooooo",
+"ooo oooooooooooo",
+"ooO Oooooooooooo",
+"oo o ooooooooooo",
+"oo o oooooooX..o",
+"oO   OoooooX...o",
+"o OoO ooooX....o",
+"o ooo oooX..X..o",
+"ooooooooX..Xo..o",
+"oooooooX.......o",
+"ooooooX..Xooo..o",
+"oooooX..Xoooo..o",
+"oooo.....ooo....",
+"oooooooooooooooo",
+"oooo............",
+"oooooooooooooooo"
+};

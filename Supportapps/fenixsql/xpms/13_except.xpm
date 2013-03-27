@@ -1,0 +1,30 @@
+/* XPM */
+static char *12_except[] = {
+/* columns rows colors chars-per-pixel */
+"16 16 8 1",
+"  c black",
+". c #BD0000",
+"X c red",
+"o c #BD00BD",
+"O c Null",
+"+ c yellow",
+"@ c #848484",
+"# c #FF84FF",
+/* pixels */
+"OOOOOOOOOOOOOOOO",
+"OOOOO       OOOO",
+"OOOOO OOOOO OOOO",
+"OOOOO O#@@O OOOO",
+"OOOOO OOOOO OOOO",
+"OOOOO O@@#O OOOO",
+"OOOOO OOOOO OOOO",
+"OOOOO OO        ",
+"XOOOO    +O+O+O ",
+"oX.OOXOO O+O+O+ ",
+"OOOXXOOO        ",
+"OO.O.OOOOOOOOOOO",
+"OXXOXXOOOOOOOOOO",
+".XOOOXoOOOOOOOOO",
+"O.OOOOOOOOOOOOOO",
+"OOOOOOOOOOOOOOOO"
+};

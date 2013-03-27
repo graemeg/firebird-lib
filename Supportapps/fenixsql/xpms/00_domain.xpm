@@ -1,0 +1,26 @@
+/* XPM */
+static char *0_domain[] = {
+/* columns rows colors chars-per-pixel */
+"16 16 4 1",
+"  c #6B63A5",
+". c #6B73A5",
+"X c #6B94D6",
+"o c Null",
+/* pixels */
+"oooooooooooo ooo",
+"oooooooooooX ooo",
+"oooooooooooX.ooo",
+"oooXXXXXXXXXXXXX",
+"oooX.......X.  o",
+"oooX.ooooooX.ooo",
+"oooX.ooooooX.ooo",
+"oooX.ooooooX.ooo",
+"oooX.ooooooX ooo",
+"oooX.ooooooX ooo",
+"oooX ooooooX ooo",
+"oooX XXXXXXX ooo",
+"oXXX         ooo",
+"     ooooooooooo",
+"oooX ooooooooooo",
+"oooXoooooooooooo"
+};

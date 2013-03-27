@@ -1,0 +1,27 @@
+/* XPM */
+static char *34_filter[] = {
+/* columns rows colors chars-per-pixel */
+"16 16 5 1",
+"  c black",
+". c #008080",
+"X c Null",
+"o c #C0C0C0",
+"O c gray100",
+/* pixels */
+"XXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXX",
+"X              X",
+"X .oOOOoooo... X",
+"XX .oOooooo.. XX",
+"XXX .oOooo.. XXX",
+"XXXX .ooo.. XXXX",
+"XXXXX ooo. XXXXX",
+"XXXXXX Oo XXXXXX",
+"XXXXXX Oo XXXXXX",
+"XXXXXX .. XXXXXX",
+"XXXXXX .. XXXXXX",
+"XXXXXX    XXXXXX",
+"XXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXX"
+};

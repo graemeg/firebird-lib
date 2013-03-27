@@ -1,0 +1,97 @@
+object frmLogin: TfrmLogin
+  Left = 410
+  Height = 148
+  Top = 252
+  Width = 220
+  HorzScrollBar.Page = 219
+  VertScrollBar.Page = 147
+  ActiveControl = edUser
+  BorderStyle = bsDialog
+  Caption = 'Login'
+  OnCreate = FormCreate
+  OnShow = FormShow
+  Position = poScreenCenter
+  object Panel1: TPanel
+    Height = 20
+    Width = 220
+    Align = alTop
+    BevelOuter = bvNone
+    ChildSizing.LeftRightSpacing = 4
+    ChildSizing.ControlsPerLine = 2
+    FullRepaint = False
+    TabOrder = 0
+    object lAlias: TLabel
+      Left = 37
+      Height = 20
+      Width = 179
+      Align = alClient
+      Caption = 'alias'
+      Color = clGray
+      Font.Color = clWhite
+      Font.Style = [fsBold]
+      Layout = tlCenter
+      ParentColor = False
+      Transparent = False
+    end
+    object Label1: TLabel
+      Left = 4
+      Height = 20
+      Width = 33
+      Align = alLeft
+      Caption = ' Alias: '
+      Color = clGray
+      Font.Color = clWhite
+      Layout = tlCenter
+      ParentColor = False
+      Transparent = False
+    end
+  end
+  object edUser: TLabeledEdit
+    Left = 8
+    Height = 21
+    Top = 40
+    Width = 200
+    MaxLength = 31
+    ParentColor = False
+    TabOrder = 1
+  end
+  object edPassword: TLabeledEdit
+    Left = 8
+    Height = 21
+    Top = 80
+    Width = 200
+    MaxLength = 31
+    ParentColor = False
+    PasswordChar = '*'
+    TabOrder = 2
+  end
+  object Panel2: TPanel
+    Height = 36
+    Top = 112
+    Width = 220
+    Align = alBottom
+    BevelOuter = bvNone
+    FullRepaint = False
+    TabOrder = 3
+    object Bevel1: TBevel
+      Height = 5
+      Width = 220
+      Align = alTop
+      Shape = bsTopLine
+    end
+    object BitBtn1: TBitBtn
+      Left = 141
+      Height = 26
+      Top = 6
+      Width = 75
+      Anchors = [akTop, akRight]
+      BorderSpacing.InnerBorder = 2
+      Caption = '&OK'
+      Default = True
+      Kind = bkOK
+      ModalResult = 1
+      NumGlyphs = 0
+      TabOrder = 0
+    end
+  end
+end

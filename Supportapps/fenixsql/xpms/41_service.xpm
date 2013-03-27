@@ -1,0 +1,33 @@
+/* XPM */
+static char *41_service[] = {
+/* columns rows colors chars-per-pixel */
+"16 16 11 1",
+"  c #0063CE",
+". c Null",
+"X c #84C6FF",
+"o c #A5D6FF",
+"O c #ADD6FF",
+"+ c #B5DEFF",
+"@ c #C6E7FF",
+"# c #D6EFFF",
+"$ c #E7F7FF",
+"% c #F7FFFF",
+"& c #FFFFFF",
+/* pixels */
+"................",
+"................",
+"..             .",
+".               ",
+". &&&&&&&&&&&%$ ",
+". &&&&&&&&&&%$# ",
+". &XX&XXXXXXXX@ ",
+". &&&&&&&&%$#o+ ",
+". &XX&XXXXXXXXO ",
+". &&&&&&%$#@+OO ",
+". &XX&XXXXXXXXO ",
+". &&&&%$#@+OOOO ",
+". &XX%XXXXXXXXO ",
+". &&%$#@+OOOOOO ",
+".               ",
+"................"
+};

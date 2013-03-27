@@ -1,0 +1,27 @@
+/* XPM */
+static char *6_udf[] = {
+/* columns rows colors chars-per-pixel */
+"16 16 5 1",
+"  c black",
+". c gray3",
+"X c #101010",
+"o c #840084",
+"O c Null",
+/* pixels */
+"OOOOOoOOOOOOOOOO",
+"OOOOoOoOOOOOOOOO",
+"OOOOOOOOOOOOOOOO",
+"OOOOoOoOOOOOOOOO",
+"OOOoOOOOOOOOOOOO",
+"OOOooOOO. OX OOO",
+"OOOoOOO O  O  OO",
+"OOOOoOOOOO O OOO",
+"OOOoOOOOO  OOOOO",
+"OOooOOO O.OOOOOO",
+"OOOoOO  O  O.OOO",
+"OOoOOOO  O  OOOO",
+"OOOoOOOOOOOOOOOO",
+"oOoOOOOOOOOOOOOO",
+"OoOOOOOOOOOOOOOO",
+"OoOOOOOOOOOOOOOO"
+};

@@ -1,0 +1,107 @@
+{ This is an automatically generated lazarus resource file }
+
+LazarusResources.Add('TfrmFbBackup','FORMDATA',[
+  'TPF0'#12'TfrmFbBackup'#11'frmFbBackup'#4'Left'#3'O'#1#6'Height'#3'2'#1#3'Top'
+  +#3#220#0#5'Width'#3#127#1#18'HorzScrollBar.Page'#3'~'#1#18'VertScrollBar.Pag'
+  +'e'#3'1'#1#13'ActiveControl'#7#8'btnStart'#11'BorderIcons'#11#12'biSystemMen'
+  +'u'#0#11'BorderStyle'#7#8'bsDialog'#7'Caption'#6#6'Backup'#12'ClientHeight'#3
+  +'2'#1#11'ClientWidth'#3#127#1#8'OnCreate'#7#10'FormCreate'#8'Position'#7#15
+  +'poDesktopCenter'#10'LCLVersion'#6#3'1.1'#0#6'TPanel'#6'Panel1'#4'Left'#2#0#6
+  +'Height'#2#29#3'Top'#3#21#1#5'Width'#3#127#1#5'Align'#7#8'alBottom'#10'Bevel'
+  +'Outer'#7#6'bvNone'#12'ClientHeight'#2#29#11'ClientWidth'#3#127#1#8'TabOrder'
+  +#2#0#0#7'TBitBtn'#8'btnStart'#4'Left'#3#22#1#6'Height'#2#24#3'Top'#2#2#5'Wid'
+  +'th'#2'd'#7'Anchors'#11#7'akRight'#0#25'BorderSpacing.InnerBorder'#2#2#7'Cap'
+  +'tion'#6#13'&Start backup'#7'Default'#9#4'Kind'#7#4'bkOK'#7'OnClick'#7#13'bt'
+  +'nStartClick'#8'TabOrder'#2#0#0#0#7'TBitBtn'#7'BitBtn2'#4'Left'#3#200#0#6'He'
+  +'ight'#2#24#3'Top'#2#2#5'Width'#2'L'#7'Anchors'#11#5'akTop'#7'akRight'#0#25
+  +'BorderSpacing.InnerBorder'#2#2#7'Caption'#6#7'&Cancel'#4'Kind'#7#7'bkClose'
+  +#8'TabOrder'#2#1#0#0#0#6'TPanel'#6'Panel2'#4'Left'#2#0#6'Height'#3#21#1#3'To'
+  +'p'#2#0#5'Width'#3#127#1#5'Align'#7#8'alClient'#10'BevelOuter'#7#6'bvNone'#28
+  +'ChildSizing.LeftRightSpacing'#2#4#28'ChildSizing.TopBottomSpacing'#2#4#12'C'
+  +'lientHeight'#3#21#1#11'ClientWidth'#3#127#1#8'TabOrder'#2#1#0#9'TNotebook'#9
+  +'Notebook1'#4'Left'#2#4#6'Height'#3#13#1#3'Top'#2#4#5'Width'#3'w'#1#9'PageIn'
+  +'dex'#2#0#5'Align'#7#8'alClient'#8'TabOrder'#2#0#7'TabStop'#9#0#5'TPage'#5'P'
+  +'age1'#28'ChildSizing.LeftRightSpacing'#2#2#0#6'TPanel'#6'Panel3'#4'Left'#2#2
+  +#6'Height'#2#18#3'Top'#2#0#5'Width'#3's'#1#5'Align'#7#5'alTop'#9'Alignment'#7
+  +#13'taLeftJustify'#10'BevelOuter'#7#6'bvNone'#7'Caption'#6#13'Database file'
+  +#8'TabOrder'#2#0#0#0#6'TPanel'#6'Panel4'#4'Left'#2#2#6'Height'#2#21#3'Top'#2
+  +#18#5'Width'#3's'#1#5'Align'#7#5'alTop'#10'BevelOuter'#7#6'bvNone'#12'Client'
+  +'Height'#2#21#11'ClientWidth'#3's'#1#8'TabOrder'#2#1#0#5'TEdit'#8'edDbFile'#4
+  +'Left'#2#0#6'Height'#2#21#3'Top'#2#0#5'Width'#3's'#1#5'Align'#7#8'alClient'#8
+  +'TabOrder'#2#0#0#0#0#6'TPanel'#6'Panel5'#4'Left'#2#2#6'Height'#2#18#3'Top'#2
+  +''''#5'Width'#3's'#1#5'Align'#7#5'alTop'#9'Alignment'#7#13'taLeftJustify'#10
+  +'BevelOuter'#7#6'bvNone'#7'Caption'#6#11'Backup file'#8'TabOrder'#2#2#0#0#6
+  +'TPanel'#6'Panel6'#4'Left'#2#2#6'Height'#2#21#3'Top'#2'9'#5'Width'#3's'#1#5
+  +'Align'#7#5'alTop'#10'BevelOuter'#7#6'bvNone'#12'ClientHeight'#2#21#11'Clien'
+  +'tWidth'#3's'#1#8'TabOrder'#2#3#0#11'TEditButton'#9'edBKPFile'#4'Left'#2#0#6
+  +'Height'#2#21#3'Top'#2#0#5'Width'#3'['#1#5'Align'#7#6'alLeft'#7'Anchors'#11#5
+  +'akTop'#6'akLeft'#7'akRight'#8'akBottom'#0#11'ButtonWidth'#2#23#8'CharCase'#7
+  +#8'ecNormal'#10'Glyph.Data'#10'J'#5#0#0'F'#5#0#0'BMF'#5#0#0#0#0#0#0'6'#0#0#0
+  +'('#0#0#0#18#0#0#0#18#0#0#0#1#0' '#0#0#0#0#0#16#5#0#0'd'#0#0#0'd'#0#0#0#0#0#0
+  +#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0
+  +#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0
+  +#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0
+  +#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0'###'
+  +#255'JJJ'#255'IJJ'#255'KLL'#255'LLL'#255'KLL'#255'JKK'#255'HII'#255'FFF'#255
+  +'CCC'#255'@AA'#255'344'#255#30#31#31#255#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0
+  +#0#0#27'3N'#255#189#189#189#255#165#166#166#255#168#170#170#255#171#173#173
+  +#255#172#174#174#255#170#171#171#255#166#167#167#255#160#161#161#255#153#154
+  +#154#255#146#148#148#255#139#141#141#255'HII'#255#0#0#0#0#0#0#0#0#0#0#0#0#0#0
+  +#0#0#0#0#0#0#27'3N'#255'PSV'#255#206#206#206#255#188#190#190#255#194#196#196
+  +#255#197#198#198#255#194#195#195#255#190#191#191#255#181#182#182#255#173#174
+  +#174#255#164#165#165#255#157#158#158#255'noo'#255#18#18#18#255#0#0#0#0#0#0#0
+  +#0#0#0#0#0#0#0#0#0#27'3N'#255#24'0I'#255#205#205#205#255#201#202#202#255#212
+  +#213#213#255#212#213#213#255#208#210#210#255#203#204#204#255#193#194#194#255
+  +#184#185#185#255#174#175#175#255#161#162#162#255#148#149#149#255'HII'#255#0#0
+  +#0#0#0#0#0#0#0#0#0#0#0#0#0#0#27'3N'#255'D}'#183#255'NQS'#255#218#218#218#255
+  +#218#219#219#255#224#225#225#255#220#221#221#255#213#214#214#255#202#203#203
+  +#255#192#193#193#255#181#182#182#255#168#169#169#255#159#160#160#255'ghh'#255
+  +'!""'#255#0#0#0#0#0#0#0#0#0#0#0#0#27'3N'#255#130#194#254#255#25'1J'#255#219
+  +#219#219#255#222#223#223#255#231#232#232#255#228#230#230#255#222#223#223#255
+  +#209#210#210#255#198#199#199#255#185#186#186#255#172#173#173#255#159#160#160
+  +#255#147#148#148#255'HII'#255#0#0#0#0#0#0#0#0#0#0#0#0#27'3N'#255#130#194#254
+  +#255'N'#134#196#255'LOR'#255#245#245#245#255#245#245#245#255#236#236#236#255
+  +#228#228#228#255#220#220#220#255#212#212#212#255#203#203#203#255#196#196#196
+  +#255#188#188#188#255#181#181#181#255#179#179#179#255'000'#255#0#0#0#0#0#0#0#0
+  +#27'3N'#255#138#200#254#255#130#194#254#255#27'3N'#255'MPS'#255'MPS'#255'ORU'
+  +#255'WZ\'#255'NQT'#255'NQT'#255'PSV'#255'PSV'#255'NQT'#255#0#0#0#255#0#0#0
+  ,#255#0#0#0#255#0#0#0#0#0#0#0#0#27'3N'#255#154#211#254#255#135#197#253#255#130
+  +#194#254#255'b'#172#248#255'b'#172#248#255'b'#172#248#255'b'#172#248#255'b'
+  +#172#248#255'b'#172#248#255'b'#172#248#255'b'#172#248#255#0#0#0#255#0#0#0#0#0
+  +#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#27'3N'#255'f'#165#229#255#154#211#254#255#133
+  +#197#254#255'f'#165#229#255#27'3N'#255#27'3N'#255#27'3N'#255#27'3N'#255#27'3'
+  +'N'#255#27'3N'#255#27'3N'#255#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0
+  +#0#0#0#0#27'3N'#255#27'3N'#255#27'3N'#255#27'3N'#255#0#0#0#0#0#0#0#0#0#0#0#0
+  +#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0
+  +#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0
+  +#0#0#0#0#0#0#0#255#0#0#0#255#0#0#0#255#0#0#0#255#0#0#0#0#0#0#0#0#0#0#0#0#0#0
+  +#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0
+  +#0#0#0#0#0#0#0#0#0#0#0#255#0#0#0#255#0#0#0#255#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0
+  +#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#255#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0
+  +#0#0#0#0#0#0#0#255#0#0#0#255#0#0#0#255#0#0#0#255#0#0#0#0#0#0#0#0#0#0#0#0#0#0
+  +#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#255#0#0#0#255#0#0#0#0#0#0
+  +#0#255#0#0#0#255#0#0#0#255#0#0#0#255#0#0#0#0#0#0#0#255#0#0#0#0#0#0#0#0#0#0#0
+  +#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#255#0#0#0
+  +#255#0#0#0#255#0#0#0#255#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0
+  +#0#0#0#0#0#0#9'MaxLength'#2#0#9'NumGlyphs'#2#1#13'OnButtonClick'#7#20'edBKPF'
+  +'ileButtonClick'#8'TabOrder'#2#0#0#0#0#11'TCheckGroup'#9'cgOptions'#4'Left'#2
+  +#2#6'Height'#3#191#0#3'Top'#2'N'#5'Width'#3's'#1#5'Align'#7#8'alClient'#8'Au'
+  +'toFill'#9#7'Caption'#6#7'Options'#28'ChildSizing.LeftRightSpacing'#2#6#28'C'
+  +'hildSizing.TopBottomSpacing'#2#6#29'ChildSizing.EnlargeHorizontal'#7#24'crs'
+  +'HomogenousChildResize'#27'ChildSizing.EnlargeVertical'#7#24'crsHomogenousCh'
+  +'ildResize'#28'ChildSizing.ShrinkHorizontal'#7#14'crsScaleChilds'#26'ChildSi'
+  +'zing.ShrinkVertical'#7#14'crsScaleChilds'#18'ChildSizing.Layout'#7#29'cclLe'
+  +'ftToRightThenTopToBottom'#27'ChildSizing.ControlsPerLine'#2#1#12'ClientHeig'
+  +'ht'#3#174#0#11'ClientWidth'#3'o'#1#13'Items.Strings'#1#6#14'Verbose output'
+  +#6#13'Metadata only'#6#16'Ignore check sum'#6#24'Ignore limbo transaction'#6
+  +#21'no garbage collection'#6#15'Old description'#6#15'No trasportable'#0#8'T'
+  +'abOrder'#2#4#4'Data'#10#11#0#0#0#7#0#0#0#3#2#2#2#2#2#2#0#0#0#5'TPage'#5'Pag'
+  +'e2'#28'ChildSizing.LeftRightSpacing'#2#2#28'ChildSizing.TopBottomSpacing'#2
+  +#2#0#5'TMemo'#4'mOut'#4'Left'#2#2#6'Height'#3#239#0#3'Top'#2#2#5'Width'#3'k'
+  +#1#5'Align'#7#8'alClient'#10'ScrollBars'#7#6'ssBoth'#8'TabOrder'#2#0#0#0#0#0
+  +#0#11'TFBLService'#11'FBLService1'#8'Protocol'#7#7'ptLocal'#13'OnWriteOutput'
+  +#7#22'FBLService1WriteOutput'#4'left'#2#8#3'top'#3#248#0#0#0#11'TSaveDialog'
+  +#9'sdBkpFile'#5'Title'#6#14'Salva con nome'#10'DefaultExt'#6#4'.gbk'#11'Filt'
+  +'erIndex'#2#0#7'Options'#11#15'ofPathMustExist'#14'ofEnableSizing'#12'ofView'
+  +'Detail'#0#4'left'#2#8#3'top'#3#24#1#0#0#0
+]);

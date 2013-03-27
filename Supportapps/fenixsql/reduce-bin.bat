@@ -1,0 +1,1 @@
+strip --strip-all fenixsql.exe

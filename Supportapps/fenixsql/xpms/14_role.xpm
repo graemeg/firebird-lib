@@ -1,0 +1,29 @@
+/* XPM */
+static char *14_role[] = {
+/* columns rows colors chars-per-pixel */
+"16 16 7 1",
+"  c black",
+". c #000084",
+"X c blue",
+"o c Null",
+"O c #848400",
+"+ c yellow",
+"@ c #848484",
+/* pixels */
+"ooooooX.X.Xooooo",
+"oooooXXXXXX.oooo",
+"ooooXXXXXXXXXooo",
+"    XXXXXXXX.ooo",
+"oooo +o+o+o+ ooo",
+"ooo +  o+o+o ooo",
+"oooOo o o+o+ ooo",
+"oo o+o+o+o+o ooo",
+"oo   +++o+o+ ooo",
+"oooo o O+oO   oo",
+"oooo  o+oO oo@ o",
+"oooo o+o+ oooo@ ",
+"oooo     @ooooo ",
+"oooooo oooooooo ",
+"oooooo oooooooo ",
+"oooooooooooooooo"
+};

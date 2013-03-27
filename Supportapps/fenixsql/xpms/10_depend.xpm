@@ -1,0 +1,29 @@
+/* XPM */
+static char *10_depend[] = {
+/* columns rows colors chars-per-pixel */
+"16 16 7 1",
+"  c #000084",
+". c blue",
+"X c #840000",
+"o c red",
+"O c Null",
+"+ c #848484",
+"@ c #FF84FF",
+/* pixels */
+"OOOOOOOOOOOOOOOO",
+"OOOOOOOOOOOOOOOO",
+"OOOOOOOOOOOOOOOO",
+"   .   OOOOOOOOO",
+".O.O.O.OOOOOOOOO",
+" .   . OOOOOOOOO",
+".OOOOO.OO . . . ",
+" O+@+O oO O.O O.",
+".OOOOO.XO . . . ",
+" .   . OX.OOOOO ",
+"OOOOOOOOo O+O+O ",
+"OOOOOOOOO OOOOO.",
+"OOOOOOOOO . . . ",
+"OOOOOOOOOOOOOOOO",
+"OOOOOOOOOOOOOOOO",
+"OOOOOOOOOOOOOOOO"
+};

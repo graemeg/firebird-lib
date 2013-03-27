@@ -1,0 +1,496 @@
+{ This is an automatically generated lazarus resource file }
+
+LazarusResources.Add('TfrmAbout','FORMDATA',[
+  'TPF0'#9'TfrmAbout'#8'frmAbout'#4'Left'#3#28#1#6'Height'#3'P'#1#3'Top'#3#195#0
+  +#5'Width'#3#239#1#18'HorzScrollBar.Page'#3#238#1#18'VertScrollBar.Page'#3'O'
+  +#1#13'ActiveControl'#7#7'BitBtn1'#11'BorderIcons'#11#12'biSystemMenu'#0#11'B'
+  +'orderStyle'#7#8'bsDialog'#7'Caption'#6#19'fenixsql .....about'#12'ClientHei'
+  +'ght'#3'P'#1#11'ClientWidth'#3#239#1#8'OnCreate'#7#10'FormCreate'#8'Position'
+  +#7#15'poDesktopCenter'#10'LCLVersion'#6#3'1.1'#0#6'TPanel'#6'Panel1'#4'Left'
+  +#2#0#6'Height'#2'X'#3'Top'#2#0#5'Width'#3#239#1#5'Align'#7#5'alTop'#10'Bevel'
+  +'Outer'#7#9'bvLowered'#28'ChildSizing.LeftRightSpacing'#2#4#28'ChildSizing.T'
+  +'opBottomSpacing'#2#2#12'ClientHeight'#2'X'#11'ClientWidth'#3#239#1#8'TabOrd'
+  +'er'#2#0#0#6'TLabel'#9'lblTitle2'#4'Left'#2#5#6'Height'#2#29#3'Top'#2'8'#5'W'
+  +'idth'#3#229#1#5'Align'#7#8'alBottom'#9'Alignment'#7#8'taCenter'#8'AutoSize'
+  +#8#7'Caption'#6#30'simple admin tool for firebird'#5'Color'#7#7'clWhite'#10
+  +'Font.Color'#7#5'clRed'#11'Font.Height'#2#240#6'Layout'#7#8'tlCenter'#11'Par'
+  +'entColor'#8#10'ParentFont'#8#11'Transparent'#8#0#0#6'TLabel'#9'lbltitle1'#4
+  +'Left'#2#5#6'Height'#2'5'#3'Top'#2#3#5'Width'#3#229#1#5'Align'#7#8'alClient'
+  +#9'Alignment'#7#8'taCenter'#8'AutoSize'#8#7'Caption'#6#8'fenixsql'#5'Color'#7
+  +#7'clWhite'#10'Font.Color'#7#15'clActiveCaption'#11'Font.Height'#2#224#6'Lay'
+  +'out'#7#8'tlCenter'#11'ParentColor'#8#10'ParentFont'#8#11'Transparent'#8#0#0
+  +#0#6'TPanel'#6'Panel2'#4'Left'#2#0#6'Height'#2#30#3'Top'#3'2'#1#5'Width'#3
+  +#239#1#5'Align'#7#8'alBottom'#10'BevelOuter'#7#6'bvNone'#12'ClientHeight'#2
+  +#30#11'ClientWidth'#3#239#1#8'TabOrder'#2#1#0#7'TBitBtn'#7'BitBtn1'#4'Left'#3
+  +#143#1#6'Height'#2#26#3'Top'#2#0#5'Width'#2'\'#25'BorderSpacing.InnerBorder'
+  +#2#2#6'Cancel'#9#7'Caption'#6#6'&Close'#4'Kind'#7#7'bkClose'#11'ModalResult'
+  +#2#2#8'TabOrder'#2#0#0#0#0#6'TPanel'#6'Panel3'#4'Left'#2#0#6'Height'#3#218#0
+  +#3'Top'#2'X'#5'Width'#3#239#1#5'Align'#7#8'alClient'#10'BevelOuter'#7#6'bvNo'
+  +'ne'#28'ChildSizing.LeftRightSpacing'#2#4#28'ChildSizing.TopBottomSpacing'#2
+  +#4#12'ClientHeight'#3#218#0#11'ClientWidth'#3#239#1#8'TabOrder'#2#2#0#12'TPa'
+  +'geControl'#3'lic'#4'Left'#2#4#6'Height'#3#210#0#3'Top'#2#4#5'Width'#3#231#1
+  +#10'ActivePage'#7#6'pgInfo'#5'Align'#7#8'alClient'#8'TabIndex'#2#0#8'TabOrde'
+  +'r'#2#0#0#9'TTabSheet'#6'pgInfo'#7'Caption'#6#6'pgInfo'#12'ClientHeight'#3
+  +#181#0#11'ClientWidth'#3#227#1#0#6'TLabel'#6'Label2'#4'Left'#2#12#6'Height'#2
+  +#15#3'Top'#2#30#5'Width'#2'7'#7'Caption'#6#9'Version :'#11'ParentColor'#8#0#0
+  +#6'TLabel'#6'Label4'#4'Left'#2#12#6'Height'#2#15#3'Top'#2'?'#5'Width'#2'3'#7
+  +'Caption'#6#8'Author :'#11'ParentColor'#8#0#0#6'TLabel'#6'Label5'#4'Left'#2
+  +#11#6'Height'#2#15#3'Top'#2']'#5'Width'#2'+'#7'Caption'#6#7'email :'#11'Pare'
+  +'ntColor'#8#0#0#6'TLabel'#6'Label6'#4'Left'#2#12#6'Height'#2#15#3'Top'#2'~'#5
+  +'Width'#2#24#7'Caption'#6#5'url :'#11'ParentColor'#8#0#0#6'TImage'#6'Image1'
+  +#4'Left'#3'8'#1#6'Height'#2':'#3'Top'#2#14#5'Width'#2'~'#12'Picture.Data'#10
+  +#187#20#0#0#23'TPortableNetworkGraphic'#159#20#0#0#137'PNG'#13#10#26#10#0#0#0
+  +#13'IHDR'#0#0#0'}'#0#0#0'9'#8#3#0#0#0','#151#212'm'#0#0#2#202'PLTE'#222#222
+  +#222#0#0#0#255#255#255'{{{'#189#189#189'{{'#132#199#199#199#222#231#231's{'
+  +#156'w'#140#165'k{'#156'c{'#148'kw'#157'co'#150'Zk'#148'cw'#140'Vo'#141'Rk'
+  +#148'Bg'#148'F^'#140'Jc'#148'Rc'#148'Og'#140#132#132#165'k{'#148'Z{'#157'cs'
+  +#156'JS_!))gK/'#140'{k=^'#140'Rk'#156'Rs'#148's'#132#165'JZ'#156'%F'#148'''B'
+  +'sgco'#127'kFC'''#17#142'sK'#239#222#173's{'#132'Jk'#148#141#140#149'9J'#181
+  +'9J'#189'/='#183'!-'#165#127#141#150#140#140'{'#157#151'{{s'#132#156#159#175
+  +'9Z'#140'BZ'#148'1c'#140'Zk'#165'Zc'#189'gw'#189'7F'#181'BR'#148'gk'#135'gRJ'
+  +#239#231#206#165#167#156'cs'#165'Zk'#156'Rs'#156'Rk'#132#165#173#222'1J'#165
+  +#199#181#142#206#198#173#140#150#173#133'{'#142'''W'#142'1Z'#140#239#199'o'
+  +#231#165#31#148#134'S'#142#148#181's{'#198#142#150#199#223#181'g'#127'wcw'
+  +#132#148'R^'#175'BV'#175'g'#132#165#157#148#159#198#173'k'#231#222#189#165
+  +#167#183'wwws{'#165#148'k%'#214#206#173'k{'#165'9c'#148#191#142'9'#135'V'#24
+  +#222#207#149#173#175#181#134#142#173#165#165#181#207#165'J'#149'c'#16'{gVoR'
+  +#27#173#140'1'#222#206#173'Bk'#156'W_oF?FW?'#26#189#149'O'#133'W'#10'cB'#31
+  +'{V7'#142#134'gwgw'#183#175#189#127'g-'#127'{oW-'#8#173#175#191'FRsK5!)!'#8
+  +'oF'#27'G#'#4#158'g'#26#143's1'#173'w/c1'#14#199#156'^'#150'{o'#173#141'JF'
+  +#20#4#159#133';'#206#206#189#127'sW'#167#148'_'#157'w1'#214#207#183'wkkg?'#10
+  +'5'#17#2#8#8#8'Z#'#6'%'#14#3'{'#148#173'o;'#9'g'''#3'oF'#12#149#159#181'sw'
+  +#142#189#189#173's'#132#173'-^'#148'1Z'#156')Z'#148'1c'#156#189#189#181'9c'
+  +#156#198#189#181#239#239#231'9V{'#247#247#247#239#231#214'^{'#165'9k'#156'Rs'
+  +#165#231#223#199'Js'#148'k'#135#175'1c'#148'Jk'#156'Bk'#165'w'#143#191'R{'
+  +#175'{'#141#175'Bc'#156'Js'#156'9k'#148#133'1'#8#132#157#189#148#167#207#222
+  +#231#239#198#206#222#206#214#231#206#222#231#214#214#222#239#247#247#167#183
+  +#206#207'R'#18'/=N1R{9Z'#156'c'#134#181#142#159#189'!!)'#24'!)'#189#189#198
+  ,#28'3S1c'#165#8#16#24'{'#140#173')Z'#156#231#231#239#14#14#17#22'%9'#231#239
+  +#239#189#198#222')Cc'#8#12#16#181#198#215#173#189#206'''-;'#20#24'%'#206#214
+  +#222#191#198#214#198#214#231#198#206#214'''O'#127#8#16'!'#8#24')'#189#206#222
+  +#206#206#214#0#8#16'!Z'#148'%c'#156#173#199#214#214#222#231'Js'#173#181#181
+  +#206#211'0'#236#130#0#0#17#144'IDATx'#218#229#153#255'C'#19'g'#158#199#153
+  +#199#179'$'#233'4'#240#140'!8'#161#152'0{'#225'K'#13#221'n'#137#4'b'#187#176
+  +'B'#218#165#136'J'#186#208'+p'#212'4C@'#144'p'#131'FA'#17#161#225'k'#145#5'V'
+  +#196#130#186'5_n'#238#232'&,1'#183'&'#182#138'Z1'#180'H'#17#235#151'K]hk['
+  +#175#215#238#221#255'p'#159#9#219#214#176#191#175'?'#220'3'#201#204#228'I'
+  +#200#235'y?'#207#231#219'Cbb'#30'c#bb'#208'ck'#235#4#250'?<'#166#246#196'*'
+  +#253#137#199't'#172'_'#213#190'~'#221#223#255'@?j_G'#252#221'['#204#163't'
+  +#145'HD'#210'R,M'#193#241'2,'#167#168#13#27'(9'#165'T'#234#148';t:'#157'r'
+  +#245'A))y\'#156#28'c)'#166#168#200#27#241#9'R'#133#10'c%'#171#203'a1&+$'#164
+  +#130#148#208#186#29'.'#29'Kq'#172#203#233#250#169#253#245#222#17'y'#194#177
+  +#134#206#136'$'#164'TJJ'#227'p'#28#142#151#195#247#22#2#158#218#160'Tn'#216#0
+  +#204#184#248#184#148#151#154#203#135#203'j'#250'[7cJ'#134'1'#149'#'#195#9#133
+  +'4'#169'/'#196#148'.'#199#161#211#168#176#148'63L'#224','#229#200#205'u'#229
+  +#150'8\%%'#2#179#4#158#159'~*'#220#148#184#28#208#227'p'#10#231#181#218'E"1'
+  +#243#154#132#145#8#13'4(D'#235#181'Z'#219#128'm`'#160#166#191#172#191#172#170
+  +#172#204'f'#181'v7'#244#151'5'#148'i'#227#176#18#6#160#162#11#21#5'"s'#129
+  +#194'|'#15#221#159#185'|'#22'OC'#23#25#184#165'W'#230#242#23'\'#174#239#145
+  +#207#235'zD'#191#211#9#163')q'#242'3'#200#229'p'#172#209#158'('#206'L|^'#148
+  +#248#188'8Q'#204#144#176#8'Y'#195#3'5M55'#182#154#254#170#170#134#178#170#134
+  +#254#154#170#254#182#9#251'H'#3#180']'#208#161#141'O '#233#2#137'9 '#22#137
+  +#201#203'ha'#25'}'#174#203'u'#228#234'4'#230'[fV'#199#157#247'S'#247#209#194
+  +'$'#235'b]n'#247#15'cp:'#29'N'#157#235'2"@'#127#20']'#156'(4cb'#162'X,'#145
+  +'0d\'#169#169#187#191#161#223'b1'#245#216#154#250'G'#154'FLM#'#182#134#17#251
+  +#232#222#134#178#134#134#222#222#134#154#134#134#210'F'#178'B'#28#128'?a'#196
+  +#177'ha'#14#161#165#143'}'#174'y'#31'3?'#235's9'#249#249#251#151#209#211#162
+  +#128#207'{'#214#231'v^'#184't'#209')'#156'\Nj'#254#226#151#136'p8'#254'f'#230
+  +#197#250#173'['#255'i7C>I'#211'o'#236#183#152#154#250'wV'#13#156#28#29'5'#217
+  +#154#170'2'#154'l'#182#134#254#134#145#9#219#4'\{'''#14't'#247#181#239'm'#184
+  +'^'#211#255'|@l'#132'G,'#186'Q'#140'R'#137#25'$'#185''''#22#191''''#191#26'p'
+  +']'#186#214#241#0'-oC'#159#203'c'#145#250#252#181#169#219#21'S'#215#252'W'
+  +#159'w'#253#229'J'#248#246#223'j'#7#250#179'[_x'#245#133#215#21#210''''#21
+  +#169#251#247'['#172'm'#189#182#218'Z'#139'}'#212#146#209#223#223'?'#208'k'
+  +#217#219#221#212#219#221'`='#208'Ps'#224#228#177#209'c'#239#156'jj'#218#181
+  +#171#138#145'0'#21'"'#160'o?'#218'L,'#127#137'>'#155'['#138#253'b'#236#242
+  +#127'-'#222#187'O'#204#162#167#183#163#186#27'W'#17#241'='#26#163'W'#206#160
+  +#229#171#177'a'#212#252'5'#204'<'#24#222#26#250#207#158'}'#225#229#223#252'f'
+  +#235#235#164'4'#175'-'#221#222';00`k'#168#173#178#219#237#189#0#7#235#179#159
+  +#180#31#176#159#182#192#172#183#183#159'8q'#236#196#177#147#167#14#214#148'1'
+  +#18#177#152')'#136'EO'#239#11#197#171#174' b'#238'+t'#244#235'+'#232'[T'#191
+  +#2#244'<T'#247't,"'#174#160'1'#167#250'!Z'#193#203#203'(i'#17'>'#229'tGk'#151
+  +'l'#252#199#159#191#240#242#203#175#190#250#172'T'#154#188#191#221#222#212';'
+  +#210'm'#234#175'-'#235#177#244'Y`'#28#182#129#222#209#246#174#147#150#150#238
+  +#134#154'^'#24#199#196'I'#192#159#170#169#217')'#184'X'#128#6'z'#158#152'a@'
+  +#166#203'9'#147#253#205#229#7#196#189#7#223#204#162#27#27'P'#245#141#25'D'
+  +#220'G'#161#18#215'}'#180#172'VN'#162#184'EA'#187';Z'#251#147#164#250#185#173
+  +'/'#128#246#23#165#205#7#15#166#31#180#246#244#216'M'#189'U'#181'eV'#187#197
+  +'2b'#233#233#182'YO'#182#159#180#140'ZFz-'#150#190#131#251':'#15#158#154'8'
+  +#208'e'#31'$i'#201#238#138#192'm'#148#154''''#190'%'#190#141#150#28'N'#207
+  +'''I3'#161#165'?'#161#188#135#168#185'c&&'#21':'#167'f>'#20#251#254#231#246
+  +#135#227#190#146#251'1y'#247#208#146';'#135#141#162#147#180#250#23'/n'#221
+  +#186#245#231#175#211#251','#249#242#174'>k'#155'e'#212#212'[['#219'b'#183'X'
+  +#251#172'v{'#251'i'#16#223#222'n'#26#25#177#180#144#133#170#28#249#219'M'#201
+  +#239#152#180#172'_'#1#254')'#255#140#8#145'Lb'#226#29#226'+'#135'>~y'#242'['
+  +#181'sr)'#188'B'#132#244#161#149#164'%B)_^ZT'#231'.'#127#189#168'f'#23#151
+  +#194'c'#196#220#185'5tE'#188#250#23#207'='#247#220#139#133'q'#251#173'Gv'''
+  +#165#219#7'z'#251#171#134'kjK''N'#247'Y'#246#159#238#26#29#221#223#215#213'5'
+  +#209'w'#218'dZ''f'#12#152#130#8#151't'#136'w'#4#13#180#30#251#13#5'R'#131#216
+  +#200#168'X'#150'c'#166#148#234#255'v|'#231','#249'J'#231#245'L'#225'I'#201
+  +#188#216#172#167#212#185'Ng'#174#250'+7'#235#156#219#145#235't'#179#209#30#7
+  +#209#237#169'_'#254#250#217#215#21'd'#170#181#133#20'%&'#29'3'#217#6#202#170
+  ,'l'#181#253#167'N'#158'>}j'#180#235'T'#223'D{'#215')0'#252#158#237#137'F'#177
+  +#4'CxwD'#26#149#227#247#243#24'OU'#4#204#152#15#250'/x'#252#206's'#223#185'n'
+  +':'#157'.75'#165#154'f='#198'[f'#204#241#206#143'>r'#240'n'#222#237'v;'#220
+  +'n'#167#155#143#166'KH'#9#185#145'$'#159'$'#27#173#173#162'DQbjK'#191#173#172
+  +#172#182#182#232#216#177#137'c'#199#186#198#250'N'#219#237#167'&L'#173#235#25
+  +#134'1'#158#217#179#155'a'#12'T'#14#235'p'#228'8'#216' '''#140#192#207'+]n'
+  +#206#239#231#156#172#243';8'#28'<'#231#231#252'<'#171#209'3'#211#28#139#207
+  +#243','#207#178#172#155#21#174'0'#138#232#153'''E'#18#17#179#177'bc'#156#213
+  +'v'#8#2'_qkm'#141#173#191'v'#184'6'#221#158#127#240'drg'#242#254'c'#214#19
+  +''':I'#9#3#129#216#188#167#241'm'#227#252'nH4'#172#146#229'9/'#239#5'5N'#144
+  +#196#11#218'x'#183#227'&hw'#184'9'#175' '#148'b9'#150#247'~y['#247'>'#239'e'
+  +#191'Dga'#0#240#136#166'?'#5'x'#8'w'#137#162#242#166#12'`g'#217#6'F'#154','
+  +#182#145#158#180'c['#20#162#223#239#222'M'#182#156#182'NX'#154'%'#140#224'a'
+  +#5#191#255#224'zee`'#183#25#179#172#3#190#202#193'B'#248#184#233'r'#184#1#233
+  +#132'q'#0#220#1'wnX'#151#155#14'7{'#14#212#250#194'c^'#223#172'n'#22'-'#168
+  +#217#200'$'#172#209'N'#138'2'#197#137#153'"'#203#191'd'#23'g'#10'ye'#196#222
+  +#211#217#245'N'#215'>R'#2'Vm&'#247#157#182#183#183#137'H'#177'8 f'#232#252'S'
+  +#215#175'W'#194#228#155#13'9,'#164'L'#183#131#243#240#159'~'#26#161#179#231
+  +#156#159'F'#230'A8'#185'}'#190#243'>'#159#143#243'y|'#180'z'#252#222'lx'#22
+  +'-'#143'_'#244#178'<'#21'M'#151#10#210'E'#137#153#218'Z-'#208#203#202#170#6
+  +#181'['#18#247#141#157#236#204#131#164']q'#182#130#201#183#154','#195'"'#200
+  +#169#18's'#133#244#3#160'_O4'#146#12'#'#131#201#133'D'#230#14#242'N''+'#168
+  +#135'Iu'#10#19#224#254'H'#184#249#18#209#227'h'#254#171#135#234#191' '#245'%'
+  +#244'Z'#232#12#218'<'#142'6'#242#172'w'#13']!'#204'{f'#165#169#168'.'#187#190
+  +#210'V'#214#159#157#157#189''''#253'D'#250'!i'#10'T'#18#28#230#146#236#22'S'
+  +#21#163'RA'#230'''S#'#244#235#5#198'=F'#21#239'f'#223#231#149'n'#157#155#11
+  +#178#231#28#188#129#246#130'AGl['#176#128#243'h'#179'y'#230'A'#232#226'7'#16
+  +'^}('#233#238'<ZHBIaop'#173'v'#152'z&'#191#234#205#186'Jc}}cYm}}}'#234#137
+  +#174'6'#134#193#241#148#206#225','#201#183#182#237#173#133'2FE'#235#233#15'>'
+  +'8'#245#1#208#207#26'o'#21#228#0#132#165#188'9'#20'%;k'#224#221#178'['#1#236
+  +#230#206#7#189'`i'#0#135'R"v'#227'Q'#244#26#171'^'#165'/'#194#186#167#192#133
+  +#242#6#163#233'PS'#229#21'e'#252'sv'#177#177#178#190'~{wm]uu'#231#137#131#201
+  +#227'b'#17'#Q'#233'\;'#218',i'#237'ES'#26#29'E'#249#155'W'#233#5#183#24'='
+  +#199#11's'#205's2=SP'#168#210#176#148'y7'#237#23'Z0'#8#150#237#230#249'Y'#20
+  +#10#163#205'ws'#127#162'K'#225#162#225#169'hz|'#252#243#249#218#162'j'#241
+  +#158#236#250#250#234#163'i;'#127'{'#248#232#190#246'Qkf'#162#216'8'#206'p'
+  +#172'.'#223'Z'#218']g'#192'|NNN0!'#25#166#254#208'V'#21#165#4#235'r'#240',E'
+  +#201'i'#133'D*e'#206#26'p'#128#246'SA0j'#236#209#240'|'#144'<'#131#198#194'3'
+  +#203'w'#167'!'#184#159#191#157#221'q'#25#133'n'#161#204'E'#205#218'u''S'#147
+  +#127#245'Jqbbequ'#245#225#195#149#189#207#212#29'>'#156#159'n1ee'#142#159#17
+  +#171#220#142'I'#139#165'w'#27#198'^'#150#245#242#193#159#253'2)'#233#245#28
+  +#135'`'#215'7'#207'At'#197'f'#227#158#128#145#132'E'#193#180#140'b'#217' 6'#7
+  +#2#28#151#160'0'#158')&'#148#158'o'#213'^'#229#183#132#18'/|3'#183'@'#132#195
+  +#196#130#151#211'D'#211#147#210#178#182#1#188'8;['#160#215'Y'#155#158#249#221
+  +#182#234#237#235#202#143'Tf'#27#205#26'7'#175#236';0'#178#141#154#246#187#189
+  +#28'D+'#254#215#31'9'#5#231#6#233'N'#7#203'RX'#193'0'#18#161#184#214'K1'#23
+  +#164'<'#140#216#140'5*'#230#140'Q?'#165#228#189#147#156#215#203'q'#148'W'#183
+  +'#'#200#5'9'#158#211#172#165#199'='#157#174'M'#20'e'#22#131#201#1#252#240#225
+  +'C'#157'#e=i-i'#25#165#25#240'HKk'#133'gK'#203'6'#239#127#8#177#229#220'9'
+  +#193#181'!'#166'@'#181#232#132#184#194#25#166#244'z'#137#194#172#210'3'#21'R'
+  +#195#148#140'f'#18#197'f'#200#252'gD)'#156#151#242#178'~'#158#131#166'a9'#141
+  +#198#171#225'40'#2#141'7Z{r'#198#22'p'#248#226#226'J'#129'^]'#253#246'PrKK~Z'
+  +#218'PFZ#'#196#217#244#131#201#201#201#141#25'u'#20#248#180#195'y'#206#193'M'
+  +'}'#236'tBx'#129'Q'#220'd'#221#134'i'#13'%'#211#155'a?'#193'@D'#192#152'1'#6
+  +#2'fI'#5#19'0P'#26#175'7'#232#199#16#253'y'#141#23#3'X'#192#131#255#6'q4}'
+  +#211'3'#217#228'v'#168#171#247#128#205'WW'#151'['#211#26#243#243#211#26#135
+  +#202#179#214'ee'#13#13'5v'#14'e'#180#12'eh'#167'!'#168#178#23'.^'#154#157#157
+  +#135'RU'#24#202'M'',<'#203#250'U'#160#206#0#216#221#230'BH'#5#138#20'='#24
+  +#129'*'#168#161'8J'#255#177'y'#10#240#130'z8('#129#13#247'Q'#244'x'#233#230
+  +#141#10#6#202#249#237#16'r'#138#143#188'U>t'#228'xc>'#140'`'#168#28'N'#249
+  +#251':'#225'~'#211#219#160#29#218#251#222#25#132'.'#186#253'B|w'#11#29','#167
+  +#130#228#202'M'#209#180'Yb'#166'U'#180#2#227#11#23#252'~'#204'q*'#21#173'2'
+  +#211#10#131#10's2'#14#195#170'C'#224#242#3#31'G'#251'{<'#198#138#2'r#c'#150
+  +#20#152#205'ds'#231#145#172'#'#229#229#169#135#160'mI'#205#207'OM=t'#228#248
+  ,'qm'#209#31'}'#145'$'#201']F'#168'c1$'#135#240#194#11#227#209#208#133#28#5'>'
+  +#12#251#27#248'^?'#5#160#136#207's~'#149#30'f'#128'.'#160#205'4Mc'#140#133'5'
+  +#240#175#242#215#248#187','#129'~J'#138#149#185'J%Eut'#190#177#238'HyFyj'#164
+  +#29#202'KM='#190#238'x'#235#208'P'#185'v\'#144'J]A'#232#6#209'Q'#0#25#222#141
+  +'5T'#202'Y'#152'LVCQ<'#5#147#10#238#30#17')'#192')'#129#232#135#240'H'#130','
+  +'zJ'#8#217'~'#153'*'#162'?:'#199'I'#165#138#194'x'#240'U'#216#153#230#238#235
+  +#236',o,_'#223#152#6#130#183'l'#217'^YW'#253'D'#253'qm'#227#166'MG2'#254#232
+  +#3#127#19#232#11'Ds'#130#138'<o'#240#156#247#204#207'^'#162#189#20#229#243
+  +#141'C>'#243#233'q'#208#3'fq'#129#243#7#161#195#140#231#143'z'#152'[F'#163
+  +#177'~~'#220#7#131#153#159#157#247'x'#224#26'+'#252#219#224#145#221#132'B'
+  +#154#2'{h'#208#146#15#246']^'#222#218'Z'#222'8'#212#216#184')K'#187#237#221
+  +'w'#223#253#183'mY'#218'M'#149#218'ME'#227'n'#138#231#174#10#218#155#201#167
+  +#24#198#231#153#191#231#155'G'#215'<<'#139#190#152#133'Q]'#155#194#15#175#4
+  +#30#162#219'SA<'#143#208',,'#210#159#141#8#197#26#255#23'^LM_'#158#241#221'G'
+  +'>0'#251#181#218'UP**)'#204#169#128#158'VZ^Z'#218#218'8'#212'bikii'#17'^g'
+  +#181'n'#202'8'#178'I[-T'#6#2#253'i"'#239#150#164'P'#133'='#232#218'y%'#16't'
+  +#212#23#193#185'X'#132#196#147#12#154#225'$p'#163#228'}'#8'}^|'#25'm'#15#193
+  +'5O'#132#144'q'#146'FW'#184'p'#241'K'#185#186'h'#127#199'r'#153#140#210'E'
+  +#254'S'#128#247#165#239#239#201#232#233')'#29'L'#235#27#237#234#219#159#254
+  +#214'[m'#201#251#219'2Z['#222'./'#250#19#11'y'#148#253'0'#162#221#172#128#161
+  +'z'#192#0#239' '#148'=&?'#139#147#128'B'#16'!t'#237'.'#240#154#239#232#128
+  +#254#4#17#10#17#4'Bu'#208#141#146#136'0B'#15#150''''#195#132':'#154'N)e:]'
+  +#201#142#18'e'#28#172'|'#250'['#237'm='#131'='#166#3#7'L&'#139#201'jm'#27#236
+  +'i;'#189#215'6'#172#221#18#231#247#131#143#225#136#213'm '#205'z'#134#185#224
+  +'1,d#TM'#220#208'3'#247#16'Z&'#136#176#175'#'#244#4#130'Me8'#0'c V'#194#11'@'
+  +#207'^'#165'/'#194#172#161'K'#212#221#185#232#28'G'#169'4'#186#220#29';'#178
+  +'v'#238#212#178#186#164#244#174#246#189'{'#247'v'#143#140#12#14#12#150#14#183
+  +'j['#179'zz'#134'S'#154'_'#202#133'2'#6#210#204#212'U'#193#234'6('#12'xv>'
+  +#193#247#159'1w'#4#250#138#254#207' '#140' >3'#27'c>'#17#180#19#161#8'}'#137
+  +#150#201#127#162'S'#179#128#15#176#186#232#138#154#162#148'9'#186#205'e;'#161
+  +#149#189#164#163'::'#186#1'?88X'#10#203#159#149#213#154'5'#164#141'1@~'#139
+  +#196'5'#214#29#177#249'IU'#16#223'6'#138'n'#163'3'#242#8#29#230#25#173#16'wD'
+  +'`c'#153#140#128#10#205#11#244'}f'#13#254#145#30#158#230#150#31#160#236'0'#27
+  +#237'q'#27#148#224#233';W['#13#171#164#226#154#154#246'6'#13#14#14#131#242'V'
+  +'mVV'#150#246#189#247#192#27'!'#191'@'#221#198#190#31#161#207#249#167'.#q&B'
+  +#227#161#8#253#11#132#234#9'"['#12'o'#190#150#26#209'n'#140#156#25#131#255#26
+  +#250#132#136#19#232#29#15'9'#255'"'#218'L'#132#163#233#178#4'9~i'#215'.'#1
+  +#222'dU*'#149'q'#3#131#0'/'#29#214#10#240#204#202#127#253'w'#244#30#206#213
+  +#176#171#141#190#134#208'''I'#198#217#25't'#155#1'K'#139#185#17#139'bB0'#4
+  +#148#218#252#9#194#176#0'u'#203#176#8'K'#139#243#194#234'/b'#13#255'='#136
+  +#223#142#128#218#129#30#6'.'#221'[!V'#162'3lB|BB'#222'.'#192'7'#236'='#208
+  +#166#146#203#243'l@o'#26#24#28#30#24'n'#29'.*'#250'U'#237#31#254#224'1C'#253
+  +'N'#193#18'y'#198#141#23'C'#11#11'R'#159'/'#224#185'K'#28'-'#190'C'#196#29#13
+  +#17#203#1'_'#210#194'B'#216#199#222'5'#230#141#17#180'x'#133'X'#12#248#164#11
+  +'c'#139#16#3'5'#243#205'w'#22#140#205#11'ca'#250#201#205#151'h%q7Z;D'#31#28
+  +#15#244']'#176#220'-X'#134#243#6'M{'#5#245#3#165'0'#251'E'#182'*[Y'#173#135
+  +'d'#10#240#180#12#167#208'g'#167#149'c'#4#177#180#184#184'x'#135'X2'#135#9'b'
+  +'l'#238'3b,<I'#16#196']'#232'z'#255'.A|'#173#6#251'S'#202#224#189'e/d:'#10
+  +#186'V'#192#31#238'rs'#196#130':4'#166#211#172#241'w%V'#150#174#210'S1V'#197
+  +#13#154'zL'#3'i'#3#165#165#131#173#3'EUUUE'#181'R:!'#1'{'#206#167'@'#180'V'
+  +#170#231#212'ss'#147#147#240'L'#160#11#146#22'w'#176#242#164'$'#255#14#225
+  +#245#156'Z'#237#221#177#184#232#224#231#22''''#169#224#156'zrN'#7'u'#5#229#13
+  +'/'#234't'#234#142'Ij'#131'rn1'#196'rkr\'#10',|B9'#208'My0'#13'd'#220'@'#219
+  +'`'#27#216#220'`'#233#160#182#181#168#234#149#170'W'#222#20#147#133'RL'#11'9'
+  +#141#130'o'#211#176'J'#13#165#9#210#216'iPy'#29'n'#25'c`'#157#188#223#13#27#5
+  +#161#146#23#246'1<'#236#234'x'#158#229' '#13'z!'#1#241#26#13#171#209#8#217'U'
+  +'HuB'#156#255#137'.'#151#203#227#19#228#241'o'#212#164'Ae'#191'Q'#4#244#193
+  +#210#158#225'Rmik'#169'V[U'#244'J'#209#155'o'#22#139'D'#21'$'#201'Q'#178#4
+  +#179#129#163' '#147'q'#26'%'#23#228#133#221#154#3#246#143#220'*'#243#175'{I'
+  +#216#201#8'w'#238#213'M'#27#12#194#27#244#178'A'#202#11#232#200#238'd*J'#187
+  +'<!'#158#140#23'Z'#156#148#142'#'#201#248'<'#160#151#2#29'ln'#155#246']'#160
+  +#215#254#174#184'8'#177#184'X'#164'PI'#197#140#20#203#228'xZ'#165#209'`='#134
+  +'m'#19#11#5'&l'#168#156#145#205#155#243'#'#214#185'*'#31'j}'#161#26#136#240
+  +#161#18'f'#133#253#27'^m'#211#134'G'#233#177'?'#254'X'#17#251#200'5'#246#145
+  ,#174#216'5?j'#196#254#212#31#251#227#167'cc'#162'?'#250#232#23#252#240#241
+  +#200#17#27#243#8#253#177#252'.'#242#3#253#255#239'/#'#235#214'?'#182#131#136
+  +'!'#30'g'#251'?'#176#141#153'BIAe~'#0#0#0#0'IEND'#174'B`'#130#11'Transparent'
+  +#9#0#0#6'TLabel'#8'lVersion'#4'Left'#2'E'#6'Height'#2#15#3'Top'#2#31#5'Width'
+  +#2'2'#7'Caption'#6#8'lVersion'#11'ParentColor'#8#0#0#6'TLabel'#7'lAuthor'#4
+  +'Left'#2'G'#6'Height'#2#15#3'Top'#2'?'#5'Width'#2'.'#7'Caption'#6#7'lAuthor'
+  +#11'ParentColor'#8#0#0#6'TLabel'#6'leMail'#6'Cursor'#7#4'crNo'#4'Left'#2'E'#6
+  +'Height'#2#15#3'Top'#2']'#5'Width'#2'{'#7'Caption'#6#20'fblib@altervista.org'
+  +#10'Font.Color'#7#6'clBlue'#10'Font.Style'#11#11'fsUnderline'#0#6'Layout'#7#8
+  +'tlCenter'#11'ParentColor'#8#10'ParentFont'#8#0#0#6'TLabel'#4'lUrl'#6'Cursor'
+  +#7#4'crNo'#4'Left'#2'E'#6'Height'#2#15#3'Top'#2'~'#5'Width'#3#152#0#7'Captio'
+  +'n'#6#27'http://fblib.altervista.org'#10'Font.Color'#7#6'clBlue'#10'Font.Sty'
+  +'le'#11#11'fsUnderline'#0#6'Layout'#7#8'tlCenter'#11'ParentColor'#8#10'Paren'
+  +'tFont'#8#0#0#0#9'TTabSheet'#9'pgLicence'#7'Caption'#6#3'lic'#12'ClientHeigh'
+  +'t'#3#181#0#11'ClientWidth'#3#227#1#0#5'TMemo'#4'mLic'#4'Left'#2#0#6'Height'
+  +#3#181#0#3'Top'#2#0#5'Width'#3#227#1#5'Align'#7#8'alClient'#13'Lines.Strings'
+  +#1#6':This program is distributed under the terms of the GPL v2.'#6#0#6' '#9
+  +#9'    GNU GENERAL PUBLIC LICENSE'#6#29#9#9'       Version 2, June 1991'#6#0
+  +#6'8 Copyright (C) 1989, 1991 Free Software Foundation, Inc.'#6'@           '
+  +'               675 Mass Ave, Cambridge, MA 02139, USA'#6'= Everyone is perm'
+  +'itted to copy and distribute verbatim copies'#6': of this license document,'
+  +' but changing it is not allowed.'#6#0#6#15#9#9#9'    Preamble'#6#0#6'?  The'
+  +' licenses for most software are designed to take away your'#6'Dfreedom to s'
+  +'hare and change it.  By contrast, the GNU General Public'#6'FLicense is int'
+  +'ended to guarantee your freedom to share and change free'#6'Dsoftware--to m'
+  +'ake sure the software is free for all its users.  This'#6';General Public L'
+  +'icense applies to most of the Free Software'#6'FFoundation''s software and '
+  +'to any other program whose authors commit to'#6'Fusing it.  (Some other Fre'
+  +'e Software Foundation software is covered by'#6'Ethe GNU Library General Pu'
+  +'blic License instead.)  You can apply it to'#6#19'your programs, too.'#6#0#6
+  +'B  When we speak of free software, we are referring to freedom, not'#6'Fpri'
+  +'ce.  Our General Public Licenses are designed to make sure that you'#6'Fhav'
+  +'e the freedom to distribute copies of free software (and charge for'#6'Ethi'
+  +'s service if you wish), that you receive source code or can get it'#6'Dif y'
+  +'ou want it, that you can change the software or use pieces of it'#6'@in new'
+  +' free programs; and that you know you can do these things.'#6#0#6'B  To pro'
+  +'tect your rights, we need to make restrictions that forbid'#6'Fanyone to de'
+  +'ny you these rights or to ask you to surrender the rights.'#6'GThese restri'
+  +'ctions translate to certain responsibilities for you if you'#6'7distribute '
+  +'copies of the software, or if you modify it.'#6#0#6'B  For example, if you '
+  +'distribute copies of such a program, whether'#6'Egratis or for a fee, you m'
+  +'ust give the recipients all the rights that'#6'Dyou have.  You must make su'
+  +'re that they, too, receive or can get the'#6'Csource code.  And you must sh'
+  +'ow them these terms so they know their'#6#7'rights.'#6#0#6'H  We protect yo'
+  +'ur rights with two steps: (1) copyright the software, and'#6'D(2) offer you'
+  +' this license which gives you legal permission to copy,'#6'&distribute and/'
+  +'or modify the software.'#6#0#6'F  Also, for each author''s protection and o'
+  +'urs, we want to make certain'#6'Athat everyone understands that there is no'
+  +' warranty for this free'#6'Hsoftware.  If the software is modified by someo'
+  +'ne else and passed on, we'#6'Gwant its recipients to know that what they ha'
+  +'ve is not the original, so'#6'Gthat any problems introduced by others will '
+  +'not reflect on the original'#6#21'authors'' reputations.'#6#0#6'@  Finally,'
+  +' any free program is threatened constantly by software'#6'Cpatents.  We wis'
+  +'h to avoid the danger that redistributors of a free'#6'Fprogram will indivi'
+  +'dually obtain patent licenses, in effect making the'#6'Eprogram proprietary'
+  +'.  To prevent this, we have made it clear that any'#6'Gpatent must be licen'
+  +'sed for everyone''s free use or not licensed at all.'#6#0#6'@  The precise '
+  +'terms and conditions for copying, distribution and'#6#20'modification follo'
+  +'w.'#6#0#6' '#9#9'    GNU GENERAL PUBLIC LICENSE'#6'B   TERMS AND CONDITIONS'
+  +' FOR COPYING, DISTRIBUTION AND MODIFICATION'#6#0#6'E  0. This License appli'
+  +'es to any program or other work which contains'#6'Da notice placed by the c'
+  +'opyright holder saying it may be distributed'#6'Funder the terms of this Ge'
+  +'neral Public License.  The "Program", below,'#6'Erefers to any such program'
+  +' or work, and a "work based on the Program"'#6'Dmeans either the Program or'
+  ,' any derivative work under copyright law:'#6'Athat is to say, a work contai'
+  +'ning the Program or a portion of it,'#6'Deither verbatim or with modificati'
+  +'ons and/or translated into another'#6'Flanguage.  (Hereinafter, translation'
+  +' is included without limitation in'#6'?the term "modification".)  Each lice'
+  +'nsee is addressed as "you".'#6#0#6'DActivities other than copying, distribu'
+  +'tion and modification are not'#6'@covered by this License; they are outside'
+  +' its scope.  The act of'#6'Frunning the Program is not restricted, and the '
+  +'output from the Program'#6'>is covered only if its contents constitute a wo'
+  +'rk based on the'#6'AProgram (independent of having been made by running the'
+  +' Program).'#6'6Whether that is true depends on what the Program does.'#6#0#6
+  +'A  1. You may copy and distribute verbatim copies of the Program''s'#6'?sou'
+  +'rce code as you receive it, in any medium, provided that you'#6'Cconspicuou'
+  +'sly and appropriately publish on each copy an appropriate'#6'@copyright not'
+  +'ice and disclaimer of warranty; keep intact all the'#6'Fnotices that refer '
+  +'to this License and to the absence of any warranty;'#6'Cand give any other '
+  +'recipients of the Program a copy of this License'#6#23'along with the Progr'
+  +'am.'#6#0#6'EYou may charge a fee for the physical act of transferring a cop'
+  +'y, and'#6'Gyou may at your option offer warranty protection in exchange for'
+  +' a fee.'#6#0#6'E  2. You may modify your copy or copies of the Program or a'
+  +'ny portion'#6'=of it, thus forming a work based on the Program, and copy an'
+  +'d'#6'Bdistribute such modifications or work under the terms of Section 1'#6
+  +';above, provided that you also meet all of these conditions:'#6#0#6'C    a)'
+  +' You must cause the modified files to carry prominent notices'#6'B    stati'
+  +'ng that you changed the files and the date of any change.'#6#0#6'F    b) Yo'
+  +'u must cause any work that you distribute or publish, that in'#6'C    whole'
+  +' or in part contains or is derived from the Program or any'#6'E    part the'
+  +'reof, to be licensed as a whole at no charge to all third'#6',    parties u'
+  +'nder the terms of this License.'#6#0#6'D    c) If the modified program norm'
+  +'ally reads commands interactively'#6'>    when run, you must cause it, when'
+  +' started running for such'#6'D    interactive use in the most ordinary way,'
+  +' to print or display an'#6'@    announcement including an appropriate copyr'
+  +'ight notice and a'#6'F    notice that there is no warranty (or else, saying'
+  +' that you provide'#6'A    a warranty) and that users may redistribute the p'
+  +'rogram under'#6'E    these conditions, and telling the user how to view a c'
+  +'opy of this'#6'B    License.  (Exception: if the Program itself is interact'
+  +'ive but'#6'D    does not normally print such an announcement, your work bas'
+  +'ed on'#6':    the Program is not required to print an announcement.)'#6#0#6
+  +'=These requirements apply to the modified work as a whole.  If'#6'Didentifi'
+  +'able sections of that work are not derived from the Program,'#6'Band can be'
+  +' reasonably considered independent and separate works in'#6'Cthemselves, th'
+  +'en this License, and its terms, do not apply to those'#6'Bsections when you'
+  +' distribute them as separate works.  But when you'#6'Edistribute the same s'
+  +'ections as part of a whole which is a work based'#6'Eon the Program, the di'
+  +'stribution of the whole must be on the terms of'#6'Athis License, whose per'
+  +'missions for other licensees extend to the'#6'Ientire whole, and thus to ea'
+  +'ch and every part regardless of who wrote it.'#6#0#6'EThus, it is not the i'
+  +'ntent of this section to claim rights or contest'#6'Eyour rights to work wr'
+  +'itten entirely by you; rather, the intent is to'#6'?exercise the right to c'
+  +'ontrol the distribution of derivative or'#6'&collective works based on the '
+  +'Program.'#6#0#6'FIn addition, mere aggregation of another work not based on'
+  +' the Program'#6'Ewith the Program (or with a work based on the Program) on '
+  +'a volume of'#6'Da storage or distribution medium does not bring the other w'
+  +'ork under'#6#26'the scope of this License.'#6#0#6'D  3. You may copy and di'
+  +'stribute the Program (or a work based on it,'#6'Eunder Section 2) in object'
+  +' code or executable form under the terms of'#6'FSections 1 and 2 above prov'
+  +'ided that you also do one of the following:'#6#0#6'D    a) Accompany it wit'
+  +'h the complete corresponding machine-readable'#6'F    source code, which mu'
+  +'st be distributed under the terms of Sections'#6'L    1 and 2 above on a me'
+  +'dium customarily used for software interchange; or,'#6#0#6'B    b) Accompan'
+  +'y it with a written offer, valid for at least three'#6'B    years, to give '
+  +'any third party, for a charge no more than your'#6'A    cost of physically '
+  +'performing source distribution, a complete'#6'A    machine-readable copy of'
+  +' the corresponding source code, to be'#6'E    distributed under the terms o'
+  +'f Sections 1 and 2 above on a medium'#6'2    customarily used for software '
+  ,'interchange; or,'#6#0#6'E    c) Accompany it with the information you recei'
+  +'ved as to the offer'#6'B    to distribute corresponding source code.  (This'
+  +' alternative is'#6'?    allowed only for noncommercial distribution and onl'
+  +'y if you'#6'D    received the program in object code or executable form wit'
+  +'h such'#6'1    an offer, in accord with Subsection b above.)'#6#0#6'CThe so'
+  +'urce code for a work means the preferred form of the work for'#6'Dmaking mo'
+  +'difications to it.  For an executable work, complete source'#6'Dcode means '
+  +'all the source code for all modules it contains, plus any'#6'?associated in'
+  +'terface definition files, plus the scripts used to'#6'Fcontrol compilation '
+  +'and installation of the executable.  However, as a'#6'?special exception, t'
+  +'he source code distributed need not include'#6'Aanything that is normally d'
+  +'istributed (in either source or binary'#6'Dform) with the major components '
+  +'(compiler, kernel, and so on) of the'#6'Doperating system on which the exec'
+  +'utable runs, unless that component'#6'"itself accompanies the executable.'#6
+  +#0#6'@If distribution of executable or object code is made by offering'#6'@a'
+  +'ccess to copy from a designated place, then offering equivalent'#6'<access '
+  +'to copy the source code from the same place counts as'#6'Bdistribution of t'
+  +'he source code, even though third parties are not'#6'8compelled to copy the'
+  +' source along with the object code.'#6#0#6'D  4. You may not copy, modify, '
+  +'sublicense, or distribute the Program'#6'=except as expressly provided unde'
+  +'r this License.  Any attempt'#6'Botherwise to copy, modify, sublicense or d'
+  +'istribute the Program is'#6'Fvoid, and will automatically terminate your ri'
+  +'ghts under this License.'#6'DHowever, parties who have received copies, or '
+  +'rights, from you under'#6'Dthis License will not have their licenses termin'
+  +'ated so long as such'#6'"parties remain in full compliance.'#6#0#6'D  5. Yo'
+  +'u are not required to accept this License, since you have not'#6'Dsigned it'
+  +'.  However, nothing else grants you permission to modify or'#6'Bdistribute '
+  +'the Program or its derivative works.  These actions are'#6'Cprohibited by l'
+  +'aw if you do not accept this License.  Therefore, by'#6'?modifying or distr'
+  +'ibuting the Program (or any work based on the'#6'DProgram), you indicate yo'
+  +'ur acceptance of this License to do so, and'#6'Call its terms and condition'
+  +'s for copying, distributing or modifying'#6'!the Program or works based on '
+  +'it.'#6#0#6'E  6. Each time you redistribute the Program (or any work based '
+  +'on the'#6'AProgram), the recipient automatically receives a license from th'
+  +'e'#6'Foriginal licensor to copy, distribute or modify the Program subject t'
+  +'o'#6';these terms and conditions.  You may not impose any further'#6'Frestr'
+  +'ictions on the recipients'' exercise of the rights granted herein.'#6'DYou '
+  +'are not responsible for enforcing compliance by third parties to'#6#13'this'
+  +' License.'#6#0#6'E  7. If, as a consequence of a court judgment or allegati'
+  +'on of patent'#6'Dinfringement or for any other reason (not limited to paten'
+  +'t issues),'#6'Cconditions are imposed on you (whether by court order, agree'
+  +'ment or'#6'Fotherwise) that contradict the conditions of this License, they'
+  +' do not'#6'>excuse you from the conditions of this License.  If you cannot'
+  +#6'Fdistribute so as to satisfy simultaneously your obligations under this'#6
+  +'FLicense and any other pertinent obligations, then as a consequence you'#6
+  +'@may not distribute the Program at all.  For example, if a patent'#6'Flicen'
+  +'se would not permit royalty-free redistribution of the Program by'#6'Eall t'
+  +'hose who receive copies directly or indirectly through you, then'#6'Cthe on'
+  +'ly way you could satisfy both it and this License would be to'#6'2refrain e'
+  +'ntirely from distribution of the Program.'#6#0#6'EIf any portion of this se'
+  +'ction is held invalid or unenforceable under'#6'Fany particular circumstanc'
+  +'e, the balance of the section is intended to'#6'>apply and the section as a'
+  +' whole is intended to apply in other'#6#14'circumstances.'#6#0#6'CIt is not'
+  +' the purpose of this section to induce you to infringe any'#6'Dpatents or o'
+  +'ther property right claims or to contest validity of any'#6'@such claims; t'
+  +'his section has the sole purpose of protecting the'#6'<integrity of the fre'
+  +'e software distribution system, which is'#6'?implemented by public license '
+  +'practices.  Many people have made'#6'@generous contributions to the wide ra'
+  +'nge of software distributed'#6'Athrough that system in reliance on consiste'
+  +'nt application of that'#6'Fsystem; it is up to the author/donor to decide i'
+  +'f he or she is willing'#6'Eto distribute software through any other system '
+  +'and a licensee cannot'#6#19'impose that choice.'#6#0#6'EThis section is int'
+  +'ended to make thoroughly clear what is believed to'#6'-be a consequence of '
+  +'the rest of this License.'#6#0#6'C  8. If the distribution and/or use of th'
+  ,'e Program is restricted in'#6'Ecertain countries either by patents or by co'
+  +'pyrighted interfaces, the'#6'Coriginal copyright holder who places the Prog'
+  +'ram under this License'#6'Bmay add an explicit geographical distribution li'
+  +'mitation excluding'#6'Cthose countries, so that distribution is permitted o'
+  +'nly in or among'#6'Ecountries not thus excluded.  In such case, this Licens'
+  +'e incorporates'#6'9the limitation as if written in the body of this License'
+  +'.'#6#0#6'I  9. The Free Software Foundation may publish revised and/or new '
+  +'versions'#6'Hof the General Public License from time to time.  Such new ver'
+  +'sions will'#6'Hbe similar in spirit to the present version, but may differ '
+  +'in detail to'#6'!address new problems or concerns.'#6#0#6'FEach version is '
+  +'given a distinguishing version number.  If the Program'#6'Gspecifies a vers'
+  +'ion number of this License which applies to it and "any'#6'Ilater version",'
+  +' you have the option of following the terms and conditions'#6'Deither of th'
+  +'at version or of any later version published by the Free'#6'ISoftware Found'
+  +'ation.  If the Program does not specify a version number of'#6'Lthis Licens'
+  +'e, you may choose any version ever published by the Free Software'#6#11'Fou'
+  +'ndation.'#6#0#6'E  10. If you wish to incorporate parts of the Program into'
+  +' other free'#6'Iprograms whose distribution conditions are different, write'
+  +' to the author'#6'Eto ask for permission.  For software which is copyrighte'
+  +'d by the Free'#6'HSoftware Foundation, write to the Free Software Foundatio'
+  +'n; we sometimes'#6'Gmake exceptions for this.  Our decision will be guided '
+  +'by the two goals'#6'Iof preserving the free status of all derivatives of ou'
+  +'r free software and'#6'9of promoting the sharing and reuse of software gene'
+  +'rally.'#6#0#6#18#9#9#9'    NO WARRANTY'#6#0#6'B  11. BECAUSE THE PROGRAM IS'
+  +' LICENSED FREE OF CHARGE, THERE IS NO '#6#8'WARRANTY'#6'DFOR THE PROGRAM, T'
+  +'O THE EXTENT PERMITTED BY APPLICABLE LAW.  EXCEPT '#6#4'WHEN'#6'?OTHERWISE '
+  +'STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER '#6#7'PARTIES'#6'APROV'
+  +'IDE THE PROGRAM "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER '#6#9'EXPRESSE'
+  +'D'#6'DOR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF'
+  +#6'IMERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  THE ENTIRE RISK A'
+  +'S'#6'FTO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU.  SHOULD TH'
+  +'E'#6'>PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY '#6#10
+  +'SERVICING,'#6#21'REPAIR OR CORRECTION.'#6#0#6'D  12. IN NO EVENT UNLESS REQ'
+  +'UIRED BY APPLICABLE LAW OR AGREED TO IN '#6#7'WRITING'#6'CWILL ANY COPYRIGH'
+  +'T HOLDER, OR ANY OTHER PARTY WHO MAY MODIFY AND/OR'#6'BREDISTRIBUTE THE PRO'
+  +'GRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR '#6#8'DAMAGES,'#6'DINCLUDING '
+  +'ANY GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES '#6#7'ARISING'#6
+  +'IOUT OF THE USE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED'
+  +#6'FTO LOSS OF DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED '#6
+  +#2'BY'#6'EYOU OR THIRD PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH A'
+  +'NY '#6#5'OTHER'#6'EPROGRAMS), EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN A'
+  +'DVISED OF THE'#6#28'POSSIBILITY OF SUCH DAMAGES.'#6#0#6'"'#9#9'     END OF '
+  +'TERMS AND CONDITIONS'#6#0#0#8'ReadOnly'#9#10'ScrollBars'#7#6'ssBoth'#8'TabO'
+  +'rder'#2#0#0#0#0#0#0#0
+]);

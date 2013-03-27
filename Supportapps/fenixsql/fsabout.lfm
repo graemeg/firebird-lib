@@ -1,0 +1,674 @@
+object frmAbout: TfrmAbout
+  Left = 284
+  Height = 336
+  Top = 195
+  Width = 495
+  HorzScrollBar.Page = 494
+  VertScrollBar.Page = 335
+  ActiveControl = BitBtn1
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsDialog
+  Caption = 'fenixsql .....about'
+  ClientHeight = 336
+  ClientWidth = 495
+  OnCreate = FormCreate
+  Position = poDesktopCenter
+  LCLVersion = '1.1'
+  object Panel1: TPanel
+    Left = 0
+    Height = 88
+    Top = 0
+    Width = 495
+    Align = alTop
+    BevelOuter = bvLowered
+    ChildSizing.LeftRightSpacing = 4
+    ChildSizing.TopBottomSpacing = 2
+    ClientHeight = 88
+    ClientWidth = 495
+    TabOrder = 0
+    object lblTitle2: TLabel
+      Left = 5
+      Height = 29
+      Top = 56
+      Width = 485
+      Align = alBottom
+      Alignment = taCenter
+      AutoSize = False
+      Caption = 'simple admin tool for firebird'
+      Color = clWhite
+      Font.Color = clRed
+      Font.Height = -16
+      Layout = tlCenter
+      ParentColor = False
+      ParentFont = False
+      Transparent = False
+    end
+    object lbltitle1: TLabel
+      Left = 5
+      Height = 53
+      Top = 3
+      Width = 485
+      Align = alClient
+      Alignment = taCenter
+      AutoSize = False
+      Caption = 'fenixsql'
+      Color = clWhite
+      Font.Color = clActiveCaption
+      Font.Height = -32
+      Layout = tlCenter
+      ParentColor = False
+      ParentFont = False
+      Transparent = False
+    end
+  end
+  object Panel2: TPanel
+    Left = 0
+    Height = 30
+    Top = 306
+    Width = 495
+    Align = alBottom
+    BevelOuter = bvNone
+    ClientHeight = 30
+    ClientWidth = 495
+    TabOrder = 1
+    object BitBtn1: TBitBtn
+      Left = 399
+      Height = 26
+      Top = 0
+      Width = 92
+      BorderSpacing.InnerBorder = 2
+      Cancel = True
+      Caption = '&Close'
+      Kind = bkClose
+      ModalResult = 2
+      TabOrder = 0
+    end
+  end
+  object Panel3: TPanel
+    Left = 0
+    Height = 218
+    Top = 88
+    Width = 495
+    Align = alClient
+    BevelOuter = bvNone
+    ChildSizing.LeftRightSpacing = 4
+    ChildSizing.TopBottomSpacing = 4
+    ClientHeight = 218
+    ClientWidth = 495
+    TabOrder = 2
+    object lic: TPageControl
+      Left = 4
+      Height = 210
+      Top = 4
+      Width = 487
+      ActivePage = pgInfo
+      Align = alClient
+      TabIndex = 0
+      TabOrder = 0
+      object pgInfo: TTabSheet
+        Caption = 'pgInfo'
+        ClientHeight = 181
+        ClientWidth = 483
+        object Label2: TLabel
+          Left = 12
+          Height = 15
+          Top = 30
+          Width = 55
+          Caption = 'Version :'
+          ParentColor = False
+        end
+        object Label4: TLabel
+          Left = 12
+          Height = 15
+          Top = 63
+          Width = 51
+          Caption = 'Author :'
+          ParentColor = False
+        end
+        object Label5: TLabel
+          Left = 11
+          Height = 15
+          Top = 93
+          Width = 43
+          Caption = 'email :'
+          ParentColor = False
+        end
+        object Label6: TLabel
+          Left = 12
+          Height = 15
+          Top = 126
+          Width = 24
+          Caption = 'url :'
+          ParentColor = False
+        end
+        object Image1: TImage
+          Left = 312
+          Height = 58
+          Top = 14
+          Width = 126
+          Picture.Data = {
+            1754506F727461626C654E6574776F726B477261706869639F14000089504E47
+            0D0A1A0A0000000D494844520000007D0000003908030000002C97D46D000002
+            CA504C5445DEDEDE000000FFFFFF7B7B7BBDBDBD7B7B84C7C7C7DEE7E7737B9C
+            778CA56B7B9C637B946B779D636F965A6B9463778C566F8D526B94426794465E
+            8C4A63945263944F678C8484A56B7B945A7B9D63739C4A535F212929674B2F8C
+            7B6B3D5E8C526B9C5273947384A54A5A9C25469427427367636F7F6B46432711
+            8E734BEFDEAD737B844A6B948D8C95394AB5394ABD2F3DB7212DA57F8D968C8C
+            7B9D977B7B73849C9FAF395A8C425A9431638C5A6BA55A63BD6777BD3746B542
+            5294676B8767524AEFE7CEA5A79C6373A55A6B9C52739C526B84A5ADDE314AA5
+            C7B58ECEC6AD8C96AD857B8E27578E315A8CEFC76FE7A51F9486538E94B5737B
+            C68E96C7DFB5677F7763778494525EAF4256AF6784A59D949FC6AD6BE7DEBDA5
+            A7B7777777737BA5946B25D6CEAD6B7BA5396394BF8E39875618DECF95ADAFB5
+            868EADA5A5B5CFA54A9563107B67566F521BAD8C31DECEAD426B9C575F6F463F
+            46573F1ABD954F85570A63421F7B56378E8667776777B7AFBD7F672D7F7B6F57
+            2D08ADAFBF4652734B35212921086F461B4723049E671A8F7331AD772F63310E
+            C79C5E967B6FAD8D4A4614049F853BCECEBD7F7357A7945F9D7731D6CFB7776B
+            6B673F0A3511020808085A2306250E037B94AD6F3B096727036F460C959FB573
+            778EBDBDAD7384AD2D5E94315A9C295A9431639CBDBDB539639CC6BDB5EFEFE7
+            39567BF7F7F7EFE7D65E7BA5396B9C5273A5E7DFC74A73946B87AF3163944A6B
+            9C426BA5778FBF527BAF7B8DAF42639C4A739C396B94853108849DBD94A7CFDE
+            E7EFC6CEDECED6E7CEDEE7D6D6DEEFF7F7A7B7CECF52122F3D4E31527B395A9C
+            6386B58E9FBD212129182129BDBDC61C33533163A50810187B8CAD295A9CE7E7
+            EF0E0E11162539E7EFEFBDC6DE294363080C10B5C6D7ADBDCE272D3B141825CE
+            D6DEBFC6D6C6D6E7C6CED6274F7F081021081829BDCEDECECED6000810215A94
+            25639CADC7D6D6DEE74A73ADB5B5CED330EC82000011904944415478DAE599FF
+            4313679EC799C7B324E934F08C2138A198307BE14B0DDD6E890462BBB042DAA5
+            884ABAD02B70D4344340907083464111A1E16B910556C482BA355F6EEEE8262C
+            31B726B68A5A31B44811EB974B5D686B5BAFD7EEDDFF709F09DBD6B0BFAF3FDC
+            33C9CCE449C8EB793FCFE7DB4362621E63236262D0636BEB04FA3F3CA6F6C42A
+            FD89C774AC5FD5BE7EDDDFFF403F6A5F47FCDD5BCCA374914844D2522C4DC1F1
+            322CA7A80D1B2839A554EA943B743A9D72F5412929795C9C1C6329A6A8C81BF1
+            0952850A6325ABCB6131262B24A48294D0BA1D2E1D4B71ACCBE9FAA9FDF5DE11
+            79C2B186CE8824A4544A4AE3701C8E97C3F716029EDAA0546ED800CCB8F8B894
+            979ACB87CB6AFA5B37634A86319523C3098534A92FC4942EC7A1D3A8B0943633
+            4CE02CE5C8CD75E596385C252502B3049E9F7E2ADC94B81CD0E3700AE7B5DA45
+            2231F39A8491080D342844EBB55ADB806D60A0A6BFACBFACAAACCC66B57637F4
+            97359469E3B01206A0A20B1505227381C27C0FDD9FB97C164F431719B8A557E6
+            F2175CAEEF91CFEB7A44BFD309A32971F233C8E570ACD19E28CE4C7C5E94F8BC
+            3851CC90B00859C303354D3535B69AFEAAAA86B2AA86FE9AAAFEB609FB4803B4
+            5DD0A18D4F20E9028939201689C9CB6861197DAECB75E4EA34E65B6656C79DF7
+            53F7D1C224EB625D6EF70F63703A1D4E9DEB3222407F145D9C28346362A2582C
+            9130645CA9A9BBBFA1DF6231F5D89AFA479A464C4D23B68611FBE8DE86B28686
+            DEDE869A8686D246B2421C803F61C4B168610EA1A58F7DAE791F333FEB7339F9
+            F9FB97D1D3A280CF7BD6E7765EB874D1299C5C4E6AFEE297887038FE66E6C5FA
+            AD5BFF6937433E49D36FECB7989AFA77560D9C1C1D35D99AAA329A6CB686FE86
+            9109DB045C7B270E74F7B5EF6DB85ED3FF7C406C84472CBA518C52891924B927
+            16BF27BF1A705DBAD6F1002D6F439FCB6391FAFCB5A9DB1553D7FC579F77FDE5
+            4AF8F6DF6A07FAB35B5F78F585D715D22715A9FBF75BAC6DBDB6DA5A8B7DD492
+            D1DFDF3FD06BD9DBDDD4DBDD603DD05073E0E4B1D163EF9C6A6ADAB5AB8A9130
+            1522A06F3FDA4C2C7F893E9B5B8AFD62ECF27F2DDEBB4FCCA2A7B7A3BA1B5711
+            F13D1AA357CEA0E5ABB161D4FC35CC3C18DE1AFACF9E7DE1E5DFFC66EBEBA434
+            AF2DDDDE3B3030606BA8ADB2DBEDBD0007EBB39FB41FB09FB6C0ACB7B79F3871
+            ECC4B193A70ED6943112B1982988454FEF0BC5ABAE2062EE2B74F4EB2BE85B54
+            BF02F43C54F7742C22AEA031A7FA215AC1CBCB2869113EE574476B976CFCC79F
+            BFF0F2CBAFBEFAAC549ABCBFDDDED43BD26DEAAF2DEBB1F459601CB681DED1F6
+            AE939696EE869A5E18C7C449C09FAAA9D929B85880067A9E986140A6CB3993FD
+            CDE507C4BD07DFCCA21B1B50F58D1944DC47A112D77DB4AC564EA2B84541BB3B
+            5AFB93A4FAB9AD2F80F617A5CD070FA61FB4F6F4D84DBD55B56556BBC53262E9
+            E9B6594FB69FB48C5A467A2D96BE83FB3A0F9E9A38D0651F2469C9EE8AC06D94
+            9A27BE25BE8D961C4ECF274933A1A53FA1BC87A8B9632626153AA7663E14FBFE
+            E7F687E3BE92FB3179F7D0923B878DA293B4FA172F6EDDBAF5E7AFD3FB2CF9F2
+            AE3E6B9B65D4D45B5BDB62B758FBAC767BFB6910DFDE6E1A19B1B49085AA1CF9
+            DB4DC9EF98B4AC5F01FE29FF8C08914C62E21DE22B873E7E79F25BB5737229BC
+            4284F4A195A42542295F5E5A54E72E7FBDA8661797C263C4DCB9357445BCFA17
+            CF3DF7DC8B8571FBAD477627A5DB077AFBAB866B6A4B274EF759F69FEE1A1DDD
+            DFD7D535D177DA645A27660C98820897748877040DB41EFB0D055283D8C8A858
+            9663A694EAFF767CE72CF94AE7F54CE149C9BCD8ACA7D4B94E67AEFA2B37EB9C
+            DB91EB74B3D11E07D1EDA95FFEFAD9D71564AAB5851425261D33D906CAAA6CB5
+            FDA74E9E3E7D6AB4EB54DF447BD72930FC9EED8946B104437877441A95E3F7F3
+            184F5504CC980FFA2F78FCCE73DFB96E3A9D2E3735A59A663DC65B66CCF1CE8F
+            3E72F06EDEED763BDC6EA79B8FA64B4809B991249F241BADADA24451626A4BBF
+            ADACACB6B6E8D8B18963C7BAC6FA4EDBEDA7264CADEB1986319ED9B39B610C54
+            0EEB70E438D820278CC0CF2B5D6ECEEFE79CACF33B381C3CE7E7FC3CABD133D3
+            1C8BCFF32CCFB2AC9B15AE308AE89927451211B3B162639CD57608025F716B6D
+            8DADBF76B836DD9E7FF0647267F2FE63D613273A49090381D8BCA7F16DE3FC6E
+            4834AC92E5392FEF05354E90C40BDA78B7E3266877B839AF2094623996F77E79
+            5BF73EEF65BF44676100F088A63F0578087789A2F2A60C6067D906469A2CB691
+            9EB4635B14A2DFEFDE4DB69CB64E589A258CE06105BFFFE07A656560B719B3AC
+            03BECAC142F8B8E972B801E9847100DC01776E58979B0E377B0ED4FAC2635EDF
+            AC6E162DA8D9C824ACD14E8A32C5899922CBBF6417670A7965C4DED3D9F54ED7
+            3E5202566D26F79DB6B7B78948B1382066E8FC53D7AF57C2E49B0D392CA44CB7
+            83F3F09F7E1AA1B3E79C9F46E64138B97DBEF33E9F8FF3797CB47AFCDE6C7816
+            2D8F5FF4B23C154D970AD2458999DA5A2DD0CBCAAA06B55B12F78D9DECCC83A4
+            5D71B682C9B79A2CC322C8A9127385F403A05F4F34920C2383C98544E60EF24E
+            272BA88749750A13E0FE48B8F912D1E368FEAB87EABF20F525F45AE80CDA3C8E
+            36F2AC770D5D21CC7B66A5A9A82EBBBED256D69F9D9DBD27FD44FA21690A5412
+            1CE692EC165315A35241E6275323F4EB05C63D4615EF66DFE7956E9D9B0BB2E7
+            1CBC81F68241476C5BB080F368B379E641E8E237105E7D28E9EE3C5A48424961
+            6F70AD76987A26BFEACDBA4A637D7D63596D7D7D7DEA89AE3686C1F194CEE12C
+            C9B7B6EDAD85324645EBE90F3E38F501D0CF1A6F15E40084A5BC3914253B6BE0
+            DDB25B01ECE6CE07BD60690087522276E351F41AAB5EA52FC2BAA7C085F206A3
+            E95053E51565FC7376B1B1B2BE7E7B776D5D7575E78983C9E362112351E95C3B
+            DA2C69ED45531A1D45F99B57E905B7183DC70B73CD73323D5350A8D2B0947937
+            ED175A300896EDE6F959140AA3CD77737FA24BE1A2E1A9687A7CFCF3F9DAA26A
+            F19EECFAFAEAA3693B7F7BF8E8BEF6516B66A2D838CE70AC2EDF5ADA5D67C07C
+            4E4E4E302119A6FED05615A504EB72F02C45C96985442A65CE1A7080F6534130
+            6AECD1F07C903C83C6C233CB77A721B89FBF9DDD7119856EA1CC45CDDA752753
+            937FF54A716262657175F5E1C395BDCFD41D3E9C9F6E3165658E9F11ABDC8E49
+            8BA5771BC65E96F5F2C19FFD3229E9F51C8760D737CF4174C566E39E80918445
+            C1B48C62D9203607021C97A0309E2926949E6FD55EE5B784122F7C33B74084C3
+            C48297D344D393D2B2B601BC383B5BA0D7599B9EF9DDB6EAEDEBCA8F54661BCD
+            1A37AFEC3B30B28D9AF6BBBD1C442BFED71F3905E706E94E07CB5258C13012A1
+            B8D64B3117A43C8CD88C352AE68C513FA5E4BD939CD7CB719457B723C805399E
+            D3ACA5C73D9DAE4D14651683C901FCF0E1439D23653D692D6919A519F0484B6B
+            85674BCB36EF7F08B1E5DC39C1B521A640B5E884B8C219A6F47A89C2ACD23315
+            52C3948C6612C566C8FC6744299C97F2B27E9E83A661398DC6ABE13430028D37
+            5A7B72C61670F8E2E24A815E5DFDF650724B4B7E5ADA50465A23C4D9F483C9C9
+            C98D197514F8B4C379CEC14D7DEC7442788151DC64DD86690D25D39B613FC140
+            44C0983106026649051330501AAF37E8C710FD798D170358C083FF0671347DD3
+            33D9E476A8ABF780CD5757975BD31AF3F3D31A87CAB3D665650D0D35760E65B4
+            0C6568A721A8B2172E5E9A9D9D87525518CA4D272C3CCBFA55A0CE00D8DDE642
+            48058A143D18812AA8A1384AFFB1790AF0827A3828810DF751F478E9E68D0A06
+            CAF9ED10728A8FBC553E74E478633E8C60A81C4EF9FB3AE17ED3DBA01DDAFBDE
+            19842EBAFD427C770B1D2CA782E4CA4DD1B45962A655B402E30B17FC7ECC712A
+            15AD32D30A830A73320EC3AA43E0F2031F47FB7B3CC68A02722363961498CD64
+            73E791AC23E5E5A987A06D49CDCF4F4D3D74E4F8716DD11F7D9124C95D46A863
+            312487F0C20BE3D1D0851C053E0CFB1BF85E3F05A088CF737E951E66802EA0CD
+            344D638C8535F0AFF2D7F8BB2C817E4A8A95B94A25457574BEB1EE487946796A
+            A41DCA4B4D3DBEEE78EBD050B9765C904A5D41E806D1510019DE8D3554CA5998
+            4C5643513C05930AEE1E1129C02981E887F048822C7A4A08D97E992AA23F3AC7
+            49A58AC278F055D899E6EEEBEC2C6F2C5FDF980682B76CD95E5957FD44FD716D
+            E3A64D4732FEE8037F13E80B4473828A3C6FF09CF7CCCF5EA2BD14E5F38D433E
+            F3E971D003667181F307A1C38CE78F7A985B46A3B17E7EDC0783999F9DF778E0
+            1A2BFCDBE091DD84429A027B68D0920FF65D5EDEDA5ADE38D4D8B8294BBBEDDD
+            77DFFDB76D59DA4D95DA4D45E36E8AE7AE0ADA9BC9A718C6E799BFE79B47D73C
+            3C8BBE9885515D9BC20FAF041EA2DB53413C8FD02C2CD29F8D08C51AFF175E4C
+            4D5F9EF1DD473E30FBB5DA55502A2A29CCA9809E565A5E5ADADA38D462696B69
+            69115E67B56ECA38B2495B2D540602FD6922EF96A450853DE8DA79251074D417
+            C1B95884C4930C9AE12470A3E47D087D5E7C196D0FC1354F849071924657B870
+            F14BB9BA687FC772998CD245FE5380F7A5EFEFC9E8E9291D4CEB1BEDEADB9FFE
+            D65B6DC9FBDB325A5BDE2E2FFA130B7994FD30A2DDAC80A17AC000EF20943D26
+            3F8B938042102174ED2EF09AEFE880FE04110A11044275D08D928830420F9627
+            C3843A9A4E29653A5DC98E12651CAC7CFA5BED6D3D833DA603074C268BC96A6D
+            1BEC693BBDD736ACDD12E7F7838FE188D56D20CD7A86B9E0312C6423544DDCD0
+            33F7105A2688B0AF23F404824D653800632056C20B40CF5EA52FC2ACA14BD4DD
+            B9E81C47A934BADC1D3BB276EED4B2BAA4F4AEF6BD7BF7768F8C0C0E0C960EB7
+            6A5BB37A7A86539A5FCA853206D2CCD455C1EA36280C78763EC1F79F317704FA
+            8AFECF208C203E331B633E11B413A1087D8996C97FA253B3800FB0BAE88A9AA2
+            9439BACD653BA195BDA4A33A3ABA013F3838580ACB9F95D59A35A48D31407E8B
+            C435D61DB1F9495510DF368A6EA333F2081DE619AD1077446063998C800ACD0B
+            F47D660DFE911E9EE6961FA0EC301BED711B94E0E93B575B0DABA4E29A9AF636
+            0D0E0E83F2566D565696F6BDF7C01B21BF40DDC6BE1FA1CFF9A72E23712642E3
+            A108FD0B84EA09225B0C6FBE961AD16E8C9C1983FF1AFA848813E81D0F39FF22
+            DA4C84A3E9B204397E69D72E01DE64552A95710383002F1DD60AF0CCCA7FFD77
+            F41ECED5B0AB8DBE86D02749C6D919749B014B8BB9118B6242300494DAFC09C2
+            B00075CBB0084B8BF3C2EA2F620DFF3D88DF8E80DA811E062EDD5B2156A2336C
+            427C4242DE2EC037EC3DD0A692CBF36C406F1A181C1E186E1D2E2AFA55ED1FFE
+            E03143FD4EC11279C68D17430B0B529F2FE0B94B1C2DBE43C41D0D11CB015FD2
+            C242D8C7DE35E68D11B47885580CF8A40B638B100335F3CD77168CCD0B6361FA
+            C9CD97682571375A3B441F1C0FF45DB0DC2D5886F3064D7B05F503A530FB45B6
+            2A5B59AD87640AF0B40CA7D067A7956304B1B4B8B8788758328709626CEE3362
+            2C3C4910C45DE87AFF2E417CAD06FB53CAE0BD652F643A0ABA56C01FEE7273C4
+            823A34A6D3ACF177255696AED2533156C50D9A7A4C036903A5A583AD03455555
+            5545B5523A21017BCEA740B456AAE7D473739393F04CA00B921677B0F2A424FF
+            0EE1F59C5AEDDDB1B8E8E0E71627A9E09C7A724E077505E50D2FEA74EA8E496A
+            83726E31C4726B725C0A2C7C4239D04D79300D64DC40DB601BD8DC60E9A0B6B5
+            A8EA95AA57DE149385524C0B398D826FD3B04A0DA509D2D86950791D6E196360
+            9DBCDF0D1B05A19217F6313CECEA789EE5200D7A2101F11A0DABD108D9554875
+            429CFF892E97CBE313E4F16FD4A44165BF5104F4C1D29EE1526D696BA9565B55
+            F44AD19B6F168B441524C951B204B381A32093711A2517E485DD9A03F68FDC2A
+            F3AF7B49D8C90877EED54D1B0CC21BF4B241CA0BE8C8EE642A4ABB3C219E8C17
+            5A9C948E23C9F83CA097021D6C6E9BF65DA0D7FEAEB838B1B858A45049C58C14
+            CBE4785AA5D1603D866D130B05266CA89C91CD9BF323D6B92A1F6A7DA11A88F0
+            A1126685FD1B5E6DD38647E9B13FFE5811FBC835F691AED8353F6AC4FED41FFB
+            E3A76363A23FFAE817FCF0F1C8111BF308FDB1FC2EF203FDFFEF2F23EBD63FB6
+            8388211E67FB3FB08D99424941657E0000000049454E44AE426082
+          }
+          Transparent = True
+        end
+        object lVersion: TLabel
+          Left = 69
+          Height = 15
+          Top = 31
+          Width = 50
+          Caption = 'lVersion'
+          ParentColor = False
+        end
+        object lAuthor: TLabel
+          Left = 71
+          Height = 15
+          Top = 63
+          Width = 46
+          Caption = 'lAuthor'
+          ParentColor = False
+        end
+        object leMail: TLabel
+          Cursor = crNo
+          Left = 69
+          Height = 15
+          Top = 93
+          Width = 123
+          Caption = 'fblib@altervista.org'
+          Font.Color = clBlue
+          Font.Style = [fsUnderline]
+          Layout = tlCenter
+          ParentColor = False
+          ParentFont = False
+        end
+        object lUrl: TLabel
+          Cursor = crNo
+          Left = 69
+          Height = 15
+          Top = 126
+          Width = 152
+          Caption = 'http://fblib.altervista.org'
+          Font.Color = clBlue
+          Font.Style = [fsUnderline]
+          Layout = tlCenter
+          ParentColor = False
+          ParentFont = False
+        end
+      end
+      object pgLicence: TTabSheet
+        Caption = 'lic'
+        ClientHeight = 181
+        ClientWidth = 483
+        object mLic: TMemo
+          Left = 0
+          Height = 181
+          Top = 0
+          Width = 483
+          Align = alClient
+          Lines.Strings = (
+            'This program is distributed under the terms of the GPL v2.'
+            ''
+            #9#9'    GNU GENERAL PUBLIC LICENSE'
+            #9#9'       Version 2, June 1991'
+            ''
+            ' Copyright (C) 1989, 1991 Free Software Foundation, Inc.'
+            '                          675 Mass Ave, Cambridge, MA 02139, USA'
+            ' Everyone is permitted to copy and distribute verbatim copies'
+            ' of this license document, but changing it is not allowed.'
+            ''
+            #9#9#9'    Preamble'
+            ''
+            '  The licenses for most software are designed to take away your'
+            'freedom to share and change it.  By contrast, the GNU General Public'
+            'License is intended to guarantee your freedom to share and change free'
+            'software--to make sure the software is free for all its users.  This'
+            'General Public License applies to most of the Free Software'
+            'Foundation''s software and to any other program whose authors commit to'
+            'using it.  (Some other Free Software Foundation software is covered by'
+            'the GNU Library General Public License instead.)  You can apply it to'
+            'your programs, too.'
+            ''
+            '  When we speak of free software, we are referring to freedom, not'
+            'price.  Our General Public Licenses are designed to make sure that you'
+            'have the freedom to distribute copies of free software (and charge for'
+            'this service if you wish), that you receive source code or can get it'
+            'if you want it, that you can change the software or use pieces of it'
+            'in new free programs; and that you know you can do these things.'
+            ''
+            '  To protect your rights, we need to make restrictions that forbid'
+            'anyone to deny you these rights or to ask you to surrender the rights.'
+            'These restrictions translate to certain responsibilities for you if you'
+            'distribute copies of the software, or if you modify it.'
+            ''
+            '  For example, if you distribute copies of such a program, whether'
+            'gratis or for a fee, you must give the recipients all the rights that'
+            'you have.  You must make sure that they, too, receive or can get the'
+            'source code.  And you must show them these terms so they know their'
+            'rights.'
+            ''
+            '  We protect your rights with two steps: (1) copyright the software, and'
+            '(2) offer you this license which gives you legal permission to copy,'
+            'distribute and/or modify the software.'
+            ''
+            '  Also, for each author''s protection and ours, we want to make certain'
+            'that everyone understands that there is no warranty for this free'
+            'software.  If the software is modified by someone else and passed on, we'
+            'want its recipients to know that what they have is not the original, so'
+            'that any problems introduced by others will not reflect on the original'
+            'authors'' reputations.'
+            ''
+            '  Finally, any free program is threatened constantly by software'
+            'patents.  We wish to avoid the danger that redistributors of a free'
+            'program will individually obtain patent licenses, in effect making the'
+            'program proprietary.  To prevent this, we have made it clear that any'
+            'patent must be licensed for everyone''s free use or not licensed at all.'
+            ''
+            '  The precise terms and conditions for copying, distribution and'
+            'modification follow.'
+            ''
+            #9#9'    GNU GENERAL PUBLIC LICENSE'
+            '   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION'
+            ''
+            '  0. This License applies to any program or other work which contains'
+            'a notice placed by the copyright holder saying it may be distributed'
+            'under the terms of this General Public License.  The "Program", below,'
+            'refers to any such program or work, and a "work based on the Program"'
+            'means either the Program or any derivative work under copyright law:'
+            'that is to say, a work containing the Program or a portion of it,'
+            'either verbatim or with modifications and/or translated into another'
+            'language.  (Hereinafter, translation is included without limitation in'
+            'the term "modification".)  Each licensee is addressed as "you".'
+            ''
+            'Activities other than copying, distribution and modification are not'
+            'covered by this License; they are outside its scope.  The act of'
+            'running the Program is not restricted, and the output from the Program'
+            'is covered only if its contents constitute a work based on the'
+            'Program (independent of having been made by running the Program).'
+            'Whether that is true depends on what the Program does.'
+            ''
+            '  1. You may copy and distribute verbatim copies of the Program''s'
+            'source code as you receive it, in any medium, provided that you'
+            'conspicuously and appropriately publish on each copy an appropriate'
+            'copyright notice and disclaimer of warranty; keep intact all the'
+            'notices that refer to this License and to the absence of any warranty;'
+            'and give any other recipients of the Program a copy of this License'
+            'along with the Program.'
+            ''
+            'You may charge a fee for the physical act of transferring a copy, and'
+            'you may at your option offer warranty protection in exchange for a fee.'
+            ''
+            '  2. You may modify your copy or copies of the Program or any portion'
+            'of it, thus forming a work based on the Program, and copy and'
+            'distribute such modifications or work under the terms of Section 1'
+            'above, provided that you also meet all of these conditions:'
+            ''
+            '    a) You must cause the modified files to carry prominent notices'
+            '    stating that you changed the files and the date of any change.'
+            ''
+            '    b) You must cause any work that you distribute or publish, that in'
+            '    whole or in part contains or is derived from the Program or any'
+            '    part thereof, to be licensed as a whole at no charge to all third'
+            '    parties under the terms of this License.'
+            ''
+            '    c) If the modified program normally reads commands interactively'
+            '    when run, you must cause it, when started running for such'
+            '    interactive use in the most ordinary way, to print or display an'
+            '    announcement including an appropriate copyright notice and a'
+            '    notice that there is no warranty (or else, saying that you provide'
+            '    a warranty) and that users may redistribute the program under'
+            '    these conditions, and telling the user how to view a copy of this'
+            '    License.  (Exception: if the Program itself is interactive but'
+            '    does not normally print such an announcement, your work based on'
+            '    the Program is not required to print an announcement.)'
+            ''
+            'These requirements apply to the modified work as a whole.  If'
+            'identifiable sections of that work are not derived from the Program,'
+            'and can be reasonably considered independent and separate works in'
+            'themselves, then this License, and its terms, do not apply to those'
+            'sections when you distribute them as separate works.  But when you'
+            'distribute the same sections as part of a whole which is a work based'
+            'on the Program, the distribution of the whole must be on the terms of'
+            'this License, whose permissions for other licensees extend to the'
+            'entire whole, and thus to each and every part regardless of who wrote it.'
+            ''
+            'Thus, it is not the intent of this section to claim rights or contest'
+            'your rights to work written entirely by you; rather, the intent is to'
+            'exercise the right to control the distribution of derivative or'
+            'collective works based on the Program.'
+            ''
+            'In addition, mere aggregation of another work not based on the Program'
+            'with the Program (or with a work based on the Program) on a volume of'
+            'a storage or distribution medium does not bring the other work under'
+            'the scope of this License.'
+            ''
+            '  3. You may copy and distribute the Program (or a work based on it,'
+            'under Section 2) in object code or executable form under the terms of'
+            'Sections 1 and 2 above provided that you also do one of the following:'
+            ''
+            '    a) Accompany it with the complete corresponding machine-readable'
+            '    source code, which must be distributed under the terms of Sections'
+            '    1 and 2 above on a medium customarily used for software interchange; or,'
+            ''
+            '    b) Accompany it with a written offer, valid for at least three'
+            '    years, to give any third party, for a charge no more than your'
+            '    cost of physically performing source distribution, a complete'
+            '    machine-readable copy of the corresponding source code, to be'
+            '    distributed under the terms of Sections 1 and 2 above on a medium'
+            '    customarily used for software interchange; or,'
+            ''
+            '    c) Accompany it with the information you received as to the offer'
+            '    to distribute corresponding source code.  (This alternative is'
+            '    allowed only for noncommercial distribution and only if you'
+            '    received the program in object code or executable form with such'
+            '    an offer, in accord with Subsection b above.)'
+            ''
+            'The source code for a work means the preferred form of the work for'
+            'making modifications to it.  For an executable work, complete source'
+            'code means all the source code for all modules it contains, plus any'
+            'associated interface definition files, plus the scripts used to'
+            'control compilation and installation of the executable.  However, as a'
+            'special exception, the source code distributed need not include'
+            'anything that is normally distributed (in either source or binary'
+            'form) with the major components (compiler, kernel, and so on) of the'
+            'operating system on which the executable runs, unless that component'
+            'itself accompanies the executable.'
+            ''
+            'If distribution of executable or object code is made by offering'
+            'access to copy from a designated place, then offering equivalent'
+            'access to copy the source code from the same place counts as'
+            'distribution of the source code, even though third parties are not'
+            'compelled to copy the source along with the object code.'
+            ''
+            '  4. You may not copy, modify, sublicense, or distribute the Program'
+            'except as expressly provided under this License.  Any attempt'
+            'otherwise to copy, modify, sublicense or distribute the Program is'
+            'void, and will automatically terminate your rights under this License.'
+            'However, parties who have received copies, or rights, from you under'
+            'this License will not have their licenses terminated so long as such'
+            'parties remain in full compliance.'
+            ''
+            '  5. You are not required to accept this License, since you have not'
+            'signed it.  However, nothing else grants you permission to modify or'
+            'distribute the Program or its derivative works.  These actions are'
+            'prohibited by law if you do not accept this License.  Therefore, by'
+            'modifying or distributing the Program (or any work based on the'
+            'Program), you indicate your acceptance of this License to do so, and'
+            'all its terms and conditions for copying, distributing or modifying'
+            'the Program or works based on it.'
+            ''
+            '  6. Each time you redistribute the Program (or any work based on the'
+            'Program), the recipient automatically receives a license from the'
+            'original licensor to copy, distribute or modify the Program subject to'
+            'these terms and conditions.  You may not impose any further'
+            'restrictions on the recipients'' exercise of the rights granted herein.'
+            'You are not responsible for enforcing compliance by third parties to'
+            'this License.'
+            ''
+            '  7. If, as a consequence of a court judgment or allegation of patent'
+            'infringement or for any other reason (not limited to patent issues),'
+            'conditions are imposed on you (whether by court order, agreement or'
+            'otherwise) that contradict the conditions of this License, they do not'
+            'excuse you from the conditions of this License.  If you cannot'
+            'distribute so as to satisfy simultaneously your obligations under this'
+            'License and any other pertinent obligations, then as a consequence you'
+            'may not distribute the Program at all.  For example, if a patent'
+            'license would not permit royalty-free redistribution of the Program by'
+            'all those who receive copies directly or indirectly through you, then'
+            'the only way you could satisfy both it and this License would be to'
+            'refrain entirely from distribution of the Program.'
+            ''
+            'If any portion of this section is held invalid or unenforceable under'
+            'any particular circumstance, the balance of the section is intended to'
+            'apply and the section as a whole is intended to apply in other'
+            'circumstances.'
+            ''
+            'It is not the purpose of this section to induce you to infringe any'
+            'patents or other property right claims or to contest validity of any'
+            'such claims; this section has the sole purpose of protecting the'
+            'integrity of the free software distribution system, which is'
+            'implemented by public license practices.  Many people have made'
+            'generous contributions to the wide range of software distributed'
+            'through that system in reliance on consistent application of that'
+            'system; it is up to the author/donor to decide if he or she is willing'
+            'to distribute software through any other system and a licensee cannot'
+            'impose that choice.'
+            ''
+            'This section is intended to make thoroughly clear what is believed to'
+            'be a consequence of the rest of this License.'
+            ''
+            '  8. If the distribution and/or use of the Program is restricted in'
+            'certain countries either by patents or by copyrighted interfaces, the'
+            'original copyright holder who places the Program under this License'
+            'may add an explicit geographical distribution limitation excluding'
+            'those countries, so that distribution is permitted only in or among'
+            'countries not thus excluded.  In such case, this License incorporates'
+            'the limitation as if written in the body of this License.'
+            ''
+            '  9. The Free Software Foundation may publish revised and/or new versions'
+            'of the General Public License from time to time.  Such new versions will'
+            'be similar in spirit to the present version, but may differ in detail to'
+            'address new problems or concerns.'
+            ''
+            'Each version is given a distinguishing version number.  If the Program'
+            'specifies a version number of this License which applies to it and "any'
+            'later version", you have the option of following the terms and conditions'
+            'either of that version or of any later version published by the Free'
+            'Software Foundation.  If the Program does not specify a version number of'
+            'this License, you may choose any version ever published by the Free Software'
+            'Foundation.'
+            ''
+            '  10. If you wish to incorporate parts of the Program into other free'
+            'programs whose distribution conditions are different, write to the author'
+            'to ask for permission.  For software which is copyrighted by the Free'
+            'Software Foundation, write to the Free Software Foundation; we sometimes'
+            'make exceptions for this.  Our decision will be guided by the two goals'
+            'of preserving the free status of all derivatives of our free software and'
+            'of promoting the sharing and reuse of software generally.'
+            ''
+            #9#9#9'    NO WARRANTY'
+            ''
+            '  11. BECAUSE THE PROGRAM IS LICENSED FREE OF CHARGE, THERE IS NO '
+            'WARRANTY'
+            'FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW.  EXCEPT '
+            'WHEN'
+            'OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER '
+            'PARTIES'
+            'PROVIDE THE PROGRAM "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER '
+            'EXPRESSED'
+            'OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF'
+            'MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  THE ENTIRE RISK AS'
+            'TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU.  SHOULD THE'
+            'PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY '
+            'SERVICING,'
+            'REPAIR OR CORRECTION.'
+            ''
+            '  12. IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN '
+            'WRITING'
+            'WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MAY MODIFY AND/OR'
+            'REDISTRIBUTE THE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR '
+            'DAMAGES,'
+            'INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES '
+            'ARISING'
+            'OUT OF THE USE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED'
+            'TO LOSS OF DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED '
+            'BY'
+            'YOU OR THIRD PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY '
+            'OTHER'
+            'PROGRAMS), EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE'
+            'POSSIBILITY OF SUCH DAMAGES.'
+            ''
+            #9#9'     END OF TERMS AND CONDITIONS'
+            ''
+          )
+          ReadOnly = True
+          ScrollBars = ssBoth
+          TabOrder = 0
+        end
+      end
+    end
+  end
+end

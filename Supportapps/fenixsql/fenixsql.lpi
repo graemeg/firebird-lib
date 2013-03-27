@@ -1,0 +1,283 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="9"/>
+    <PathDelim Value="\"/>
+    <General>
+      <Flags>
+        <LRSInOutputDirectory Value="False"/>
+        <SaveJumpHistory Value="False"/>
+        <SaveFoldState Value="False"/>
+      </Flags>
+      <SessionStorage Value="InProjectDir"/>
+      <MainUnit Value="0"/>
+      <Title Value="fenixsql"/>
+      <Icon Value="0"/>
+    </General>
+    <VersionInfo>
+      <MinorVersionNr Value="4"/>
+      <RevisionNr Value="2"/>
+      <BuildNr Value="3"/>
+    </VersionInfo>
+    <BuildModes Count="1">
+      <Item1 Name="default" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+      <IgnoreBinaries Value="False"/>
+      <IncludeFileFilter Value="*.(pas|pp|inc|lfm|lpr|lrs|lpi|lpk|sh|xml)"/>
+      <ExcludeFileFilter Value="*.(bak|ppu|ppw|o|so);*~;backup"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <FormatVersion Value="1"/>
+        <LaunchingApplication PathPlusParams="\usr\X11R6\bin\xterm -T 'Lazarus Run Output' -e $(LazarusDir)\tools\runwait.sh $(TargetCmdLine)"/>
+      </local>
+    </RunParams>
+    <RequiredPackages Count="4">
+      <Item1>
+        <PackageName Value="fblib"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="LazUtils"/>
+      </Item2>
+      <Item3>
+        <PackageName Value="SynEdit"/>
+        <MinVersion Major="1" Valid="True"/>
+      </Item3>
+      <Item4>
+        <PackageName Value="LCL"/>
+      </Item4>
+    </RequiredPackages>
+    <Units Count="28">
+      <Unit0>
+        <Filename Value="fenixsql.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="fenixsql"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="fsbrowser.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmBrowser"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="fsbrowser"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="fsdm.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="dmib"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
+        <UnitName Value="fsdm"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="fsconfig.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="fsconfig"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="fsparaminput.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmParam"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="fsparaminput"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="fsmixf.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="fsmixf"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="fsblobinput.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmBlobInput"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="fsblobinput"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="fsblobtext.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmBlobText"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="fsblobtext"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="fslogin.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmLogin"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="fslogin"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="fsconst.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="fsconst"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="fsdialogtran.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmDialogTran"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="fsdialogtran"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="fstableview.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmTableView"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="fstableview"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="fstablefilter.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmTableFilter"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="fstablefilter"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="fsblobviewdialog.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmBlobViewDialog"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="fsblobviewdialog"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="fscreatedb.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmCreateDb"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="fscreatedb"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="fsexporttohtml.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmExportToHtml"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="fsexporttohtml"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="fsdescription.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmDescription"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="fsdescription"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="fsoptions.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmOptions"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="fsoptions"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="fstextoptions.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmTextOptions"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="fstextoptions"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="fsunixborder.inc"/>
+        <IsPartOfProject Value="True"/>
+      </Unit19>
+      <Unit20>
+        <Filename Value="fsservice.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmService"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="fsservice"/>
+      </Unit20>
+      <Unit21>
+        <Filename Value="fsusers.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmUsers"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="fsusers"/>
+      </Unit21>
+      <Unit22>
+        <Filename Value="fsusermod.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmUserMod"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="fsusermod"/>
+      </Unit22>
+      <Unit23>
+        <Filename Value="fsbackup.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmFbBackup"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="fsbackup"/>
+      </Unit23>
+      <Unit24>
+        <Filename Value="fsabout.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmAbout"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="fsabout"/>
+      </Unit24>
+      <Unit25>
+        <Filename Value="fsdbconnections.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmDbConnections"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="fsdbconnections"/>
+      </Unit25>
+      <Unit26>
+        <Filename Value="fsgridintf.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="fsgridintf"/>
+      </Unit26>
+      <Unit27>
+        <Filename Value="fenixsql.inc"/>
+        <IsPartOfProject Value="True"/>
+      </Unit27>
+    </Units>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <PathDelim Value="\"/>
+    <SearchPaths>
+      <OtherUnitFiles Value="..\..\3rdParty\tiOPF2\3rdParty\FBLib\Trunk"/>
+      <UnitOutputDirectory Value="units\$(TargetCPU)-$(TargetOS)"/>
+      <SrcPath Value="$(LazarusDir)\lcl;$(LazarusDir)\lcl\interfaces\$(LCLWidgetType)"/>
+    </SearchPaths>
+    <Parsing>
+      <SyntaxOptions>
+        <UseAnsiStrings Value="False"/>
+      </SyntaxOptions>
+    </Parsing>
+    <Other>
+      <CompilerPath Value="$(CompPath)"/>
+    </Other>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions Count="2">
+      <Item1>
+        <Name Value="ECodetoolError"/>
+      </Item1>
+      <Item2>
+        <Name Value="EFOpenError"/>
+      </Item2>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

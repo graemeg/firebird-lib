@@ -1,0 +1,26 @@
+/* XPM */
+static char *1_table[] = {
+/* columns rows colors chars-per-pixel */
+"16 16 4 1",
+"  c black",
+". c #000084",
+"X c blue",
+"o c Null",
+/* pixels */
+"oooooooooooooooo",
+".X...X...X...X.o",
+"XoX.XoX.XoX.XoXo",
+"...X...X...X...o",
+"XoooooooooooooXo",
+".o   o   o   o.o",
+"XoooooooooooooXo",
+".o   o   o   o.o",
+"XoooooooooooooXo",
+".o   o   o   o.o",
+"XoooooooooooooXo",
+".o   o   o   o.o",
+"XoooooooooooooXo",
+".X...X...X...X.o",
+"oooooooooooooooo",
+"oooooooooooooooo"
+};
