@@ -11,8 +11,11 @@ object frmUsers: TfrmUsers
   Caption = 'frmUsers'
   ChildSizing.LeftRightSpacing = 4
   ChildSizing.TopBottomSpacing = 4
+  ClientHeight = 286
+  ClientWidth = 414
   OnClose = FormClose
   OnCreate = FormCreate
+  LCLVersion = '1.1'
   object Panel1: TPanel
     Left = 4
     Height = 30
@@ -20,6 +23,8 @@ object frmUsers: TfrmUsers
     Width = 406
     Align = alBottom
     BevelOuter = bvNone
+    ClientHeight = 30
+    ClientWidth = 406
     TabOrder = 0
     object btnClose: TBitBtn
       Left = 331
@@ -27,9 +32,8 @@ object frmUsers: TfrmUsers
       Top = 6
       Width = 75
       BorderSpacing.InnerBorder = 2
-      Caption = '&Chiudi'
+      Caption = '&Close'
       Kind = bkClose
-      NumGlyphs = 0
       TabOrder = 0
     end
   end
@@ -40,13 +44,18 @@ object frmUsers: TfrmUsers
     Width = 406
     Align = alClient
     Caption = 'Register users'
+    ClientHeight = 231
+    ClientWidth = 402
     TabOrder = 1
     object Panel2: TPanel
       Left = 306
-      Height = 230
+      Height = 231
+      Top = 0
       Width = 96
       Align = alRight
       BevelOuter = bvNone
+      ClientHeight = 231
+      ClientWidth = 96
       TabOrder = 0
       object btnAdd: TButton
         Left = 8
@@ -79,7 +88,7 @@ object frmUsers: TfrmUsers
         TabOrder = 2
       end
       object Button1: TButton
-        Left = 16
+        Left = 8
         Height = 25
         Top = 150
         Width = 75
@@ -89,12 +98,16 @@ object frmUsers: TfrmUsers
       end
     end
     object Panel3: TPanel
-      Height = 230
+      Left = 0
+      Height = 231
+      Top = 0
       Width = 306
       Align = alClient
       BevelOuter = bvNone
       ChildSizing.LeftRightSpacing = 4
       ChildSizing.TopBottomSpacing = 4
+      ClientHeight = 231
+      ClientWidth = 306
       TabOrder = 1
       object Panel4: TPanel
         Left = 4
@@ -109,16 +122,20 @@ object frmUsers: TfrmUsers
       end
       object lbUsers: TListBox
         Left = 4
-        Height = 203
+        Height = 204
         Top = 23
         Width = 298
         Align = alClient
+        ItemHeight = 0
+        ScrollWidth = 294
         TabOrder = 1
+        TopIndex = -1
       end
     end
   end
   object FblService1: TFBLService
-    left = 48
-    top = 272
+    Protocol = ptLocal
+    left = 56
+    top = 232
   end
-end
+end

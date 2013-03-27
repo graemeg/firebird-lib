@@ -1,23 +1,29 @@
 <?xml version="1.0"?>
 <CONFIG>
   <ProjectOptions>
+    <Version Value="9"/>
     <PathDelim Value="\"/>
-    <Version Value="5"/>
     <General>
+      <Flags>
+        <LRSInOutputDirectory Value="False"/>
+        <SaveJumpHistory Value="False"/>
+        <SaveFoldState Value="False"/>
+      </Flags>
+      <SessionStorage Value="InProjectDir"/>
       <MainUnit Value="0"/>
-      <IconPath Value="./"/>
-      <TargetFileExt Value=""/>
       <Title Value="fenixsql"/>
-      <ActiveEditorIndexAtStart Value="0"/>
+      <Icon Value="0"/>
     </General>
     <VersionInfo>
-      <CurrentMajorRevNr Value="4"/>
-      <CurrentMinorRevNr Value="2"/>
-      <CurrentBuildNr Value="3"/>
+      <MinorVersionNr Value="4"/>
+      <RevisionNr Value="2"/>
+      <BuildNr Value="3"/>
     </VersionInfo>
+    <BuildModes Count="1">
+      <Item1 Name="default" Default="True"/>
+    </BuildModes>
     <PublishOptions>
       <Version Value="2"/>
-      <DestinationDirectory Value="$(TestDir)\publishedproject\"/>
       <IgnoreBinaries Value="False"/>
       <IncludeFileFilter Value="*.(pas|pp|inc|lfm|lpr|lrs|lpi|lpk|sh|xml)"/>
       <ExcludeFileFilter Value="*.(bak|ppu|ppw|o|so);*~;backup"/>
@@ -28,537 +34,238 @@
         <LaunchingApplication PathPlusParams="\usr\X11R6\bin\xterm -T 'Lazarus Run Output' -e $(LazarusDir)\tools\runwait.sh $(TargetCmdLine)"/>
       </local>
     </RunParams>
-    <RequiredPackages Count="3">
+    <RequiredPackages Count="4">
       <Item1>
-        <PackageName Value="SynEdit"/>
-        <MinVersion Major="1" Valid="True"/>
+        <PackageName Value="fblib"/>
       </Item1>
       <Item2>
-        <PackageName Value="LCL"/>
+        <PackageName Value="LazUtils"/>
       </Item2>
       <Item3>
-        <PackageName Value="fblib"/>
-        <MinVersion Minor="8" Release="2" Valid="True"/>
+        <PackageName Value="SynEdit"/>
+        <MinVersion Major="1" Valid="True"/>
       </Item3>
+      <Item4>
+        <PackageName Value="LCL"/>
+      </Item4>
     </RequiredPackages>
-    <Units Count="58">
+    <Units Count="28">
       <Unit0>
         <Filename Value="fenixsql.lpr"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="fenixsql"/>
-        <CursorPos X="8" Y="15"/>
-        <TopLine Value="1"/>
-        <UsageCount Value="200"/>
       </Unit0>
       <Unit1>
         <Filename Value="fsbrowser.pas"/>
-        <ComponentName Value="frmBrowser"/>
         <IsPartOfProject Value="True"/>
-        <ResourceFilename Value="fsbrowser.lrs"/>
+        <ComponentName Value="frmBrowser"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
         <UnitName Value="fsbrowser"/>
-        <CursorPos X="20" Y="376"/>
-        <TopLine Value="360"/>
-        <EditorIndex Value="0"/>
-        <UsageCount Value="200"/>
-        <Loaded Value="True"/>
       </Unit1>
       <Unit2>
-        <Filename Value="fenisql.lpi"/>
-        <CursorPos X="1" Y="1"/>
-        <TopLine Value="27"/>
-        <UsageCount Value="2"/>
-        <SyntaxHighlighter Value="None"/>
+        <Filename Value="fsdm.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="dmib"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
+        <UnitName Value="fsdm"/>
       </Unit2>
       <Unit3>
-        <Filename Value="home\alessandro\lazarus\lcl\lresources.pp"/>
-        <UnitName Value="LResources"/>
-        <CursorPos X="1" Y="1"/>
-        <TopLine Value="1"/>
-        <UsageCount Value="2"/>
-      </Unit3>
-      <Unit4>
-        <Filename Value="fsdm.pas"/>
-        <ComponentName Value="dmib"/>
-        <IsPartOfProject Value="True"/>
-        <ResourceFilename Value="fsdm.lrs"/>
-        <UnitName Value="fsdm"/>
-        <CursorPos X="18" Y="25"/>
-        <TopLine Value="6"/>
-        <UsageCount Value="200"/>
-      </Unit4>
-      <Unit5>
         <Filename Value="fsconfig.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="fsconfig"/>
-        <CursorPos X="22" Y="46"/>
-        <TopLine Value="37"/>
-        <EditorIndex Value="1"/>
-        <UsageCount Value="200"/>
-        <Loaded Value="True"/>
-      </Unit5>
-      <Unit6>
+      </Unit3>
+      <Unit4>
         <Filename Value="fsparaminput.pas"/>
-        <ComponentName Value="frmParam"/>
         <IsPartOfProject Value="True"/>
-        <ResourceFilename Value="fsparaminput.lrs"/>
+        <ComponentName Value="frmParam"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
         <UnitName Value="fsparaminput"/>
-        <CursorPos X="55" Y="3"/>
-        <TopLine Value="1"/>
-        <UsageCount Value="200"/>
-      </Unit6>
-      <Unit7>
+      </Unit4>
+      <Unit5>
         <Filename Value="fsmixf.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="fsmixf"/>
-        <CursorPos X="12" Y="2"/>
-        <TopLine Value="1"/>
-        <UsageCount Value="201"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="fsblobinput.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmBlobInput"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="fsblobinput"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="fsblobtext.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmBlobText"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="fsblobtext"/>
       </Unit7>
       <Unit8>
-        <Filename Value="fsblobinput.pas"/>
-        <ComponentName Value="frmBlobInput"/>
+        <Filename Value="fslogin.pas"/>
         <IsPartOfProject Value="True"/>
-        <ResourceFilename Value="fsblobinput.lrs"/>
-        <UnitName Value="fsblobinput"/>
-        <CursorPos X="1" Y="86"/>
-        <TopLine Value="1"/>
-        <UsageCount Value="200"/>
+        <ComponentName Value="frmLogin"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="fslogin"/>
       </Unit8>
       <Unit9>
-        <Filename Value="fsblobtext.pas"/>
-        <ComponentName Value="frmBlobText"/>
-        <IsPartOfProject Value="True"/>
-        <ResourceFilename Value="fsblobtext.lrs"/>
-        <UnitName Value="fsblobtext"/>
-        <CursorPos X="63" Y="140"/>
-        <TopLine Value="90"/>
-        <UsageCount Value="200"/>
-      </Unit9>
-      <Unit10>
-        <Filename Value="fslogin.pas"/>
-        <ComponentName Value="frmLogin"/>
-        <IsPartOfProject Value="True"/>
-        <ResourceFilename Value="fslogin.lrs"/>
-        <UnitName Value="fslogin"/>
-        <CursorPos X="46" Y="5"/>
-        <TopLine Value="1"/>
-        <UsageCount Value="200"/>
-      </Unit10>
-      <Unit11>
         <Filename Value="fsconst.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="fsconst"/>
-        <CursorPos X="9" Y="2"/>
-        <TopLine Value="1"/>
-        <UsageCount Value="215"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="fsdialogtran.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmDialogTran"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="fsdialogtran"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="fstableview.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmTableView"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="fstableview"/>
       </Unit11>
       <Unit12>
-        <Filename Value="fsdialogtran.pas"/>
-        <ComponentName Value="frmDialogTran"/>
+        <Filename Value="fstablefilter.pas"/>
         <IsPartOfProject Value="True"/>
-        <ResourceFilename Value="fsdialogtran.lrs"/>
-        <UnitName Value="fsdialogtran"/>
-        <CursorPos X="9" Y="2"/>
-        <TopLine Value="1"/>
-        <UsageCount Value="214"/>
+        <ComponentName Value="FrmTableFilter"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="fstablefilter"/>
       </Unit12>
       <Unit13>
-        <Filename Value="fscon.pas"/>
-        <ComponentName Value="frmCon"/>
-        <ResourceFilename Value="fscon.lrs"/>
-        <UnitName Value="fscon"/>
-        <CursorPos X="39" Y="106"/>
-        <TopLine Value="98"/>
-        <UsageCount Value="180"/>
+        <Filename Value="fsblobviewdialog.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmBlobViewDialog"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="fsblobviewdialog"/>
       </Unit13>
       <Unit14>
-        <Filename Value="..\..\fblib\FBLDsql.pas"/>
-        <UnitName Value="FBLDsql"/>
-        <CursorPos X="67" Y="1154"/>
-        <TopLine Value="1"/>
-        <UsageCount Value="17"/>
+        <Filename Value="fscreatedb.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmCreateDb"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="fscreatedb"/>
       </Unit14>
       <Unit15>
-        <Filename Value="home\alessandro\prj\fblib\FBLScript.pas"/>
-        <UnitName Value="FBLScript"/>
-        <CursorPos X="1" Y="1"/>
-        <TopLine Value="1"/>
-        <UsageCount Value="4"/>
+        <Filename Value="fsexporttohtml.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmExportToHtml"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="fsexporttohtml"/>
       </Unit15>
       <Unit16>
-        <Filename Value="home\alessandro\prj\fblib\FBLmixf.pas"/>
-        <UnitName Value="FBLmixf"/>
-        <CursorPos X="39" Y="26"/>
-        <TopLine Value="178"/>
-        <UsageCount Value="4"/>
+        <Filename Value="fsdescription.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmDescription"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="fsdescription"/>
       </Unit16>
       <Unit17>
-        <Filename Value="fstableview.pas"/>
-        <ComponentName Value="frmTableView"/>
+        <Filename Value="fsoptions.pas"/>
         <IsPartOfProject Value="True"/>
-        <ResourceFilename Value="fstableview.lrs"/>
-        <UnitName Value="fstableview"/>
-        <CursorPos X="12" Y="261"/>
-        <TopLine Value="253"/>
-        <UsageCount Value="206"/>
+        <ComponentName Value="frmOptions"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="fsoptions"/>
       </Unit17>
       <Unit18>
-        <Filename Value="fstablefilter.pas"/>
-        <ComponentName Value="FrmTableFilter"/>
+        <Filename Value="fstextoptions.pas"/>
         <IsPartOfProject Value="True"/>
-        <ResourceFilename Value="fstablefilter.lrs"/>
-        <UnitName Value="fstablefilter"/>
-        <CursorPos X="38" Y="3"/>
-        <TopLine Value="1"/>
-        <UsageCount Value="204"/>
+        <ComponentName Value="frmTextOptions"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="fstextoptions"/>
       </Unit18>
       <Unit19>
-        <Filename Value="fsblobviewdialog.pas"/>
-        <ComponentName Value="frmBlobViewDialog"/>
-        <IsPartOfProject Value="True"/>
-        <ResourceFilename Value="fsblobviewdialog.lrs"/>
-        <UnitName Value="fsblobviewdialog"/>
-        <CursorPos X="26" Y="7"/>
-        <TopLine Value="1"/>
-        <UsageCount Value="203"/>
-      </Unit19>
-      <Unit20>
-        <Filename Value="C:\FPC\lazarus\lcl\grids.pas"/>
-        <UnitName Value="Grids"/>
-        <CursorPos X="36" Y="120"/>
-        <TopLine Value="109"/>
-        <UsageCount Value="15"/>
-      </Unit20>
-      <Unit21>
-        <Filename Value="C:\FPC\lazarus\lcl\controls.pp"/>
-        <UnitName Value="Controls"/>
-        <CursorPos X="3" Y="173"/>
-        <TopLine Value="130"/>
-        <UsageCount Value="9"/>
-      </Unit21>
-      <Unit22>
-        <Filename Value="fscreatedb.pas"/>
-        <ComponentName Value="frmCreateDb"/>
-        <IsPartOfProject Value="True"/>
-        <ResourceFilename Value="fscreatedb.lrs"/>
-        <UnitName Value="fscreatedb"/>
-        <CursorPos X="57" Y="3"/>
-        <TopLine Value="1"/>
-        <UsageCount Value="201"/>
-      </Unit22>
-      <Unit23>
-        <Filename Value="fsextorttohtml.pas"/>
-        <ComponentName Value="frmExportToHtml"/>
-        <ResourceFilename Value="fsextorttohtml.lrs"/>
-        <UnitName Value="fsextorttohtml"/>
-        <CursorPos X="39" Y="7"/>
-        <TopLine Value="1"/>
-        <UsageCount Value="5"/>
-      </Unit23>
-      <Unit24>
-        <Filename Value="fsexporttohtml.pas"/>
-        <ComponentName Value="frmExportToHtml"/>
-        <IsPartOfProject Value="True"/>
-        <ResourceFilename Value="fsexporttohtml.lrs"/>
-        <UnitName Value="fsexporttohtml"/>
-        <CursorPos X="9" Y="2"/>
-        <TopLine Value="1"/>
-        <UsageCount Value="203"/>
-      </Unit24>
-      <Unit25>
-        <Filename Value="fsdescription.pas"/>
-        <ComponentName Value="frmDescription"/>
-        <IsPartOfProject Value="True"/>
-        <ResourceFilename Value="fsdescription.lrs"/>
-        <UnitName Value="fsdescription"/>
-        <CursorPos X="9" Y="2"/>
-        <TopLine Value="1"/>
-        <UsageCount Value="218"/>
-      </Unit25>
-      <Unit26>
-        <Filename Value="fsoptions.pas"/>
-        <ComponentName Value="frmOptions"/>
-        <IsPartOfProject Value="True"/>
-        <ResourceFilename Value="fsoptions.lrs"/>
-        <UnitName Value="fsoptions"/>
-        <CursorPos X="16" Y="1"/>
-        <TopLine Value="1"/>
-        <UsageCount Value="216"/>
-      </Unit26>
-      <Unit27>
-        <Filename Value="fstextoptions.pas"/>
-        <ComponentName Value="frmTextOptions"/>
-        <IsPartOfProject Value="True"/>
-        <ResourceFilename Value="fstextoptions.lrs"/>
-        <UnitName Value="fstextoptions"/>
-        <CursorPos X="48" Y="4"/>
-        <TopLine Value="1"/>
-        <UsageCount Value="205"/>
-      </Unit27>
-      <Unit28>
         <Filename Value="fsunixborder.inc"/>
         <IsPartOfProject Value="True"/>
-        <CursorPos X="18" Y="6"/>
-        <TopLine Value="1"/>
-        <UsageCount Value="200"/>
-      </Unit28>
-      <Unit29>
+      </Unit19>
+      <Unit20>
         <Filename Value="fsservice.pas"/>
+        <IsPartOfProject Value="True"/>
         <ComponentName Value="frmService"/>
-        <IsPartOfProject Value="True"/>
-        <ResourceFilename Value="fsservice.lrs"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
         <UnitName Value="fsservice"/>
-        <CursorPos X="1" Y="150"/>
-        <TopLine Value="137"/>
-        <UsageCount Value="201"/>
-        <Bookmarks Count="1">
-          <Item0 X="6" Y="629" ID="1"/>
-        </Bookmarks>
-      </Unit29>
-      <Unit30>
-        <Filename Value="..\..\fblib\FBLService.pas"/>
-        <UnitName Value="FBLService"/>
-        <CursorPos X="43" Y="1031"/>
-        <TopLine Value="1024"/>
-        <UsageCount Value="33"/>
-      </Unit30>
-      <Unit31>
-        <Filename Value="..\..\fblib\ibase_h.pas"/>
-        <UnitName Value="ibase_h"/>
-        <CursorPos X="2" Y="638"/>
-        <TopLine Value="627"/>
-        <UsageCount Value="4"/>
-      </Unit31>
-      <Unit32>
-        <Filename Value="..\..\fblib\FBLDatabase.pas"/>
-        <UnitName Value="FBLDatabase"/>
-        <CursorPos X="27" Y="305"/>
-        <TopLine Value="293"/>
-        <UsageCount Value="3"/>
-      </Unit32>
-      <Unit33>
+      </Unit20>
+      <Unit21>
         <Filename Value="fsusers.pas"/>
+        <IsPartOfProject Value="True"/>
         <ComponentName Value="frmUsers"/>
-        <IsPartOfProject Value="True"/>
-        <ResourceFilename Value="fsusers.lrs"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
         <UnitName Value="fsusers"/>
-        <CursorPos X="12" Y="2"/>
-        <TopLine Value="1"/>
-        <UsageCount Value="184"/>
-      </Unit33>
-      <Unit34>
+      </Unit21>
+      <Unit22>
         <Filename Value="fsusermod.pas"/>
+        <IsPartOfProject Value="True"/>
         <ComponentName Value="FrmUserMod"/>
-        <IsPartOfProject Value="True"/>
-        <ResourceFilename Value="fsusermod.lrs"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
         <UnitName Value="fsusermod"/>
-        <CursorPos X="9" Y="2"/>
-        <TopLine Value="1"/>
-        <UsageCount Value="184"/>
-      </Unit34>
-      <Unit35>
+      </Unit22>
+      <Unit23>
         <Filename Value="fsbackup.pas"/>
+        <IsPartOfProject Value="True"/>
         <ComponentName Value="frmFbBackup"/>
-        <IsPartOfProject Value="True"/>
-        <ResourceFilename Value="fsbackup.lrs"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
         <UnitName Value="fsbackup"/>
-        <CursorPos X="12" Y="2"/>
-        <TopLine Value="1"/>
-        <UsageCount Value="181"/>
-      </Unit35>
-      <Unit36>
-        <Filename Value="C:\FPC\lazarus\lcl\extctrls.pp"/>
-        <UnitName Value="ExtCtrls"/>
-        <CursorPos X="32" Y="4"/>
-        <TopLine Value="1"/>
-        <UsageCount Value="9"/>
-      </Unit36>
-      <Unit37>
-        <Filename Value="C:\FPC\lazarus\components\synedit\synedit.pp"/>
-        <UnitName Value="SynEdit"/>
-        <CursorPos X="27" Y="790"/>
-        <TopLine Value="778"/>
-        <UsageCount Value="1"/>
-      </Unit37>
-      <Unit38>
-        <Filename Value="C:\FPC\lazarus\components\synedit\synedittypes.pp"/>
-        <UnitName Value="SynEditTypes"/>
-        <CursorPos X="3" Y="66"/>
-        <TopLine Value="50"/>
-        <UsageCount Value="9"/>
-      </Unit38>
-      <Unit39>
-        <Filename Value="C:\FPC\src\fpc\rtl\objpas\classes\classesh.inc"/>
-        <CursorPos X="14" Y="1392"/>
-        <TopLine Value="1381"/>
-        <UsageCount Value="9"/>
-      </Unit39>
-      <Unit40>
-        <Filename Value="C:\FPC\src\fpc\rtl\win32\wininc\defines.inc"/>
-        <CursorPos X="14" Y="2356"/>
-        <TopLine Value="2345"/>
-        <UsageCount Value="9"/>
-      </Unit40>
-      <Unit41>
+      </Unit23>
+      <Unit24>
         <Filename Value="fsabout.pas"/>
+        <IsPartOfProject Value="True"/>
         <ComponentName Value="frmAbout"/>
-        <IsPartOfProject Value="True"/>
-        <ResourceFilename Value="fsabout.lrs"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
         <UnitName Value="fsabout"/>
-        <CursorPos X="22" Y="5"/>
-        <TopLine Value="1"/>
-        <UsageCount Value="160"/>
-      </Unit41>
-      <Unit42>
-        <Filename Value="C:\FPC\lazarus\lcl\forms.pp"/>
-        <UnitName Value="Forms"/>
-        <CursorPos X="14" Y="996"/>
-        <TopLine Value="984"/>
-        <UsageCount Value="2"/>
-      </Unit42>
-      <Unit43>
-        <Filename Value="..\fblib\FBLService.pas"/>
-        <UnitName Value="FBLService"/>
-        <CursorPos X="46" Y="1082"/>
-        <TopLine Value="1066"/>
-        <UsageCount Value="10"/>
-      </Unit43>
-      <Unit44>
-        <Filename Value="..\lcl\comctrls.pp"/>
-        <UnitName Value="ComCtrls"/>
-        <CursorPos X="14" Y="2305"/>
-        <TopLine Value="2290"/>
-        <UsageCount Value="9"/>
-      </Unit44>
-      <Unit45>
-        <Filename Value="C:\FPC\lazarus\lcl\interfaces\win32\interfaces.pp"/>
-        <UnitName Value="Interfaces"/>
-        <CursorPos X="1" Y="1"/>
-        <TopLine Value="12"/>
-        <UsageCount Value="9"/>
-      </Unit45>
-      <Unit46>
+      </Unit24>
+      <Unit25>
         <Filename Value="fsdbconnections.pas"/>
-        <ComponentName Value="frmDbConnections"/>
         <IsPartOfProject Value="True"/>
-        <ResourceFilename Value="fsdbconnections.lrs"/>
+        <ComponentName Value="frmDbConnections"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
         <UnitName Value="fsdbconnections"/>
-        <CursorPos X="11" Y="21"/>
-        <TopLine Value="1"/>
-        <EditorIndex Value="2"/>
-        <UsageCount Value="154"/>
-        <Loaded Value="True"/>
-      </Unit46>
-      <Unit47>
-        <Filename Value="C:\FPC\lazarus\lcl\lresources.pp"/>
-        <UnitName Value="LResources"/>
-        <CursorPos X="1" Y="1"/>
-        <TopLine Value="21"/>
-        <UsageCount Value="9"/>
-      </Unit47>
-      <Unit48>
-        <Filename Value="C:\FPC\src\fpc\fcl\inc\inifiles.pp"/>
-        <UnitName Value="IniFiles"/>
-        <CursorPos X="22" Y="139"/>
-        <TopLine Value="132"/>
-        <UsageCount Value="4"/>
-      </Unit48>
-      <Unit49>
-        <Filename Value="C:\FPC\src\fpc\rtl\objpas\math.pp"/>
-        <UnitName Value="math"/>
-        <CursorPos X="10" Y="282"/>
-        <TopLine Value="354"/>
-        <UsageCount Value="3"/>
-      </Unit49>
-      <Unit50>
-        <Filename Value="..\..\fblib\FBLmixf.pas"/>
-        <UnitName Value="FBLmixf"/>
-        <CursorPos X="80" Y="126"/>
-        <TopLine Value="115"/>
-        <UsageCount Value="13"/>
-      </Unit50>
-      <Unit51>
-        <Filename Value="C:\FPC\src\fpc\rtl\inc\mathh.inc"/>
-        <CursorPos X="14" Y="58"/>
-        <TopLine Value="61"/>
-        <UsageCount Value="2"/>
-      </Unit51>
-      <Unit52>
+      </Unit25>
+      <Unit26>
         <Filename Value="fsgridintf.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="fsgridintf"/>
-        <CursorPos X="39" Y="18"/>
-        <TopLine Value="1"/>
-        <UsageCount Value="110"/>
-      </Unit52>
-      <Unit53>
-        <Filename Value="..\..\fblib\FBLMetadata.pas"/>
-        <UnitName Value="FBLMetadata"/>
-        <CursorPos X="92" Y="568"/>
-        <TopLine Value="546"/>
-        <UsageCount Value="10"/>
-      </Unit53>
-      <Unit54>
-        <Filename Value="..\fblib\FBLDsql.pas"/>
-        <UnitName Value="FBLDsql"/>
-        <CursorPos X="7" Y="600"/>
-        <TopLine Value="620"/>
-        <UsageCount Value="10"/>
-      </Unit54>
-      <Unit55>
+      </Unit26>
+      <Unit27>
         <Filename Value="fenixsql.inc"/>
         <IsPartOfProject Value="True"/>
-        <CursorPos X="3" Y="1"/>
-        <TopLine Value="1"/>
-        <EditorIndex Value="3"/>
-        <UsageCount Value="22"/>
-        <Loaded Value="True"/>
-      </Unit55>
-      <Unit56>
-        <Filename Value="..\fblib\FBLDataset.pas"/>
-        <UnitName Value="FBLDataset"/>
-        <CursorPos X="7" Y="118"/>
-        <TopLine Value="96"/>
-        <UsageCount Value="10"/>
-      </Unit56>
-      <Unit57>
-        <Filename Value="..\fblib\FBLDataset.inc"/>
-        <CursorPos X="2" Y="414"/>
-        <TopLine Value="357"/>
-        <UsageCount Value="10"/>
-      </Unit57>
+      </Unit27>
     </Units>
-    <JumpHistory Count="3" HistoryIndex="2">
-      <Position1>
-        <Filename Value="fsbrowser.pas"/>
-        <Caret Line="379" Column="19" TopLine="360"/>
-      </Position1>
-      <Position2>
-        <Filename Value="fsdbconnections.pas"/>
-        <Caret Line="21" Column="11" TopLine="5"/>
-      </Position2>
-      <Position3>
-        <Filename Value="fsbrowser.pas"/>
-        <Caret Line="376" Column="20" TopLine="360"/>
-      </Position3>
-    </JumpHistory>
   </ProjectOptions>
   <CompilerOptions>
-    <Version Value="5"/>
+    <Version Value="11"/>
     <PathDelim Value="\"/>
     <SearchPaths>
-      <SrcPath Value="$(LazarusDir)\lcl\;$(LazarusDir)\lcl\interfaces\$(LCLWidgetType)\"/>
+      <OtherUnitFiles Value="..\..\3rdParty\tiOPF2\3rdParty\FBLib\Trunk"/>
+      <UnitOutputDirectory Value="units\$(TargetCPU)-$(TargetOS)"/>
+      <SrcPath Value="$(LazarusDir)\lcl;$(LazarusDir)\lcl\interfaces\$(LCLWidgetType)"/>
     </SearchPaths>
-    <CodeGeneration>
-      <Generate Value="Faster"/>
-    </CodeGeneration>
-    <Linking>
-      <Options>
-        <Win32>
-          <GraphicApplication Value="True"/>
-        </Win32>
-      </Options>
-    </Linking>
+    <Parsing>
+      <SyntaxOptions>
+        <UseAnsiStrings Value="False"/>
+      </SyntaxOptions>
+    </Parsing>
     <Other>
       <CompilerPath Value="$(CompPath)"/>
     </Other>

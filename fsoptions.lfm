@@ -1,4 +1,10 @@
 object frmOptions: TfrmOptions
+  Left = 296
+  Height = 318
+  Top = 202
+  Width = 408
+  HorzScrollBar.Page = 407
+  VertScrollBar.Page = 317
   ActiveControl = cgBrowser.CheckBox0
   BorderIcons = [biSystemMenu]
   BorderStyle = bsDialog
@@ -6,15 +12,13 @@ object frmOptions: TfrmOptions
   ClientHeight = 318
   ClientWidth = 408
   OnCreate = FormCreate
-  PixelsPerInch = 96
   Position = poDesktopCenter
-  HorzScrollBar.Page = 407
-  VertScrollBar.Page = 317
-  Left = 296
-  Height = 318
-  Top = 202
-  Width = 408
+  LCLVersion = '1.1'
   object Panel1: TPanel
+    Left = 0
+    Height = 288
+    Top = 0
+    Width = 408
     Align = alTop
     BevelOuter = bvNone
     ChildSizing.LeftRightSpacing = 4
@@ -22,32 +26,33 @@ object frmOptions: TfrmOptions
     ClientHeight = 288
     ClientWidth = 408
     TabOrder = 0
-    Height = 288
-    Width = 408
     object Notebook1: TNotebook
-      Align = alClient
-      PageIndex = 0
       Left = 4
       Height = 280
       Top = 4
       Width = 400
+      PageIndex = 0
+      Align = alClient
+      TabOrder = 0
+      TabStop = True
       object Page1: TPage
-        Caption = 'Preferences'
-        ClientWidth = 392
-        ClientHeight = 254
-        Height = 254
-        Width = 392
         object Panel2: TPanel
+          Left = 0
+          Height = 280
+          Top = 0
+          Width = 176
           Align = alLeft
           BevelOuter = bvNone
           ChildSizing.LeftRightSpacing = 4
           ChildSizing.TopBottomSpacing = 4
-          ClientHeight = 254
+          ClientHeight = 280
           ClientWidth = 176
           TabOrder = 0
-          Height = 254
-          Width = 176
           object cgBrowser: TCheckGroup
+            Left = 4
+            Height = 76
+            Top = 4
+            Width = 168
             Align = alTop
             AutoFill = True
             Caption = 'Browser'
@@ -59,90 +64,91 @@ object frmOptions: TfrmOptions
             ChildSizing.ShrinkVertical = crsScaleChilds
             ChildSizing.Layout = cclLeftToRightThenTopToBottom
             ChildSizing.ControlsPerLine = 1
+            ClientHeight = 59
+            ClientWidth = 164
             Items.Strings = (
               'Show system object'
             )
             TabOrder = 0
-            Left = 4
-            Height = 76
-            Top = 4
-            Width = 168
             Data = {
               0100000002
             }
           end
           object GroupBox1: TGroupBox
-            Align = alTop
-            Caption = 'Result grid'
-            ClientHeight = 62
-            ClientWidth = 164
-            TabOrder = 1
             Left = 4
             Height = 80
             Top = 80
             Width = 168
+            Align = alTop
+            Caption = 'Result grid'
+            ClientHeight = 63
+            ClientWidth = 164
+            TabOrder = 1
             object Label1: TLabel
-              Caption = 'Max rows in grid (500..10000)'
-              Color = clNone
-              ParentColor = False
               Left = 4
-              Height = 14
+              Height = 15
               Top = 12
-              Width = 146
+              Width = 188
+              Caption = 'Max rows in grid (500..10000)'
+              ParentColor = False
             end
             object seMaxGridRows: TSpinEdit
+              Left = 4
+              Height = 23
+              Top = 30
+              Width = 158
               MaxValue = 10000
               MinValue = 500
               TabOrder = 0
               Value = 6000
-              Left = 4
-              Height = 20
-              Top = 30
-              Width = 158
             end
           end
           object GroupBox2: TGroupBox
-            Align = alClient
-            Caption = 'Result dataset'
-            ClientHeight = 72
-            ClientWidth = 164
-            TabOrder = 2
             Left = 4
-            Height = 90
+            Height = 116
             Top = 160
             Width = 168
+            Align = alClient
+            Caption = 'Result dataset'
+            ClientHeight = 99
+            ClientWidth = 164
+            TabOrder = 2
             object Label2: TLabel
-              Caption = 'Fetch Limit (0=No limit)'
-              Color = clNone
-              ParentColor = False
               Left = 10
-              Height = 14
+              Height = 15
               Top = 22
-              Width = 111
+              Width = 152
+              Caption = 'Fetch Limit (0=No limit)'
+              ParentColor = False
             end
             object seMaxFetch: TSpinEdit
+              Left = 4
+              Height = 23
+              Top = 38
+              Width = 158
               OnChange = seMaxFetchChange
               TabOrder = 0
               Value = 1
-              Left = 4
-              Height = 20
-              Top = 38
-              Width = 158
             end
           end
         end
         object Panel3: TPanel
+          Left = 176
+          Height = 280
+          Top = 0
+          Width = 224
           Align = alClient
           BevelOuter = bvNone
           ChildSizing.LeftRightSpacing = 4
           ChildSizing.TopBottomSpacing = 4
-          ClientHeight = 254
-          ClientWidth = 216
+          ClientHeight = 280
+          ClientWidth = 224
           TabOrder = 1
-          Left = 176
-          Height = 254
-          Width = 216
           object rgOutput: TRadioGroup
+            Left = 4
+            Height = 90
+            Top = 186
+            Width = 216
             Align = alBottom
             AutoFill = True
             Caption = 'Result set output'
@@ -154,18 +160,20 @@ object frmOptions: TfrmOptions
             ChildSizing.ShrinkVertical = crsScaleChilds
             ChildSizing.Layout = cclLeftToRightThenTopToBottom
             ChildSizing.ControlsPerLine = 1
+            ClientHeight = 73
+            ClientWidth = 212
             ItemIndex = 0
             Items.Strings = (
               'Grid '
               'Plain text'
             )
             TabOrder = 0
-            Left = 4
-            Height = 90
-            Top = 160
-            Width = 208
           end
           object cgSql: TCheckGroup
+            Left = 4
+            Height = 182
+            Top = 4
+            Width = 216
             Align = alClient
             AutoFill = True
             Caption = 'Sql '
@@ -177,16 +185,14 @@ object frmOptions: TfrmOptions
             ChildSizing.ShrinkVertical = crsScaleChilds
             ChildSizing.Layout = cclLeftToRightThenTopToBottom
             ChildSizing.ControlsPerLine = 1
+            ClientHeight = 165
+            ClientWidth = 212
             Items.Strings = (
               'Auto commit DDL statement'
               'Verbose script'
               'Show "SET TERM" in DDL'
             )
             TabOrder = 1
-            Left = 4
-            Height = 156
-            Top = 4
-            Width = 208
             Data = {
               03000000020202
             }
@@ -196,36 +202,33 @@ object frmOptions: TfrmOptions
     end
   end
   object btnOk: TBitBtn
+    Left = 328
+    Height = 24
+    Top = 290
+    Width = 75
     Anchors = [akTop, akRight]
     BorderSpacing.InnerBorder = 2
     Caption = '&OK'
     Default = True
     Kind = bkOK
-    NumGlyphs = 0
     OnClick = btnOkClick
     TabOrder = 1
-    Left = 328
-    Height = 24
-    Top = 290
-    Width = 75
   end
   object btnCancel: TBitBtn
-    BorderSpacing.InnerBorder = 2
-    Caption = 'Annulla'
-    Kind = bkCancel
-    ModalResult = 2
-    NumGlyphs = 0
-    TabOrder = 2
     Left = 248
     Height = 24
     Top = 290
     Width = 75
+    BorderSpacing.InnerBorder = 2
+    Caption = '&Cancel'
+    Kind = bkCancel
+    ModalResult = 2
+    TabOrder = 2
   end
   object OpenDialog1: TOpenDialog
     Title = 'Apri file esistenti'
     FilterIndex = 0
-    Title = 'Apri file esistenti'
     left = 289
     top = 8
   end
-end
+end

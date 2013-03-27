@@ -142,8 +142,8 @@ type
     lvValues: TListView;
     MenuItem2: TMenuItem;
     MenuItem3: TMenuItem;
-    nbMain: TNotebook;
-    nbSQL: TNotebook;
+    nbMain: TPageControl;
+    nbSQL: TPageControl;
     pmnItem: TPopupMenu;
     pmnDatabase: TPopupMenu;
     pmnMemo: TPopupMenu;
@@ -152,20 +152,20 @@ type
     sgParams: TStringGrid;
     sgFields: TStringGrid;
     sbtvDb: TStatusBar;
-    tabMessages: TPage;
-    tabPlan: TPage;
-    tabParams: TPage;
+    tabMessages: TTabSheet;
+    tabPlan: TTabSheet;
+    tabParams: TTabSheet;
     sgGrid: TStringGrid;
     mGrid: TSynMemo;
-    tabFields: TPage;
+    tabFields: TTabSheet;
     pUp: TPanel;
     pDown: TPanel;
     Splitter1: TSplitter;
     mSql: TSynEdit;
     sbarEdit: TStatusBar;
-    TabDLL: TPage;
-    TabSql: TPage;
-    tabGrid: TPage;
+    TabDLL: TTabSheet;
+    TabSql: TTabSheet;
+    tabGrid: TTabSheet;
     pTitle: TPanel;
     Script: TFBLScript;
     ImageList1: TImageList;
@@ -3429,4 +3429,4 @@ initialization
   {$ENDIF}
 
 end.
-
+

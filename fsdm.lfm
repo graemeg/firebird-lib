@@ -1,7 +1,5 @@
 object dmib: Tdmib
   Height = 270
-  HorizontalOffset = 480
-  VerticalOffset = 224
   Width = 404
   object DbMain: TFBLDatabase
     SQLDialect = 1

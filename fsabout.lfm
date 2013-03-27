@@ -9,15 +9,22 @@ object frmAbout: TfrmAbout
   BorderIcons = [biSystemMenu]
   BorderStyle = bsDialog
   Caption = 'fenixsql .....about'
+  ClientHeight = 336
+  ClientWidth = 495
   OnCreate = FormCreate
   Position = poDesktopCenter
+  LCLVersion = '1.1'
   object Panel1: TPanel
+    Left = 0
     Height = 88
+    Top = 0
     Width = 495
     Align = alTop
     BevelOuter = bvLowered
     ChildSizing.LeftRightSpacing = 4
     ChildSizing.TopBottomSpacing = 2
+    ClientHeight = 88
+    ClientWidth = 495
     TabOrder = 0
     object lblTitle2: TLabel
       Left = 5
@@ -33,6 +40,7 @@ object frmAbout: TfrmAbout
       Font.Height = -16
       Layout = tlCenter
       ParentColor = False
+      ParentFont = False
       Transparent = False
     end
     object lbltitle1: TLabel
@@ -49,30 +57,35 @@ object frmAbout: TfrmAbout
       Font.Height = -32
       Layout = tlCenter
       ParentColor = False
+      ParentFont = False
       Transparent = False
     end
   end
   object Panel2: TPanel
+    Left = 0
     Height = 30
     Top = 306
     Width = 495
     Align = alBottom
     BevelOuter = bvNone
+    ClientHeight = 30
+    ClientWidth = 495
     TabOrder = 1
     object BitBtn1: TBitBtn
       Left = 399
       Height = 26
+      Top = 0
       Width = 92
       BorderSpacing.InnerBorder = 2
       Cancel = True
-      Caption = '&Chiudi'
+      Caption = '&Close'
       Kind = bkClose
       ModalResult = 2
-      NumGlyphs = 0
       TabOrder = 0
     end
   end
   object Panel3: TPanel
+    Left = 0
     Height = 218
     Top = 88
     Width = 495
@@ -80,50 +93,52 @@ object frmAbout: TfrmAbout
     BevelOuter = bvNone
     ChildSizing.LeftRightSpacing = 4
     ChildSizing.TopBottomSpacing = 4
+    ClientHeight = 218
+    ClientWidth = 495
     TabOrder = 2
-    object lic: TNotebook
+    object lic: TPageControl
       Left = 4
       Height = 210
       Top = 4
       Width = 487
+      ActivePage = pgInfo
       Align = alClient
-      PageIndex = 0
-      object pgInfo: TPage
+      TabIndex = 0
+      TabOrder = 0
+      object pgInfo: TTabSheet
         Caption = 'pgInfo'
+        ClientHeight = 181
+        ClientWidth = 483
         object Label2: TLabel
           Left = 12
-          Height = 14
+          Height = 15
           Top = 30
-          Width = 43
+          Width = 55
           Caption = 'Version :'
-          Color = clNone
           ParentColor = False
         end
         object Label4: TLabel
           Left = 12
-          Height = 14
+          Height = 15
           Top = 63
-          Width = 41
+          Width = 51
           Caption = 'Author :'
-          Color = clNone
           ParentColor = False
         end
         object Label5: TLabel
           Left = 11
-          Height = 14
+          Height = 15
           Top = 93
-          Width = 32
+          Width = 43
           Caption = 'email :'
-          Color = clNone
           ParentColor = False
         end
         object Label6: TLabel
           Left = 12
-          Height = 14
+          Height = 15
           Top = 126
-          Width = 20
+          Width = 24
           Caption = 'url :'
-          Color = clNone
           ParentColor = False
         end
         object Image1: TImage
@@ -303,54 +318,56 @@ object frmAbout: TfrmAbout
         end
         object lVersion: TLabel
           Left = 69
-          Height = 14
+          Height = 15
           Top = 31
-          Width = 38
+          Width = 50
           Caption = 'lVersion'
-          Color = clNone
           ParentColor = False
         end
         object lAuthor: TLabel
           Left = 71
-          Height = 14
+          Height = 15
           Top = 63
-          Width = 36
+          Width = 46
           Caption = 'lAuthor'
-          Color = clNone
           ParentColor = False
         end
         object leMail: TLabel
           Cursor = crNo
           Left = 69
-          Height = 14
+          Height = 15
           Top = 93
-          Width = 96
+          Width = 123
           Caption = 'fblib@altervista.org'
-          Color = clNone
           Font.Color = clBlue
           Font.Style = [fsUnderline]
           Layout = tlCenter
           ParentColor = False
+          ParentFont = False
         end
         object lUrl: TLabel
           Cursor = crNo
           Left = 69
-          Height = 14
+          Height = 15
           Top = 126
-          Width = 122
+          Width = 152
           Caption = 'http://fblib.altervista.org'
-          Color = clNone
           Font.Color = clBlue
           Font.Style = [fsUnderline]
           Layout = tlCenter
           ParentColor = False
+          ParentFont = False
         end
       end
-      object pgLicence: TPage
+      object pgLicence: TTabSheet
         Caption = 'lic'
+        ClientHeight = 181
+        ClientWidth = 483
         object mLic: TMemo
-          Height = 184
-          Width = 479
+          Left = 0
+          Height = 181
+          Top = 0
+          Width = 483
           Align = alClient
           Lines.Strings = (
             'This program is distributed under the terms of the GPL v2.'
@@ -654,4 +671,4 @@ object frmAbout: TfrmAbout
       end
     end
   end
-end
+end

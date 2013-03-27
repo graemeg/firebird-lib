@@ -1,23 +1,20 @@
-{ Questo è un file risorse generato automaticamente da Lazarus }
-
 LazarusResources.Add('Tdmib','FORMDATA',[
-  'TPF0'#5'Tdmib'#4'dmib'#6'Height'#3#14#1#16'HorizontalOffset'#3#224#1#14'Vert'
-  +'icalOffset'#3#224#0#5'Width'#3#148#1#0#12'TFBLDatabase'#6'DbMain'#10'SQLDia'
-  +'lect'#2#1#4'left'#2#8#3'top'#2#8#0#0#10'TSynSQLSyn'#10'SynSQLSyn1'#13'Defau'
-  +'ltFilter'#6#22'File SQL (*.sql)|*.sql'#7'Enabled'#8#23'CommentAttri.Foregro'
-  +'und'#7#6'clTeal'#22'StringAttri.Foreground'#7#5'clRed'#25'TableNameAttri.Fo'
-  +'reground'#7#9'clFuchsia'#20'TableNameAttri.Style'#11#11'fsUnderline'#0#10'S'
-  +'QLDialect'#7#13'sqlInterbase6'#4'left'#3#192#0#3'top'#2#8#0#0#15'TFBLTransa'
-  +'ction'#6'trISql'#8'Database'#7#6'DbMain'#4'left'#2#8#3'top'#2'X'#0#0#8'TFBL'
-  +'Dsql'#7'qryISql'#11'Transaction'#7#6'trISql'#4'left'#2#8#3'top'#2'x'#0#0#15
-  +'TFBLTransaction'#9'trBrowser'#8'Database'#7#6'DbMain'#4'left'#2'('#3'top'#2
-  +'X'#0#0#12'TFBLMetadata'#6'IbMeta'#8'Database'#7#6'DbMain'#10'Terminator'#6#1
-  +'^'#7'SetTerm'#9#4'left'#2'-'#3'top'#2#8#0#0#8'TFBLDsql'#10'qryBrowser'#11'T'
-  +'ransaction'#7#9'trBrowser'#4'left'#2')'#3'top'#2'x'#0#0#8'TFBLDsql'#12'qryT'
-  +'ableView'#11'Transaction'#7#11'trTableView'#4'left'#2'P'#3'top'#2'x'#0#0#15
-  +'TFBLTransaction'#11'trTableView'#8'Database'#7#6'DbMain'#4'left'#2'P'#3'top'
-  +#2'X'#0#0#8'TFBLDsql'#14'qryTableFilter'#11'Transaction'#7#11'trTableView'#4
-  +'left'#2'P'#3'top'#3#152#0#0#0#15'TFBLTransaction'#10'trBlobView'#8'Database'
-  +#7#6'DbMain'#4'left'#2'x'#3'top'#2'X'#0#0#8'TFBLDsql'#11'qryBlobView'#11'Tra'
-  +'nsaction'#7#10'trBlobView'#4'left'#2'x'#3'top'#2'x'#0#0#0
+  'TPF0'#5'Tdmib'#4'dmib'#6'Height'#3#14#1#5'Width'#3#148#1#0#12'TFBLDatabase'#6
+  +'DbMain'#10'SQLDialect'#2#1#4'left'#2#8#3'top'#2#8#0#0#10'TSynSQLSyn'#10'Syn'
+  +'SQLSyn1'#13'DefaultFilter'#6#22'File SQL (*.sql)|*.sql'#7'Enabled'#8#23'Com'
+  +'mentAttri.Foreground'#7#6'clTeal'#22'StringAttri.Foreground'#7#5'clRed'#25
+  +'TableNameAttri.Foreground'#7#9'clFuchsia'#20'TableNameAttri.Style'#11#11'fs'
+  +'Underline'#0#10'SQLDialect'#7#13'sqlInterbase6'#4'left'#3#192#0#3'top'#2#8#0
+  +#0#15'TFBLTransaction'#6'trISql'#8'Database'#7#6'DbMain'#4'left'#2#8#3'top'#2
+  +'X'#0#0#8'TFBLDsql'#7'qryISql'#11'Transaction'#7#6'trISql'#4'left'#2#8#3'top'
+  +#2'x'#0#0#15'TFBLTransaction'#9'trBrowser'#8'Database'#7#6'DbMain'#4'left'#2
+  +'('#3'top'#2'X'#0#0#12'TFBLMetadata'#6'IbMeta'#8'Database'#7#6'DbMain'#10'Te'
+  +'rminator'#6#1'^'#7'SetTerm'#9#4'left'#2'-'#3'top'#2#8#0#0#8'TFBLDsql'#10'qr'
+  +'yBrowser'#11'Transaction'#7#9'trBrowser'#4'left'#2')'#3'top'#2'x'#0#0#8'TFB'
+  +'LDsql'#12'qryTableView'#11'Transaction'#7#11'trTableView'#4'left'#2'P'#3'to'
+  +'p'#2'x'#0#0#15'TFBLTransaction'#11'trTableView'#8'Database'#7#6'DbMain'#4'l'
+  +'eft'#2'P'#3'top'#2'X'#0#0#8'TFBLDsql'#14'qryTableFilter'#11'Transaction'#7
+  +#11'trTableView'#4'left'#2'P'#3'top'#3#152#0#0#0#15'TFBLTransaction'#10'trBl'
+  +'obView'#8'Database'#7#6'DbMain'#4'left'#2'x'#3'top'#2'X'#0#0#8'TFBLDsql'#11
+  +'qryBlobView'#11'Transaction'#7#10'trBlobView'#4'left'#2'x'#3'top'#2'x'#0#0#0
 ]);

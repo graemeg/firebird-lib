@@ -9,9 +9,12 @@ object frmDescription: TfrmDescription
   Caption = 'frmDescription'
   ChildSizing.LeftRightSpacing = 4
   ChildSizing.TopBottomSpacing = 4
+  ClientHeight = 266
+  ClientWidth = 361
   Constraints.MinHeight = 200
   Constraints.MinWidth = 200
   Position = poDesktopCenter
+  LCLVersion = '1.1'
   object Panel1: TPanel
     Left = 4
     Height = 31
@@ -19,6 +22,8 @@ object frmDescription: TfrmDescription
     Width = 353
     Align = alBottom
     BevelOuter = bvNone
+    ClientHeight = 31
+    ClientWidth = 353
     TabOrder = 0
     object BitBtn1: TBitBtn
       Left = 275
@@ -31,7 +36,6 @@ object frmDescription: TfrmDescription
       Default = True
       Kind = bkOK
       ModalResult = 1
-      NumGlyphs = 0
       TabOrder = 0
     end
     object BitBtn2: TBitBtn
@@ -41,10 +45,9 @@ object frmDescription: TfrmDescription
       Width = 75
       Anchors = [akTop, akRight]
       BorderSpacing.InnerBorder = 2
-      Caption = 'Annulla'
+      Caption = '&Cancel'
       Kind = bkCancel
       ModalResult = 2
-      NumGlyphs = 0
       TabOrder = 1
     end
   end
@@ -57,4 +60,4 @@ object frmDescription: TfrmDescription
     ScrollBars = ssBoth
     TabOrder = 1
   end
-end
+end

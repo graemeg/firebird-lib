@@ -25,7 +25,7 @@ interface
 
 uses
   Classes, SysUtils, LResources, Forms, Controls, Graphics, Dialogs, ExtCtrls,
-  StdCtrls, Buttons, SynMemo, SynHighlighterSQL, ColorBox;
+  StdCtrls, Buttons, SynMemo, SynHighlighterSQL, ColorBox, ComCtrls;
 
 type
 
@@ -57,9 +57,9 @@ type
     lblFontDDL: TLabel;
     lblFontSql: TLabel;
     lbElements: TListBox;
-    Notebook1: TNotebook;
-    Page1: TPage;
-    Page2: TPage;
+    Notebook1: TPageControl;
+    Page1: TTabSheet;
+    Page2: TTabSheet;
     Panel1: TPanel;
     Panel2: TPanel;
     PanelDown: TPanel;

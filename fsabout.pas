@@ -27,7 +27,7 @@ interface
 
 uses
   Classes, SysUtils, LResources, Forms, Controls, Graphics, Dialogs, ExtCtrls,
-  StdCtrls, Buttons;
+  StdCtrls, Buttons, ComCtrls;
 
 type
 
@@ -46,13 +46,13 @@ type
     lVersion: TLabel;
     lAuthor: TLabel;
     leMail: TLabel;
-    lic: TNotebook;
+    lic: TPageControl;
     mLic: TMemo;
-    pgInfo: TPage;
+    pgInfo: TTabSheet;
     Panel1: TPanel;
     Panel2: TPanel;
     Panel3: TPanel;
-    pgLicence: TPage;
+    pgLicence: TTabSheet;
     procedure FormCreate(Sender: TObject);
   private
     { private declarations }
@@ -117,4 +117,4 @@ initialization
   {$I fsabout.lrs}
 
 end.
-
+

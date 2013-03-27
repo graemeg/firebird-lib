@@ -1,11 +1,12 @@
 program fenixsql;
 
 {$mode objfpc}{$H+}
+{$IFDEF MSWINDOWS} {$appmode gui} {$ENDIF}
 
 uses
   Interfaces, // this includes the LCL widgetset
-  Forms
-  { add your units here }, fsbrowser, fsdm, fblib, fsconfig, fsparaminput,
+  Forms,
+  fsbrowser, fsdm, fsconfig, fsparaminput,
   fsblobinput, fsblobtext, fslogin, fsconst, fsdialogtran, fstableview,
   fstablefilter, fsblobviewdialog, fsmixf, fscreatedb, fsexporttohtml, 
   fsdescription, fsoptions, fstextoptions, fsservice, fsusers, fsusermod,
