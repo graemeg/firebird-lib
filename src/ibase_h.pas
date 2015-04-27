@@ -1609,11 +1609,9 @@ end;
 
 procedure CheckFbClientLoaded(const ClientLibrary: string = '');
 begin
-  if hDLL = LibHandleNil then
-  begin
-    if ClientLibrary <> '' then DLL := ClientLibrary;
-    LoadFBClientLibrary;
-  end;
+  if hDLL <> LibHandleNil then Exit;
+  if ClientLibrary <> '' then DLL := ClientLibrary;
+  LoadFBClientLibrary;
   if hDLL = LibHandleNil then
     raise Exception.Create('Library ' + DLL + ' not found');
 end;
