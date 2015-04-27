@@ -37,19 +37,12 @@ type
   {***************** Plain API Constants definition ****************}
 
 const
+
   {$IFNDEF UNIX}
-  DEFAULT_DLL_LOCATION = 'gds32.dll';
-  DEFAULT_DLL_LOCATION2 = 'fbclient.dll';
+  DEFAULT_LIBRARIES: array [1..3] of string = ('fbembed.dll', 'fbclient.dll', 'gds32.dll');
   LibHandleNil = 0;
-  {$ELSE}
-  {$IFDEF LINUX}
-  DEFAULT_DLL_LOCATION = 'libfbclient.so.0';
-  DEFAULT_DLL_LOCATION2 = 'libgds.so';
-  {$ENDIF}
-  {$IFDEF BSD}
-  DEFAULT_DLL_LOCATION = 'libgds.so.0';
-  DEFAULT_DLL_LOCATION2 = 'libgds.so';
-  {$ENDIF}
+  {$ELSE} // LINUX, BSD
+  DEFAULT_LIBRARIES: array [1..3] of string = ('libfbclient.so', 'libgds.so', 'libfbembed.so');
   LibHandleNil = nil;
   {$ENDIF}
   
@@ -1518,7 +1511,7 @@ var
   { Library Initialization }
 
 function LoadFBClientLibrary: boolean;
-procedure CheckFbClientLoaded;
+procedure CheckFbClientLoaded(const ClientLibrary: string = '');
 function FBClientLibraryExists: boolean;
 
 
@@ -1614,10 +1607,13 @@ end;
 //------------------------------------------------------------------------------
 
 
-procedure CheckFbClientLoaded;
+procedure CheckFbClientLoaded(const ClientLibrary: string = '');
 begin
   if hDLL = LibHandleNil then
+  begin
+    if ClientLibrary <> '' then DLL := ClientLibrary;
     LoadFBClientLibrary;
+  end;
   if hDLL = LibHandleNil then
     raise Exception.Create('Library ' + DLL + ' not found');
 end;
@@ -1640,6 +1636,7 @@ function LoadFBClientLibrary: boolean;
       end;
     end;
   end;
+var I: Byte;
 begin
   // Firebird needs libcryp.so symbols
   {$IFDEF UNIX}
@@ -1652,24 +1649,16 @@ begin
   end;
   {$ENDIF}
   {$ENDIF}
-
-  {$IFNDEF UNIX}
-  DLL := 'fbembed.dll';
-  TryToLoadLibrary;
-  if hDLL = LibHandleNil then
+  // Load existing if specified
+  if (DLL <> '') then TryToLoadLibrary else
+  // Try quessing library name
+  for I := 1 to Length(DEFAULT_LIBRARIES) do
   begin
-    {$ENDIF}
-    DLL := DEFAULT_DLL_LOCATION2;
+    DLL := DEFAULT_LIBRARIES[I];
     TryToLoadLibrary;
-    if hDLL = LibHandleNil then
-    begin
-      DLL := DEFAULT_DLL_LOCATION;
-      TryToLoadLibrary;
-    end;
-    {$IFNDEF UNIX}
+    if hDLL <> LibHandleNil then Break;
   end;
-  {$ENDIF}
-
+  // Link routine handles
   if hDLL <> LibHandleNil then
   begin
     isc_sqlcode := Tisc_sqlcode(GetProcedurePointer(hDLL, 'isc_sqlcode'));

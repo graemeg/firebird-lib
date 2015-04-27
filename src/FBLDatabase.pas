@@ -67,6 +67,7 @@ type
     FHost: string;
     FTcpPort: word;                     // default 3050
     FProtocol: TProtocolType;
+    FClientLibrary: string;
     FDBFile: string;
     FConnectString: string;
     FCharacterSet: string;
@@ -290,7 +291,8 @@ type
     {Number of attached objects (TFBLTransaction or TFBLEvent)}
     property AttachObjectCount: Integer read GetAttachObjectCount;
   published
-
+    {Client library name}
+    property ClientLibrary: string read FClientLibrary write FClientLibrary;
     {Database name or alias name
     @html(<br>) see also @link(Connect)}
     property DBFile: string read FDBFile write FDBFile;
@@ -515,7 +517,7 @@ var
 begin
   DBh := nil;
   TRh := nil;
-  CheckFbClientLoaded;
+  CheckFbClientLoaded(FClientLibrary);
   //Params := 'USER ''' + AUser + ''' ' + 'PASSWORD ''' +
   //APassword + ''' ' + 'PAGE_SIZE ' + IntToStr(APageSize);
   Params := 'USER ' + QuotedStr(AUser) + ' PASSWORD ' +
@@ -1128,7 +1130,7 @@ var
   DpbIdx: Short;
   LenBuffer: Integer;
 begin
-  CheckFbClientLoaded;
+  CheckFbClientLoaded(FClientLibrary);
   if FDBHandle <> nil then
     FBLError(E_DB_ALREADY_CON);
   SetConnectString;
