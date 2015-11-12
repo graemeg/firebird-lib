@@ -39,10 +39,10 @@ type
 const
 
   {$IFNDEF UNIX}
-  DEFAULT_LIBRARIES: array [1..3] of string = ('fbembed.dll', 'fbclient.dll', 'gds32.dll');
+  DEFAULT_LIBRARIES: array [1..3] of string = ('fbclient.dll', 'fbembed.dll', 'gds32.dll');
   LibHandleNil = 0;
   {$ELSE} // LINUX, BSD
-  DEFAULT_LIBRARIES: array [1..3] of string = ('libfbclient.so', 'libgds.so', 'libfbembed.so');
+  DEFAULT_LIBRARIES: array [1..3] of string = ('libfbclient.so', 'libfbembed.so', 'libgds.so');
   LibHandleNil = nil;
   {$ENDIF}
   
