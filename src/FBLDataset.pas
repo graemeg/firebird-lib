@@ -351,7 +351,6 @@ begin
    if DefaultFields then
      DestroyFields;
    FDsql.Close;
-  // ShowMessage('InternalClose');
 end;
 
 //------------------------------------------------------------------------------
