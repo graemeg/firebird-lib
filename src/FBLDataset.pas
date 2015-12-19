@@ -196,7 +196,6 @@ end;
 
 destructor TFBLCustomDataset.Destroy;
 begin
-  //ShowMessage('Destroy');
   FDsql.OnUnPrepare := nil;
   FDsql.Free;
   {$IFDEF FPC}
@@ -231,12 +230,9 @@ end;
 
 //------------------------------------------------------------------------------
 
-
 function TFBLCustomDataset.GetTransaction: TFBLTransaction;
 begin
-  Result := nil;
-  if FDsql.Transaction <> nil then
-    Result := FDsql.Transaction;
+  Result := FDsql.Transaction;
 end;
 
 //------------------------------------------------------------------------------
@@ -270,7 +266,7 @@ begin
      EFBLDatasetError.Create('No "SELECT" Statement type');
 
   if fDsql.ParamCount > 0 then
-     EFBLDatasetError.Create('query whit params is not implemented yet');
+     EFBLDatasetError.Create('Query with params is not implemented yet');
 end;
 
 //------------------------------------------------------------------------------
