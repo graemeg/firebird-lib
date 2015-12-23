@@ -114,11 +114,9 @@ type
     {Free up  all resources associated with this instance}
     destructor Destroy; override;
     {@EXCLUDE}
-    procedure Notification(AComponent: TComponent; Operation: TOperation); override;
+    procedure DoTransactionEnd; virtual;
     {@EXCLUDE}
-    procedure DoOnEndTransaction; virtual;
-    {@EXCLUDE}
-    procedure DoOnDestroy; virtual;
+    procedure DoTransactionDestroy; virtual;
     {Prepare statement for execution and alloc memory for output fields and input parameters}
     procedure Prepare;
     {Free the statement and free memory assigned to fields and parameters}
@@ -428,19 +426,6 @@ begin
 end;
 
 //------------------------------------------------------------------------------
-
-procedure TFBLDsql.Notification(AComponent: TComponent;
-  Operation: TOperation);//override;
-begin
-  if Operation = opRemove then
-  begin
-    if AComponent = FTransaction then FTransaction := nil;
-  end;
-  inherited Notification(AComponent, Operation);
-end;
-
-
-//------------------------------------------------------------------------------
 {$IFDEF FBL_THREADSAFE}
 procedure TFBLDSql.Lock;
 begin
@@ -457,16 +442,16 @@ end;
 
 //------------------------------------------------------------------------------
 
-procedure TFBLDsql.DoOnEndTransaction;
+procedure TFBLDsql.DoTransactionEnd;
 begin
   if FPrepared then UnPrepare;
 end;
 
 //------------------------------------------------------------------------------
 
-procedure TFBLDsql.DoOnDestroy;
+procedure TFBLDsql.DoTransactionDestroy;
 begin
-  if FTransaction <> nil then FTransaction := nil;
+  FTransaction := nil;
 end;
 
 //------------------------------------------------------------------------------
@@ -512,14 +497,10 @@ end;
 
 procedure TFBLDsql.SetTransaction(Value: TFBLTransaction);
 begin
-  if assigned(FTransaction) and (Value <> FTransaction) then
-    FTransaction.RemQuery(self);
-  if Assigned(Value) and (Value <> FTransaction) then
-    Value.AddQuery(self);
-  if Assigned(Value) then
-    FTransaction := Value
-  else
-    FTransaction := nil;
+  if FTransaction = Value then Exit;
+  if Assigned(FTransaction) then FTransaction.RemQuery(Self);
+  if Assigned(Value) then Value.AddQuery(Self);
+  FTransaction := Value;
 end;
 
 //------------------------------------------------------------------------------

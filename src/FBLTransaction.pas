@@ -43,8 +43,8 @@ type
   {@EXCLUDE}
   IFBLTranEvent = interface
     ['{ABAEBCBF-722A-4570-A3C9-A0F66045C6BB}']
-    procedure DoOnEndTransaction;
-    procedure DoOnDestroy;
+    procedure DoTransactionEnd;
+    procedure DoTransactionDestroy;
   end;
   {Transaction Action}
   TTRAction = (TARollback, TACommit, TACommitRetaining);
@@ -185,9 +185,9 @@ var
   i: integer;
 begin
   if inTransaction then EndTransaction(TARollback);
-  if Assigned(FDatabase) then FDatabase.RemoveAttachObj(self);
+  if Assigned(FDatabase) then FDatabase.RemoveAttachObj(Self);
   for i := 0 to FDSqls.Count - 1 do
-    IFBLTranEvent(FDSqls[i]).DoOnDestroy;
+    IFBLTranEvent(FDSqls[i]).DoTransactionDestroy;
   FDSqls.Free;
   FReservationReadTables.Free;
   FReservationWriteTables.Free;
@@ -515,7 +515,7 @@ begin
         end;
     end;
     for i := 0 to FDSqls.Count - 1 do
-      IFBLTranEvent(FDSqls[i]).DoOnEndTransaction;
+      IFBLTranEvent(FDSqls[i]).DoTransactionEnd;
     if Assigned(FOnEndTransaction) then
       FOnEndTransaction(self, Action);
     {$IFDEF FBL_THREADSAFE}

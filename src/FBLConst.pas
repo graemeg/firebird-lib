@@ -23,7 +23,8 @@ unit FBLConst;
 
 interface
 
-const
+resourcestring
+
   (* Error *)
   E_DB_NONAME = 'TFBLDatabase: DBFile Property is not set';
   E_DB_ALREADY_CON = 'Database already Connected';
@@ -71,6 +72,10 @@ const
   E_EV_LIST_EMPTY = 'Event list empty';
   E_SC_INVALID_LEN_SET_TERM = 'Invalid "SET TERM" lenght in script';
   E_SC_INVALID_CHAR_IN_SET_TERM = 'Invalid char  in "SET TERM" %s';
+
+
+const
+
   (* Global *)
   // PALETTE_NAME = 'FBL';
 
